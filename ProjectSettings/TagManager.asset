@@ -11,7 +11,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Ground
   - 
   - 
   - 
@@ -41,5 +41,21 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: FarBackground
+    uniqueID: 642975961
+    locked: 0
+  - name: Background
+    uniqueID: 1990505853
+    locked: 0
+  - name: Ground
+    uniqueID: 279184003
+    locked: 0
+  - name: Foreground
+    uniqueID: 1104628839
+    locked: 0
+  - name: FarForeground
+    uniqueID: 2491368045
+    locked: 0
   m_RenderingLayers:
   - Default
+  m_MigratedRenderPipelines: []
