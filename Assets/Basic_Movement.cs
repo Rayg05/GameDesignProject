@@ -3,32 +3,42 @@ using UnityEngine;
 public class Basic_Movement : MonoBehaviour
 {
     private Rigidbody2D rb;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+    [SerializeField] private float moveSpeed = 10f;
+    [SerializeField] private float jumpForce = 1f;
+
+    [SerializeField] private Transform groundCheck;
+    [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private float groundCheckRadius = 0.1f;
+
+    private bool isGrounded;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        float moveSpeed = 10f; // Speed at which the object moves
-                              // Checks if the "D" key or Right Arrow is currently being held down
-        float jumpForce = 20f; // Force applied when jumping
-
+        // horizontal movement dictated by input keys (A/D or Left/Right Arrow)
+        float moveInput = 0f;
         if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
-    {
-        transform.Translate(Vector3.right * moveSpeed * Time.deltaTime);
+            moveInput = 1f;
+        else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+            moveInput = -1f;
+
+        rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
+
+        // jump added with isGrounded check to prevent double jump
+        if ((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) && isGrounded)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f); // reset vertical velocity
+            rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+        }
     }
 
-    // Checks if the "A" key or Left Arrow is currently being held down
-    if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+    void FixedUpdate()
     {
-        transform.Translate(Vector3.left * moveSpeed * Time.deltaTime);
-    }
-        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
-        {
-            transform.Translate(Vector3.up * jumpForce * Time.deltaTime);
-        }
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
     }
 }
