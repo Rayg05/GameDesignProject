@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: fa85bb1ac014c694aabb3ae7fe634b7b
+guid: 11990a25aaf97e64aac528e2df16032b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7307495421300114526
-    second: RunningSpritesheet_0
+      213: 2215029857177058089
+    second: Base Attack Effect_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -102,13 +102,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: RunningSpritesheet_0
+      name: Base Attack Effect_0
       rect:
         serializedVersion: 2
-        x: 3000
+        x: 0
         y: 0
-        width: 900
-        height: 1333
+        width: 1333
+        height: 1000
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -117,20 +117,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e5403607e50796560800000000000000
-      internalID: 7307495421300114526
+      spriteID: 92b3ceb5bed5dbe10800000000000000
+      internalID: 2215029857177058089
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RunningSpritesheet_1
+      name: Base Attack Effect_1
       rect:
         serializedVersion: 2
-        x: 4000
+        x: 1333
         y: 0
-        width: 900
-        height: 1333
+        width: 1333
+        height: 1000
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,20 +139,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fcc6fcb4255a6ab41b27efae51bd0d51
-      internalID: 49546281
+      spriteID: 302c5723459c4394ba94b87f5d879e89
+      internalID: 936073881
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RunningSpritesheet_3
+      name: Base Attack Effect_2
       rect:
         serializedVersion: 2
-        x: 6000
+        x: 2666
         y: 0
-        width: 900
-        height: 1333
+        width: 1333
+        height: 1000
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,20 +161,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8cce33d5cdda88a409740f94ad3e0adc
-      internalID: -73736258
+      spriteID: 4a419157815d6ae44b1c1f08d5c4d465
+      internalID: -1845919211
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RunningSpritesheet_4
+      name: Base Attack Effect_3
       rect:
         serializedVersion: 2
-        x: 7000
+        x: 3999
         y: 0
-        width: 900
-        height: 1333
+        width: 1333
+        height: 1000
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,20 +183,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fcacbac6443259046ad59cde08977dd0
-      internalID: 547759513
+      spriteID: 3d6d6c31a0af37d49bf7568dce1d7e5c
+      internalID: -105646516
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RunningSpritesheet_6
+      name: Base Attack Effect_4
       rect:
         serializedVersion: 2
-        x: 8000
+        x: 5332
         y: 0
-        width: 900
-        height: 1333
+        width: 1333
+        height: 1000
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,20 +205,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba2dd2bbc57f8d24bbb99b52e344b09b
-      internalID: 1168753346
+      spriteID: d4bc842711e3b314fbca31b6b1467846
+      internalID: -652064
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RunningSpritesheet_12
+      name: Base Attack Effect_5
       rect:
         serializedVersion: 2
-        x: 0
+        x: 6665
         y: 0
-        width: 900
-        height: 1333
+        width: 1333
+        height: 1000
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -227,20 +227,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85acafdaa0175f1468cf8f14012693b8
-      internalID: 1973964492
+      spriteID: dd5ab995f9499cb48902a999e25d1b8d
+      internalID: 1621767888
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RunningSpritesheet_13
+      name: Base Attack Effect_6
       rect:
         serializedVersion: 2
-        x: 1000
+        x: 7998
         y: 0
-        width: 900
-        height: 1333
+        width: 1333
+        height: 1000
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -249,20 +249,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9e9dae9a76a3af40a58f867cbc00bfb
-      internalID: 192343373
+      spriteID: 131de1c43e0be4c44ae31402e94a8b64
+      internalID: 1573373988
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RunningSpritesheet_14
+      name: Base Attack Effect_7
       rect:
         serializedVersion: 2
-        x: 2000
+        x: 9331
         y: 0
-        width: 900
-        height: 1333
+        width: 1333
+        height: 1000
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,20 +271,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29be0a36f79fbe346abf73e3de0b60ca
-      internalID: 1279573158
+      spriteID: 9eec49723d062dc4e8c85867d18d4fc0
+      internalID: -213761699
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RunningSpritesheet_15
+      name: Base Attack Effect_8
       rect:
         serializedVersion: 2
-        x: 5000
+        x: 10664
         y: 0
-        width: 900
-        height: 1333
+        width: 1333
+        height: 1000
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -293,20 +293,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aefc625d71890ba429f0a51943bd22ad
-      internalID: 12057523
+      spriteID: d4591e3bb63c0284bae20a91ffcc739a
+      internalID: 1693356674
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RunningSpritesheet_16
+      name: Base Attack Effect_9
       rect:
         serializedVersion: 2
-        x: 9000
+        x: 11997
         y: 0
-        width: 900
-        height: 1333
+        width: 1333
+        height: 1000
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -315,74 +315,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f68780c8cfc34c84bb60973286f295bf
-      internalID: 1300529952
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RunningSpritesheet_17
-      rect:
-        serializedVersion: 2
-        x: 10000
-        y: 0
-        width: 900
-        height: 1333
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9afad5a25afc89b41b03fcdb9d448ce2
-      internalID: 230759956
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RunningSpritesheet_18
-      rect:
-        serializedVersion: 2
-        x: 11000
-        y: 0
-        width: 900
-        height: 1333
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: faaf5e49cfdbfab4898181e37688d50c
-      internalID: 586623848
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RunningSpritesheet_19
-      rect:
-        serializedVersion: 2
-        x: 12000
-        y: 0
-        width: 900
-        height: 1333
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0afa8ec03999a36429c41b3feeadfa0e
-      internalID: 95753263
+      spriteID: c483d87f08f5211488853dd6e0099f28
+      internalID: -25475110
       vertices: []
       indices: 
       edges: []
@@ -391,7 +325,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 83398a5137ad9c04a90639f27cacaebb
+    spriteID: 8ede4f9da7b11414aa7ebbe5f79334c7
     internalID: 0
     vertices: []
     indices: 
@@ -401,28 +335,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":10.0,"y":1.0},"gridSpriteSize":{"x":1333.0,"y":1000.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":true,"isAlternate":false}'
     nameFileIdTable:
-      RunningSpritesheet_0: 7307495421300114526
-      RunningSpritesheet_1: 49546281
-      RunningSpritesheet_10: -771872915
-      RunningSpritesheet_11: 728118662
-      RunningSpritesheet_12: 1973964492
-      RunningSpritesheet_13: 192343373
-      RunningSpritesheet_14: 1279573158
-      RunningSpritesheet_15: 12057523
-      RunningSpritesheet_16: 1300529952
-      RunningSpritesheet_17: 230759956
-      RunningSpritesheet_18: 586623848
-      RunningSpritesheet_19: 95753263
-      RunningSpritesheet_2: -1006662655
-      RunningSpritesheet_3: -73736258
-      RunningSpritesheet_4: 547759513
-      RunningSpritesheet_5: 1933018506
-      RunningSpritesheet_6: 1168753346
-      RunningSpritesheet_7: -1860678359
-      RunningSpritesheet_8: -2123663500
-      RunningSpritesheet_9: -1988456711
+      Base Attack Effect_0: 2215029857177058089
+      Base Attack Effect_1: 936073881
+      Base Attack Effect_2: -1845919211
+      Base Attack Effect_3: -105646516
+      Base Attack Effect_4: -652064
+      Base Attack Effect_5: 1621767888
+      Base Attack Effect_6: 1573373988
+      Base Attack Effect_7: -213761699
+      Base Attack Effect_8: 1693356674
+      Base Attack Effect_9: -25475110
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
