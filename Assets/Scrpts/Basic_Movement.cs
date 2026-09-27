@@ -40,7 +40,7 @@ public class Basic_Movement : MonoBehaviour
         rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
 
         // jump added with isGrounded check to prevent double jump
-        if ((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) && isGrounded)
+        if ((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space)) && isGrounded)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f); // reset vertical velocity
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
