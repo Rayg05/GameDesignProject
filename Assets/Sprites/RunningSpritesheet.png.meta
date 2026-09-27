@@ -105,9 +105,9 @@ TextureImporter:
       name: RunningSpritesheet_0
       rect:
         serializedVersion: 2
-        x: 3000
+        x: 0
         y: 0
-        width: 900
+        width: 1000
         height: 1333
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -127,9 +127,9 @@ TextureImporter:
       name: RunningSpritesheet_1
       rect:
         serializedVersion: 2
-        x: 4000
+        x: 1000
         y: 0
-        width: 900
+        width: 1000
         height: 1333
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -149,9 +149,9 @@ TextureImporter:
       name: RunningSpritesheet_3
       rect:
         serializedVersion: 2
-        x: 6000
+        x: 3000
         y: 0
-        width: 900
+        width: 1000
         height: 1333
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -171,9 +171,9 @@ TextureImporter:
       name: RunningSpritesheet_4
       rect:
         serializedVersion: 2
-        x: 7000
+        x: 4000
         y: 0
-        width: 900
+        width: 1000
         height: 1333
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -193,9 +193,9 @@ TextureImporter:
       name: RunningSpritesheet_6
       rect:
         serializedVersion: 2
-        x: 8000
+        x: 6000
         y: 0
-        width: 900
+        width: 1000
         height: 1333
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -215,9 +215,9 @@ TextureImporter:
       name: RunningSpritesheet_12
       rect:
         serializedVersion: 2
-        x: 0
+        x: 12000
         y: 0
-        width: 900
+        width: 1000
         height: 1333
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -234,34 +234,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RunningSpritesheet_13
-      rect:
-        serializedVersion: 2
-        x: 1000
-        y: 0
-        width: 900
-        height: 1333
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: adecac04101e1a34d996047a1bfc71af
-      internalID: -1166752173
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RunningSpritesheet_14
+      name: RunningSpritesheet_2
       rect:
         serializedVersion: 2
         x: 2000
         y: 0
-        width: 900
+        width: 1000
         height: 1333
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -271,19 +249,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d720d56387d160846a36b69b63ef43ac
-      internalID: -2110727367
+      spriteID: 2dd73ffbdbf46ae49bb6521deb5c3f4e
+      internalID: 90025922
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RunningSpritesheet_15
+      name: RunningSpritesheet_5
       rect:
         serializedVersion: 2
         x: 5000
         y: 0
-        width: 900
+        width: 1000
         height: 1333
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -293,19 +271,63 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: afee0d4025191fc448495b826d218230
-      internalID: 554524226
+      spriteID: 5dfce9602f8f73449b0a704ae988f2d0
+      internalID: 1385880506
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RunningSpritesheet_16
+      name: RunningSpritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 7000
+        y: 0
+        width: 1000
+        height: 1333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d7bfcf766bf2ae4bb9aef5d2e189988
+      internalID: 968221632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunningSpritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 8000
+        y: 0
+        width: 1000
+        height: 1333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71c9bf4bcea549144bdc191f58c84b13
+      internalID: -528471694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunningSpritesheet_9
       rect:
         serializedVersion: 2
         x: 9000
         y: 0
-        width: 900
+        width: 1000
         height: 1333
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -315,19 +337,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 904475c35ae7b2b419afaa7a74b00ae6
-      internalID: 1665487434
+      spriteID: bee953a000d469e43b7ae45b04ebdabe
+      internalID: -1823173056
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RunningSpritesheet_17
+      name: RunningSpritesheet_10
       rect:
         serializedVersion: 2
         x: 10000
         y: 0
-        width: 900
+        width: 1000
         height: 1333
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -337,19 +359,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2de52468adb9ddd45a21ae255e9a6a41
-      internalID: 804612724
+      spriteID: 72787ce291dee3c448309bf569cb4210
+      internalID: 1274122983
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RunningSpritesheet_18
+      name: RunningSpritesheet_11
       rect:
         serializedVersion: 2
         x: 11000
         y: 0
-        width: 900
+        width: 1000
         height: 1333
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -359,30 +381,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c078b58b83e11a47864d011259290aa
-      internalID: -1071180761
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RunningSpritesheet_19
-      rect:
-        serializedVersion: 2
-        x: 12000
-        y: 0
-        width: 900
-        height: 1333
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ca63f0df32bb3744abb5e5266dc3ad80
-      internalID: 842883395
+      spriteID: 9168e9ed7434ce842a7f4717a785c1dc
+      internalID: 561236931
       vertices: []
       indices: 
       edges: []
@@ -401,20 +401,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":13.0,"y":1.0},"gridSpriteSize":{"x":1000.0,"y":1333.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       RunningSpritesheet_0: 7307495421300114526
       RunningSpritesheet_1: -386133385
       RunningSpritesheet_10: 1274122983
       RunningSpritesheet_11: 561236931
       RunningSpritesheet_12: 707483242
-      RunningSpritesheet_13: -1166752173
-      RunningSpritesheet_14: -2110727367
-      RunningSpritesheet_15: 554524226
-      RunningSpritesheet_16: 1665487434
-      RunningSpritesheet_17: 804612724
-      RunningSpritesheet_18: -1071180761
-      RunningSpritesheet_19: 842883395
       RunningSpritesheet_2: 90025922
       RunningSpritesheet_3: 605359875
       RunningSpritesheet_4: -1631269981
