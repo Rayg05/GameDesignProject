@@ -11,7 +11,7 @@ public class JabAttack : MonoBehaviour
     private Collider2D attackAreaCollider;
     private SpriteRenderer attackAreaRenderer;
     private bool attacking = false;
-    private float timeToAttack = 1.5f;
+    private float timeToAttack = 5f;
     private float timer = 0f;
 
     void Start()
@@ -50,6 +50,7 @@ public class JabAttack : MonoBehaviour
             if (timer >= timeToAttack)
             {
                 attack_Animation.SetBool("Attack", false);
+                attack_Effect_Animation.SetBool("Pressed_Attack", false);
                 timer = 0;
                 attacking = false;
                 attackAreaCollider.enabled = false;
