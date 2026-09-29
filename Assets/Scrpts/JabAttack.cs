@@ -42,9 +42,8 @@ public class JabAttack : MonoBehaviour
             timer += Time.deltaTime;
 
             if (timer >= timeToAttack)
-            { 
+            {
                 attack_Animation.SetBool("Attack", false);
-                attack_Effect_Animation.SetBool("Pressed_Attack", false);
                 timer = 0;
                 attacking = false;
                 attackAreaCollider.enabled = false;
