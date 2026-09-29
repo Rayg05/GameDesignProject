@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class JabAttack : MonoBehaviour
 {
-    Animator attack_Animation;        // Player's own animator
-    Animator attack_Effect_Animation; // Weapon/hitbox's animator
+    //base jab variables
+    Animator attack_Animation;
+    Animator attack_Effect_Animation; 
     private GameObject attackArea = default;
     private Collider2D attackAreaCollider;
     private SpriteRenderer attackAreaRenderer;
@@ -15,9 +16,10 @@ public class JabAttack : MonoBehaviour
 
     void Start()
     {
-        attack_Animation = GetComponent<Animator>();                    // Player's animator
+        //setting initial animations and variable to needed declarations
+        attack_Animation = GetComponent<Animator>();
         attackArea = transform.GetChild(1).gameObject;
-        attack_Effect_Animation = attackArea.GetComponent<Animator>();  // Weapon's animator (has Pressed_Attack)
+        attack_Effect_Animation = attackArea.GetComponent<Animator>(); 
         attackAreaCollider = attackArea.GetComponent<Collider2D>();
         attackAreaRenderer = attackArea.GetComponent<SpriteRenderer>();
 
@@ -32,11 +34,15 @@ public class JabAttack : MonoBehaviour
 
     void Update()
     {
+        //attack button
         if (Input.GetKeyDown(KeyCode.E))
         {
+            //calls attack function
             Attack();
         }
 
+        //sets up timer that will deactivate the attack animation 
+        //and its area hitbox
         if (attacking)
         {
             timer += Time.deltaTime;
@@ -52,6 +58,8 @@ public class JabAttack : MonoBehaviour
         }
     }
 
+    //attack function that activates needed animations and 
+    //area hitbox
     private void Attack()
     {
         attack_Animation.SetBool("Attack", true);
