@@ -24,7 +24,6 @@ public class Basic_Movement : MonoBehaviour
     void Update()
     {
         float animationInput = Input.GetAxisRaw("Horizontal");
-
         run_Animator.SetFloat("Speed", Mathf.Abs(animationInput));
         if (animationInput > 0)
             transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
