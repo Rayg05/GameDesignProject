@@ -56,6 +56,9 @@ TagManager:
   - name: FarForeground
     uniqueID: 2491368045
     locked: 0
+  - name: UI
+    uniqueID: 3507780141
+    locked: 0
   m_RenderingLayers:
   - Default
   m_MigratedRenderPipelines: []
