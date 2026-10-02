@@ -11,7 +11,7 @@ public class JabAttack : MonoBehaviour
     private Collider2D attackAreaCollider;
     private SpriteRenderer attackAreaRenderer;
     private bool attacking = false;
-    private float timeToAttack = 5f;
+    private float timeToAttack = 1.15f; //DO NOT CHANGE FOR CLEAN ANIMATION SAKE
     private float timer = 0f;
 
     void Start()
@@ -40,13 +40,12 @@ public class JabAttack : MonoBehaviour
             //calls attack function
             Attack();
         }
-
+        
         //sets up timer that will deactivate the attack animation 
         //and its area hitbox
         if (attacking)
         {
             timer += Time.deltaTime;
-
             if (timer >= timeToAttack)
             {
                 attack_Animation.SetBool("Attack", false);
