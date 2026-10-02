@@ -269,7 +269,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!223 &172209672
 Canvas:
   m_ObjectHideFlags: 0
@@ -279,8 +279,8 @@ Canvas:
   m_GameObject: {fileID: 172209669}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 2
+  m_Camera: {fileID: 160338487}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -291,7 +291,7 @@ Canvas:
   m_UseReflectionProbes: 0
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: -787187155
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &172209673
@@ -301,19 +301,19 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 172209669}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.014285715, y: 0.02, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 805551360}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1745007938}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
+  m_SizeDelta: {x: 50, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &305849767
 GameObject:
   m_ObjectHideFlags: 0
@@ -1049,6 +1049,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fbe7abc005406a47b58fa822d90946e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Telescope
+  player: {fileID: 1224198800}
+  selectionScreen: {fileID: 1745007936}
+  selectionObj: {fileID: 1107588498}
 --- !u!61 &790359925
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1129,8 +1132,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -5, y: -3}
+  m_SizeDelta: {x: 10, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &805551361
 MonoBehaviour:
@@ -1152,7 +1155,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Test Text!
+  m_text: Neptune
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1179,15 +1182,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 15
-  m_fontSizeBase: 15
+  m_fontSize: 2
+  m_fontSizeBase: 2
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
   m_fontSizeMax: 0
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_characterHorizontalScale: 1
@@ -1343,6 +1346,9 @@ MonoBehaviour:
   - {fileID: 1912421969}
   - {fileID: 1574815059}
   maincam: {fileID: 160338485}
+  tmp: {fileID: 805551361}
+  selectionScreen: {fileID: 1745007936}
+  player: {fileID: 1224198800}
 --- !u!1 &1133070953
 GameObject:
   m_ObjectHideFlags: 0
@@ -2357,7 +2363,9 @@ Transform:
   m_LocalPosition: {x: 0, y: -0, z: 0}
   m_LocalScale: {x: 70, y: 50, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2001950385}
+  - {fileID: 172209673}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1788883337
@@ -2660,9 +2668,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2001950384}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.014285715, y: 0.02, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1880486477}
@@ -2670,7 +2678,7 @@ Transform:
   - {fileID: 424406833}
   - {fileID: 1912421969}
   - {fileID: 1574815059}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1745007938}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
@@ -2682,6 +2690,4 @@ SceneRoots:
   - {fileID: 1224198806}
   - {fileID: 1745007938}
   - {fileID: 1107588500}
-  - {fileID: 2001950385}
-  - {fileID: 172209673}
   - {fileID: 1133070956}
