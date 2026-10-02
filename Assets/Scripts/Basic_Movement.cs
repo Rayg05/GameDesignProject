@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class Basic_Movement : MonoBehaviour
 {
-    private Animator animator;
+    private Animator run_Animator;
+    
     private Rigidbody2D rb;
 
     [SerializeField] private float moveSpeed = 10f;
@@ -16,15 +17,14 @@ public class Basic_Movement : MonoBehaviour
 
     void Start()
     {
-        animator = GetComponent<Animator>();
+        run_Animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
     }
 
     void Update()
     {
         float animationInput = Input.GetAxisRaw("Horizontal");
-
-        //animator.SetFloat("Speed", Mathf.Abs(animationInput));
+        run_Animator.SetFloat("Speed", Mathf.Abs(animationInput));
         if (animationInput > 0)
             transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
         else if (animationInput < 0)
@@ -40,7 +40,7 @@ public class Basic_Movement : MonoBehaviour
         rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
 
         // jump added with isGrounded check to prevent double jump
-        if ((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) && isGrounded)
+        if ((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space)) && isGrounded)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f); // reset vertical velocity
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);

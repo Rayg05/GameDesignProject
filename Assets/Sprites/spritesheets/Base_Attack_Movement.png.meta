@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: fa85bb1ac014c694aabb3ae7fe634b7b
+guid: c749b56e062451f4b8a966cfcb38728a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7307495421300114526
-    second: RunningSpritesheet_0
+      213: 6627685733658917053
+    second: Base_Attack_Movement_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -102,12 +102,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: RunningSpritesheet_0
+      name: Base_Attack_Movement_0
       rect:
         serializedVersion: 2
-        x: 3000
+        x: 100
         y: 0
-        width: 900
+        width: 1000
         height: 1333
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -117,19 +117,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e5403607e50796560800000000000000
-      internalID: 7307495421300114526
+      spriteID: db8f9ad4f054afb50800000000000000
+      internalID: 6627685733658917053
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RunningSpritesheet_1
+      name: Base_Attack_Movement_1
       rect:
         serializedVersion: 2
-        x: 4000
+        x: 1150
         y: 0
-        width: 900
+        width: 1000
         height: 1333
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -139,19 +139,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fcc6fcb4255a6ab41b27efae51bd0d51
-      internalID: 49546281
+      spriteID: 055b50d3ceea72a48b192ff3cc637c50
+      internalID: -317748952
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RunningSpritesheet_3
+      name: Base_Attack_Movement_2
       rect:
         serializedVersion: 2
-        x: 6000
+        x: 2250
         y: 0
-        width: 900
+        width: 1000
         height: 1333
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -161,19 +161,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8cce33d5cdda88a409740f94ad3e0adc
-      internalID: -73736258
+      spriteID: 14b4c85ac7145474fb900c418e52da52
+      internalID: -606808014
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RunningSpritesheet_4
+      name: Base_Attack_Movement_3
       rect:
         serializedVersion: 2
-        x: 7000
+        x: 3310
         y: 0
-        width: 900
+        width: 1000
         height: 1333
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -183,19 +183,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fcacbac6443259046ad59cde08977dd0
-      internalID: 547759513
+      spriteID: ada614da813ba3e48bf9eb4615e3294e
+      internalID: -1497107293
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RunningSpritesheet_6
+      name: Base_Attack_Movement_6
       rect:
         serializedVersion: 2
-        x: 8000
+        x: 6650
         y: 0
-        width: 900
+        width: 1000
         height: 1333
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -205,19 +205,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba2dd2bbc57f8d24bbb99b52e344b09b
-      internalID: 1168753346
+      spriteID: 6db3740a46516114c98e9c04606147a8
+      internalID: -1382726128
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RunningSpritesheet_12
+      name: Base_Attack_Movement_7
       rect:
         serializedVersion: 2
-        x: 0
+        x: 7750
         y: 0
-        width: 900
+        width: 1000
         height: 1333
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -227,19 +227,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85acafdaa0175f1468cf8f14012693b8
-      internalID: 1973964492
+      spriteID: 8ca2c1de08dac844fbdda32a83c4229a
+      internalID: -1342697101
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RunningSpritesheet_13
+      name: Base_Attack_Movement_8
       rect:
         serializedVersion: 2
-        x: 1000
+        x: 8870
         y: 0
-        width: 900
+        width: 1000
         height: 1333
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -249,19 +249,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9e9dae9a76a3af40a58f867cbc00bfb
-      internalID: 192343373
+      spriteID: 9d546e6e8ee439c469c1f2b7e45feab3
+      internalID: -1185553443
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RunningSpritesheet_14
+      name: Base_Attack_Movement_9
       rect:
         serializedVersion: 2
-        x: 2000
+        x: 10103
         y: 0
-        width: 900
+        width: 1000
         height: 1333
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -271,19 +271,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29be0a36f79fbe346abf73e3de0b60ca
-      internalID: 1279573158
+      spriteID: d78d90f1d91292f43b7b49a23b427426
+      internalID: 756151848
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RunningSpritesheet_15
+      name: Base_Attack_Movement_11
       rect:
         serializedVersion: 2
-        x: 5000
+        x: 11108
         y: 0
-        width: 900
+        width: 1000
         height: 1333
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -293,19 +293,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aefc625d71890ba429f0a51943bd22ad
-      internalID: 12057523
+      spriteID: d466af7c18d4a7e4cbb6cec7b9ba7127
+      internalID: 355634303
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RunningSpritesheet_16
+      name: Base_Attack_Movement_13
       rect:
         serializedVersion: 2
-        x: 9000
+        x: 12201
         y: 0
-        width: 900
+        width: 1000
         height: 1333
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -315,19 +315,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f68780c8cfc34c84bb60973286f295bf
-      internalID: 1300529952
+      spriteID: b0e782bd357117b4888154f691984af2
+      internalID: -659178291
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RunningSpritesheet_17
+      name: Base_Attack_Movement_15
       rect:
         serializedVersion: 2
-        x: 10000
+        x: 13321
         y: 0
-        width: 900
+        width: 1000
         height: 1333
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -337,19 +337,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9afad5a25afc89b41b03fcdb9d448ce2
-      internalID: 230759956
+      spriteID: dba043ff9ad93994394e48ebae5af2e4
+      internalID: 1319166573
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RunningSpritesheet_18
+      name: Base_Attack_Movement_17
       rect:
         serializedVersion: 2
-        x: 11000
+        x: 14400
         y: 0
-        width: 900
+        width: 1000
         height: 1333
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -359,19 +359,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: faaf5e49cfdbfab4898181e37688d50c
-      internalID: 586623848
+      spriteID: 14d001d201b665e4990a59c27302b518
+      internalID: 692364695
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RunningSpritesheet_19
+      name: Base_Attack_Movement_20
       rect:
         serializedVersion: 2
-        x: 12000
+        x: 4420
         y: 0
-        width: 900
+        width: 1000
         height: 1333
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -381,8 +381,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0afa8ec03999a36429c41b3feeadfa0e
-      internalID: 95753263
+      spriteID: 430922a3f30c64046b4d15a5320c4486
+      internalID: -1289200266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Base_Attack_Movement_21
+      rect:
+        serializedVersion: 2
+        x: 5550
+        y: 0
+        width: 1000
+        height: 1333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b929fda93766084a91a5762621ca2f6
+      internalID: 1033562785
       vertices: []
       indices: 
       edges: []
@@ -391,7 +413,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 83398a5137ad9c04a90639f27cacaebb
+    spriteID: 1acc6403a9ff007459aeff289581a07c
     internalID: 0
     vertices: []
     indices: 
@@ -403,26 +425,30 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      RunningSpritesheet_0: 7307495421300114526
-      RunningSpritesheet_1: 49546281
-      RunningSpritesheet_10: -771872915
-      RunningSpritesheet_11: 728118662
-      RunningSpritesheet_12: 1973964492
-      RunningSpritesheet_13: 192343373
-      RunningSpritesheet_14: 1279573158
-      RunningSpritesheet_15: 12057523
-      RunningSpritesheet_16: 1300529952
-      RunningSpritesheet_17: 230759956
-      RunningSpritesheet_18: 586623848
-      RunningSpritesheet_19: 95753263
-      RunningSpritesheet_2: -1006662655
-      RunningSpritesheet_3: -73736258
-      RunningSpritesheet_4: 547759513
-      RunningSpritesheet_5: 1933018506
-      RunningSpritesheet_6: 1168753346
-      RunningSpritesheet_7: -1860678359
-      RunningSpritesheet_8: -2123663500
-      RunningSpritesheet_9: -1988456711
+      Base_Attack_Movement_0: 6627685733658917053
+      Base_Attack_Movement_1: -317748952
+      Base_Attack_Movement_10: 1336091176
+      Base_Attack_Movement_11: 355634303
+      Base_Attack_Movement_12: 1119080151
+      Base_Attack_Movement_13: -659178291
+      Base_Attack_Movement_14: -1593903373
+      Base_Attack_Movement_15: 1319166573
+      Base_Attack_Movement_16: 2069596767
+      Base_Attack_Movement_17: 692364695
+      Base_Attack_Movement_18: 1844710076
+      Base_Attack_Movement_19: 737539857
+      Base_Attack_Movement_2: -606808014
+      Base_Attack_Movement_20: -1289200266
+      Base_Attack_Movement_21: 1033562785
+      Base_Attack_Movement_22: -369063170
+      Base_Attack_Movement_23: -191287814
+      Base_Attack_Movement_3: -1497107293
+      Base_Attack_Movement_4: 1415836111
+      Base_Attack_Movement_5: -1234389008
+      Base_Attack_Movement_6: -1382726128
+      Base_Attack_Movement_7: -1342697101
+      Base_Attack_Movement_8: -1185553443
+      Base_Attack_Movement_9: 756151848
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
