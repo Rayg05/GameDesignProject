@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class Basic_Movement : MonoBehaviour
 {
-    private Animator animator;
+    private Animator run_Animator;
+    
     private Rigidbody2D rb;
 
     [SerializeField] private float moveSpeed = 10f;
@@ -16,7 +17,7 @@ public class Basic_Movement : MonoBehaviour
 
     void Start()
     {
-        animator = GetComponent<Animator>();
+        run_Animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -24,7 +25,7 @@ public class Basic_Movement : MonoBehaviour
     {
         float animationInput = Input.GetAxisRaw("Horizontal");
 
-        animator.SetFloat("Speed", Mathf.Abs(animationInput));
+        run_Animator.SetFloat("Speed", Mathf.Abs(animationInput));
         if (animationInput > 0)
             transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
         else if (animationInput < 0)

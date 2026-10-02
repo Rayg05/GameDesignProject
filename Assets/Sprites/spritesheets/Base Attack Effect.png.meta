@@ -105,10 +105,10 @@ TextureImporter:
       name: Base Attack Effect_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1333
-        height: 1000
+        x: 8
+        y: 434
+        width: 202
+        height: 140
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,10 +127,10 @@ TextureImporter:
       name: Base Attack Effect_1
       rect:
         serializedVersion: 2
-        x: 1333
-        y: 0
-        width: 1333
-        height: 1000
+        x: 1324
+        y: 371
+        width: 740
+        height: 281
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,10 +149,10 @@ TextureImporter:
       name: Base Attack Effect_2
       rect:
         serializedVersion: 2
-        x: 2666
-        y: 0
-        width: 1333
-        height: 1000
+        x: 2789
+        y: 325
+        width: 997
+        height: 350
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,10 +171,10 @@ TextureImporter:
       name: Base Attack Effect_3
       rect:
         serializedVersion: 2
-        x: 3999
-        y: 0
-        width: 1333
-        height: 1000
+        x: 4191
+        y: 356
+        width: 1122
+        height: 273
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,10 +193,10 @@ TextureImporter:
       name: Base Attack Effect_4
       rect:
         serializedVersion: 2
-        x: 5332
-        y: 0
-        width: 1333
-        height: 1000
+        x: 5555
+        y: 340
+        width: 1036
+        height: 304
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,10 +215,10 @@ TextureImporter:
       name: Base Attack Effect_5
       rect:
         serializedVersion: 2
-        x: 6665
-        y: 0
-        width: 1333
-        height: 1000
+        x: 6879
+        y: 371
+        width: 1081
+        height: 265
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,10 +237,10 @@ TextureImporter:
       name: Base Attack Effect_6
       rect:
         serializedVersion: 2
-        x: 7998
-        y: 0
-        width: 1333
-        height: 1000
+        x: 8040
+        y: 348
+        width: 1153
+        height: 265
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -259,10 +259,10 @@ TextureImporter:
       name: Base Attack Effect_7
       rect:
         serializedVersion: 2
-        x: 9331
-        y: 0
-        width: 1333
-        height: 1000
+        x: 9372
+        y: 356
+        width: 1169
+        height: 249
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,10 +281,10 @@ TextureImporter:
       name: Base Attack Effect_8
       rect:
         serializedVersion: 2
-        x: 10664
-        y: 0
-        width: 1333
-        height: 1000
+        x: 10642
+        y: 403
+        width: 780
+        height: 194
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -303,10 +303,10 @@ TextureImporter:
       name: Base Attack Effect_9
       rect:
         serializedVersion: 2
-        x: 11997
-        y: 0
-        width: 1333
-        height: 1000
+        x: 11975
+        y: 403
+        width: 420
+        height: 109
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -339,6 +339,7 @@ TextureImporter:
     nameFileIdTable:
       Base Attack Effect_0: 2215029857177058089
       Base Attack Effect_1: 936073881
+      Base Attack Effect_10: -1409525581
       Base Attack Effect_2: -1845919211
       Base Attack Effect_3: -105646516
       Base Attack Effect_4: -652064
