@@ -35,7 +35,7 @@ public class JabAttack : MonoBehaviour
     void Update()
     {
         //attack button
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetMouseButton(0))
         {
             //calls attack function
             Attack();

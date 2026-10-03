@@ -38,14 +38,14 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Default
-    uniqueID: 0
-    locked: 0
   - name: FarBackground
     uniqueID: 642975961
     locked: 0
   - name: Background
     uniqueID: 1990505853
+    locked: 0
+  - name: Default
+    uniqueID: 0
     locked: 0
   - name: Ground
     uniqueID: 279184003
@@ -55,6 +55,9 @@ TagManager:
     locked: 0
   - name: FarForeground
     uniqueID: 2491368045
+    locked: 0
+  - name: UI
+    uniqueID: 3507780141
     locked: 0
   m_RenderingLayers:
   - Default
