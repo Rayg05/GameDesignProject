@@ -322,6 +322,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e37010993260704aa942a9a842316df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::JabAttack
+--- !u!114 &853024817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853024805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eb9763bbb2a9cf48b153fd89b607f10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Loadout
+  weapon: {fileID: 0}
+  ability: {fileID: 0}
+  item: {fileID: 0}
 --- !u!1 &1014181853
 GameObject:
   m_ObjectHideFlags: 0
@@ -550,6 +565,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad9e558600e978a4e8484e938b7e4dbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::JabAttackArea
+  damage: 3
 --- !u!212 &1040531451
 SpriteRenderer:
   serializedVersion: 3
@@ -1008,6 +1024,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2399115592720631176, guid: ad4af34d8d483a745bf3290c52f7b6be, type: 3}
       insertIndex: -1
       addedObject: {fileID: 853024811}
+    - targetCorrespondingSourceObject: {fileID: 2399115592720631176, guid: ad4af34d8d483a745bf3290c52f7b6be, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 853024817}
   m_SourcePrefab: {fileID: 100100000, guid: ad4af34d8d483a745bf3290c52f7b6be, type: 3}
 --- !u!1001 &8772345134165883214
 PrefabInstance:
