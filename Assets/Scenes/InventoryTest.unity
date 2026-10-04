@@ -128,6 +128,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 111966411}
+  - component: {fileID: 111966413}
+  - component: {fileID: 111966412}
   m_Layer: 0
   m_Name: UserInterface
   m_TagString: Untagged
@@ -151,6 +153,33 @@ Transform:
   - {fileID: 1962286514}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &111966412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111966410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36f0e9a3e3020d34fbc286a69141becb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIController
+  windowManager: {fileID: 111966413}
+--- !u!114 &111966413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111966410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 387af613fa61aa442a56508193485399, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WindowManager
+  uiDocument: {fileID: 1962286515}
+  gameWindowTemplate: {fileID: 9197481963319205126, guid: 907fa8967d63b7048b53826455851817, type: 3}
 --- !u!1 &828957428
 GameObject:
   m_ObjectHideFlags: 0
