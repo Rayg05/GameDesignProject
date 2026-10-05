@@ -1,0 +1,8 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/USS/TabView.uss?fileID=7433441132597879392&amp;guid=13663212c6eb83c4a9005cd4b2ca3a2b&amp;type=3#TabView"/>
+    <Style src="project://database/Assets/UI%20Toolkit/USS/ExtraStyle.uss?fileID=7433441132597879392&amp;guid=f210b7b79dae28c4da52cb8dda594c12&amp;type=3#ExtraStyle"/>
+    <ui:TabView style="flex-grow: 0;">
+        <ui:Tab label="Inventory" name="Inventory" style="position: absolute;"/>
+        <ui:Tab label="Settings" name="Settings"/>
+    </ui:TabView>
+</ui:UXML>
