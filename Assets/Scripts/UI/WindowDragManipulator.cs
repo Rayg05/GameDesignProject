@@ -11,10 +11,23 @@ public class WindowDragManipulator : PointerManipulator
     private Vector2 panelSize;
     private float windowwidth;
 
+    private Vector2 currentPosition;
+
     public WindowDragManipulator(VisualElement dragHandle, VisualElement _windowRoot)
     {
         target = dragHandle;
         windowRoot = _windowRoot;
+    }
+
+    public void SetPosition(Vector2 position)
+    {
+        currentPosition = position;
+        windowRoot.style.translate = new Translate(position.x, position.y);
+    }
+
+    public Vector2 GetPosition()
+    {
+        return currentPosition;
     }
 
     protected override void RegisterCallbacksOnTarget()
@@ -36,7 +49,7 @@ public class WindowDragManipulator : PointerManipulator
 
 
         startPointerPosition = evt.position;
-        startWindowPosition = new Vector2(windowRoot.resolvedStyle.left, windowRoot.resolvedStyle.top);
+        startWindowPosition = currentPosition;
 
         panelSize = windowRoot.panel.visualTree.worldBound.size;
         windowwidth = windowRoot.resolvedStyle.width;
@@ -57,8 +70,8 @@ public class WindowDragManipulator : PointerManipulator
         newPosition.x = Mathf.Clamp(newPosition.x, -(windowwidth - 40), panelSize.x - 40);
         newPosition.y = Mathf.Clamp(newPosition.y, 0, panelSize.y - 40);
 
-        windowRoot.style.left = newPosition.x;
-        windowRoot.style.top = newPosition.y;
+        currentPosition = newPosition;
+        windowRoot.style.translate = new Translate(currentPosition.x, currentPosition.y);
 
     }
 

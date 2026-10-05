@@ -13,13 +13,7 @@ public class GameWindow //represents single window instance
 
     public GameWindow(VisualTreeAsset template, VisualElement parent, string title)
     {
-        var templateContainer = template.Instantiate();
-        windowRoot = templateContainer.Q<VisualElement>("gamewindow");
-
-        for (int i = 0; i<templateContainer.styleSheets.count; i++)
-        {
-            windowRoot.styleSheets.Add(templateContainer.styleSheets[i]);
-        }
+        windowRoot = template.Instantiate().ExtractRoot("gamewindow");
 
         titleLabel = windowRoot.Q<Label>("title-label");
         contentArea = windowRoot.Q<VisualElement>("content");
@@ -50,12 +44,11 @@ public class GameWindow //represents single window instance
 
     public void SetPosition(float x, float y)
     {
-        windowRoot.style.left = x;
-        windowRoot.style.top = y;
+        dragManipulator.SetPosition(new Vector2(x,y));
     }
 
-    public Vector2 GetPostion()
+    public Vector2 GetPosition()
     {
-        return new Vector2(windowRoot.resolvedStyle.left, windowRoot.resolvedStyle.top);
+        return dragManipulator.GetPosition();
     }
 }

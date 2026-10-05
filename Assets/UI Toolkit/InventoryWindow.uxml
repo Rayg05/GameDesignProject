@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Template name="ItemSlot" src="project://database/Assets/UI%20Toolkit/ItemSlot.uxml?fileID=9197481963319205126&amp;guid=b63592a6ffefd5b4a9772ebbf241cf90&amp;type=3#ItemSlot"/>
+    <Style src="project://database/Assets/GlobalVariables.uss?fileID=7433441132597879392&amp;guid=11e1901a77736034bb3fe5357d5bac9e&amp;type=3#GlobalVariables"/>
+    <Style src="project://database/Assets/ItemSlot.uss?fileID=7433441132597879392&amp;guid=0101377588c6f04428fd7a78d4135683&amp;type=3#ItemSlot"/>
+    <Style src="project://database/Assets/InventoryWindow.uss?fileID=7433441132597879392&amp;guid=4c5bc77a240dd6c45a354c9005d3f8f1&amp;type=3#InventoryWindow"/>
+    <ui:VisualElement name="InventoryContent" style="flex-grow: 1;">
+        <ui:Instance template="ItemSlot"/>
+    </ui:VisualElement>
+</ui:UXML>

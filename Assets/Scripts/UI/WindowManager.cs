@@ -69,7 +69,7 @@ public class WindowManager : MonoBehaviour
 
     private void SaveWindowPosition(string id, GameWindow window)
     {
-        var pos = window.GetPostion();
+        var pos = window.GetPosition();
         PlayerPrefs.SetFloat($"window_{id}_x", pos.x);
         PlayerPrefs.SetFloat($"window_{id}_y", pos.y);
     }
