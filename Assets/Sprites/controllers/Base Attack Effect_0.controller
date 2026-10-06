@@ -34,7 +34,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Pressed_Attack
+    m_ConditionEvent: Press_Attack
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 4336791601918214673}
@@ -59,7 +59,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: Pressed_Attack
+    m_ConditionEvent: Press_Attack
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 7596890736177764948}
@@ -84,7 +84,7 @@ AnimatorController:
   m_Name: Base Attack Effect_0
   serializedVersion: 6
   m_AnimatorParameters:
-  - m_Name: Pressed_Attack
+  - m_Name: Press_Attack
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -111,7 +111,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Pluto_Base_Attack_Anim
+  m_Name: Pluto_Base_Up_Attack
   m_Speed: 1.5
   m_CycleOffset: 0
   m_Transitions:
