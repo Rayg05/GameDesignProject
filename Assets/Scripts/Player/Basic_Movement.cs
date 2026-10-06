@@ -5,6 +5,8 @@ public class Basic_Movement : MonoBehaviour
     private Animator run_Animator;
     private Animator jump_Animator;
     private Animator fall_Animator;
+    private Animator look_up_Animator;
+    
 
     private Rigidbody2D rb;
 
@@ -24,6 +26,7 @@ public class Basic_Movement : MonoBehaviour
 
     void Start()
     {
+        look_up_Animator = GetComponent<Animator>();
         fall_Animator = GetComponent<Animator>();
         jump_Animator = GetComponent<Animator>();
         run_Animator = GetComponent<Animator>();
@@ -42,14 +45,28 @@ public class Basic_Movement : MonoBehaviour
         // horizontal movement dictated by input keys (A/D or Left/Right Arrow)
         float moveInput = 0f;
         if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+        {
             moveInput = 1f;
+        }
         else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+        {
             moveInput = -1f;
+        }
+        else if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            look_up_Animator.SetBool("Look_Up", true);
+        }
+        if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.UpArrow))
+        {
+            look_up_Animator.SetBool("Look_Up", false);
+            //up_Attack_Animator.SetBool("Up_Attack", false);
+        }
+
 
         rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
 
         // jump added with isGrounded check to prevent double jump
-        if ((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space)) && isGrounded)
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             Jumping();
         }
