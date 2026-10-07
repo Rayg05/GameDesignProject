@@ -1,0 +1,6 @@
+:root {
+    --color-primary: rgb(116, 86, 171);
+    --color-secondary: rgb(0, 0, 0);
+    --font-header: url("project://database/Assets/Fonts/LATOWEB-BOLD.TTF?fileID=12800000&guid=09cf179430955154b925d45e9d5c89e5&type=3#LATOWEB-BOLD");
+    --font-body: url("");
+}
