@@ -1,37 +1,36 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    [SerializeField] private float health = 10f;
+    [SerializeField] private float health = 1000f;
+    [SerializeField] private float maxHP = 1000f;
+    [SerializeField] private float regen = 1f;       // base regen per second
+    [SerializeField] private float regenDelay = 5f;  // delay after damage before regen starts
 
-    [SerializeField] private float maxHP = 10f;
-
-    [SerializeField] private float regen = 1f;  //regen amount
-    [SerializeField] private float regenDelay = 5f; //time between between regen
-
-    //both can be edited for desired amounts
-
+    private float regenMultiplier = 1f;
     private float startRegenTime = 0.0f;
+    private bool needsRegen = false;
 
     private bool regenAllowed => Time.time > startRegenTime;
 
-    private bool needsRegen = false;
+    public void SetRegenMultiplier(float multiplier)
+    {
+        regenMultiplier = multiplier;
+    }
 
-    private void OnTakeDamage() //checks to see if the player has taken damage to determine if they need to regen
+    private void OnTakeDamage()
     {
         needsRegen = true;
-
         startRegenTime = Time.time + regenDelay;
     }
-    
+
     public void Damage(float amount)
     {
-        health = health - amount;
+        health -= amount;
         if (health <= 0)
         {
             Destroy(gameObject);
+            return;
         }
 
         OnTakeDamage();
@@ -39,21 +38,18 @@ public class Health : MonoBehaviour
 
     private void Regenerate()
     {
-        health += regen * Time.deltaTime;   //re adds hp
+        health += regen * regenMultiplier * Time.deltaTime;
 
-        Debug.Log("HP is " + health);
-
-        if(health >= maxHP)
+        if (health >= maxHP)
         {
             health = maxHP;
-
             needsRegen = false;
         }
     }
 
     void Update()
     {
-        if(needsRegen &&  regenAllowed) //runs the regen script
+        if (needsRegen && regenAllowed)
         {
             Regenerate();
         }
