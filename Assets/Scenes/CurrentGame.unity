@@ -334,6 +334,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Health
   health: 1000
+  maxHP: 10
+  regen: 1
+  regenDelay: 5
 --- !u!95 &560135192
 Animator:
   serializedVersion: 7
@@ -368,6 +371,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e4e8343bc986d54ca0c5d7032e2cea7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Larissa_Movement
+  amplitude: 1
+  frequency: 0.5
 --- !u!1001 &681356366
 PrefabInstance:
   m_ObjectHideFlags: 0
