@@ -19,8 +19,6 @@ public class Health : MonoBehaviour
 
     private bool needsRegen = false;
 
-    //private int MAX_HEALTH = 100;
-
     private void OnTakeDamage() //checks to see if the player has taken damage to determine if they need to regen
     {
         needsRegen = true;

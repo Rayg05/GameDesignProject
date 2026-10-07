@@ -3,21 +3,20 @@ using UnityEngine;
 public class Larissa_Movement : MonoBehaviour
 {
     private Animator idle_Larissa_Animator;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [SerializeField] private float amplitude = 0.25f;  //distance it moves
+    [SerializeField] private float frequency = 1f;     //frequency at which the object goes up or down
+    private Vector3 startPos;
+
     void Start()
     {
         idle_Larissa_Animator = GetComponent<Animator>();
+        startPos = transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
-        float animationInput = Input.GetAxisRaw("Horizontal");
-        idle_Larissa_Animator.SetFloat("isMoving", Mathf.Abs(animationInput));
-        if (animationInput > 0)
-            transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
-        else if (animationInput < 0)
-            transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
-
+        float offset = Mathf.Sin(Time.time * frequency * Mathf.PI * 2f) * amplitude;
+        transform.position = new Vector3(startPos.x, startPos.y + offset, startPos.z);
     }
 }
