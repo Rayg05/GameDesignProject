@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class JabAttackArea : MonoBehaviour
 {
-    [SerializeField] public float damage = 3f;
+    [SerializeField] public int damage = 3;
 
     private void OnTriggerEnter2D(Collider2D collider)
     {

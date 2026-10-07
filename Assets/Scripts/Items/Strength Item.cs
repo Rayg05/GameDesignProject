@@ -3,12 +3,12 @@ using UnityEngine;
 public class StrengthItem : MonoBehaviour
 {
     [SerializeField] private JabAttackArea jabAttack; 
-    [SerializeField] private float strengthBonus = 3;
+    [SerializeField] private int strengthBonus = 3;
     [SerializeField] private float buffDuration = 10f;
     [SerializeField] private float cooldownDuration = 10f;
     [SerializeField] private int usages = 3;
 
-    private float orig_Damage;
+    private int orig_Damage;
     private bool isBuffActive = false;
     private bool onCooldown = false;
     private float timer = 0f;
