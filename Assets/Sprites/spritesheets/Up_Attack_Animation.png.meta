@@ -1,0 +1,541 @@
+fileFormatVersion: 2
+guid: fba10d3bac5069d48a7dba7f8224be24
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4177382075517872590
+    second: Up_Attack_Animation_0
+  - first:
+      213: 3375832852267819656
+    second: Up_Attack_Animation_1
+  - first:
+      213: -7942132362710033617
+    second: Up_Attack_Animation_2
+  - first:
+      213: -3126349436713656950
+    second: Up_Attack_Animation_3
+  - first:
+      213: 4578299671873605731
+    second: Up_Attack_Animation_4
+  - first:
+      213: -8010982375549514893
+    second: Up_Attack_Animation_5
+  - first:
+      213: -5113749486801834741
+    second: Up_Attack_Animation_6
+  - first:
+      213: -62759273769359834
+    second: Up_Attack_Animation_7
+  - first:
+      213: 5016392437360892148
+    second: Up_Attack_Animation_8
+  - first:
+      213: 6506772839406331989
+    second: Up_Attack_Animation_9
+  - first:
+      213: -1516267505435324868
+    second: Up_Attack_Animation_10
+  - first:
+      213: 9173830213367183450
+    second: Up_Attack_Animation_11
+  - first:
+      213: -4325602881406721728
+    second: Up_Attack_Animation_12
+  - first:
+      213: 6014476594186695529
+    second: Up_Attack_Animation_13
+  - first:
+      213: -3594472346668875822
+    second: Up_Attack_Animation_14
+  - first:
+      213: 6905155664014288769
+    second: Up_Attack_Animation_15
+  - first:
+      213: -6613890789148362174
+    second: Up_Attack_Animation_16
+  - first:
+      213: 7944888890225491239
+    second: Up_Attack_Animation_17
+  - first:
+      213: -8245292803592223842
+    second: Up_Attack_Animation_18
+  - first:
+      213: 314253341749361623
+    second: Up_Attack_Animation_19
+  - first:
+      213: -2695094708281385597
+    second: Up_Attack_Animation_20
+  - first:
+      213: -9090262935767710708
+    second: Up_Attack_Animation_21
+  - first:
+      213: -2312150880832614161
+    second: Up_Attack_Animation_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Up_Attack_Animation_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 900
+        height: 1333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec9a35e6dda09f930800000000000000
+      internalID: 4177382075517872590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up_Attack_Animation_1
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 0
+        width: 900
+        height: 1333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 882648cd71e59de20800000000000000
+      internalID: 3375832852267819656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up_Attack_Animation_2
+      rect:
+        serializedVersion: 2
+        x: 2350
+        y: 0
+        width: 900
+        height: 1333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2bd88102b0e7c190800000000000000
+      internalID: -7942132362710033617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up_Attack_Animation_3
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 0
+        width: 900
+        height: 1333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8d90fc50c9fc94d0800000000000000
+      internalID: -3126349436713656950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up_Attack_Animation_4
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 0
+        width: 900
+        height: 1333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36050517b43698f30800000000000000
+      internalID: 4578299671873605731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up_Attack_Animation_5
+      rect:
+        serializedVersion: 2
+        x: 6170
+        y: 0
+        width: 900
+        height: 1333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37bc47339f543d090800000000000000
+      internalID: -8010982375549514893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up_Attack_Animation_7
+      rect:
+        serializedVersion: 2
+        x: 7430
+        y: 0
+        width: 900
+        height: 1333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 626ad94e5c8012ff0800000000000000
+      internalID: -62759273769359834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up_Attack_Animation_9
+      rect:
+        serializedVersion: 2
+        x: 8650
+        y: 0
+        width: 900
+        height: 1333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55869fe4c63bc4a50800000000000000
+      internalID: 6506772839406331989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up_Attack_Animation_10
+      rect:
+        serializedVersion: 2
+        x: 9850
+        y: 0
+        width: 900
+        height: 1333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3e4f02ccb225fae0800000000000000
+      internalID: -1516267505435324868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up_Attack_Animation_11
+      rect:
+        serializedVersion: 2
+        x: 11000
+        y: 0
+        width: 900
+        height: 1333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a583f7959fdff4f70800000000000000
+      internalID: 9173830213367183450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up_Attack_Animation_12
+      rect:
+        serializedVersion: 2
+        x: 12200
+        y: 0
+        width: 900
+        height: 1333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 041a85ee81f58f3c0800000000000000
+      internalID: -4325602881406721728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up_Attack_Animation_13
+      rect:
+        serializedVersion: 2
+        x: 13350
+        y: 0
+        width: 900
+        height: 1333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 963366aa896b77350800000000000000
+      internalID: 6014476594186695529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up_Attack_Animation_14
+      rect:
+        serializedVersion: 2
+        x: 14550
+        y: 0
+        width: 900
+        height: 1333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2df36dde17edd1ec0800000000000000
+      internalID: -3594472346668875822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up_Attack_Animation_15
+      rect:
+        serializedVersion: 2
+        x: 15730
+        y: 0
+        width: 900
+        height: 1333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1872958cd7a04df50800000000000000
+      internalID: 6905155664014288769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Up_Attack_Animation_16
+      rect:
+        serializedVersion: 2
+        x: 16920
+        y: 0
+        width: 900
+        height: 1333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24a75918e5db634a0800000000000000
+      internalID: -6613890789148362174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 67befb8b4174a094a9962d6d468da7e5
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Up_Attack_Animation_0: 4177382075517872590
+      Up_Attack_Animation_1: 3375832852267819656
+      Up_Attack_Animation_10: -1516267505435324868
+      Up_Attack_Animation_11: 9173830213367183450
+      Up_Attack_Animation_12: -4325602881406721728
+      Up_Attack_Animation_13: 6014476594186695529
+      Up_Attack_Animation_14: -3594472346668875822
+      Up_Attack_Animation_15: 6905155664014288769
+      Up_Attack_Animation_16: -6613890789148362174
+      Up_Attack_Animation_17: 7944888890225491239
+      Up_Attack_Animation_18: -8245292803592223842
+      Up_Attack_Animation_19: 314253341749361623
+      Up_Attack_Animation_2: -7942132362710033617
+      Up_Attack_Animation_20: -2695094708281385597
+      Up_Attack_Animation_21: -9090262935767710708
+      Up_Attack_Animation_22: -2312150880832614161
+      Up_Attack_Animation_3: -3126349436713656950
+      Up_Attack_Animation_4: 4578299671873605731
+      Up_Attack_Animation_5: -8010982375549514893
+      Up_Attack_Animation_6: -5113749486801834741
+      Up_Attack_Animation_7: -62759273769359834
+      Up_Attack_Animation_8: 5016392437360892148
+      Up_Attack_Animation_9: 6506772839406331989
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

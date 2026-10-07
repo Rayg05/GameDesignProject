@@ -5,67 +5,130 @@ using UnityEngine;
 public class JabAttack : MonoBehaviour
 {
     //base jab variables
-    Animator attack_Animation;
-    Animator attack_Effect_Animation; 
-    private GameObject attackArea = default;
+    Animator attack_Animation;        // Player's own animator
+    Animator attack_Effect_Animation; // Side hitbox's animator
+    Animator attack_Up_Effect_Animation; // Up hitbox's animator
+    Animator attack_Down_Effect_Animation; // Up hitbox's animator
+
+    private GameObject attackArea = default;       // side hitbox
     private Collider2D attackAreaCollider;
     private SpriteRenderer attackAreaRenderer;
+
+    private GameObject upAttackArea = default;      // up hitbox
+    private Collider2D upAttackAreaCollider;
+    private SpriteRenderer upAttackAreaRenderer;
+
+    private GameObject downAttackArea = default;      // down hitbox
+    private Collider2D downAttackAreaCollider;
+    private SpriteRenderer downAttackAreaRenderer;
+
     private bool attacking = false;
     private float timeToAttack = 1.15f; //DO NOT CHANGE FOR CLEAN ANIMATION SAKE
     private float timer = 0f;
 
     void Start()
     {
-        //setting initial animations and variable to needed declarations
-        attack_Animation = GetComponent<Animator>();
+        attack_Animation = GetComponent<Animator>(); // Player's animator
+
         attackArea = transform.GetChild(1).gameObject;
-        attack_Effect_Animation = attackArea.GetComponent<Animator>(); 
+        attack_Effect_Animation = attackArea.GetComponent<Animator>();
         attackAreaCollider = attackArea.GetComponent<Collider2D>();
         attackAreaRenderer = attackArea.GetComponent<SpriteRenderer>();
 
-        attack_Effect_Animation.SetBool("Pressed_Attack", false);
-        attack_Animation.SetBool("Attack", false);
+        upAttackArea = transform.GetChild(2).gameObject; // adjust index to match your actual hierarchy
+        attack_Up_Effect_Animation = upAttackArea.GetComponent<Animator>();
+        upAttackAreaCollider = upAttackArea.GetComponent<Collider2D>();
+        upAttackAreaRenderer = upAttackArea.GetComponent<SpriteRenderer>();
 
-        // Keep it active always — just start with visuals/hitbox off
+        downAttackArea = transform.GetChild(3).gameObject; // adjust index to match your actual hierarchy
+        attack_Down_Effect_Animation = downAttackArea.GetComponent<Animator>();
+        downAttackAreaCollider = downAttackArea.GetComponent<Collider2D>();
+        downAttackAreaRenderer = downAttackArea.GetComponent<SpriteRenderer>();
+
+        attack_Animation.SetBool("Attack", false);
+        attack_Animation.SetBool("Attack_Up", false);
+        attack_Animation.SetBool("Attack_Down", false);
+        attack_Effect_Animation.SetBool("Press_Attack", false);
+        attack_Up_Effect_Animation.SetBool("Press_Up_Attack", false);
+        attack_Down_Effect_Animation.SetBool("Press_Down_Attack", false);
+
+        // Keep both hitbox objects active always — just start with visuals/hitboxes off
         attackArea.SetActive(true);
         attackAreaCollider.enabled = false;
         attackAreaRenderer.enabled = false;
+
+        upAttackArea.SetActive(true);
+        upAttackAreaCollider.enabled = false;
+        upAttackAreaRenderer.enabled = false;
+
+        downAttackArea.SetActive(true);
+        downAttackAreaCollider.enabled = false;
+        downAttackAreaRenderer.enabled = false;
     }
 
     void Update()
     {
-        //attack button
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0) && !attacking)
         {
-            //calls attack function
             Attack();
         }
-        
-        //sets up timer that will deactivate the attack animation 
-        //and its area hitbox
+
         if (attacking)
         {
             timer += Time.deltaTime;
             if (timer >= timeToAttack)
             {
                 attack_Animation.SetBool("Attack", false);
-                attack_Effect_Animation.SetBool("Pressed_Attack", false);
+                attack_Animation.SetBool("Attack_Up", false);
+                attack_Animation.SetBool("Attack_Down", false);
+                attack_Effect_Animation.SetBool("Press_Attack", false);
+                attack_Up_Effect_Animation.SetBool("Press_Up_Attack", false);
+                attack_Down_Effect_Animation.SetBool("Press_Down_Attack", false);
                 timer = 0;
                 attacking = false;
+
                 attackAreaCollider.enabled = false;
                 attackAreaRenderer.enabled = false;
+
+                upAttackAreaCollider.enabled = false;
+                upAttackAreaRenderer.enabled = false;
+
+                downAttackAreaCollider.enabled = false;
+                downAttackAreaRenderer.enabled = false;
             }
         }
     }
 
-    //attack function that activates needed animations and 
-    //area hitbox
     private void Attack()
     {
-        attack_Animation.SetBool("Attack", true);
-        attack_Effect_Animation.SetBool("Pressed_Attack", true);
+        if (Input.GetKey(KeyCode.W))
+        {
+            //Debug.Log("Up attack branch hit");
+            attack_Animation.SetBool("Attack_Up", true);
+            attack_Up_Effect_Animation.SetBool("Press_Up_Attack", true);
+
+
+            upAttackAreaCollider.enabled = true;
+            upAttackAreaRenderer.enabled = true;
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            //Debug.Log("Up attack branch hit");
+            attack_Animation.SetBool("Attack_Down", true);
+            attack_Down_Effect_Animation.SetBool("Press_Down_Attack", true);
+
+            downAttackAreaCollider.enabled = true;
+            downAttackAreaRenderer.enabled = true;
+        }
+        if(!Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.W))
+        {
+            attack_Animation.SetBool("Attack", true);
+            attack_Effect_Animation.SetBool("Press_Attack", true);
+
+            attackAreaCollider.enabled = true;
+            attackAreaRenderer.enabled = true;
+        }
+
         attacking = true;
-        attackAreaCollider.enabled = true;
-        attackAreaRenderer.enabled = true;
     }
 }
