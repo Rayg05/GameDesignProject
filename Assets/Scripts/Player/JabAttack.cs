@@ -28,19 +28,19 @@ public class JabAttack : MonoBehaviour
 
     void Start()
     {
-        attack_Animation = GetComponent<Animator>(); // Player's animator
+        attack_Animation = GetComponent<Animator>(); 
 
         attackArea = transform.GetChild(1).gameObject;
         attack_Effect_Animation = attackArea.GetComponent<Animator>();
         attackAreaCollider = attackArea.GetComponent<Collider2D>();
         attackAreaRenderer = attackArea.GetComponent<SpriteRenderer>();
 
-        upAttackArea = transform.GetChild(2).gameObject; // adjust index to match your actual hierarchy
+        upAttackArea = transform.GetChild(2).gameObject; 
         attack_Up_Effect_Animation = upAttackArea.GetComponent<Animator>();
         upAttackAreaCollider = upAttackArea.GetComponent<Collider2D>();
         upAttackAreaRenderer = upAttackArea.GetComponent<SpriteRenderer>();
 
-        downAttackArea = transform.GetChild(3).gameObject; // adjust index to match your actual hierarchy
+        downAttackArea = transform.GetChild(3).gameObject; 
         attack_Down_Effect_Animation = downAttackArea.GetComponent<Animator>();
         downAttackAreaCollider = downAttackArea.GetComponent<Collider2D>();
         downAttackAreaRenderer = downAttackArea.GetComponent<SpriteRenderer>();
