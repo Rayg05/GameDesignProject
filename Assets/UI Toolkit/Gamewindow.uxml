@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/gamewindow.uss?fileID=7433441132597879392&amp;guid=07114ca8d909c924e9857d6562a8efcd&amp;type=3#gamewindow"/>
+    <Style src="project://database/Assets/GlobalVariables.uss?fileID=7433441132597879392&amp;guid=11e1901a77736034bb3fe5357d5bac9e&amp;type=3#GlobalVariables"/>
+    <ui:VisualElement name="gamewindow" style="flex-grow: 1;">
+        <ui:VisualElement name="content" style="flex-grow: 1;"/>
+        <ui:VisualElement name="title-bar" style="flex-grow: 1;">
+            <ui:Label text="Label" name="title-label" class="h1" style="width: auto;"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
