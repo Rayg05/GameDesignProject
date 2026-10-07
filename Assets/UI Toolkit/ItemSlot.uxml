@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/ItemSlot.uss?fileID=7433441132597879392&amp;guid=0101377588c6f04428fd7a78d4135683&amp;type=3#ItemSlot"/>
+    <Style src="project://database/Assets/GlobalVariables.uss?fileID=7433441132597879392&amp;guid=11e1901a77736034bb3fe5357d5bac9e&amp;type=3#GlobalVariables"/>
+    <ui:VisualElement name="ItemSlot" style="flex-grow: 1;">
+        <ui:VisualElement name="Icon" style="flex-grow: 1;"/>
+    </ui:VisualElement>
+</ui:UXML>
