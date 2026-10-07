@@ -7,10 +7,19 @@ public class JabAttackArea : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collider)
     {
         Debug.Log("Trigger entered with: " + collider.gameObject.name);
-        if (collider.GetComponent<Health>()!= null)
+
+        // Bosses use BossHealth instead of Health
+        BossHealth bossHealth = collider.GetComponentInParent<BossHealth>();
+        if (bossHealth != null)
+        {
+            bossHealth.TakeDamage(damage);
+            return;
+        }
+
+        Health health = collider.GetComponentInParent<Health>();
+        if (health != null)
         {
             Debug.Log("Found Health component, applying damage");
-            Health health = collider.GetComponent<Health>();
             health.Damage(damage);
         }
     }

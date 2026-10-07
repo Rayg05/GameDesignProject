@@ -9,7 +9,7 @@ public class Health : MonoBehaviour
     public void Damage(int amount)
     {
         health = health - amount;
-        if (health - amount <= 0)
+        if (health <= 0)
         {
             Destroy(gameObject);
         }
