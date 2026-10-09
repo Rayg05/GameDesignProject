@@ -460,9 +460,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2399115592720631176, guid: ad4af34d8d483a745bf3290c52f7b6be, type: 3}
       insertIndex: -1
       addedObject: {fileID: 493244528}
-    - targetCorrespondingSourceObject: {fileID: 2399115592720631176, guid: ad4af34d8d483a745bf3290c52f7b6be, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 493244527}
   m_SourcePrefab: {fileID: 100100000, guid: ad4af34d8d483a745bf3290c52f7b6be, type: 3}
 --- !u!1 &493244525 stripped
 GameObject:
@@ -474,18 +471,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8569775371850302, guid: ad4af34d8d483a745bf3290c52f7b6be, type: 3}
   m_PrefabInstance: {fileID: 493244524}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &493244527
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 493244525}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afb711f552d40604798c6a06ffe8ff09, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FollowMouse
 --- !u!114 &493244528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -746,8 +731,8 @@ GameObject:
   - component: {fileID: 1205231238}
   - component: {fileID: 1205231237}
   - component: {fileID: 1205231236}
-  - component: {fileID: 1205231244}
   - component: {fileID: 1205231243}
+  - component: {fileID: 1205231244}
   m_Layer: 0
   m_Name: Larissa
   m_TagString: Untagged
@@ -978,16 +963,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1205231235}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52e302558fa0ed3458510b46c0ed3120, type: 3}
+  m_Script: {fileID: 11500000, guid: b11808549fb9bc24790286ede8616323, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Larissa_Boss
-  target: {fileID: 493244526}
-  animator: {fileID: 1205231237}
-  phases: []
-  returnSceneName: HubWorld
-  returnDelay: 3
-  idleDuration: 1
-  chaseTimeout: 5
+  m_EditorClassIdentifier: Assembly-CSharp::Boss
 --- !u!1001 &1254372725
 PrefabInstance:
   m_ObjectHideFlags: 0

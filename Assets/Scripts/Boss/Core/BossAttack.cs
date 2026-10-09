@@ -119,7 +119,7 @@ public abstract class BossAttack : MonoBehaviour
 
     // ---- Hooks for subclasses ----
     protected virtual void OnWindup() { }                     // telegraph: flash, sound, charge-up
-    protected virtual void OnActive() { }                     // the hit itself: hitbox, projectile, lunge
+    protected virtual void OnActive() { }                     // the hit itself: hitbox, Larissa_Projectile, lunge
     protected virtual void OnRecovery() { }                   // punish window for the player
     protected virtual void OnStageUpdate(AttackStage stage) { } // every frame during any stage
     protected virtual void OnCancelled() { }                  // called before OnEnd when interrupted
