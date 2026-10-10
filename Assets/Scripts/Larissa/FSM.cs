@@ -14,6 +14,8 @@ public interface IState {
 public class FSM
 {
     IState current_state;
+    Boss boss;
+    public FSM(Boss b) { boss = b; }
 
     // Call Exit of old state, call Enter of new state.
     public void ChangeState(IState newstate) {

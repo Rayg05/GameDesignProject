@@ -10,7 +10,8 @@ public class Larissa_Projectile : IState {
     }
 
     public void Execute() {
-        Debug.Log("Execute Larissa_Projectile!");
+        //Debug.Log("Execute Larissa_Projectile!");
+        larissa.ChooseNextState(this);
     }
 
     public void Exit() {

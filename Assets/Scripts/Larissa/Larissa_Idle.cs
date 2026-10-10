@@ -1,14 +1,18 @@
 using UnityEngine;
 
-public class Idle : IState {
+public class Larissa_Idle : IState {
     Boss larissa;
     float timer;
 
-    public Idle(Boss boss) { larissa = boss; }
+    public Larissa_Idle(Boss boss) { larissa = boss; }
 
     public void Enter() {
-        Debug.Log("Entering idle.");
+        Debug.Log("Entering Larissa_Idle.");
+        // Reset timer.
         timer = 0f;
+        
+        // Face player.
+
         return;
     }
 
@@ -18,12 +22,12 @@ public class Idle : IState {
         // This is just a little easier for right now.
         timer += Time.deltaTime;
 
-        if (timer > 5f) { larissa.state_machine.ChangeState(new Larissa_Projectile(larissa)); }
+        if (timer > 3f) { larissa.ChooseNextState(this); }
         return;
     }
 
     public void Exit() {
-        Debug.Log("Exiting idle.");
+        Debug.Log("Exiting Larissa_Idle.");
         return;
     }
 }
