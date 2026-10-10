@@ -10,9 +10,9 @@ public class Larissa_Idle : IState {
         Debug.Log("Entering Larissa_Idle.");
         // Reset timer.
         timer = 0f;
-        
-        // Face player.
 
+        // Face player.
+        larissa.FaceTarget();
         return;
     }
 

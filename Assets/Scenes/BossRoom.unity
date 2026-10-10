@@ -511,7 +511,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Basic_Movement2
   moveSpeed: 10
-  jumpForce: 20
+  jumpForce: 40
   groundCheck: {fileID: 1967294862}
   groundLayer:
     serializedVersion: 2
@@ -800,7 +800,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1205231235}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -966,6 +966,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b11808549fb9bc24790286ede8616323, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Boss
+  projectile: {fileID: 6880417653192060602, guid: 916f82cfe8282e2498ebd8435a3e1f25, type: 3}
+  target: {fileID: 493244526}
 --- !u!1001 &1254372725
 PrefabInstance:
   m_ObjectHideFlags: 0

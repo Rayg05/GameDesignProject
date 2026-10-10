@@ -4,6 +4,8 @@ using System.Collections.Generic;
 
 public class Boss : MonoBehaviour {
     public FSM state_machine { get; private set; }
+    public GameObject projectile;
+    public Transform target;
 
     List<IState> states = new List<IState>();
     int num_states;
@@ -42,5 +44,14 @@ public class Boss : MonoBehaviour {
         int rand = Random.Range(1, num_states);
         Debug.Log("Rand = " + rand + ", num_states = " + num_states);
         state_machine.ChangeState(states[rand]);
+    }
+
+    // If player is to the left, face the same way, and vice versa.
+    public void FaceTarget() {
+        if(target.position.x < transform.position.x) {
+            transform.localScale = new Vector2(1, transform.localScale.y);
+        } else {
+            transform.localScale = new Vector2(-1, transform.localScale.y);
+        }
     }
 }
