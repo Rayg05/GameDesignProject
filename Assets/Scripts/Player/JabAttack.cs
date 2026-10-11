@@ -1,9 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class JabAttack : MonoBehaviour
 {
+    [SerializeField] private EquipmentData jabWeapon;
     //base jab variables
     Animator attack_Animation;        // Player's own animator
     Animator attack_Effect_Animation; // Side hitbox's animator
@@ -28,19 +27,19 @@ public class JabAttack : MonoBehaviour
 
     void Start()
     {
-        attack_Animation = GetComponent<Animator>(); 
+        attack_Animation = GetComponent<Animator>();
 
         attackArea = transform.GetChild(1).gameObject;
         attack_Effect_Animation = attackArea.GetComponent<Animator>();
         attackAreaCollider = attackArea.GetComponent<Collider2D>();
         attackAreaRenderer = attackArea.GetComponent<SpriteRenderer>();
 
-        upAttackArea = transform.GetChild(2).gameObject; 
+        upAttackArea = transform.GetChild(2).gameObject;
         attack_Up_Effect_Animation = upAttackArea.GetComponent<Animator>();
         upAttackAreaCollider = upAttackArea.GetComponent<Collider2D>();
         upAttackAreaRenderer = upAttackArea.GetComponent<SpriteRenderer>();
 
-        downAttackArea = transform.GetChild(3).gameObject; 
+        downAttackArea = transform.GetChild(3).gameObject;
         attack_Down_Effect_Animation = downAttackArea.GetComponent<Animator>();
         downAttackAreaCollider = downAttackArea.GetComponent<Collider2D>();
         downAttackAreaRenderer = downAttackArea.GetComponent<SpriteRenderer>();
@@ -68,7 +67,7 @@ public class JabAttack : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButton(0) && !attacking)
+        if (Input.GetMouseButton(0) && !attacking && Loadout.IsEquipped(jabWeapon) && Time.timeScale > 0f)
         {
             Attack();
         }
@@ -120,7 +119,7 @@ public class JabAttack : MonoBehaviour
             downAttackAreaCollider.enabled = true;
             downAttackAreaRenderer.enabled = true;
         }
-        if(!Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.W))
+        if (!Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.W))
         {
             attack_Animation.SetBool("Attack", true);
             attack_Effect_Animation.SetBool("Press_Attack", true);

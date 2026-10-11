@@ -7,6 +7,7 @@ public class StrengthItem : MonoBehaviour
     [SerializeField] private float buffDuration = 10f;
     [SerializeField] private float cooldownDuration = 10f;
     [SerializeField] private int usages = 3;
+    [SerializeField] private EquipmentData strengthItem; 
 
     private int orig_Damage;
     private bool isBuffActive = false;
@@ -18,18 +19,21 @@ public class StrengthItem : MonoBehaviour
         if (jabAttack == null) return;
 
         // Activate buff on key press
-        if (Input.GetKeyDown(KeyCode.Q) && !isBuffActive && !onCooldown && usages >0)
+        if (Input.GetKeyDown(KeyCode.Q) && Loadout.IsEquipped(strengthItem) && Time.timeScale > 0f)
         {
-            orig_Damage = jabAttack.damage;
-            jabAttack.damage += strengthBonus;
-            isBuffActive = true;
-            timer = 0f;
-            usages--;
-            Debug.Log("UNLIMITED POWERRRR");
-        }
-        else if (Input.GetKeyDown(KeyCode.Q) && onCooldown)
-        {
-            Debug.Log("still on cooldown!");
+            if (!isBuffActive && !onCooldown && usages > 0)
+            {
+                orig_Damage = jabAttack.damage;
+                jabAttack.damage += strengthBonus;
+                isBuffActive = true;
+                timer = 0f;
+                usages--;
+                Debug.Log("UNLIMITED POWERRRR");
+            }
+            else if (onCooldown)
+            {
+                Debug.Log("still on cooldown!");
+            }
         }
 
         // Count down the active buff

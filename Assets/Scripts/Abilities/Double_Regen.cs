@@ -3,26 +3,34 @@ using UnityEngine;
 public class DoubleRegen : MonoBehaviour
 {
     [SerializeField] private float multiplier = 2f;
+    [SerializeField] private EquipmentData ability;
 
     private Health health;
 
-    //awake instead of start so script doesnt need to be enabled
-    //to load upon pressing start. Otherwise this wont work unless
-    //toggled on and off again
     void Awake()
     {
         health = GetComponent<Health>();
     }
 
-    //used for equipping ability to player
     void OnEnable()
     {
-        health.SetRegenMultiplier(multiplier);
+        Loadout.Changed += OnLoadoutChanged;
+        Apply();   // covers the case where it's already equipped on load
     }
 
-    //used when unequipping ability to player
     void OnDisable()
     {
-        health.SetRegenMultiplier(1f);
+        Loadout.Changed -= OnLoadoutChanged;
+        if (health != null) health.SetRegenMultiplier(1f);
+    }
+
+    private void OnLoadoutChanged(SlotType type, EquipmentData data)
+    {
+        if (ability != null && type == ability.slotType) Apply();
+    }
+
+    private void Apply()
+    {
+        health.SetRegenMultiplier(Loadout.IsEquipped(ability) ? multiplier : 1f);
     }
 }
