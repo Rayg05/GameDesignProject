@@ -8,8 +8,9 @@ public class CircleSlot : MonoBehaviour
 
     private void OnEnable()
     {
+        //references OnLoadoutChanged to add to subscriber list
         Loadout.Changed += OnLoadoutChanged;
-        Refresh(Loadout.Get(slotType));
+        Refresh(Loadout.Get(slotType)); // show the current gear
     }
 
     private void OnDisable()
@@ -17,11 +18,13 @@ public class CircleSlot : MonoBehaviour
         Loadout.Changed -= OnLoadoutChanged;
     }
 
+    //redraw when gear in this slot's type changes
     private void OnLoadoutChanged(SlotType type, EquipmentData data)
     {
         if (type == slotType) Refresh(data);
     }
 
+    //shows the icon of equipment if there or not
     private void Refresh(EquipmentData data)
     {
         bool hasIcon = data != null && data.icon != null;

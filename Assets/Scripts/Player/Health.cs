@@ -8,7 +8,7 @@ public class Health : MonoBehaviour
     [SerializeField] private float regen = 1f;       // base regen per second
     [SerializeField] private float regenDelay = 5f;  // delay after damage before regen starts
 
-    public event Action<float, float> HealthChanged; // (current, max)
+    public event Action<float, float> HealthChanged; 
     public float Current => health;
     public float Max => maxHP;
 

@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 70195c6923946f4458fb1efaf551ede9, type: 3}
-  m_Name: TestAbility
+  m_Name: Empty
   m_EditorClassIdentifier: Assembly-CSharp::EquipmentData
   displayName: 
-  icon: {fileID: 8938707657970751806, guid: c1cfaa832d5124f4291b9b3d9597650c, type: 3}
+  icon: {fileID: 0}
   slotType: 0
