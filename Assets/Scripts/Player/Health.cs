@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Health : MonoBehaviour
@@ -6,6 +7,10 @@ public class Health : MonoBehaviour
     [SerializeField] private float maxHP = 1000f;
     [SerializeField] private float regen = 1f;       // base regen per second
     [SerializeField] private float regenDelay = 5f;  // delay after damage before regen starts
+
+    public event Action<float, float> HealthChanged; // (current, max)
+    public float Current => health;
+    public float Max => maxHP;
 
     private float regenMultiplier = 1f;
     private float startRegenTime = 0.0f;
@@ -27,6 +32,8 @@ public class Health : MonoBehaviour
     public void Damage(float amount)
     {
         health -= amount;
+        HealthChanged?.Invoke(Mathf.Max(health, 0f), maxHP);
+
         if (health <= 0)
         {
             Destroy(gameObject);
@@ -45,6 +52,8 @@ public class Health : MonoBehaviour
             health = maxHP;
             needsRegen = false;
         }
+
+        HealthChanged?.Invoke(health, maxHP);
     }
 
     void Update()
