@@ -85,6 +85,7 @@ public class InventoryWindow : MonoBehaviour
     // equips or unequips specific weapons/abilites/items
     private void OnEntryClicked(EquipmentData data)
     {
+        Debug.Log($"Clicked {data.displayName} ({data.slotType})");
         bool alreadyEquipped = Loadout.Get(data.slotType) == data;
         Loadout.Equip(data.slotType, alreadyEquipped ? null : data);
     }
