@@ -2296,6 +2296,8 @@ MonoBehaviour:
   target: {fileID: 422117638}
   offset: {x: 0, y: 2.5, z: -50}
   smoothSpeed: 3
+  bounds: {fileID: 0}
+  snapOnStart: 1
 --- !u!1 &1029045717
 GameObject:
   m_ObjectHideFlags: 0

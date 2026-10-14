@@ -8,9 +8,19 @@ public class InteractionDetector : MonoBehaviour
 
     void Start()
     {
-        interactionIcon.SetActive(false);
+        if (interactionIcon != null)
+            interactionIcon.SetActive(false);
     }
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            interactableInRange?.interact();
+        }
+    }
+
+    // Kept for a PlayerInput "Interact" action if we switch to the new Input System
     public void OnInteract(InputAction.CallbackContext context)
     {
         if (context.performed)
@@ -24,7 +34,8 @@ public class InteractionDetector : MonoBehaviour
         if (collision.TryGetComponent(out Interactable interactable) && interactable.canInteract())
         {
             interactableInRange = interactable;
-            interactionIcon.SetActive(true);
+            if (interactionIcon != null)
+                interactionIcon.SetActive(true);
         }
     }
 
@@ -33,7 +44,8 @@ public class InteractionDetector : MonoBehaviour
         if (collision.TryGetComponent(out Interactable interactable) && interactable == interactableInRange)
         {
             interactableInRange = null;
-            interactionIcon.SetActive(false);
+            if (interactionIcon != null)
+                interactionIcon.SetActive(false);
         }
     }
 }
