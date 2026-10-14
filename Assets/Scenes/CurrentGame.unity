@@ -1450,6 +1450,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pluto
       objectReference: {fileID: 0}
+    - target: {fileID: 5325668105319428109, guid: ad4af34d8d483a745bf3290c52f7b6be, type: 3}
+      propertyPath: doubleJump
+      value: 
+      objectReference: {fileID: 11400000, guid: a65180b267275c44cb5b0e9b79ba4373, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -1483,12 +1487,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 570712959256716289, guid: 18b6210d721804a47af49bf13e38e660, type: 3}
       propertyPath: ownedEquipment.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 570712959256716289, guid: 18b6210d721804a47af49bf13e38e660, type: 3}
       propertyPath: 'ownedEquipment.Array.data[3]'
       value: 
       objectReference: {fileID: 11400000, guid: 8669902dbe98191458b5f78d86ca63a0, type: 2}
+    - target: {fileID: 570712959256716289, guid: 18b6210d721804a47af49bf13e38e660, type: 3}
+      propertyPath: 'ownedEquipment.Array.data[4]'
+      value: 
+      objectReference: {fileID: 11400000, guid: a65180b267275c44cb5b0e9b79ba4373, type: 2}
     - target: {fileID: 781036818076610538, guid: 18b6210d721804a47af49bf13e38e660, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
