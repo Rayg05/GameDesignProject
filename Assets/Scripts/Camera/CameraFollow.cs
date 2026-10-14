@@ -13,7 +13,12 @@ public class CameraFollow : MonoBehaviour
     void Start()
     {
         cam = GetComponent<Camera>();
-        if (snapOnStart && target != null) transform.position = GetDesiredPosition(); //skip the intro zoom
+        if (snapOnStart) SnapToTarget(); //skip the intro zoom
+    }
+
+    public void SnapToTarget()
+    {
+        if (target != null) transform.position = GetDesiredPosition(); //jump straight to the target without gliding
     }
 
     void LateUpdate()

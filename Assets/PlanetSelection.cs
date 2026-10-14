@@ -20,6 +20,13 @@ public class PlanetSelection : MonoBehaviour
     private int targetY = 0;
     Vector3 targetPos;
 
+    private void OnEnable() {
+        // Stop following the player and point the camera at the menu.
+        maincam.GetComponent<CameraFollow>().enabled = false;
+        Vector3 menuPos = selectionScreen.transform.position;
+        maincam.transform.position = new Vector3(menuPos.x, menuPos.y, maincam.transform.position.z);
+    }
+
     void Start() {
         // Get the number of planets.
         numPlanets = planetPositions.Length;
@@ -61,6 +68,10 @@ public class PlanetSelection : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Escape)) {
             player.SetActive(true);
             selectionScreen.SetActive(false);
+            // Go back to following the player.
+            CameraFollow follow = maincam.GetComponent<CameraFollow>();
+            follow.enabled = true;
+            follow.SnapToTarget();
             gameObject.SetActive(false);
         }
 
