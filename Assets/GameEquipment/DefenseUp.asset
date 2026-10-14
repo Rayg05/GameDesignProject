@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: DefenseUp
   m_EditorClassIdentifier: Assembly-CSharp::EquipmentData
   displayName: 
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 9e5e200069c8ec14b857e10db776c146, type: 3}
   slotType: 1
