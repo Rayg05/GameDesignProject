@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 4924281}
   - component: {fileID: 4924282}
   m_Layer: 0
-  m_Name: Desk (1)
+  m_Name: Selection
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -145,8 +145,8 @@ Transform:
   m_GameObject: {fileID: 4924280}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.42, y: 3.76, z: 2}
-  m_LocalScale: {x: 0.5638572, y: 0.8473752, z: 1}
+  m_LocalPosition: {x: 8.3976, y: 4.05, z: 2}
+  m_LocalScale: {x: 0.5613762, y: 0.88389707, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 638253479}
@@ -758,7 +758,7 @@ GameObject:
   - component: {fileID: 436625229}
   - component: {fileID: 436625230}
   m_Layer: 0
-  m_Name: Wall (1)
+  m_Name: Ice Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1312,7 +1312,7 @@ GameObject:
   - component: {fileID: 828128567}
   - component: {fileID: 828128566}
   m_Layer: 6
-  m_Name: Floor (1)
+  m_Name: Ice Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1898,7 +1898,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -65057353, guid: 8e7e8cbef1466294d83491d7620902b8, type: 3}
-  m_Color: {r: 0.9858491, g: 1, b: 0.999884, a: 1}
+  m_Color: {r: 0.7086597, g: 0.78104687, b: 0.8584906, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2675,7 +2675,7 @@ GameObject:
   - component: {fileID: 2001573100}
   - component: {fileID: 2001573101}
   m_Layer: 0
-  m_Name: Wall (2)
+  m_Name: banner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2746,7 +2746,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 4763415714078566847, guid: 849bb39e45722c64e9de40fdedc2ed53, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.5660378, g: 0.5660378, b: 0.5660378, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
