@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 58f311b26d713e541bc323057975e117, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -403,6 +403,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 340518284}
   m_CullTransparentMesh: 1
+--- !u!1001 &397275963
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4255553592736696680, guid: 4d77ed88b21c77241b6c2b43c3fb8cd1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 21.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 4255553592736696680, guid: 4d77ed88b21c77241b6c2b43c3fb8cd1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4255553592736696680, guid: 4d77ed88b21c77241b6c2b43c3fb8cd1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 49.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4255553592736696680, guid: 4d77ed88b21c77241b6c2b43c3fb8cd1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4255553592736696680, guid: 4d77ed88b21c77241b6c2b43c3fb8cd1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4255553592736696680, guid: 4d77ed88b21c77241b6c2b43c3fb8cd1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4255553592736696680, guid: 4d77ed88b21c77241b6c2b43c3fb8cd1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4255553592736696680, guid: 4d77ed88b21c77241b6c2b43c3fb8cd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4255553592736696680, guid: 4d77ed88b21c77241b6c2b43c3fb8cd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4255553592736696680, guid: 4d77ed88b21c77241b6c2b43c3fb8cd1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5110515629947937600, guid: 4d77ed88b21c77241b6c2b43c3fb8cd1, type: 3}
+      propertyPath: m_Name
+      value: Netpune
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4d77ed88b21c77241b6c2b43c3fb8cd1, type: 3}
 --- !u!4 &422117638 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8569775371850302, guid: ad4af34d8d483a745bf3290c52f7b6be, type: 3}
@@ -2450,7 +2507,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.02, y: 1.4032949}
+    oldSize: {x: 13.33, y: 10.023535}
     newSize: {x: 2.02, y: 1.4032949}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -2662,7 +2719,7 @@ Transform:
   m_GameObject: {fileID: 1100985265}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.8, y: 13.9648, z: 13.3144}
+  m_LocalPosition: {x: -9, y: -452, z: 13.3144}
   m_LocalScale: {x: 124.879074, y: 28.929775, z: 6.1441836}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4358,3 +4415,4 @@ SceneRoots:
   - {fileID: 560135190}
   - {fileID: 1934517901}
   - {fileID: 1388023645}
+  - {fileID: 397275963}

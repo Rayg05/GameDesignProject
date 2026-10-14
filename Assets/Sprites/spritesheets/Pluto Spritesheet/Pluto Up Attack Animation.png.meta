@@ -1,0 +1,535 @@
+fileFormatVersion: 2
+guid: c2667942a4156d841992e865a5b675b7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1646750363987948542
+    second: Pluto Up Attack Animation_0
+  - first:
+      213: 400281581784942614
+    second: Pluto Up Attack Animation_1
+  - first:
+      213: 2620122356628701922
+    second: Pluto Up Attack Animation_2
+  - first:
+      213: -678746455777804289
+    second: Pluto Up Attack Animation_3
+  - first:
+      213: -9116313638254865402
+    second: Pluto Up Attack Animation_4
+  - first:
+      213: -317256290381569950
+    second: Pluto Up Attack Animation_5
+  - first:
+      213: 6936229518599966071
+    second: Pluto Up Attack Animation_6
+  - first:
+      213: 7093443783938484931
+    second: Pluto Up Attack Animation_7
+  - first:
+      213: 8928309028146835549
+    second: Pluto Up Attack Animation_8
+  - first:
+      213: -5040503172695190309
+    second: Pluto Up Attack Animation_9
+  - first:
+      213: -3392949616251174340
+    second: Pluto Up Attack Animation_10
+  - first:
+      213: 8887527055694406569
+    second: Pluto Up Attack Animation_11
+  - first:
+      213: 3652770923827527169
+    second: Pluto Up Attack Animation_12
+  - first:
+      213: 1967708148665302286
+    second: Pluto Up Attack Animation_13
+  - first:
+      213: 9082688370566782204
+    second: Pluto Up Attack Animation_14
+  - first:
+      213: -9099463730506909496
+    second: Pluto Up Attack Animation_15
+  - first:
+      213: -6812358717694928885
+    second: Pluto Up Attack Animation_16
+  - first:
+      213: 370672385997945763
+    second: Pluto Up Attack Animation_17
+  - first:
+      213: -1855251687693893142
+    second: Pluto Up Attack Animation_18
+  - first:
+      213: -1242502394092191930
+    second: Pluto Up Attack Animation_19
+  - first:
+      213: -8649009655931168295
+    second: Pluto Up Attack Animation_20
+  - first:
+      213: -6638114379870425222
+    second: Pluto Up Attack Animation_21
+  - first:
+      213: -2459248038139790186
+    second: Pluto Up Attack Animation_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pluto Up Attack Animation_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3999
+        width: 1200
+        height: 1333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef33f3f2bbe6ad610800000000000000
+      internalID: 1646750363987948542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto Up Attack Animation_1
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3999
+        width: 1200
+        height: 1333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6184c645af51e8500800000000000000
+      internalID: 400281581784942614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto Up Attack Animation_2
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3999
+        width: 1200
+        height: 1333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e2c9eeb66b8c5420800000000000000
+      internalID: 2620122356628701922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto Up Attack Animation_3
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 3999
+        width: 1200
+        height: 1333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffffec2d1bb9496f0800000000000000
+      internalID: -678746455777804289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto Up Attack Animation_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2666
+        width: 1200
+        height: 1333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60415cadb095c7180800000000000000
+      internalID: -9116313638254865402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto Up Attack Animation_5
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2666
+        width: 1200
+        height: 1333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2606c05b511e89bf0800000000000000
+      internalID: -317256290381569950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto Up Attack Animation_6
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2666
+        width: 1200
+        height: 1333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77dcab85fff624060800000000000000
+      internalID: 6936229518599966071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto Up Attack Animation_7
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 2666
+        width: 1200
+        height: 1333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ca2bdfe989f07260800000000000000
+      internalID: 7093443783938484931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto Up Attack Animation_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1333
+        width: 1200
+        height: 1333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d50fa93c1c9b7eb70800000000000000
+      internalID: 8928309028146835549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto Up Attack Animation_9
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1333
+        width: 1200
+        height: 1333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd41646f1198c0ab0800000000000000
+      internalID: -5040503172695190309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto Up Attack Animation_10
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1333
+        width: 1200
+        height: 1333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c320d86fc42d9e0d0800000000000000
+      internalID: -3392949616251174340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto Up Attack Animation_11
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 1333
+        width: 1200
+        height: 1333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a3a65ed4c6d65b70800000000000000
+      internalID: 8887527055694406569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto Up Attack Animation_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1200
+        height: 1333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10e7d905dcf31b230800000000000000
+      internalID: 3652770923827527169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto Up Attack Animation_13
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 1200
+        height: 1333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0d36d6c224be4b10800000000000000
+      internalID: 1967708148665302286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto Up Attack Animation_14
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 0
+        width: 1200
+        height: 1333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfc543d63f03c0e70800000000000000
+      internalID: 9082688370566782204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 00aaa0c73e997944f9ad20d983faa6b6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":4.0},"gridSpriteSize":{"x":1200.0,"y":1333.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Pluto Up Attack Animation_0: 1646750363987948542
+      Pluto Up Attack Animation_1: 400281581784942614
+      Pluto Up Attack Animation_10: -3392949616251174340
+      Pluto Up Attack Animation_11: 8887527055694406569
+      Pluto Up Attack Animation_12: 3652770923827527169
+      Pluto Up Attack Animation_13: 1967708148665302286
+      Pluto Up Attack Animation_14: 9082688370566782204
+      Pluto Up Attack Animation_2: 2620122356628701922
+      Pluto Up Attack Animation_3: -678746455777804289
+      Pluto Up Attack Animation_4: -9116313638254865402
+      Pluto Up Attack Animation_5: -317256290381569950
+      Pluto Up Attack Animation_6: 6936229518599966071
+      Pluto Up Attack Animation_7: 7093443783938484931
+      Pluto Up Attack Animation_8: 8928309028146835549
+      Pluto Up Attack Animation_9: -5040503172695190309
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
