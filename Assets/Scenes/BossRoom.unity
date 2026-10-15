@@ -968,6 +968,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Boss
   projectile: {fileID: 6880417653192060602, guid: 916f82cfe8282e2498ebd8435a3e1f25, type: 3}
   target: {fileID: 493244526}
+  leftEdgeX: 1
+  rightEdgeX: 35
 --- !u!1001 &1254372725
 PrefabInstance:
   m_ObjectHideFlags: 0

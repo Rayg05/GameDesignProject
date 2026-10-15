@@ -7,6 +7,9 @@ public class Boss : MonoBehaviour {
     public GameObject projectile;
     public Transform target;
 
+    public float leftEdgeX;
+    public float rightEdgeX;
+
     List<IState> states = new List<IState>();
     int num_states;
 

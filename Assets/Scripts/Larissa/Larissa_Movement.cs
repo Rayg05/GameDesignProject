@@ -17,6 +17,6 @@ public class Larissa_Movement : MonoBehaviour
     void Update()
     {
         float offset = Mathf.Sin(Time.time * frequency * Mathf.PI * 2f) * amplitude;
-        transform.position = new Vector3(startPos.x, startPos.y + offset, startPos.z);
+        transform.position = new Vector3(transform.position.x, startPos.y + offset, transform.position.z);
     }
 }
