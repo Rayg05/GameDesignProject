@@ -1,10 +1,10 @@
 using UnityEngine;
 
 public class Larissa_Projectile : IState {
-    Boss larissa;
+    Larissa_Boss larissa;
     private float spread = 0.5f;
 
-    public Larissa_Projectile(Boss boss) { larissa = boss; }
+    public Larissa_Projectile(Larissa_Boss boss) { larissa = boss; }
 
     public void Enter() {
         Debug.Log("Entering Larissa_Projectile.");

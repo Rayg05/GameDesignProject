@@ -7,7 +7,7 @@ public class Larissa_Dash : IState {
     float targetX;
     float curY;
     float larissaDir;
-    float larissaSpd = 0.1f;
+    float larissaSpd = 1.0f;
     bool dashing = false;
 
     Collider2D hitbox;

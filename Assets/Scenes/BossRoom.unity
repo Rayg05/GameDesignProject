@@ -611,6 +611,7 @@ MonoBehaviour:
   buffDuration: 10
   cooldownDuration: 10
   usages: 3
+  strengthItem: {fileID: 0}
 --- !u!4 &325773442 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8813358092592181117, guid: f6956f6437a4a784f8d303eed4fb5ff1, type: 3}
@@ -705,10 +706,10 @@ PrefabInstance:
       addedObject: {fileID: 493244529}
     - targetCorrespondingSourceObject: {fileID: 2399115592720631176, guid: ad4af34d8d483a745bf3290c52f7b6be, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 493244528}
+      addedObject: {fileID: 493244540}
     - targetCorrespondingSourceObject: {fileID: 2399115592720631176, guid: ad4af34d8d483a745bf3290c52f7b6be, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 493244540}
+      addedObject: {fileID: 493244545}
   m_SourcePrefab: {fileID: 100100000, guid: ad4af34d8d483a745bf3290c52f7b6be, type: 3}
 --- !u!1 &493244525 stripped
 GameObject:
@@ -720,21 +721,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8569775371850302, guid: ad4af34d8d483a745bf3290c52f7b6be, type: 3}
   m_PrefabInstance: {fileID: 493244524}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &493244528
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 493244525}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2eb9763bbb2a9cf48b153fd89b607f10, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Loadout
-  weapon: {fileID: 0}
-  ability: {fileID: 0}
-  item: {fileID: 0}
 --- !u!114 &493244529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -747,6 +733,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e37010993260704aa942a9a842316df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::JabAttack
+  jabWeapon: {fileID: 11400000, guid: 02fa3ec703aba52478452b2ade516dca, type: 2}
 --- !u!114 &493244535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -782,6 +769,19 @@ MonoBehaviour:
   maxHP: 10
   regen: 1
   regenDelay: 5
+--- !u!114 &493244545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493244525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad9e558600e978a4e8484e938b7e4dbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::JabAttackArea
+  damage: 3
 --- !u!1 &756253387
 GameObject:
   m_ObjectHideFlags: 0
@@ -835,6 +835,7 @@ MonoBehaviour:
   buffDuration: 10
   cooldownDuration: 10
   usages: 3
+  strengthItem: {fileID: 0}
 --- !u!212 &756253390
 SpriteRenderer:
   serializedVersion: 3
@@ -968,7 +969,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.02, y: 1.4032949}
+    oldSize: {x: 13.33, y: 10.023535}
     newSize: {x: 2.02, y: 1.4032949}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1216,11 +1217,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52e302558fa0ed3458510b46c0ed3120, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Larissa_Boss
-  projectile: {fileID: 6880417653192060602, guid: 916f82cfe8282e2498ebd8435a3e1f25, type: 3}
   target: {fileID: 493244526}
   leftEdgeX: -40
   rightEdgeX: 40
-  projectile: {fileID: 0}
+  projectile: {fileID: 6880417653192060602, guid: 916f82cfe8282e2498ebd8435a3e1f25, type: 3}
 --- !u!1001 &1254372725
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1326,6 +1326,7 @@ MonoBehaviour:
   buffDuration: 10
   cooldownDuration: 10
   usages: 3
+  strengthItem: {fileID: 0}
 --- !u!4 &1254372729 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8813358092592181117, guid: f6956f6437a4a784f8d303eed4fb5ff1, type: 3}

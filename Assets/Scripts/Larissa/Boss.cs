@@ -4,7 +4,6 @@ using System.Collections.Generic;
 
 public abstract class Boss : MonoBehaviour {
     public FSM state_machine { get; private set; }
-    public GameObject projectile;
     public Transform target;
     public float leftEdgeX;
     public float rightEdgeX;

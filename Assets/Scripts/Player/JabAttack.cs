@@ -63,6 +63,11 @@ public class JabAttack : MonoBehaviour
         downAttackArea.SetActive(true);
         downAttackAreaCollider.enabled = false;
         downAttackAreaRenderer.enabled = false;
+
+        /*
+         *          DEBUG!!! DELETE LATER:
+         */
+        Loadout.Equip(SlotType.Weapon, jabWeapon); 
     }
 
     void Update()
