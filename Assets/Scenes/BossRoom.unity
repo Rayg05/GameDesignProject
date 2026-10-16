@@ -420,6 +420,7 @@ GameObject:
   m_Component:
   - component: {fileID: 287960858}
   - component: {fileID: 287960859}
+  - component: {fileID: 287960860}
   m_Layer: 0
   m_Name: Hurtbox
   m_TagString: Untagged
@@ -488,6 +489,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 4, y: 6}
   m_EdgeRadius: 0
+--- !u!114 &287960860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287960857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f499f55dc8f7615448a3370396ef7b49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Player_Hurtbox
 --- !u!1001 &325773439
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -9,6 +9,7 @@ public class Basic_Movement2 : MonoBehaviour
     
 
     private Rigidbody2D rb;
+    private GameObject hurtbox;
 
     [SerializeField] private float moveSpeed = 10f;
     [SerializeField] private float jumpForce = 100f;
@@ -31,6 +32,7 @@ public class Basic_Movement2 : MonoBehaviour
         jump_Animator = GetComponent<Animator>();
         run_Animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        hurtbox = transform.Find("Hurtbox").gameObject;
     }
 
     void Update()
@@ -106,5 +108,12 @@ public class Basic_Movement2 : MonoBehaviour
         RaycastHit2D groundCast = Physics2D.Raycast(transform.position, Vector2.down, 10.0f, groundLayer);
         isGrounded = (groundCast.collider != null);
         //isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
-    }   
+    }
+
+    public void HurtPlayer() {
+        // Turn off hitbox for a set amount of time.
+        Debug.Log("Turning off!");
+        hurtbox.SetActive(false);
+        return;
+    }
 }
