@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    [SerializeField] private float health = 1000f;
-    [SerializeField] private float maxHP = 1000f;
+    [SerializeField] private float health = 100f;
+    [SerializeField] private float maxHP = 100f;
     [SerializeField] private float regen = 1f;       // base regen per second
     [SerializeField] private float regenDelay = 5f;  // delay after damage before regen starts
 
@@ -32,7 +32,6 @@ public class Health : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-
         OnTakeDamage();
     }
 

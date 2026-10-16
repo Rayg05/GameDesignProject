@@ -706,6 +706,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2399115592720631176, guid: ad4af34d8d483a745bf3290c52f7b6be, type: 3}
       insertIndex: -1
       addedObject: {fileID: 493244528}
+    - targetCorrespondingSourceObject: {fileID: 2399115592720631176, guid: ad4af34d8d483a745bf3290c52f7b6be, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 493244540}
   m_SourcePrefab: {fileID: 100100000, guid: ad4af34d8d483a745bf3290c52f7b6be, type: 3}
 --- !u!1 &493244525 stripped
 GameObject:
@@ -756,13 +759,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 497841347458d5642a0605074a36f9be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Basic_Movement2
-  moveSpeed: 10
+  moveSpeed: 20
   jumpForce: 40
   groundCheck: {fileID: 1967294862}
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
   groundCheckRadius: 0.1
+--- !u!114 &493244540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493244525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4197db3605ed9fa42a64148b60cc5996, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Health
+  health: 10
+  maxHP: 10
+  regen: 1
+  regenDelay: 5
 --- !u!1 &756253387
 GameObject:
   m_ObjectHideFlags: 0
@@ -974,11 +993,10 @@ GameObject:
   - component: {fileID: 1205231241}
   - component: {fileID: 1205231240}
   - component: {fileID: 1205231239}
-  - component: {fileID: 1205231238}
   - component: {fileID: 1205231237}
   - component: {fileID: 1205231236}
-  - component: {fileID: 1205231243}
-  - component: {fileID: 1205231244}
+  - component: {fileID: 1205231245}
+  - component: {fileID: 1205231246}
   m_Layer: 0
   m_Name: Larissa
   m_TagString: Untagged
@@ -1022,22 +1040,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1205231238
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1205231235}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4197db3605ed9fa42a64148b60cc5996, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Health
-  health: 1000
-  maxHP: 10
-  regen: 1
-  regenDelay: 5
 --- !u!50 &1205231239
 Rigidbody2D:
   serializedVersion: 5
@@ -1095,7 +1097,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -1187,7 +1189,7 @@ Transform:
   - {fileID: 79645430}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1205231243
+--- !u!114 &1205231245
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1199,9 +1201,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7afad2071a6a4304abeea64d12673f59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossHealth
-  maxHealth: 100
-  invulnerabilityAfterHit: 0
---- !u!114 &1205231244
+  health: 10
+  maxHP: 10
+  invincible: 0
+--- !u!114 &1205231246
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1210,13 +1213,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1205231235}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b11808549fb9bc24790286ede8616323, type: 3}
+  m_Script: {fileID: 11500000, guid: 52e302558fa0ed3458510b46c0ed3120, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Boss
+  m_EditorClassIdentifier: Assembly-CSharp::Larissa_Boss
   projectile: {fileID: 6880417653192060602, guid: 916f82cfe8282e2498ebd8435a3e1f25, type: 3}
   target: {fileID: 493244526}
   leftEdgeX: -40
-  rightEdgeX: 35
+  rightEdgeX: 40
+  projectile: {fileID: 0}
 --- !u!1001 &1254372725
 PrefabInstance:
   m_ObjectHideFlags: 0

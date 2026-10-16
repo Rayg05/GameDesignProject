@@ -10,6 +10,7 @@ public class Basic_Movement2 : MonoBehaviour
 
     private Rigidbody2D rb;
     private GameObject hurtbox;
+    private Health playerHealth;
 
     [SerializeField] private float moveSpeed = 10f;
     [SerializeField] private float jumpForce = 100f;
@@ -32,6 +33,7 @@ public class Basic_Movement2 : MonoBehaviour
         jump_Animator = GetComponent<Animator>();
         run_Animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        playerHealth = GetComponent<Health>();
         hurtbox = transform.Find("Hurtbox").gameObject;
     }
 
@@ -110,10 +112,10 @@ public class Basic_Movement2 : MonoBehaviour
         //isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
     }
 
-    public void HurtPlayer() {
+    public void HurtPlayer(float amt) {
         // Turn off hitbox for a set amount of time.
-        Debug.Log("Turning off!");
-        hurtbox.SetActive(false);
+        Debug.Log("Player has taken damage!");
+        playerHealth.Damage(amt);
         return;
     }
 }
