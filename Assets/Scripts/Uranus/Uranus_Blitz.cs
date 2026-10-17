@@ -11,8 +11,8 @@ public class Uranus_Blitz : IState
     float curY;
     float startTime;
 
-    float uranusSpd = 20f;   // units per second (was 0.1 per frame)
-    float duration = 20f;   // total time spent blitzing
+    float uranusSpd = 40f;
+    float duration = 10f;   // total time spent blitzing
 
     public Uranus_Blitz(Boss boss)
     {
@@ -33,14 +33,14 @@ public class Uranus_Blitz : IState
         curY = uranus.transform.position.y;
         if (hitbox != null) hitbox.SetActive(true);
 
-        // Start by dashing to whichever edge is farther away.
+        //start by dashing to whichever edge is farther away.
         float x = uranus.transform.position.x;
         targetX = Mathf.Abs(x - rEX) > Mathf.Abs(x - lEX) ? rEX : lEX;
     }
 
     public void Execute()
     {
-        // Time's up: stop and move on.
+        // stop and move to next state
         if (Time.time - startTime >= duration)
         {
             uranus.ChooseNextState(this);
@@ -55,7 +55,7 @@ public class Uranus_Blitz : IState
         pos.y = curY;
         uranus.transform.position = pos;
 
-        // Arrived: flip to the opposite edge.
+        //when arrived flip to opposed edge
         if (Mathf.Approximately(pos.x, targetX))
             targetX = (targetX == rEX) ? lEX : rEX;
     }
