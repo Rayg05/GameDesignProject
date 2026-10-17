@@ -5,7 +5,7 @@ public class Player_Hurtbox : MonoBehaviour
 {
 
     private float itimer = 0.0f;
-    private float imax = 3.0f;
+    private float imax = 1.5f;
     private bool invincible = false;
 
     Basic_Movement2 player;

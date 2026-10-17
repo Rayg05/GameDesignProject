@@ -4,6 +4,6 @@ public class Uranus_Blitz_Hitbox : MonoBehaviour
 {
     void OnTriggerEnter2D(Collider2D collision)
     {
-        //Debug.Log("TOUCHING " + collision.name);
+        Debug.Log("TOUCHING " + collision.name);
     }
 }
