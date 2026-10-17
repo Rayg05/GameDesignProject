@@ -11,8 +11,8 @@ public class Uranus_Blitz : IState
     float curY;
     float startTime;
 
-    float uranusSpd = 40f;
-    float duration = 1f;   // total time spent blitzing
+    float uranusSpd = 35f;
+    float duration = 8f;   // total time spent blitzing
 
     public Uranus_Blitz(Boss boss)
     {
