@@ -3,10 +3,14 @@ using UnityEngine;
 public class Larissa_Idle : IState {
     Boss larissa;
     float timer;
-
-    public Larissa_Idle(Boss boss) { larissa = boss; }
+    readonly Animator animator;
+    public Larissa_Idle(Boss boss) { 
+        larissa = boss;
+        animator = larissa.GetComponent<Animator>();
+    }
 
     public void Enter() {
+        animator.SetBool("Idle", true);
         Debug.Log("Entering Larissa_Idle.");
         // Reset timer.
         timer = 0f;
@@ -27,6 +31,7 @@ public class Larissa_Idle : IState {
     }
 
     public void Exit() {
+        animator.SetBool("Idle", false);
         Debug.Log("Exiting Larissa_Idle.");
         return;
     }

@@ -14,6 +14,8 @@ public class Uranus_Blitz : IState
     float uranusSpd = 35f;
     float duration = 8f;   // total time spent blitzing
 
+    readonly Animator animator;
+
     public Uranus_Blitz(Boss boss)
     {
         uranus = boss;
@@ -24,6 +26,8 @@ public class Uranus_Blitz : IState
         hitbox = hb != null ? hb.gameObject : null;
         if (hitbox == null)
             Debug.LogWarning("Uranus has no child named 'Hitbox'. Blitz won't deal damage.");
+
+        animator = uranus.GetComponent<Animator>();
     }
 
     public void Enter()
@@ -36,6 +40,7 @@ public class Uranus_Blitz : IState
         //start by dashing to whichever edge is farther away.
         float x = uranus.transform.position.x;
         targetX = Mathf.Abs(x - rEX) > Mathf.Abs(x - lEX) ? rEX : lEX;
+        animator.SetBool("Blitz", true);
     }
 
     public void Execute()
@@ -62,6 +67,7 @@ public class Uranus_Blitz : IState
 
     public void Exit()
     {
+        animator.SetBool("Blitz", false);
         if (hitbox != null) hitbox.SetActive(false);
         Debug.Log("Exiting Uranus_Blitz.");
     }

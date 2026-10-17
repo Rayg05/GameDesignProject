@@ -3,7 +3,6 @@ using static UnityEditor.VersionControl.Asset;
 
 public class Uranus_Boss : Boss
 {
-
     protected override void BuildStates() {
         // IDLE SHOULD BE FIRST ON THE LIST!
         states.Add(new Uranus_Idle(this));

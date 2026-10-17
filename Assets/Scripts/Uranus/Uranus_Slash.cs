@@ -6,6 +6,7 @@ public class Uranus_Slash : IState
 {
     readonly Boss uranus;
     readonly Material lineMaterial;
+    readonly Animator animator;
 
     const float drawDuration = .3f;    // time to draw the line from start to end
     const float holdDuration = 2.2f;    // how long the finished line stays before the state ends
@@ -28,12 +29,14 @@ public class Uranus_Slash : IState
     {
         uranus = boss;
         lineMaterial = new Material(Shader.Find("Sprites/Default"));
+        animator = uranus.GetComponent<Animator>();
     }
 
     public void Enter()
     {
         Debug.Log("Entering Uranus_Slash.");
         timer = 0f;
+        animator.SetBool("Slash", true);
         for (int i = 0; i < numOfSlashes; i++)
         {
             // pick start and end points for each slash
@@ -118,6 +121,7 @@ public class Uranus_Slash : IState
 
     public void Exit()
     {
+        animator.SetBool("Slash", false);
         // Clean up the line renderers when exiting the state
         for (int i = 0; i < numOfSlashes; i++)
         {
