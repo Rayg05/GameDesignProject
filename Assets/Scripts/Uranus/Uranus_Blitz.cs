@@ -2,23 +2,24 @@ using UnityEngine;
 
 public class Uranus_Blitz : IState
 {
-    Boss uranus;
-    float rEX;
-    float lEX;
+    readonly Boss uranus;
+    readonly float rEX;
+    readonly float lEX;
+    readonly GameObject hitbox;
+
     float targetX;
     float curY;
-    float uranusDir;
-    float uranusSpd = 0.1f;
-    bool dashing = false;
-    GameObject hitbox;
+    float startTime;
+
+    float uranusSpd = 20f;   // units per second (was 0.1 per frame)
+    float duration = 20f;   // total time spent blitzing
+
     public Uranus_Blitz(Boss boss)
     {
         uranus = boss;
         rEX = uranus.rightEdgeX;
         lEX = uranus.leftEdgeX;
-        curY = uranus.transform.position.y;
 
-        // Look up the hitbox once. It may not exist yet, so don't assume it does.
         Transform hb = uranus.transform.Find("Hitbox");
         hitbox = hb != null ? hb.gameObject : null;
         if (hitbox == null)
@@ -27,40 +28,41 @@ public class Uranus_Blitz : IState
 
     public void Enter()
     {
+        Debug.Log("Entering Uranus_Blitz.");
+        startTime = Time.time;
+        curY = uranus.transform.position.y;
         if (hitbox != null) hitbox.SetActive(true);
-        Debug.Log("Entering Uranus_Dash.");
+
+        // Start by dashing to whichever edge is farther away.
+        float x = uranus.transform.position.x;
+        targetX = Mathf.Abs(x - rEX) > Mathf.Abs(x - lEX) ? rEX : lEX;
     }
 
     public void Execute()
     {
-        // Face player.
+        // Time's up: stop and move on.
+        if (Time.time - startTime >= duration)
+        {
+            uranus.ChooseNextState(this);
+            return;
+        }
+
         uranus.FaceTarget();
 
-        // Pick a point.
-        if (!dashing)
-        {
-            uranusDir = uranus.transform.localScale.x;
-            // Pick right or left point depending on where uranus is facing.
-            if (uranusDir < 0) { targetX = rEX; } else { targetX = lEX; }
-            dashing = true;
-        }
-        else
-        {
-            // Move uranus.
-            uranus.transform.position += new Vector3((-1) * uranusDir * uranusSpd, 0.0f, 0.0f);
+        // Move toward the current edge.
+        Vector3 pos = uranus.transform.position;
+        pos.x = Mathf.MoveTowards(pos.x, targetX, uranusSpd * Time.deltaTime);
+        pos.y = curY;
+        uranus.transform.position = pos;
 
-            // Have we arrived?
-            bool arrived = (uranusDir < 0) ? (uranus.transform.position.x >= rEX) : (uranus.transform.position.x <= lEX);
-
-            // Exit when arrived.
-            if (arrived) { uranus.ChooseNextState(this); }
-        }
+        // Arrived: flip to the opposite edge.
+        if (Mathf.Approximately(pos.x, targetX))
+            targetX = (targetX == rEX) ? lEX : rEX;
     }
 
     public void Exit()
     {
-        dashing = false;
         if (hitbox != null) hitbox.SetActive(false);
-        Debug.Log("Exiting uranus_Dash.");
+        Debug.Log("Exiting Uranus_Blitz.");
     }
 }
