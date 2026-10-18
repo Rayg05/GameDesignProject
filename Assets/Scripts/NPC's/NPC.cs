@@ -89,6 +89,13 @@ public class NPC : MonoBehaviour, Interactable
 
     }
 
+    public void endInteraction()
+    {
+        // Force the box closed if the player walks away mid-conversation
+        if (isDialogueActive)
+            EndDialogue();
+    }
+
     public void EndDialogue()
     {
         StopAllCoroutines();

@@ -64,8 +64,10 @@ public class PlanetSelection : MonoBehaviour
             // GO TO ROOM HERE.
         }
 
-        // Exit out of telescope screen.
-        if(Input.GetKeyDown(KeyCode.Escape)) {
+        // Exit out of telescope screen (E toggles it closed, Escape also works).
+        bool togglePressed = Input.GetKeyDown(KeyCode.E) && Time.frameCount != Telescope.lastToggleFrame;
+        if(togglePressed || Input.GetKeyDown(KeyCode.Escape)) {
+            Telescope.lastToggleFrame = Time.frameCount;
             player.SetActive(true);
             selectionScreen.SetActive(false);
             // Go back to following the player.

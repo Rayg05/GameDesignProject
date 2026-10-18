@@ -6,10 +6,13 @@ public class Telescope : MonoBehaviour
     [SerializeField] private GameObject selectionScreen;
     [SerializeField] private GameObject selectionObj;
     private bool inRange = false;
+    // Frame the menu was last opened/closed, so one E press can't both open and close it.
+    public static int lastToggleFrame = -1;
 
     private void Update() {
-        // When the player is inside the telescope trigger, they can press a key to open the menu.
-        if(Input.GetKeyDown(KeyCode.Return) && inRange) {
+        // When the player is inside the telescope trigger, they can press E to open the menu.
+        if(Input.GetKeyDown(KeyCode.E) && inRange && Time.frameCount != lastToggleFrame) {
+            lastToggleFrame = Time.frameCount;
             player.SetActive(false);
             selectionScreen.SetActive(true);
             selectionObj.SetActive(true);
