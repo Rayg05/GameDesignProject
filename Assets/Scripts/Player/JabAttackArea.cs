@@ -10,14 +10,15 @@ public class JabAttackArea : MonoBehaviour
         BossHealth bossHealth = collider.GetComponentInParent<BossHealth>();
         if (bossHealth != null)
         {
-            bossHealth.TakeDamage(damage);
+            bossHealth.Damage(damage);
             return;
         }
 
-        Health health = collider.GetComponentInParent<Health>();
+        Health health = collider.GetComponent<Health>();
         if (health != null)
         {
             health.Damage(damage);
+            return;
         }
     }
 }

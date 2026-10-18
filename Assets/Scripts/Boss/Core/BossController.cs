@@ -90,14 +90,14 @@ public abstract class BossController : MonoBehaviour
 
     protected virtual void OnEnable()
     {
-        Health.Damaged += HandleDamaged;
-        Health.Died += HandleDied;
+        //Health.Damaged += HandleDamaged;
+        //Health.Died += HandleDied;
     }
 
     protected virtual void OnDisable()
     {
-        Health.Damaged -= HandleDamaged;
-        Health.Died -= HandleDied;
+        //Health.Damaged -= HandleDamaged;
+        //Health.Died -= HandleDied;
     }
 
     protected virtual void Start()
@@ -224,12 +224,14 @@ public abstract class BossController : MonoBehaviour
     private void UpdatePhase()
     {
         // Loop so a big hit can skip through multiple phases
+        /*
         while (CurrentPhase + 1 < phases.Count && Health.Normalized <= phases[CurrentPhase + 1].healthThreshold)
         {
             CurrentPhase++;
             OnPhaseChanged(CurrentPhase);
             PhaseChanged?.Invoke(CurrentPhase);
         }
+        */
     }
 
     private void HandleDied()

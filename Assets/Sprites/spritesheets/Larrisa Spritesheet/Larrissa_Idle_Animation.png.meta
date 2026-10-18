@@ -1,0 +1,351 @@
+fileFormatVersion: 2
+guid: 57a8b70ddc4ea344da72872bedf14255
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8533667386308870
+    second: Larrissa_Idle_Animation_0
+  - first:
+      213: -6623929183036973853
+    second: Larrissa_Idle_Animation_1
+  - first:
+      213: -3232553571259891687
+    second: Larrissa_Idle_Animation_2
+  - first:
+      213: 4523549136352508505
+    second: Larrissa_Idle_Animation_3
+  - first:
+      213: 853504258164949343
+    second: Larrissa_Idle_Animation_4
+  - first:
+      213: -2760849487361840248
+    second: Larrissa_Idle_Animation_5
+  - first:
+      213: -7514545893369422172
+    second: Larrissa_Idle_Animation_6
+  - first:
+      213: 1954650173403773241
+    second: Larrissa_Idle_Animation_7
+  - first:
+      213: -3482383116315017948
+    second: Larrissa_Idle_Animation_8
+  - first:
+      213: 6232295271580192882
+    second: Larrissa_Idle_Animation_9
+  - first:
+      213: -5283039215020353280
+    second: Larrissa_Idle_Animation_10
+  - first:
+      213: 2754781282383269172
+    second: Larrissa_Idle_Animation_11
+  - first:
+      213: -73172737316921155
+    second: Larrissa_Idle_Animation_12
+  - first:
+      213: 6193772883754429792
+    second: Larrissa_Idle_Animation_13
+  - first:
+      213: 6390744768373451853
+    second: Larrissa_Idle_Animation_14
+  - first:
+      213: 2803458380593285727
+    second: Larrissa_Idle_Animation_15
+  - first:
+      213: -3801746714586647712
+    second: Larrissa_Idle_Animation_16
+  - first:
+      213: -4835534062191464367
+    second: Larrissa_Idle_Animation_17
+  - first:
+      213: -6014236334229133570
+    second: Larrissa_Idle_Animation_18
+  - first:
+      213: -7787510519288538175
+    second: Larrissa_Idle_Animation_19
+  - first:
+      213: 4074613238983529144
+    second: Larrissa_Idle_Animation_20
+  - first:
+      213: -2106309281814254282
+    second: Larrissa_Idle_Animation_21
+  - first:
+      213: 1020681714444583747
+    second: Larrissa_Idle_Animation_22
+  - first:
+      213: 6728646373019616167
+    second: Larrissa_Idle_Animation_23
+  - first:
+      213: -3648343168984477445
+    second: Larrissa_Idle_Animation_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Larrissa_Idle_Animation_0
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 100
+        width: 900
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 609313543515e1000800000000000000
+      internalID: 8533667386308870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Larrissa_Idle_Animation_1
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 100
+        width: 900
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ecdcbbc0831314a0800000000000000
+      internalID: -6623929183036973853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Larrissa_Idle_Animation_2
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 100
+        width: 900
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91042ab57a9a323d0800000000000000
+      internalID: -3232553571259891687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Larrissa_Idle_Animation_3
+      rect:
+        serializedVersion: 2
+        x: 3100
+        y: 100
+        width: 900
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95af05409ffd6ce30800000000000000
+      internalID: 4523549136352508505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Larrissa_Idle_Animation_4
+      rect:
+        serializedVersion: 2
+        x: 4100
+        y: 100
+        width: 900
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f51843ac99148db00800000000000000
+      internalID: 853504258164949343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Larrissa_Idle_Animation_6
+      rect:
+        serializedVersion: 2
+        x: 5100
+        y: 100
+        width: 900
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ae5851e258f6b790800000000000000
+      internalID: -7514545893369422172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ad324cbc3d88e884d8c16668d78c26bb
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Larrissa_Idle_Animation_0: 8533667386308870
+      Larrissa_Idle_Animation_1: -6623929183036973853
+      Larrissa_Idle_Animation_10: -5283039215020353280
+      Larrissa_Idle_Animation_11: 2754781282383269172
+      Larrissa_Idle_Animation_12: -73172737316921155
+      Larrissa_Idle_Animation_13: 6193772883754429792
+      Larrissa_Idle_Animation_14: 6390744768373451853
+      Larrissa_Idle_Animation_15: 2803458380593285727
+      Larrissa_Idle_Animation_16: -3801746714586647712
+      Larrissa_Idle_Animation_17: -4835534062191464367
+      Larrissa_Idle_Animation_18: -6014236334229133570
+      Larrissa_Idle_Animation_19: -7787510519288538175
+      Larrissa_Idle_Animation_2: -3232553571259891687
+      Larrissa_Idle_Animation_20: 4074613238983529144
+      Larrissa_Idle_Animation_21: -2106309281814254282
+      Larrissa_Idle_Animation_22: 1020681714444583747
+      Larrissa_Idle_Animation_23: 6728646373019616167
+      Larrissa_Idle_Animation_24: -3648343168984477445
+      Larrissa_Idle_Animation_3: 4523549136352508505
+      Larrissa_Idle_Animation_4: 853504258164949343
+      Larrissa_Idle_Animation_5: -2760849487361840248
+      Larrissa_Idle_Animation_6: -7514545893369422172
+      Larrissa_Idle_Animation_7: 1954650173403773241
+      Larrissa_Idle_Animation_8: -3482383116315017948
+      Larrissa_Idle_Animation_9: 6232295271580192882
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

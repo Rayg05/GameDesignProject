@@ -1,0 +1,585 @@
+fileFormatVersion: 2
+guid: cd520d967e8bd374daeea4d925ce4bba
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8511749107173749477
+    second: Larrissa Icicle Attack Animation_0
+  - first:
+      213: 7116493122630354111
+    second: Larrissa Icicle Attack Animation_1
+  - first:
+      213: 4264966498667064308
+    second: Larrissa Icicle Attack Animation_2
+  - first:
+      213: -487488097410591924
+    second: Larrissa Icicle Attack Animation_3
+  - first:
+      213: 165595322812902390
+    second: Larrissa Icicle Attack Animation_4
+  - first:
+      213: 8631812468524850587
+    second: Larrissa Icicle Attack Animation_5
+  - first:
+      213: 218133134902680285
+    second: Larrissa Icicle Attack Animation_6
+  - first:
+      213: 8032250052102392846
+    second: Larrissa Icicle Attack Animation_7
+  - first:
+      213: 6107595086071317182
+    second: Larrissa Icicle Attack Animation_8
+  - first:
+      213: -8955964085455302495
+    second: Larrissa Icicle Attack Animation_9
+  - first:
+      213: 4960190975883525344
+    second: Larrissa Icicle Attack Animation_10
+  - first:
+      213: -7162331197893582109
+    second: Larrissa Icicle Attack Animation_11
+  - first:
+      213: 5949133323906896104
+    second: Larrissa Icicle Attack Animation_12
+  - first:
+      213: 2691173502661202477
+    second: Larrissa Icicle Attack Animation_13
+  - first:
+      213: 345930625428652184
+    second: Larrissa Icicle Attack Animation_14
+  - first:
+      213: 385385256263957460
+    second: Larrissa Icicle Attack Animation_15
+  - first:
+      213: 8005710990358093465
+    second: Larrissa Icicle Attack Animation_16
+  - first:
+      213: -6932986563449288779
+    second: Larrissa Icicle Attack Animation_17
+  - first:
+      213: -7000591388624225436
+    second: Larrissa Icicle Attack Animation_18
+  - first:
+      213: 3583243253332061090
+    second: Larrissa Icicle Attack Animation_19
+  - first:
+      213: 8512584563468714114
+    second: Larrissa Icicle Attack Animation_20
+  - first:
+      213: 8428012468264162036
+    second: Larrissa Icicle Attack Animation_21
+  - first:
+      213: -3132337599738195997
+    second: Larrissa Icicle Attack Animation_22
+  - first:
+      213: -6442291423570060790
+    second: Larrissa Icicle Attack Animation_23
+  - first:
+      213: 7924053467153784086
+    second: Larrissa Icicle Attack Animation_24
+  - first:
+      213: 4120163186697002759
+    second: Larrissa Icicle Attack Animation_25
+  - first:
+      213: -5374984512837021647
+    second: Larrissa Icicle Attack Animation_26
+  - first:
+      213: 8384063493589019622
+    second: Larrissa Icicle Attack Animation_27
+  - first:
+      213: -1374999302464655256
+    second: Larrissa Icicle Attack Animation_28
+  - first:
+      213: -2894249484547147578
+    second: Larrissa Icicle Attack Animation_29
+  - first:
+      213: -7295762213569420135
+    second: Larrissa Icicle Attack Animation_30
+  - first:
+      213: 5157953644006555978
+    second: Larrissa Icicle Attack Animation_31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Larrissa Icicle Attack Animation_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3999
+        width: 1000
+        height: 1333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e2f65e37becf1670800000000000000
+      internalID: 8511749107173749477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Larrissa Icicle Attack Animation_1
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3999
+        width: 1000
+        height: 1333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb484ec4accd2c260800000000000000
+      internalID: 7116493122630354111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Larrissa Icicle Attack Animation_2
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 3999
+        width: 1000
+        height: 1333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fbedfb0f64303b30800000000000000
+      internalID: 4264966498667064308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Larrissa Icicle Attack Animation_3
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3999
+        width: 1000
+        height: 1333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c435c9188281c39f0800000000000000
+      internalID: -487488097410591924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Larrissa Icicle Attack Animation_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2666
+        width: 1000
+        height: 1333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fbaab891105c4200800000000000000
+      internalID: 165595322812902390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Larrissa Icicle Attack Animation_5
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2666
+        width: 1000
+        height: 1333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9d1632f4bb5ac770800000000000000
+      internalID: 8631812468524850587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Larrissa Icicle Attack Animation_6
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2666
+        width: 1000
+        height: 1333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddadd933ee6f60300800000000000000
+      internalID: 218133134902680285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Larrissa Icicle Attack Animation_7
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2666
+        width: 1000
+        height: 1333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0c0dae9dd8487f60800000000000000
+      internalID: 8032250052102392846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Larrissa Icicle Attack Animation_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1333
+        width: 1000
+        height: 1333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb2c3311f5982c450800000000000000
+      internalID: 6107595086071317182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Larrissa Icicle Attack Animation_9
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1333
+        width: 1000
+        height: 1333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a0d7417d1606b380800000000000000
+      internalID: -8955964085455302495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Larrissa Icicle Attack Animation_10
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1333
+        width: 1000
+        height: 1333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ecb2af896326d440800000000000000
+      internalID: 4960190975883525344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Larrissa Icicle Attack Animation_11
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1333
+        width: 1000
+        height: 1333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e2ead129b94a9c90800000000000000
+      internalID: -7162331197893582109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Larrissa Icicle Attack Animation_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1000
+        height: 1333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e0d8ecfc319f8250800000000000000
+      internalID: 5949133323906896104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Larrissa Icicle Attack Animation_13
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 0
+        width: 1000
+        height: 1333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d22901fca08f85520800000000000000
+      internalID: 2691173502661202477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Larrissa Icicle Attack Animation_14
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 0
+        width: 1000
+        height: 1333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8908a9d221efcc400800000000000000
+      internalID: 345930625428652184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Larrissa Icicle Attack Animation_15
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 0
+        width: 1000
+        height: 1333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4db394549d9295500800000000000000
+      internalID: 385385256263957460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 7d6d67e168a1b6e45b0d9e986c7f62b6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":4.0,"y":4.0},"gridSpriteSize":{"x":1000.0,"y":1333.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Larrissa Icicle Attack Animation_0: 8511749107173749477
+      Larrissa Icicle Attack Animation_1: 7116493122630354111
+      Larrissa Icicle Attack Animation_10: 4960190975883525344
+      Larrissa Icicle Attack Animation_11: -7162331197893582109
+      Larrissa Icicle Attack Animation_12: 5949133323906896104
+      Larrissa Icicle Attack Animation_13: 2691173502661202477
+      Larrissa Icicle Attack Animation_14: 345930625428652184
+      Larrissa Icicle Attack Animation_15: 385385256263957460
+      Larrissa Icicle Attack Animation_2: 4264966498667064308
+      Larrissa Icicle Attack Animation_3: -487488097410591924
+      Larrissa Icicle Attack Animation_4: 165595322812902390
+      Larrissa Icicle Attack Animation_5: 8631812468524850587
+      Larrissa Icicle Attack Animation_6: 218133134902680285
+      Larrissa Icicle Attack Animation_7: 8032250052102392846
+      Larrissa Icicle Attack Animation_8: 6107595086071317182
+      Larrissa Icicle Attack Animation_9: -8955964085455302495
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
