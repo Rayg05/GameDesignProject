@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: DoubleJump
   m_EditorClassIdentifier: Assembly-CSharp::EquipmentData
   displayName: 
-  icon: {fileID: 3330681223243198311, guid: 7d96d777a0bae0645bf3a35ead3ca0a1, type: 3}
+  icon: {fileID: 756151848, guid: c749b56e062451f4b8a966cfcb38728a, type: 3}
   slotType: 2

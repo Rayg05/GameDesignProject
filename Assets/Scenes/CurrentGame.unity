@@ -262,6 +262,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 02fa3ec703aba52478452b2ade516dca, type: 2}
   - {fileID: 11400000, guid: 1d45c29cade6536498696b802ff8497e, type: 2}
   - {fileID: 11400000, guid: 5d318396791de7e4686a51f4068d50d8, type: 2}
+  - {fileID: 11400000, guid: a65180b267275c44cb5b0e9b79ba4373, type: 2}
+  - {fileID: 11400000, guid: 8669902dbe98191458b5f78d86ca63a0, type: 2}
 --- !u!1 &279110542
 GameObject:
   m_ObjectHideFlags: 0
@@ -982,6 +984,7 @@ MonoBehaviour:
   maxHP: 100
   regen: 1
   regenDelay: 5
+  damageMult: 1
 --- !u!95 &560135192
 Animator:
   serializedVersion: 7
@@ -1960,6 +1963,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::JabAttack
   jabWeapon: {fileID: 11400000, guid: 02fa3ec703aba52478452b2ade516dca, type: 2}
+--- !u!114 &853024812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853024805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 497841347458d5642a0605074a36f9be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Basic_Movement2
+  moveSpeed: 10
+  jumpForce: 20
+  groundCheck: {fileID: 2038348795}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  groundCheckRadius: 0.1
+  doubleJump: {fileID: 11400000, guid: a65180b267275c44cb5b0e9b79ba4373, type: 2}
 --- !u!1 &855161040
 GameObject:
   m_ObjectHideFlags: 0
@@ -4207,6 +4230,11 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!4 &2038348795 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7574830798867039685, guid: ad4af34d8d483a745bf3290c52f7b6be, type: 3}
+  m_PrefabInstance: {fileID: 6947062910680428145}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2140899000
 GameObject:
   m_ObjectHideFlags: 0
@@ -4328,7 +4356,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pluto
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 5325668105319428109, guid: ad4af34d8d483a745bf3290c52f7b6be, type: 3}
+      propertyPath: doubleJump
+      value: 
+      objectReference: {fileID: 11400000, guid: a65180b267275c44cb5b0e9b79ba4373, type: 2}
+    m_RemovedComponents:
+    - {fileID: 5325668105319428109, guid: ad4af34d8d483a745bf3290c52f7b6be, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8569775371850302, guid: ad4af34d8d483a745bf3290c52f7b6be, type: 3}
@@ -4344,6 +4377,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2399115592720631176, guid: ad4af34d8d483a745bf3290c52f7b6be, type: 3}
       insertIndex: -1
       addedObject: {fileID: 853024811}
+    - targetCorrespondingSourceObject: {fileID: 2399115592720631176, guid: ad4af34d8d483a745bf3290c52f7b6be, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 853024812}
   m_SourcePrefab: {fileID: 100100000, guid: ad4af34d8d483a745bf3290c52f7b6be, type: 3}
 --- !u!1001 &8772345134165883214
 PrefabInstance:
