@@ -1,9 +1,58 @@
-:root {
+/* All art is authored on a 1920x1080 canvas, so positions are percentages of that frame. */
+
+.menu-root {
+    flex-grow: 1;
+    background-color: rgb(7, 3, 36);
 }
 
-.header {
+.menu-layer {
+    position: absolute;
+    left: 0;
     top: 0;
+    right: 0;
+    bottom: 0;
 }
 
-.buttton {
+.menu-background {
+    background-image: url("project://database/Assets/Sprites/UI/Main%20menu/menubg.png?fileID=2800000&guid=26d4a2cb6df71314c99911e0525e5ac7&type=3#menubg");
+    -unity-background-scale-mode: scale-and-crop;
+}
+
+.menu-title {
+    background-image: url("project://database/Assets/Sprites/UI/Main%20menu/title.png?fileID=2800000&guid=70bea683c99057149817eb9676b82a67&type=3#title");
+    -unity-background-scale-mode: stretch-to-fill;
+}
+
+/* play_0 slice: x 1633, y 257 (from bottom), 287x203 on the 1920x1080 sheet */
+.play-button {
+    position: absolute;
+    left: 85.05%;
+    top: 57.41%;
+    width: 14.95%;
+    height: 18.8%;
+    margin: 0;
+    padding: 0;
+    border-width: 0;
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("project://database/Assets/Sprites/UI/Main%20menu/play.png?fileID=3794550611322748858&guid=bc6225436303a644a95d6264488ea65c&type=3#play_0");
+    -unity-background-scale-mode: stretch-to-fill;
+    transform-origin: right;
+    transition-property: scale, -unity-background-image-tint-color;
+    transition-duration: 0.12s;
+}
+
+.play-button:hover {
+    background-color: rgba(0, 0, 0, 0);
+    scale: 1.08 1.08;
+}
+
+.play-button:active {
+    background-color: rgba(0, 0, 0, 0);
+    scale: 1.02 1.02;
+    -unity-background-image-tint-color: rgb(200, 235, 240);
+}
+
+.play-button:focus {
+    background-color: rgba(0, 0, 0, 0);
 }

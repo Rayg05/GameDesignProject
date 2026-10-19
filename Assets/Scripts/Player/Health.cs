@@ -8,7 +8,8 @@ public class Health : MonoBehaviour
     [SerializeField] private float regen = 1f;       // base regen per second
     [SerializeField] private float regenDelay = 5f;  // delay after damage before regen starts
 
-    public event Action<float, float> HealthChanged; 
+    public event Action<float, float> HealthChanged;
+    public event Action<float> Healed; // fired before HealthChanged for discrete heals (not regen)
     public float Current => health;
     public float Max => maxHP;
 
@@ -40,6 +41,18 @@ public class Health : MonoBehaviour
             return;
         }
         OnTakeDamage();
+    }
+
+    public void Heal(float amount)
+    {
+        if (amount <= 0f || health >= maxHP) return;
+
+        float before = health;
+        health = Mathf.Min(health + amount, maxHP);
+        if (health >= maxHP) needsRegen = false;
+
+        Healed?.Invoke(health - before);
+        HealthChanged?.Invoke(health, maxHP);
     }
 
     private void Regenerate()

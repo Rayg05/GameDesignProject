@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: 2xRegenAbility
   m_EditorClassIdentifier: Assembly-CSharp::EquipmentData
   displayName: 
-  icon: {fileID: 8938707657970751806, guid: c1cfaa832d5124f4291b9b3d9597650c, type: 3}
+  icon: {fileID: 1475863190240918629, guid: 34cdc7f3b2503ec47a661682ead86472, type: 3}
   slotType: 2
