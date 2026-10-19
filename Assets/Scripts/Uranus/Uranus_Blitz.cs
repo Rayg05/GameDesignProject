@@ -1,0 +1,74 @@
+using UnityEngine;
+
+public class Uranus_Blitz : IState
+{
+    readonly Boss uranus;
+    readonly float rEX;
+    readonly float lEX;
+    readonly GameObject hitbox;
+
+    float targetX;
+    float curY;
+    float startTime;
+
+    float uranusSpd = 35f;
+    float duration = 8f;   // total time spent blitzing
+
+    readonly Animator animator;
+
+    public Uranus_Blitz(Boss boss)
+    {
+        uranus = boss;
+        rEX = uranus.rightEdgeX;
+        lEX = uranus.leftEdgeX;
+
+        Transform hb = uranus.transform.Find("Hitbox");
+        hitbox = hb != null ? hb.gameObject : null;
+        if (hitbox == null)
+            Debug.LogWarning("Uranus has no child named 'Hitbox'. Blitz won't deal damage.");
+
+        animator = uranus.GetComponent<Animator>();
+    }
+
+    public void Enter()
+    {
+        Debug.Log("Entering Uranus_Blitz.");
+        startTime = Time.time;
+        curY = uranus.transform.position.y;
+        if (hitbox != null) hitbox.SetActive(true);
+
+        //start by dashing to whichever edge is farther away.
+        float x = uranus.transform.position.x;
+        targetX = Mathf.Abs(x - rEX) > Mathf.Abs(x - lEX) ? rEX : lEX;
+        animator.SetBool("Blitz", true);
+    }
+
+    public void Execute()
+    {
+        // stop and move to next state
+        if (Time.time - startTime >= duration)
+        {
+            uranus.ChooseNextState(this);
+            return;
+        }
+
+        uranus.FaceTarget();
+
+        // Move toward the current edge.
+        Vector3 pos = uranus.transform.position;
+        pos.x = Mathf.MoveTowards(pos.x, targetX, uranusSpd * Time.deltaTime);
+        pos.y = curY;
+        uranus.transform.position = pos;
+
+        //when arrived flip to opposed edge
+        if (Mathf.Approximately(pos.x, targetX))
+            targetX = (targetX == rEX) ? lEX : rEX;
+    }
+
+    public void Exit()
+    {
+        animator.SetBool("Blitz", false);
+        if (hitbox != null) hitbox.SetActive(false);
+        Debug.Log("Exiting Uranus_Blitz.");
+    }
+}

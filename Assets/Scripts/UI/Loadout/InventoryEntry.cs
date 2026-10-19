@@ -13,6 +13,7 @@ public class InventoryEntry : MonoBehaviour
     public void Setup(EquipmentData data, bool isEquipped, Action<EquipmentData> onClick)
     {
         icon.sprite = data.icon;
+        icon.preserveAspect = true;
         icon.enabled = data.icon != null;
 
         equippedMarker.SetActive(isEquipped);

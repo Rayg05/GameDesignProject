@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: StrengthItem
   m_EditorClassIdentifier: Assembly-CSharp::EquipmentData
   displayName: 
-  icon: {fileID: 21300000, guid: 9e3850ff9c22c0949954069e855a2a44, type: 3}
+  icon: {fileID: 12085813604639031, guid: ccf6302d5e7e87c4ba6d56d938b6c07b, type: 3}
   slotType: 1
