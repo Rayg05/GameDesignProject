@@ -9,7 +9,7 @@ public class Larissa_Dash : IState {
     float larissaDir;
     float larissaSpd = 0.1f;
     bool dashing = false;
-
+    readonly Animator animator;
     Collider2D hitbox;
 
     public Larissa_Dash(Boss boss) { 
@@ -17,9 +17,11 @@ public class Larissa_Dash : IState {
         rEX = larissa.rightEdgeX;
         lEX = larissa.leftEdgeX;
         curY = larissa.transform.position.y;
+        animator = larissa.GetComponent<Animator>();
     }
 
     public void Enter() {
+        animator.SetBool("Dash", true);
         // Activate hitbox child.
         larissa.transform.Find("Hitbox").gameObject.SetActive(true);
         Debug.Log("Entering Larissa_Dash.");
@@ -48,6 +50,7 @@ public class Larissa_Dash : IState {
     }
 
     public void Exit() {
+        animator.SetBool("Dash", false);
         larissa.transform.Find("Hitbox").gameObject.SetActive(false);
         dashing = false;
         Debug.Log("Exiting Larissa_Dash.");

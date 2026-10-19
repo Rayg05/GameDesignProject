@@ -13,6 +13,13 @@ public class NPC : MonoBehaviour, Interactable
     private int dialogueIndex;
     private bool isTyping, isDialogueActive;
 
+    void Start()
+    {
+        // Make sure the panel starts hidden even if it was left active in the scene
+        if (dialoguePanel != null)
+            dialoguePanel.SetActive(false);
+    }
+
     public bool canInteract()
     {
         return !isDialogueActive;
@@ -39,7 +46,7 @@ public class NPC : MonoBehaviour, Interactable
         isDialogueActive = true;
         dialogueIndex = 0;
 
-        nameText.SetText(dialogueData.name);
+        nameText.SetText(dialogueData.npcName);
         portraitImage.sprite = dialogueData.npcPortrait;
 
         dialoguePanel.SetActive(true);
@@ -64,7 +71,7 @@ public class NPC : MonoBehaviour, Interactable
         }
         else
         {
-            //EndDialogue
+            EndDialogue();
         }
     }
 
@@ -80,6 +87,13 @@ public class NPC : MonoBehaviour, Interactable
 
         isTyping = false;
 
+    }
+
+    public void endInteraction()
+    {
+        // Force the box closed if the player walks away mid-conversation
+        if (isDialogueActive)
+            EndDialogue();
     }
 
     public void EndDialogue()
