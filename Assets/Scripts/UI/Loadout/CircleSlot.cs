@@ -29,6 +29,7 @@ public class CircleSlot : MonoBehaviour
     {
         bool hasIcon = data != null && data.icon != null;
         iconImage.sprite = hasIcon ? data.icon : null;
+        iconImage.preserveAspect = true;
         iconImage.enabled = hasIcon;
     }
 }
