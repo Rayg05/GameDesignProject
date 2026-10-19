@@ -20,6 +20,13 @@ public class PlanetSelection : MonoBehaviour
     private int targetY = 0;
     Vector3 targetPos;
 
+    private void OnEnable() {
+        // Stop following the player and point the camera at the menu.
+        maincam.GetComponent<CameraFollow>().enabled = false;
+        Vector3 menuPos = selectionScreen.transform.position;
+        maincam.transform.position = new Vector3(menuPos.x, menuPos.y, maincam.transform.position.z);
+    }
+
     void Start() {
         // Get the number of planets.
         numPlanets = planetPositions.Length;
@@ -57,10 +64,16 @@ public class PlanetSelection : MonoBehaviour
             // GO TO ROOM HERE.
         }
 
-        // Exit out of telescope screen.
-        if(Input.GetKeyDown(KeyCode.Escape)) {
+        // Exit out of telescope screen (E toggles it closed, Escape also works).
+        bool togglePressed = Input.GetKeyDown(KeyCode.E) && Time.frameCount != Telescope.lastToggleFrame;
+        if(togglePressed || Input.GetKeyDown(KeyCode.Escape)) {
+            Telescope.lastToggleFrame = Time.frameCount;
             player.SetActive(true);
             selectionScreen.SetActive(false);
+            // Go back to following the player.
+            CameraFollow follow = maincam.GetComponent<CameraFollow>();
+            follow.enabled = true;
+            follow.SnapToTarget();
             gameObject.SetActive(false);
         }
 

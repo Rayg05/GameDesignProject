@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPCDialogue
   npcName: Neptune
   npcPortrait: {fileID: 0}
-  diaougueLines:
+  dialogueLines:
   - Why hello there Pluto
   - How may I be of assisstance?
   typingSpeed: 0.05
