@@ -11,5 +11,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CurrentGame.unity
     guid: aa5d2503431070f4084f5d12bd33a74f
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 3b35d09a75b8c1641a4f281e324ef0e3
+  - enabled: 1
+    path: Assets/Scenes/HubWorld.unity
+    guid: 08bcc540e14661f4794efeb19ed68f66
   m_configObjects:
     com.unity.dt.app-ui: {fileID: 11400000, guid: 1b1c20d82303e4b5781c3ef50ac1449f, type: 2}
