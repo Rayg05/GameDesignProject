@@ -1,6 +1,5 @@
 using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class PlanetSelection : MonoBehaviour
 {
@@ -61,19 +60,19 @@ public class PlanetSelection : MonoBehaviour
          *          SCENES MUST BE IN YOUR CURRENT BUILD PROFILE.
          *          THEY DO NOT SAVE OVER GITHUB. THEY ARE PER-DEVICE.
          */
-        if(Input.GetKeyDown(KeyCode.Return)) {
+        if(!SceneFader.IsTransitioning && Input.GetKeyDown(KeyCode.Return)) {
             // Clean up current scene here.
 
             // Create name of scene ([Planet]Boss)
             string sceneName = planetNames[targetX] + "Boss";
             
             // GO TO ROOM HERE.
-            SceneManager.LoadScene(sceneName);
+            SceneFader.LoadScene(sceneName);
         }
 
         // Exit out of telescope screen (E toggles it closed, Escape also works).
         bool togglePressed = Input.GetKeyDown(KeyCode.E) && Time.frameCount != Telescope.lastToggleFrame;
-        if(togglePressed || Input.GetKeyDown(KeyCode.Escape)) {
+        if(!SceneFader.IsTransitioning && (togglePressed || Input.GetKeyDown(KeyCode.Escape))) {
             Telescope.lastToggleFrame = Time.frameCount;
             player.SetActive(true);
             selectionScreen.SetActive(false);

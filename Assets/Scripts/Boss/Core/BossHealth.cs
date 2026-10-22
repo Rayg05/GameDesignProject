@@ -8,11 +8,16 @@ public class BossHealth : MonoBehaviour {
     private float itimer = 0.0f;
     private float imax = 1.0f; // Amount of time the boss will be invincible.
 
+    [Header("After Defeat")]
+    [SerializeField] private string returnSceneName = "HubWorld";
+    [SerializeField] private float returnDelay = 5f;
+
     public void Damage(float amount) {
         if(invincible) { return; }
         // Deal damage if not invincible.
         health -= amount;
         if (health <= 0) {
+            SceneFader.LoadScene(returnSceneName, returnDelay);
             Destroy(gameObject);
             return;
         }

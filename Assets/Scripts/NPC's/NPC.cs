@@ -13,6 +13,11 @@ public class NPC : MonoBehaviour, Interactable
     private int dialogueIndex;
     private bool isTyping, isDialogueActive;
 
+    void Awake()
+    {
+        InteractPrompt.GetOrAdd(gameObject, "SPEAK");
+    }
+
     void Start()
     {
         // Make sure the panel starts hidden even if it was left active in the scene
