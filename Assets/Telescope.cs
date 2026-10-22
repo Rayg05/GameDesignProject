@@ -16,8 +16,6 @@ public class Telescope : MonoBehaviour
             player.SetActive(false);
             selectionScreen.SetActive(true);
             selectionObj.SetActive(true);
-            // Open the planet selection screen.
-            Debug.Log("Open!");
         }
     }
 
