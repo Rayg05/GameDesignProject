@@ -3,21 +3,12 @@ using UnityEngine;
 public class SpearArea : MonoBehaviour
 {
     [SerializeField] public int damage = 3;
-    
-    private void OnTriggerEnter2D(Collider2D collider)
-    {
-         BossHealth bossHealth = collider.GetComponentInParent<BossHealth>();
-        if (bossHealth != null)
-        {
-            bossHealth.Damage(damage);
-            return;
-        }
+    [SerializeField] public int bonusDamage = 3;
+    [SerializeField] public BoxCollider2D tip;
 
-        Health health = collider.GetComponent<Health>();
-        if (health != null)
-        {
-            health.Damage(damage);
-            return;
-        }
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        BossHealth bosshealth = collision.GetComponentInParent<BossHealth>();
     }
+
 }
