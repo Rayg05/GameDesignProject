@@ -18,6 +18,10 @@ public class BossHealth : MonoBehaviour
     private bool needsRegen = false;
     private bool regenAllowed => Time.time > startRegenTime;
 
+    [Header("After Defeat")]
+    [SerializeField] private string returnSceneName = "HubWorld";
+    [SerializeField] private float returnDelay = 5f;
+
     private void OnTakeDamage()
     {
         needsRegen = true;
@@ -32,6 +36,7 @@ public class BossHealth : MonoBehaviour
         HealthChanged?.Invoke(Mathf.Max(health, 0f), maxHP);
         if (health <= 0)
         {
+            SceneFader.LoadScene(returnSceneName, returnDelay);
             Destroy(gameObject);
             return;
         }

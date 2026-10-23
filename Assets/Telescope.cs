@@ -8,6 +8,11 @@ public class Telescope : MonoBehaviour
     private bool inRange = false;
     // Frame the menu was last opened/closed, so one E press can't both open and close it.
     public static int lastToggleFrame = -1;
+    private InteractPrompt prompt;
+
+    private void Awake() {
+        prompt = InteractPrompt.GetOrAdd(gameObject, "USE");
+    }
 
     private void Update() {
         // When the player is inside the telescope trigger, they can press E to open the menu.
@@ -16,9 +21,9 @@ public class Telescope : MonoBehaviour
             player.SetActive(false);
             selectionScreen.SetActive(true);
             selectionObj.SetActive(true);
-            // Open the planet selection screen.
-            Debug.Log("Open!");
         }
+
+        prompt.SetVisible(inRange && player.activeSelf);
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {

@@ -3,16 +3,11 @@ using UnityEngine;
 
 public class PlanetSelection : MonoBehaviour
 {
-    [SerializeField]
-    private Transform[] planetPositions;
-    [SerializeField]
-    private GameObject maincam;
-    [SerializeField]
-    private TextMeshProUGUI tmp;
-    [SerializeField]
-    private GameObject selectionScreen;
-    [SerializeField]
-    private GameObject player;
+    [SerializeField] private Transform[] planetPositions;
+    [SerializeField] private GameObject maincam;
+    [SerializeField] private TextMeshProUGUI tmp;
+    [SerializeField] private GameObject selectionScreen;
+    [SerializeField] private GameObject player;
 
     private string[] planetNames = { "Neptune", "Uranus", "Saturn", "Jupiter", "Other" };
     private int numPlanets;
@@ -60,13 +55,24 @@ public class PlanetSelection : MonoBehaviour
 
 
         // Check for selection.
-        if(Input.GetKeyDown(KeyCode.Return)) {
+        /*
+         *                          IMPORTANT NOTE:
+         *          SCENES MUST BE IN YOUR CURRENT BUILD PROFILE.
+         *          THEY DO NOT SAVE OVER GITHUB. THEY ARE PER-DEVICE.
+         */
+        if(!SceneFader.IsTransitioning && Input.GetKeyDown(KeyCode.Return)) {
+            // Clean up current scene here.
+
+            // Create name of scene ([Planet]Boss)
+            string sceneName = planetNames[targetX] + "Boss";
+            
             // GO TO ROOM HERE.
+            SceneFader.LoadScene(sceneName);
         }
 
         // Exit out of telescope screen (E toggles it closed, Escape also works).
         bool togglePressed = Input.GetKeyDown(KeyCode.E) && Time.frameCount != Telescope.lastToggleFrame;
-        if(togglePressed || Input.GetKeyDown(KeyCode.Escape)) {
+        if(!SceneFader.IsTransitioning && (togglePressed || Input.GetKeyDown(KeyCode.Escape))) {
             Telescope.lastToggleFrame = Time.frameCount;
             player.SetActive(true);
             selectionScreen.SetActive(false);
