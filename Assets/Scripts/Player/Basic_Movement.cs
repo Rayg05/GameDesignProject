@@ -16,6 +16,7 @@ public class Basic_Movement : MonoBehaviour
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private float groundCheckRadius = 0.1f;
+    [SerializeField] public EquipmentData doubleJump;
     private float timeToJump = .7f;
     private float timeToFall = .2f;
     private bool jumping = false;
@@ -23,6 +24,8 @@ public class Basic_Movement : MonoBehaviour
     private float jump_timer = 0f;
     private float fall_timer = 0f;
     private bool isGrounded;
+    private int maxJump;
+    private int jumpCount = 0;
 
     void Start()
     {
@@ -64,11 +67,18 @@ public class Basic_Movement : MonoBehaviour
 
 
         rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
+        if(isGrounded)
+        {
+            jumpCount = 0;
+        }
 
         // jump added with isGrounded check to prevent double jump
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        maxJump = Loadout.IsEquipped(doubleJump) ? 1 : 0;
+
+        if (Input.GetKeyDown(KeyCode.Space) && (isGrounded || jumpCount < maxJump))
         {
             Jumping();
+            jumpCount++;
         }
 
         if (jumping)
@@ -100,6 +110,7 @@ public class Basic_Movement : MonoBehaviour
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f); // reset vertical velocity
         rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         jumping = true;
+       
     }
     void FixedUpdate()
     {

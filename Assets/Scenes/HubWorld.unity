@@ -2095,10 +2095,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1224198806}
   - component: {fileID: 1224198805}
-  - component: {fileID: 1224198804}
   - component: {fileID: 1224198803}
   - component: {fileID: 1224198802}
   - component: {fileID: 1224198801}
+  - component: {fileID: 1224198807}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2201,25 +2201,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &1224198804
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1224198800}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06e4f39c886af1a49b30b0c797dc00a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Basic_Movement
-  moveSpeed: 10
-  jumpForce: 15
-  groundCheck: {fileID: 473451144}
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  groundCheckRadius: 0.1
 --- !u!212 &1224198805
 SpriteRenderer:
   serializedVersion: 3
@@ -2297,6 +2278,26 @@ Transform:
   - {fileID: 859712304}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1224198807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224198800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 497841347458d5642a0605074a36f9be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Basic_Movement2
+  moveSpeed: 10
+  jumpForce: 20
+  groundCheck: {fileID: 473451144}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  groundCheckRadius: 0.1
+  doubleJump: {fileID: 0}
 --- !u!1 &1574815057
 GameObject:
   m_ObjectHideFlags: 0
