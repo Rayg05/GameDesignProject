@@ -473,7 +473,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3362985842116335182, guid: f6956f6437a4a784f8d303eed4fb5ff1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 584824738}
   m_SourcePrefab: {fileID: 100100000, guid: f6956f6437a4a784f8d303eed4fb5ff1, type: 3}
 --- !u!1 &287960857
 GameObject:
@@ -801,6 +804,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2399115592720631176, guid: ad4af34d8d483a745bf3290c52f7b6be, type: 3}
       insertIndex: -1
       addedObject: {fileID: 493244542}
+    - targetCorrespondingSourceObject: {fileID: 2399115592720631176, guid: ad4af34d8d483a745bf3290c52f7b6be, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 493244547}
   m_SourcePrefab: {fileID: 100100000, guid: ad4af34d8d483a745bf3290c52f7b6be, type: 3}
 --- !u!1 &493244525 stripped
 GameObject:
@@ -901,11 +907,62 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Spear
   spear: {fileID: 11400000, guid: 2a2c4ddd268f7d94f8b0d8cf9bfee0c3, type: 2}
+--- !u!114 &493244547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493244525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cedee4f59e9896e45b3cac7535976ad0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DefenseUp
+  health: {fileID: 493244540}
+  defenseUp: {fileID: 11400000, guid: 8669902dbe98191458b5f78d86ca63a0, type: 2}
+  usages: 3
+  buffDuration: 10
+  cooldownDuration: 10
+--- !u!1 &584824732 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3362985842116335182, guid: f6956f6437a4a784f8d303eed4fb5ff1, type: 3}
+  m_PrefabInstance: {fileID: 281409263}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &584824733 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8813358092592181117, guid: f6956f6437a4a784f8d303eed4fb5ff1, type: 3}
   m_PrefabInstance: {fileID: 281409263}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &584824735 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7421237650350021927, guid: f6956f6437a4a784f8d303eed4fb5ff1, type: 3}
+  m_PrefabInstance: {fileID: 281409263}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 584824732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad9e558600e978a4e8484e938b7e4dbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::JabAttackArea
+--- !u!114 &584824738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 584824732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c6dbb8f1709e2a4c828d9c9f366c579, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StrengthItem
+  jabAttack: {fileID: 584824735}
+  strengthBonus: 3
+  buffDuration: 10
+  cooldownDuration: 10
+  usages: 3
+  strengthItem: {fileID: 11400000, guid: 1d45c29cade6536498696b802ff8497e, type: 2}
 --- !u!1 &756253387
 GameObject:
   m_ObjectHideFlags: 0
@@ -1173,7 +1230,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3362985842116335182, guid: f6956f6437a4a784f8d303eed4fb5ff1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1720588787}
   m_SourcePrefab: {fileID: 100100000, guid: f6956f6437a4a784f8d303eed4fb5ff1, type: 3}
 --- !u!1 &1205231235
 GameObject:
@@ -1607,11 +1667,45 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1720588781 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3362985842116335182, guid: f6956f6437a4a784f8d303eed4fb5ff1, type: 3}
+  m_PrefabInstance: {fileID: 864948681}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1720588782 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8813358092592181117, guid: f6956f6437a4a784f8d303eed4fb5ff1, type: 3}
   m_PrefabInstance: {fileID: 864948681}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1720588784 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7421237650350021927, guid: f6956f6437a4a784f8d303eed4fb5ff1, type: 3}
+  m_PrefabInstance: {fileID: 864948681}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720588781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad9e558600e978a4e8484e938b7e4dbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::JabAttackArea
+--- !u!114 &1720588787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720588781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c6dbb8f1709e2a4c828d9c9f366c579, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StrengthItem
+  jabAttack: {fileID: 1720588784}
+  strengthBonus: 3
+  buffDuration: 10
+  cooldownDuration: 10
+  usages: 3
+  strengthItem: {fileID: 11400000, guid: 1d45c29cade6536498696b802ff8497e, type: 2}
 --- !u!1001 &1915432517
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2183,13 +2277,50 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3846351381302293390, guid: e40efc124c086634ebc0fc2d50be45dd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8813358091708878514}
   m_SourcePrefab: {fileID: 100100000, guid: e40efc124c086634ebc0fc2d50be45dd, type: 3}
+--- !u!1 &3362985843153778562 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3846351381302293390, guid: e40efc124c086634ebc0fc2d50be45dd, type: 3}
+  m_PrefabInstance: {fileID: 1454098985822111720}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7421237649345887467 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1254616049069694643, guid: e40efc124c086634ebc0fc2d50be45dd, type: 3}
+  m_PrefabInstance: {fileID: 1454098985822111720}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3362985843153778562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad9e558600e978a4e8484e938b7e4dbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::JabAttackArea
 --- !u!4 &8813358091708878513 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2915959572208161449, guid: e40efc124c086634ebc0fc2d50be45dd, type: 3}
   m_PrefabInstance: {fileID: 1454098985822111720}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8813358091708878514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3362985843153778562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c6dbb8f1709e2a4c828d9c9f366c579, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StrengthItem
+  jabAttack: {fileID: 7421237649345887467}
+  strengthBonus: 3
+  buffDuration: 10
+  cooldownDuration: 10
+  usages: 3
+  strengthItem: {fileID: 11400000, guid: 1d45c29cade6536498696b802ff8497e, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
