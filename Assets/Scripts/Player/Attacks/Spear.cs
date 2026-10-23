@@ -8,19 +8,16 @@ public class Spear : MonoBehaviour
     Animator attack_Up_Effect_Animation; // Up hitbox's animator
     Animator attack_Down_Effect_Animation; // Up hitbox's animator
 
-     private GameObject attackArea = default;       // side hitbox
+    private GameObject attackArea = default;       // side hitbox
     private Collider2D attackAreaCollider;
-    private Collider2D attackBonusCollider;
     private SpriteRenderer attackAreaRenderer;
 
     private GameObject upAttackArea = default;      // up hitbox
     private Collider2D upAttackAreaCollider;
-    private Collider2D upAttackBonusCollider;
     private SpriteRenderer upAttackAreaRenderer;
 
     private GameObject downAttackArea = default;      // down hitbox
     private Collider2D downAttackAreaCollider;
-    private Collider2D downAttackBonusCollider;
     private SpriteRenderer downAttackAreaRenderer;
 
     private bool attacking = false;
@@ -29,24 +26,21 @@ public class Spear : MonoBehaviour
 
     void Start()
     {
-        attack_Animation  = GetComponent<Animator>();
+        attack_Animation = GetComponent<Animator>();
 
         attackArea = transform.GetChild(4).gameObject;
         attack_Effect_Animation = attackArea.GetComponent<Animator>();
-        attackAreaCollider = attackArea.GetComponent<PolygonCollider2D>();
-        attackBonusCollider = attackArea.GetComponent<BoxCollider2D>();
+        attackAreaCollider = attackArea.GetComponent<Collider2D>();
         attackAreaRenderer = attackArea.GetComponent<SpriteRenderer>();
 
         upAttackArea = transform.GetChild(5).gameObject;
         attack_Up_Effect_Animation = upAttackArea.GetComponent<Animator>();
-        upAttackAreaCollider = upAttackArea.GetComponent<PolygonCollider2D>();
-        upAttackBonusCollider =  upAttackArea.GetComponent<BoxCollider2D>();
+        upAttackAreaCollider = upAttackArea.GetComponent<Collider2D>();
         upAttackAreaRenderer = upAttackArea.GetComponent<SpriteRenderer>();
 
         downAttackArea = transform.GetChild(6).gameObject;
         attack_Down_Effect_Animation = downAttackArea.GetComponent<Animator>();
-        downAttackAreaCollider = downAttackArea.GetComponent<PolygonCollider2D>();
-        downAttackBonusCollider = downAttackArea.GetComponent<BoxCollider2D>();
+        downAttackAreaCollider = downAttackArea.GetComponent<Collider2D>();
         downAttackAreaRenderer = downAttackArea.GetComponent<SpriteRenderer>();
 
         attack_Animation.SetBool("Attack", false);
@@ -56,34 +50,31 @@ public class Spear : MonoBehaviour
         attack_Up_Effect_Animation.SetBool("Press_Up_Attack", false);
         attack_Down_Effect_Animation.SetBool("Press_Down_Attack", false);
 
+        // Keep both hitbox objects active always � just start with visuals/hitboxes off
         attackArea.SetActive(true);
         attackAreaCollider.enabled = false;
-        attackBonusCollider.enabled = false;
         attackAreaRenderer.enabled = false;
 
         upAttackArea.SetActive(true);
         upAttackAreaCollider.enabled = false;
-        upAttackBonusCollider.enabled = false;
         upAttackAreaRenderer.enabled = false;
 
         downAttackArea.SetActive(true);
         downAttackAreaCollider.enabled = false;
-        downAttackBonusCollider.enabled =false;
         downAttackAreaRenderer.enabled = false;
     }
 
-    private void Update()
+    void Update()
     {
-        if(Input.GetMouseButton(0) && !attacking && Loadout.IsEquipped(spear) && Time.timeScale > 0f)
+        if (Input.GetMouseButton(0) && !attacking && Loadout.IsEquipped(spear) && Time.timeScale > 0f)
         {
             Attack();
         }
 
-        if(attacking)
+        if (attacking)
         {
             timer += Time.deltaTime;
-
-            if(timer >= timeToAttack)
+            if (timer >= timeToAttack)
             {
                 attack_Animation.SetBool("Attack", false);
                 attack_Animation.SetBool("Attack_Up", false);
@@ -95,15 +86,12 @@ public class Spear : MonoBehaviour
                 attacking = false;
 
                 attackAreaCollider.enabled = false;
-                attackBonusCollider.enabled = false;
                 attackAreaRenderer.enabled = false;
 
                 upAttackAreaCollider.enabled = false;
-                upAttackBonusCollider.enabled = false;
                 upAttackAreaRenderer.enabled = false;
 
                 downAttackAreaCollider.enabled = false;
-                downAttackBonusCollider.enabled = false;
                 downAttackAreaRenderer.enabled = false;
             }
         }
@@ -111,35 +99,39 @@ public class Spear : MonoBehaviour
 
     private void Attack()
     {
-        if(Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.W))
         {
+            //Debug.Log("Up attack branch hit");
             attack_Animation.SetBool("Attack_Up", true);
             attack_Up_Effect_Animation.SetBool("Press_Up_Attack", true);
 
+            Debug.Log("This is the spear");
+
+
             upAttackAreaCollider.enabled = true;
-            upAttackBonusCollider.enabled = true;
             upAttackAreaRenderer.enabled = true;
         }
-
         if (Input.GetKey(KeyCode.S))
         {
+            //Debug.Log("Up attack branch hit");
             attack_Animation.SetBool("Attack_Down", true);
             attack_Down_Effect_Animation.SetBool("Press_Down_Attack", true);
-            
+
+            Debug.Log("This is the spear");
+
             downAttackAreaCollider.enabled = true;
-            downAttackBonusCollider.enabled = true;
             downAttackAreaRenderer.enabled = true;
         }
-        if(!Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.W))
+        if (!Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.W))
         {
             attack_Animation.SetBool("Attack", true);
             attack_Effect_Animation.SetBool("Press_Attack", true);
+            Debug.Log("This is the spear");
 
             attackAreaCollider.enabled = true;
-            attackBonusCollider.enabled = true;
             attackAreaRenderer.enabled = true;
         }
+
         attacking = true;
     }
-
 }
