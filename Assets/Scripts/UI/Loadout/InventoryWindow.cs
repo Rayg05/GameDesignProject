@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -14,6 +15,10 @@ public class InventoryWindow : MonoBehaviour
 
     private InventoryEntry[][] entries;
     private bool isOpen;
+
+    // HUD key prompts listen to this so they hide behind the open inventory
+    public static bool IsOpen { get; private set; }
+    public static event Action<bool> OpenChanged;
 
     private void Awake()
     {
@@ -40,7 +45,11 @@ public class InventoryWindow : MonoBehaviour
     {
         hud.InventoryToggled -= Toggle;
         Loadout.Changed -= OnLoadoutChanged;
-        if (isOpen) Time.timeScale = 1f;
+        if (isOpen)
+        {
+            Time.timeScale = 1f;
+            SetStaticOpen(false);
+        }
     }
 
     private void Update()
@@ -57,7 +66,15 @@ public class InventoryWindow : MonoBehaviour
         isOpen = open;
         panel.SetActive(open);
         Time.timeScale = open ? 0f : 1f;
+        SetStaticOpen(open);
         if (open) Refresh();
+    }
+
+    private static void SetStaticOpen(bool open)
+    {
+        if (IsOpen == open) return;
+        IsOpen = open;
+        OpenChanged?.Invoke(open);
     }
 
     // fills each row according to what kind of equipment it is and leaves whatever left as blank

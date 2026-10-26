@@ -6,6 +6,13 @@ using UnityEngine.UI;
 public class KeybindLabel : MonoBehaviour
 {
     private TextMeshProUGUI keyText;
+    private bool hasKey;
+
+    // subscribed for the badge's whole life since hiding it deactivates the object
+    private void Awake() => InventoryWindow.OpenChanged += OnInventoryOpenChanged;
+    private void OnDestroy() => InventoryWindow.OpenChanged -= OnInventoryOpenChanged;
+
+    private void OnInventoryOpenChanged(bool open) => UpdateVisible();
 
     public static KeybindLabel Create(RectTransform target, string key)
     {
@@ -58,6 +65,13 @@ public class KeybindLabel : MonoBehaviour
     public void SetKey(string key)
     {
         keyText.text = key;
-        gameObject.SetActive(!string.IsNullOrEmpty(key));
+        hasKey = !string.IsNullOrEmpty(key);
+        UpdateVisible();
+    }
+
+    // also hidden while the inventory is open so it doesn't show through it
+    private void UpdateVisible()
+    {
+        gameObject.SetActive(hasKey && !InventoryWindow.IsOpen);
     }
 }

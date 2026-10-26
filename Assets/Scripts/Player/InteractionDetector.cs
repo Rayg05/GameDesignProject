@@ -15,13 +15,17 @@ public class InteractionDetector : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && !InventoryWindow.IsOpen)
         {
             interactableInRange?.interact();
         }
 
         if (promptInRange != null)
             promptInRange.SetVisible(interactableInRange != null && interactableInRange.canInteract());
+
+        // the player's E icon also hides behind the open inventory
+        if (interactionIcon != null)
+            interactionIcon.SetActive(interactableInRange != null && !InventoryWindow.IsOpen);
     }
 
     // Kept for a PlayerInput "Interact" action if we switch to the new Input System
