@@ -703,8 +703,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7afad2071a6a4304abeea64d12673f59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossHealth
-  health: 10
-  maxHP: 10
+  health: 36
+  maxHP: 36
   regen: 1
   regenDelay: 5
   invincible: 0
@@ -726,7 +726,10 @@ MonoBehaviour:
   target: {fileID: 493244526}
   leftEdgeX: -40
   rightEdgeX: 40
+  contactDamage: 5
   projectile: {fileID: 0}
+  projectileDamage: 15
+  dashDamage: 35
 --- !u!1 &1507829121
 GameObject:
   m_ObjectHideFlags: 0

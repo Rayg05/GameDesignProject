@@ -1,7 +1,7 @@
 using UnityEngine;
 
 public class Larissa_Dash : IState {
-    Boss larissa;
+    Larissa_Boss larissa;
     float rEX;
     float lEX;
     float targetX;
@@ -12,7 +12,7 @@ public class Larissa_Dash : IState {
     readonly Animator animator;
     Collider2D hitbox;
 
-    public Larissa_Dash(Boss boss) { 
+    public Larissa_Dash(Larissa_Boss boss) { 
         larissa = boss;
         rEX = larissa.rightEdgeX;
         lEX = larissa.leftEdgeX;
@@ -23,7 +23,11 @@ public class Larissa_Dash : IState {
     public void Enter() {
         animator.SetBool("Dash", true);
         // Activate hitbox child.
-        larissa.transform.Find("Hitbox").gameObject.SetActive(true);
+        GameObject hitbox = larissa.transform.Find("Hitbox").gameObject;
+        BossDamage.Apply(hitbox, larissa.dashDamage);
+        // her body hits as hard as the dash while dashing, so it doesn't matter which collider touches first
+        BossDamage.Apply(larissa.gameObject, larissa.dashDamage);
+        hitbox.SetActive(true);
         Debug.Log("Entering Larissa_Dash.");
     }
 
@@ -52,6 +56,7 @@ public class Larissa_Dash : IState {
     public void Exit() {
         animator.SetBool("Dash", false);
         larissa.transform.Find("Hitbox").gameObject.SetActive(false);
+        BossDamage.Apply(larissa.gameObject, larissa.contactDamage);
         dashing = false;
         Debug.Log("Exiting Larissa_Dash.");
     }

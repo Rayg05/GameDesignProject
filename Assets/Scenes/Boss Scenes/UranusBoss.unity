@@ -385,8 +385,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4197db3605ed9fa42a64148b60cc5996, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Health
-  health: 100
-  maxHP: 100
+  health: 72
+  maxHP: 72
   regen: 1
   regenDelay: 5
   damageMult: 1
@@ -957,6 +957,14 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 460498001}
+    - target: {fileID: 8336132183604343561, guid: 0e46c532aaa52e54f880af7dc7d5b0db, type: 3}
+      propertyPath: blitzDamage
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 8336132183604343561, guid: 0e46c532aaa52e54f880af7dc7d5b0db, type: 3}
+      propertyPath: slashDamage
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
