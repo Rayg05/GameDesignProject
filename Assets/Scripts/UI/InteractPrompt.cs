@@ -5,8 +5,8 @@ using UnityEngine.UI;
 public class InteractPrompt : MonoBehaviour
 {
     public string label = "USE";
-    [SerializeField] private float heightAboveTop = 0.4f;
-    [SerializeField] private float fontSize = 4f;
+    [SerializeField] private float heightAboveTop = 0.8f;
+    [SerializeField] private float fontSize = 8f;
 
     private static GameObject keyPopup;
     private static int visibleCount;
@@ -93,7 +93,7 @@ public class InteractPrompt : MonoBehaviour
         hoverText.outlineWidth = 0.25f;
         hoverText.outlineColor = Color.black;
         hoverText.textWrappingMode = TextWrappingModes.NoWrap;
-        hoverText.rectTransform.sizeDelta = new Vector2(4f, 1f);
+        hoverText.rectTransform.sizeDelta = new Vector2(8f, 2f);
         textObject.GetComponent<MeshRenderer>().sortingOrder = 100;
         textObject.SetActive(false);
     }

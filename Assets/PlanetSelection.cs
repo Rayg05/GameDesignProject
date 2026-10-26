@@ -17,6 +17,8 @@ public class PlanetSelection : MonoBehaviour
     private TextMeshProUGUI errorText;
     private float errorHideTime;
 
+    private GameObject controlsHint; // [A / D] Browse  [E] Select  [ESC] Back
+
     private string[] planetNames = { "Neptune", "Uranus", "Saturn", "Jupiter", "Other" };
     private int numPlanets;
     private int targetX = 0;
@@ -28,6 +30,15 @@ public class PlanetSelection : MonoBehaviour
         maincam.GetComponent<CameraFollow>().enabled = false;
         Vector3 menuPos = selectionScreen.transform.position;
         maincam.transform.position = new Vector3(menuPos.x, menuPos.y, maincam.transform.position.z);
+
+        // Show the controls while the menu is open.
+        if (controlsHint == null)
+            controlsHint = KeyHintBar.Create("Planet Select Controls", ("A / D", "Browse"), ("E", "Select"), ("ESC", "Back"));
+        controlsHint.SetActive(true);
+    }
+
+    private void OnDisable() {
+        if (controlsHint != null) { controlsHint.SetActive(false); }
     }
 
     void Start() {
@@ -75,7 +86,9 @@ public class PlanetSelection : MonoBehaviour
          *          SCENES MUST BE IN YOUR CURRENT BUILD PROFILE.
          *          THEY DO NOT SAVE OVER GITHUB. THEY ARE PER-DEVICE.
          */
-        if(!SceneFader.IsTransitioning && Input.GetKeyDown(KeyCode.Return)) {
+        // Skip the frame the telescope opened, so the E that opened it doesn't also pick a planet.
+        bool selectPressed = Input.GetKeyDown(KeyCode.E) && Time.frameCount != Telescope.lastToggleFrame;
+        if(!SceneFader.IsTransitioning && selectPressed) {
             // Clean up current scene here.
 
             if (!Loadout.HasAnyEquipped()) {
@@ -97,9 +110,8 @@ public class PlanetSelection : MonoBehaviour
             if (Time.unscaledTime >= errorHideTime) { errorText.gameObject.SetActive(false); }
         }
 
-        // Exit out of telescope screen (E toggles it closed, Escape also works).
-        bool togglePressed = Input.GetKeyDown(KeyCode.E) && Time.frameCount != Telescope.lastToggleFrame;
-        if(!SceneFader.IsTransitioning && (togglePressed || Input.GetKeyDown(KeyCode.Escape))) {
+        // Exit out of telescope screen with Escape (E is used to select).
+        if(!SceneFader.IsTransitioning && Input.GetKeyDown(KeyCode.Escape)) {
             Telescope.lastToggleFrame = Time.frameCount;
             errorText.gameObject.SetActive(false);
             player.SetActive(true);

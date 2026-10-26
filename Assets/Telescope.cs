@@ -16,7 +16,8 @@ public class Telescope : MonoBehaviour
 
     private void Update() {
         // When the player is inside the telescope trigger, they can press E to open the menu.
-        if(Input.GetKeyDown(KeyCode.E) && inRange && Time.frameCount != lastToggleFrame) {
+        // player.activeSelf is false while the menu is open, so E there selects a planet instead of reopening it.
+        if(Input.GetKeyDown(KeyCode.E) && inRange && player.activeSelf && Time.frameCount != lastToggleFrame) {
             lastToggleFrame = Time.frameCount;
             player.SetActive(false);
             selectionScreen.SetActive(true);

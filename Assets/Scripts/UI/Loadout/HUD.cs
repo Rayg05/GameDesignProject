@@ -41,6 +41,7 @@ public class HUD : MonoBehaviour
         SetAlpha(restoreFill, 0f);
 
         inventoryButton.onClick.AddListener(() => InventoryToggled?.Invoke());
+        KeybindLabel.Create((RectTransform)inventoryButton.transform, "I");
         if (playerHealth != null) Bind(playerHealth);
     }
 
