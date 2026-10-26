@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Uranus_Blitz : IState
 {
-    readonly Boss uranus;
+    readonly Uranus_Boss uranus;
     readonly float rEX;
     readonly float lEX;
     readonly GameObject hitbox;
@@ -16,7 +16,7 @@ public class Uranus_Blitz : IState
 
     readonly Animator animator;
 
-    public Uranus_Blitz(Boss boss)
+    public Uranus_Blitz(Uranus_Boss boss)
     {
         uranus = boss;
         rEX = uranus.rightEdgeX;
@@ -35,7 +35,14 @@ public class Uranus_Blitz : IState
         Debug.Log("Entering Uranus_Blitz.");
         startTime = Time.time;
         curY = uranus.transform.position.y;
-        if (hitbox != null) hitbox.SetActive(true);
+        if (hitbox != null)
+        {
+            BossDamage.Apply(hitbox, uranus.blitzDamage);
+            hitbox.SetActive(true);
+        }
+
+        // his body hits as hard as the blitz while blitzing, so it doesn't matter which collider touches first
+        BossDamage.Apply(uranus.gameObject, uranus.blitzDamage);
 
         //start by dashing to whichever edge is farther away.
         float x = uranus.transform.position.x;
@@ -69,6 +76,7 @@ public class Uranus_Blitz : IState
     {
         animator.SetBool("Blitz", false);
         if (hitbox != null) hitbox.SetActive(false);
+        BossDamage.Apply(uranus.gameObject, uranus.contactDamage);
         Debug.Log("Exiting Uranus_Blitz.");
     }
 }

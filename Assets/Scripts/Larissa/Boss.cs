@@ -8,6 +8,7 @@ public abstract class Boss : MonoBehaviour {
     public Transform target;
     public float leftEdgeX;
     public float rightEdgeX;
+    public float contactDamage = 5f; // touching the boss itself
 
     protected List<IState> states = new List<IState>();
     int num_states;
@@ -17,6 +18,7 @@ public abstract class Boss : MonoBehaviour {
     public abstract void ChooseNextState(IState previous_state);
 
     protected virtual void Awake() {
+        BossDamage.Apply(gameObject, contactDamage);
         BuildStates();
         state_machine = new FSM(this);
     }

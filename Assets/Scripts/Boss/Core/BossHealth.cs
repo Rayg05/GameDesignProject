@@ -12,6 +12,7 @@ public class BossHealth : MonoBehaviour
     private float itimer = 0.0f;
     private float imax = 1.0f; // Amount of time the boss will be invincible.
     public event Action<float, float> HealthChanged;
+    public event Action<float> Damaged; // damage amount
     public float Current => health;
     public float Max => maxHP;
     private float startRegenTime = 0.0f;
@@ -21,6 +22,12 @@ public class BossHealth : MonoBehaviour
     [Header("After Defeat")]
     [SerializeField] private string returnSceneName = "HubWorld";
     [SerializeField] private float returnDelay = 5f;
+
+    private void Awake()
+    {
+        // Hit flash + damage numbers for every boss
+        if (GetComponent<BossHitFeedback>() == null) gameObject.AddComponent<BossHitFeedback>();
+    }
 
     private void OnTakeDamage()
     {
@@ -34,6 +41,7 @@ public class BossHealth : MonoBehaviour
         // Deal damage if not invincible.
         health -= amount;
         HealthChanged?.Invoke(Mathf.Max(health, 0f), maxHP);
+        Damaged?.Invoke(amount);
         if (health <= 0)
         {
             SceneFader.LoadScene(returnSceneName, returnDelay);

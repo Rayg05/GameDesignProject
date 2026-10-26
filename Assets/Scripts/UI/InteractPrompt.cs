@@ -5,8 +5,8 @@ using UnityEngine.UI;
 public class InteractPrompt : MonoBehaviour
 {
     public string label = "USE";
-    [SerializeField] private float heightAboveTop = 0.4f;
-    [SerializeField] private float fontSize = 4f;
+    [SerializeField] private float heightAboveTop = 0.8f;
+    [SerializeField] private float fontSize = 8f;
 
     private static GameObject keyPopup;
     private static int visibleCount;
@@ -36,11 +36,10 @@ public class InteractPrompt : MonoBehaviour
         if (hoverText == null) BuildHoverText();
         hoverText.text = label;
         hoverText.transform.position = GetHoverPosition();
-        hoverText.gameObject.SetActive(true);
 
         visibleCount++;
         if (keyPopup == null) BuildKeyPopup();
-        keyPopup.SetActive(true);
+        ApplyVisibility();
     }
 
     public void Hide()
@@ -51,7 +50,22 @@ public class InteractPrompt : MonoBehaviour
         if (hoverText != null) hoverText.gameObject.SetActive(false);
 
         visibleCount = Mathf.Max(visibleCount - 1, 0);
-        if (keyPopup != null) keyPopup.SetActive(visibleCount > 0);
+        if (keyPopup != null) keyPopup.SetActive(visibleCount > 0 && !InventoryWindow.IsOpen);
+    }
+
+    // prompts stay hidden while the inventory is open, and come back when it closes
+    private void ApplyVisibility()
+    {
+        bool show = visible && !InventoryWindow.IsOpen;
+        if (hoverText != null) hoverText.gameObject.SetActive(show);
+        if (keyPopup != null) keyPopup.SetActive(visibleCount > 0 && !InventoryWindow.IsOpen);
+    }
+
+    private void OnInventoryOpenChanged(bool open) => ApplyVisibility();
+
+    private void OnEnable()
+    {
+        InventoryWindow.OpenChanged += OnInventoryOpenChanged;
     }
 
     private void LateUpdate()
@@ -62,6 +76,7 @@ public class InteractPrompt : MonoBehaviour
 
     private void OnDisable()
     {
+        InventoryWindow.OpenChanged -= OnInventoryOpenChanged;
         Hide();
     }
 
@@ -93,7 +108,7 @@ public class InteractPrompt : MonoBehaviour
         hoverText.outlineWidth = 0.25f;
         hoverText.outlineColor = Color.black;
         hoverText.textWrappingMode = TextWrappingModes.NoWrap;
-        hoverText.rectTransform.sizeDelta = new Vector2(4f, 1f);
+        hoverText.rectTransform.sizeDelta = new Vector2(8f, 2f);
         textObject.GetComponent<MeshRenderer>().sortingOrder = 100;
         textObject.SetActive(false);
     }

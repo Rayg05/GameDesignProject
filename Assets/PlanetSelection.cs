@@ -9,6 +9,16 @@ public class PlanetSelection : MonoBehaviour
     [SerializeField] private GameObject selectionScreen;
     [SerializeField] private GameObject player;
 
+    [Header("No loadout error")]
+    [SerializeField] private string noLoadoutMessage = "No loadout equipped";
+    [SerializeField] private Color errorColor = new Color(0.8f, 0.1f, 0.1f, 0.9f); // banner background
+    [SerializeField] private float errorDuration = 2f;
+    private GameObject errorBanner; // fixed above the controls bar, not attached to the planet
+    private float errorShownTime;
+    private float errorHideTime;
+
+    private GameObject controlsHint; // [A / D] Browse  [E] Select  [ESC] Back
+
     private string[] planetNames = { "Neptune", "Uranus", "Saturn", "Jupiter", "Other" };
     private int numPlanets;
     private int targetX = 0;
@@ -20,6 +30,18 @@ public class PlanetSelection : MonoBehaviour
         maincam.GetComponent<CameraFollow>().enabled = false;
         Vector3 menuPos = selectionScreen.transform.position;
         maincam.transform.position = new Vector3(menuPos.x, menuPos.y, maincam.transform.position.z);
+
+        // Show the controls while the menu is open.
+        if (controlsHint == null)
+            controlsHint = KeyHintBar.Create("Planet Select Controls", ("A / D", "Browse"), ("E", "Select"), ("ESC", "Back"));
+        controlsHint.SetActive(true);
+        if (errorBanner == null)
+            errorBanner = KeyHintBar.CreateWarning("No Loadout Warning", noLoadoutMessage, errorColor);
+    }
+
+    private void OnDisable() {
+        if (controlsHint != null) { controlsHint.SetActive(false); }
+        if (errorBanner != null) { errorBanner.SetActive(false); }
     }
 
     void Start() {
@@ -60,20 +82,36 @@ public class PlanetSelection : MonoBehaviour
          *          SCENES MUST BE IN YOUR CURRENT BUILD PROFILE.
          *          THEY DO NOT SAVE OVER GITHUB. THEY ARE PER-DEVICE.
          */
-        if(!SceneFader.IsTransitioning && Input.GetKeyDown(KeyCode.Return)) {
+        // Skip the frame the telescope opened, so the E that opened it doesn't also pick a planet.
+        bool selectPressed = Input.GetKeyDown(KeyCode.E) && Time.frameCount != Telescope.lastToggleFrame;
+        if(!SceneFader.IsTransitioning && selectPressed) {
             // Clean up current scene here.
 
-            // Create name of scene ([Planet]Boss)
-            string sceneName = planetNames[targetX] + "Boss";
-            
-            // GO TO ROOM HERE.
-            SceneFader.LoadScene(sceneName);
+            if (!Loadout.HasAnyEquipped()) {
+                // Can't fight a boss empty-handed.
+                errorBanner.SetActive(true);
+                errorShownTime = Time.unscaledTime;
+                errorHideTime = errorShownTime + errorDuration;
+            } else {
+                // Create name of scene ([Planet]Boss)
+                string sceneName = planetNames[targetX] + "Boss";
+
+                // GO TO ROOM HERE.
+                SceneFader.LoadScene(sceneName);
+            }
         }
 
-        // Exit out of telescope screen (E toggles it closed, Escape also works).
-        bool togglePressed = Input.GetKeyDown(KeyCode.E) && Time.frameCount != Telescope.lastToggleFrame;
-        if(!SceneFader.IsTransitioning && (togglePressed || Input.GetKeyDown(KeyCode.Escape))) {
+        // Pop the warning in so it catches the eye, hide it once its time is up.
+        if (errorBanner.activeSelf) {
+            float t = Mathf.Clamp01((Time.unscaledTime - errorShownTime) / 0.15f);
+            errorBanner.transform.GetChild(0).localScale = Vector3.one * Mathf.Lerp(1.25f, 1f, t);
+            if (Time.unscaledTime >= errorHideTime) { errorBanner.SetActive(false); }
+        }
+
+        // Exit out of telescope screen with Escape (E is used to select).
+        if(!SceneFader.IsTransitioning && Input.GetKeyDown(KeyCode.Escape)) {
             Telescope.lastToggleFrame = Time.frameCount;
+            errorBanner.SetActive(false);
             player.SetActive(true);
             selectionScreen.SetActive(false);
             // Go back to following the player.

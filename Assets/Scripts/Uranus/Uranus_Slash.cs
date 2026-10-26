@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Uranus_Slash : IState
 {
-    readonly Boss uranus;
+    readonly Uranus_Boss uranus;
     readonly Material lineMaterial;
     readonly Animator animator;
 
@@ -25,7 +25,7 @@ public class Uranus_Slash : IState
     Vector3[] endPoints = new Vector3[numOfSlashes];
     float timer;
 
-    public Uranus_Slash(Boss boss)
+    public Uranus_Slash(Uranus_Boss boss)
     {
         uranus = boss;
         lineMaterial = new Material(Shader.Find("Sprites/Default"));
@@ -59,6 +59,7 @@ public class Uranus_Slash : IState
 
             //create a new GameObject for the line renderer and box collider
             GameObject go = new GameObject("UranusSlash");
+            BossDamage.Apply(go, uranus.slashDamage);
             go.transform.position = (startPoints[i] + endPoints[i]) / 2f;
             go.transform.rotation = Quaternion.Euler(0f, 0f, angle);
 

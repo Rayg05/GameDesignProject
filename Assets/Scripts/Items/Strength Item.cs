@@ -14,6 +14,14 @@ public class StrengthItem : MonoBehaviour
     private bool onCooldown = false;
     private float timer = 0f;
 
+    // which EquipmentData is the strength item, so the HUD can show its timer
+    public static EquipmentData Data { get; private set; }
+
+    void Awake()
+    {
+        if (strengthItem != null) Data = strengthItem;
+    }
+
     void Update()
     {
         if (jabAttack == null) return;
@@ -27,6 +35,7 @@ public class StrengthItem : MonoBehaviour
                 jabAttack.damage += strengthBonus;
                 isBuffActive = true;
                 timer = 0f;
+                ItemTimers.StartActive(strengthItem, buffDuration);
                 usages--;
                 Debug.Log("UNLIMITED POWERRRR");
             }
@@ -45,6 +54,7 @@ public class StrengthItem : MonoBehaviour
                 jabAttack.damage = orig_Damage;
                 isBuffActive = false;
                 onCooldown = true;
+                ItemTimers.StartCooldown(strengthItem, cooldownDuration);
                 timer = 0f;
                 Debug.Log("Buff ended, now on cooldown");
             }

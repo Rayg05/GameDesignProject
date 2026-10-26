@@ -5,6 +5,10 @@ public class Larissa_Boss : Boss
 {
     public GameObject projectile;
 
+    [Header("Attack Damage")]
+    public float projectileDamage = 5f; // per ice projectile
+    public float dashDamage = 5f;
+
     protected override void BuildStates() {
         // IDLE SHOULD BE FIRST ON THE LIST!
         states.Add(new Larissa_Idle(this));

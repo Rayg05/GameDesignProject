@@ -15,3 +15,4 @@ MonoBehaviour:
   displayName: 
   icon: {fileID: 12085813604639031, guid: ccf6302d5e7e87c4ba6d56d938b6c07b, type: 3}
   slotType: 1
+  keybind: Q

@@ -9,11 +9,15 @@ public class Basic_Movement2 : MonoBehaviour
     
 
     private Rigidbody2D rb;
+    private Collider2D bodyCollider;
     private GameObject hurtbox;
     private Health playerHealth;
 
     [SerializeField] private float moveSpeed = 10f;
-    [SerializeField] private float jumpForce = 100f;
+    [SerializeField] private float jumpHeight = 7f; // height of a full jump (space held the whole way up)
+    [SerializeField] private float timeToApex = 0.35f; // seconds a full jump takes to reach the top
+    [SerializeField, Min(1f)] private float fallGravityMultiplier = 2.5f; // stronger gravity when falling or when space is let go early
+    private bool rising = false;
 
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
@@ -36,6 +40,7 @@ public class Basic_Movement2 : MonoBehaviour
         jump_Animator = GetComponent<Animator>();
         run_Animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        bodyCollider = GetComponent<Collider2D>();
         playerHealth = GetComponent<Health>();
         hurtbox = transform.Find("Hurtbox").gameObject;
     }
@@ -84,6 +89,12 @@ public class Basic_Movement2 : MonoBehaviour
             jumpCount++;
         }
 
+        // letting go of space (or reaching the top) switches to the stronger gravity, so the arc bends down sooner
+        if (rising && (!Input.GetKey(KeyCode.Space) || rb.linearVelocity.y <= 0f))
+        {
+            rising = false;
+        }
+
         if (jumping)
         {
             jump_timer += Time.deltaTime;
@@ -110,15 +121,23 @@ public class Basic_Movement2 : MonoBehaviour
     void Jumping()
     {
         jump_Animator.SetBool("Jump", true);
-        rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f); // reset vertical velocity
-        rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+        // launch speed that reaches jumpHeight after timeToApex seconds under the rising gravity
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, 2f * jumpHeight / timeToApex);
+        rising = true;
         jumping = true;
     }
     private void FixedUpdate()
     {
-        RaycastHit2D groundCast = Physics2D.Raycast(transform.position, Vector2.down, 10.0f, groundLayer);
-        isGrounded = (groundCast.collider != null);
-        //isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+        // gravity that brings a full jump to a stop exactly at jumpHeight
+        float riseGravity = 2f * jumpHeight / (timeToApex * timeToApex);
+        float gravity = rising ? riseGravity : riseGravity * fallGravityMultiplier;
+        rb.gravityScale = gravity / -Physics2D.gravity.y;
+
+        // thin box at the bottom of the player's collider, so it works at any player size
+        Bounds b = bodyCollider.bounds;
+        Vector2 feet = new Vector2(b.center.x, b.min.y);
+        Vector2 checkSize = new Vector2(b.size.x * 0.9f, groundCheckRadius * 2f);
+        isGrounded = Physics2D.OverlapBox(feet, checkSize, 0f, groundLayer);
     }
 
     public void HurtPlayer(float amt) {

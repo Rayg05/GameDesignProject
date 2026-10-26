@@ -3,6 +3,10 @@ using static UnityEditor.VersionControl.Asset;
 
 public class Uranus_Boss : Boss
 {
+    [Header("Attack Damage")]
+    public float blitzDamage = 5f;
+    public float slashDamage = 5f; // per slash line
+
     protected override void BuildStates() {
         // IDLE SHOULD BE FIRST ON THE LIST!
         states.Add(new Uranus_Idle(this));

@@ -21,7 +21,9 @@ public class Spear : MonoBehaviour
     private SpriteRenderer downAttackAreaRenderer;
 
     private bool attacking = false;
-    private float timeToAttack = 1.15f; //DO NOT CHANGE FOR CLEAN ANIMATION SAKE
+    private const float baseAttackDuration = 1.15f; //DO NOT CHANGE FOR CLEAN ANIMATION SAKE (length of the attack animation at speed 1)
+    [SerializeField] private float attackSpeed = 1.75f; // >1 = faster attack and animation
+    private float timeToAttack => baseAttackDuration / attackSpeed;
     private float timer = 0f;
 
     void Start()
@@ -84,6 +86,7 @@ public class Spear : MonoBehaviour
                 attack_Down_Effect_Animation.SetBool("Press_Down_Attack", false);
                 timer = 0;
                 attacking = false;
+                SetAnimationSpeed(1f);
 
                 attackAreaCollider.enabled = false;
                 attackAreaRenderer.enabled = false;
@@ -132,6 +135,15 @@ public class Spear : MonoBehaviour
             attackAreaRenderer.enabled = true;
         }
 
+        SetAnimationSpeed(attackSpeed);
         attacking = true;
+    }
+
+    private void SetAnimationSpeed(float speed)
+    {
+        attack_Animation.speed = speed;
+        attack_Effect_Animation.speed = speed;
+        attack_Up_Effect_Animation.speed = speed;
+        attack_Down_Effect_Animation.speed = speed;
     }
 }
