@@ -2291,7 +2291,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Basic_Movement2
   moveSpeed: 10
-  jumpForce: 20
+  jumpHeight: 7
+  timeToApex: 0.35
   groundCheck: {fileID: 473451144}
   groundLayer:
     serializedVersion: 2
