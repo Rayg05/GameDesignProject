@@ -52,6 +52,41 @@ public static class KeyHintBar
         return bar;
     }
 
+    // Warning banner in the same style, sitting just above the hint bar, e.g. "No loadout equipped"
+    public static GameObject CreateWarning(string name, string message, Color background)
+    {
+        GameObject warning = new GameObject(name);
+        Canvas canvas = warning.AddComponent<Canvas>();
+        canvas.renderMode = RenderMode.ScreenSpaceOverlay;
+        canvas.sortingOrder = 101;
+        CanvasScaler scaler = warning.AddComponent<CanvasScaler>();
+        scaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
+        scaler.referenceResolution = new Vector2(1920f, 1080f);
+        scaler.matchWidthOrHeight = 0.5f;
+
+        GameObject panel = CreateUIObject("Panel", warning.transform);
+        panel.AddComponent<Image>().color = background;
+        RectTransform panelRect = (RectTransform)panel.transform;
+        panelRect.anchorMin = panelRect.anchorMax = new Vector2(0.5f, 0f);
+        panelRect.pivot = new Vector2(0.5f, 0f);
+        panelRect.anchoredPosition = new Vector2(0f, 170f); // hint bar is at 60 and ~80 tall
+        HorizontalLayoutGroup layout = panel.AddComponent<HorizontalLayoutGroup>();
+        layout.padding = new RectOffset(32, 32, 14, 14);
+        layout.childAlignment = TextAnchor.MiddleCenter;
+        layout.childControlWidth = layout.childControlHeight = true;
+        layout.childForceExpandWidth = layout.childForceExpandHeight = false;
+        ContentSizeFitter fitter = panel.AddComponent<ContentSizeFitter>();
+        fitter.horizontalFit = fitter.verticalFit = ContentSizeFitter.FitMode.PreferredSize;
+
+        TextMeshProUGUI text = CreateText("Message", panel.transform, message, Color.white);
+        text.fontSize = 44f;
+        text.outlineWidth = 0.2f;
+        text.outlineColor = Color.black;
+
+        warning.SetActive(false);
+        return warning;
+    }
+
     private static GameObject CreateUIObject(string objectName, Transform parent)
     {
         GameObject go = new GameObject(objectName, typeof(RectTransform));

@@ -24,6 +24,10 @@ public class HUD : MonoBehaviour
     [SerializeField] private GameObject criticalIcon;
     [SerializeField, Range(0f, 1f)] private float criticalThreshold = 0.2f;
 
+    [Header("Strength buff")]
+    [SerializeField] private Color strengthGlowColor = new Color(1f, 0.55f, 0f, 1f); // orange
+    [SerializeField] private float glowPulseSpeed = 4f;
+
     [Header("Debug")]
     [SerializeField] private bool debugKeys = true; // O = damage, P = heal
     [SerializeField] private float debugAmount = 20f;
@@ -32,6 +36,13 @@ public class HUD : MonoBehaviour
     private Coroutine damageRoutine, healRoutine;
     private bool healPending;   // next HealthChanged comes from Health.Heal
     private float healTarget;   // fill the heal animation is heading to
+
+    // orange glow layers behind the bar + seconds left, while the strength item is active
+    private static readonly float[] GlowPadding = { 6f, 12f, 20f };
+    private static readonly float[] GlowAlpha = { 0.7f, 0.4f, 0.18f };
+    private Image[] glowLayers;
+    private TextMeshProUGUI strengthTimerText;
+    private bool timerOutlineSet;
 
     //attach health to healthbar
     private void Awake()
@@ -43,6 +54,7 @@ public class HUD : MonoBehaviour
         inventoryButton.onClick.AddListener(() => InventoryToggled?.Invoke());
         KeybindLabel.Create((RectTransform)inventoryButton.transform, "I");
         if (playerHealth != null) Bind(playerHealth);
+        BuildStrengthGlow(); // last, so the core HUD is set up even if this fails
     }
 
     //toggling inventory
@@ -56,6 +68,8 @@ public class HUD : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.O)) target.Damage(debugAmount);
             if (Input.GetKeyDown(KeyCode.P)) target.Heal(debugAmount);
         }
+
+        UpdateStrengthGlow();
     }
 
     //points healthbar to health component
@@ -188,6 +202,84 @@ public class HUD : MonoBehaviour
         SetAlpha(healFill, 0f);
         SetAlpha(restoreFill, 0f);
         healRoutine = null;
+    }
+
+    // Copies of the bar's outline drawn as solid orange, each a bit bigger and fainter = soft glow
+    private void BuildStrengthGlow()
+    {
+        RectTransform bar = (RectTransform)healthFill.transform.parent;
+        Transform emptyBar = bar.Find("EmptyBar");
+        Image source = emptyBar != null ? emptyBar.GetComponent<Image>() : healthFill;
+
+        Shader shader = Shader.Find("Custom/UISilhouette");
+        Material silhouette = shader != null ? new Material(shader) : null;
+
+        glowLayers = new Image[GlowPadding.Length];
+        for (int i = 0; i < GlowPadding.Length; i++)
+        {
+            GameObject go = new GameObject("StrengthGlow" + i, typeof(RectTransform));
+            go.transform.SetParent(bar, false);
+            go.transform.SetAsFirstSibling(); // behind the bar, biggest layer furthest back
+            RectTransform rect = (RectTransform)go.transform;
+            rect.anchorMin = Vector2.zero;
+            rect.anchorMax = Vector2.one;
+            rect.offsetMin = new Vector2(-GlowPadding[i], -GlowPadding[i]);
+            rect.offsetMax = new Vector2(GlowPadding[i], GlowPadding[i]);
+
+            Image glow = go.AddComponent<Image>();
+            glow.sprite = source.sprite;
+            glow.material = silhouette;
+            glow.raycastTarget = false;
+            glowLayers[i] = glow;
+            go.SetActive(false);
+        }
+
+        GameObject textObject = new GameObject("StrengthTimer", typeof(RectTransform));
+        textObject.transform.SetParent(bar, false);
+        RectTransform textRect = (RectTransform)textObject.transform;
+        textRect.anchorMin = textRect.anchorMax = new Vector2(1f, 0.5f);
+        textRect.pivot = new Vector2(0f, 0.5f);
+        textRect.anchoredPosition = new Vector2(GlowPadding[GlowPadding.Length - 1] + 8f, 0f);
+        textRect.sizeDelta = new Vector2(120f, 60f);
+        strengthTimerText = textObject.AddComponent<TextMeshProUGUI>();
+        strengthTimerText.fontSize = 40f;
+        strengthTimerText.fontStyle = FontStyles.Bold;
+        strengthTimerText.color = strengthGlowColor;
+        strengthTimerText.alignment = TextAlignmentOptions.Left;
+        strengthTimerText.textWrappingMode = TextWrappingModes.NoWrap;
+        strengthTimerText.raycastTarget = false;
+        textObject.SetActive(false);
+    }
+
+    private void UpdateStrengthGlow()
+    {
+        float remaining = ItemTimers.ActiveRemaining(StrengthItem.Data);
+        bool active = remaining > 0f;
+
+        if (strengthTimerText.gameObject.activeSelf != active) strengthTimerText.gameObject.SetActive(active);
+        foreach (Image glow in glowLayers)
+            if (glow.gameObject.activeSelf != active) glow.gameObject.SetActive(active);
+        if (!active) return;
+
+        if (!timerOutlineSet && strengthTimerText.gameObject.activeInHierarchy)
+        {
+            // TMP's material only exists once the text is active (the healthbar is hidden in the hub),
+            // so the outline is set the first time it shows instead of in BuildStrengthGlow
+            strengthTimerText.outlineWidth = 0.25f;
+            strengthTimerText.outlineColor = Color.black;
+            timerOutlineSet = true;
+        }
+
+        strengthTimerText.text = Mathf.CeilToInt(remaining) + "s";
+
+        // gentle pulse so it reads as a buff rather than part of the bar
+        float pulse = Mathf.Lerp(0.6f, 1f, (Mathf.Sin(Time.unscaledTime * glowPulseSpeed) + 1f) * 0.5f);
+        for (int i = 0; i < glowLayers.Length; i++)
+        {
+            Color c = strengthGlowColor;
+            c.a = GlowAlpha[i] * pulse;
+            glowLayers[i].color = c;
+        }
     }
 
     private static void SetAlpha(Image image, float alpha)

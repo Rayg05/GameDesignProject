@@ -11,10 +11,10 @@ public class PlanetSelection : MonoBehaviour
 
     [Header("No loadout error")]
     [SerializeField] private string noLoadoutMessage = "No loadout equipped";
-    [SerializeField] private Color errorColor = Color.red;
+    [SerializeField] private Color errorColor = new Color(0.8f, 0.1f, 0.1f, 0.9f); // banner background
     [SerializeField] private float errorDuration = 2f;
-    [SerializeField] private Vector3 errorOffset = new Vector3(0f, -1.5f, 0f); // from the planet name text
-    private TextMeshProUGUI errorText;
+    private GameObject errorBanner; // fixed above the controls bar, not attached to the planet
+    private float errorShownTime;
     private float errorHideTime;
 
     private GameObject controlsHint; // [A / D] Browse  [E] Select  [ESC] Back
@@ -35,10 +35,13 @@ public class PlanetSelection : MonoBehaviour
         if (controlsHint == null)
             controlsHint = KeyHintBar.Create("Planet Select Controls", ("A / D", "Browse"), ("E", "Select"), ("ESC", "Back"));
         controlsHint.SetActive(true);
+        if (errorBanner == null)
+            errorBanner = KeyHintBar.CreateWarning("No Loadout Warning", noLoadoutMessage, errorColor);
     }
 
     private void OnDisable() {
         if (controlsHint != null) { controlsHint.SetActive(false); }
+        if (errorBanner != null) { errorBanner.SetActive(false); }
     }
 
     void Start() {
@@ -46,13 +49,6 @@ public class PlanetSelection : MonoBehaviour
         numPlanets = planetPositions.Length;
         // Set initial position to the leftmost planet.
         targetPos = planetPositions[0].position;
-
-        // Copy the planet name text so the error uses the same font and canvas.
-        errorText = Instantiate(tmp, tmp.transform.parent);
-        errorText.name = "NoLoadoutError";
-        errorText.text = noLoadoutMessage;
-        errorText.color = errorColor;
-        errorText.gameObject.SetActive(false);
 
         // DEBUG
         for(int i = 0; i < planetPositions.Length; i++) {
@@ -93,8 +89,9 @@ public class PlanetSelection : MonoBehaviour
 
             if (!Loadout.HasAnyEquipped()) {
                 // Can't fight a boss empty-handed.
-                errorText.gameObject.SetActive(true);
-                errorHideTime = Time.unscaledTime + errorDuration;
+                errorBanner.SetActive(true);
+                errorShownTime = Time.unscaledTime;
+                errorHideTime = errorShownTime + errorDuration;
             } else {
                 // Create name of scene ([Planet]Boss)
                 string sceneName = planetNames[targetX] + "Boss";
@@ -104,16 +101,17 @@ public class PlanetSelection : MonoBehaviour
             }
         }
 
-        // Keep the error under the planet name, hide it once its time is up.
-        if (errorText.gameObject.activeSelf) {
-            errorText.transform.position = tmp.transform.position + errorOffset;
-            if (Time.unscaledTime >= errorHideTime) { errorText.gameObject.SetActive(false); }
+        // Pop the warning in so it catches the eye, hide it once its time is up.
+        if (errorBanner.activeSelf) {
+            float t = Mathf.Clamp01((Time.unscaledTime - errorShownTime) / 0.15f);
+            errorBanner.transform.GetChild(0).localScale = Vector3.one * Mathf.Lerp(1.25f, 1f, t);
+            if (Time.unscaledTime >= errorHideTime) { errorBanner.SetActive(false); }
         }
 
         // Exit out of telescope screen with Escape (E is used to select).
         if(!SceneFader.IsTransitioning && Input.GetKeyDown(KeyCode.Escape)) {
             Telescope.lastToggleFrame = Time.frameCount;
-            errorText.gameObject.SetActive(false);
+            errorBanner.SetActive(false);
             player.SetActive(true);
             selectionScreen.SetActive(false);
             // Go back to following the player.

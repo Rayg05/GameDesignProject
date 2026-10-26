@@ -31,6 +31,7 @@ public class DefenseUp : MonoBehaviour
                 health.damageMult = 0.5f;//reduces incoming damage by 1/2
                 isActive = true;
                 timer = 0f;
+                ItemTimers.StartActive(defenseUp, buffDuration);
                 usages--;
                 Debug.Log("damage reduced");
             }
@@ -48,6 +49,7 @@ public class DefenseUp : MonoBehaviour
                 health.damageMult = baseMult;
                 isActive = false;
                 onCooldown = true;
+                ItemTimers.StartCooldown(defenseUp, cooldownDuration);
                 timer = 0f;
                 Debug.Log("buff on cooldown");
             }

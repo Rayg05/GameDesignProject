@@ -25,6 +25,20 @@ public class KeybindLabel : MonoBehaviour
         rect.pivot = new Vector2(1f, 0.5f);
         rect.anchoredPosition = new Vector2(-8f, 0f);
 
+        // If the target is flipped (e.g. the Inventory button is rotated 180 on Y), its "left" is on the
+        // right of the screen. Put the badge on its other side and un-flip it so it still shows on the left.
+        Transform canvasRoot = target.GetComponentInParent<Canvas>().rootCanvas.transform;
+        if (Vector3.Dot(target.right, canvasRoot.right) < 0f)
+        {
+            rect.anchorMin = rect.anchorMax = new Vector2(1f, 0.5f);
+            rect.anchoredPosition = new Vector2(8f, 0f);
+            rect.localRotation = Quaternion.Euler(0f, 180f, 0f);
+        }
+
+        // undo any scale on the target so every badge is the same size
+        float relativeScale = Mathf.Abs(target.lossyScale.x / canvasRoot.lossyScale.x);
+        if (relativeScale > 0f) rect.localScale = Vector3.one / relativeScale;
+
         // own sorting so later HUD elements can't draw over the badge
         Canvas canvas = badge.AddComponent<Canvas>();
         canvas.overrideSorting = true;

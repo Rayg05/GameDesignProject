@@ -2300,9 +2300,8 @@ MonoBehaviour:
   selectionScreen: {fileID: 1745007936}
   player: {fileID: 460498002}
   noLoadoutMessage: No loadout equipped
-  errorColor: {r: 1, g: 0, b: 0, a: 1}
+  errorColor: {r: 0.8, g: 0.1, b: 0.1, a: 0.9}
   errorDuration: 2
-  errorOffset: {x: 0, y: -1.5, z: 0}
 --- !u!1 &1133070953
 GameObject:
   m_ObjectHideFlags: 0
@@ -3401,7 +3400,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4255553592736696680, guid: 4d77ed88b21c77241b6c2b43c3fb8cd1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4255553592736696680, guid: 4d77ed88b21c77241b6c2b43c3fb8cd1, type: 3}
       propertyPath: m_LocalRotation.w

@@ -9,6 +9,11 @@ public class Health : MonoBehaviour
     [SerializeField] private float regenDelay = 5f;  // delay after damage before regen starts
     [SerializeField] public float damageMult = 1f; //editable damage multiplier so that incoming damage can be edited
 
+    [Header("On Death")]
+    [SerializeField] private bool returnToHubOnDeath = true; // same fade back to the hub as beating a boss
+    [SerializeField] private string returnSceneName = "HubWorld";
+    [SerializeField] private float returnDelay = 2f;
+
     public event Action<float, float> HealthChanged;
     public event Action<float> Healed; // fired before HealthChanged for discrete heals (not regen)
     public float Current => health;
@@ -38,6 +43,7 @@ public class Health : MonoBehaviour
 
         if (health <= 0)
         {
+            if (returnToHubOnDeath) SceneFader.LoadScene(returnSceneName, returnDelay);
             Destroy(gameObject);
             return;
         }
