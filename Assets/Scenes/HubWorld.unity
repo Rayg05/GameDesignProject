@@ -1925,6 +1925,10 @@ MonoBehaviour:
   tmp: {fileID: 805551361}
   selectionScreen: {fileID: 1745007936}
   player: {fileID: 1224198800}
+  noLoadoutMessage: No loadout equipped
+  errorColor: {r: 1, g: 0, b: 0, a: 1}
+  errorDuration: 2
+  errorOffset: {x: 0, y: -1.5, z: 0}
 --- !u!1 &1133070953
 GameObject:
   m_ObjectHideFlags: 0
@@ -2290,9 +2294,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 497841347458d5642a0605074a36f9be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Basic_Movement2
-  moveSpeed: 10
+  moveSpeed: 15
   jumpHeight: 7
-  timeToApex: 0.35
+  timeToApex: 1
+  fallGravityMultiplier: 2.5
   groundCheck: {fileID: 473451144}
   groundLayer:
     serializedVersion: 2

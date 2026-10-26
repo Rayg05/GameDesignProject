@@ -447,6 +447,7 @@ MonoBehaviour:
   maxHP: 100
   regen: 1
   regenDelay: 5
+  damageMult: 1
 --- !u!114 &979188998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -485,13 +486,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Basic_Movement2
   moveSpeed: 20
-  jumpHeight: 27
-  timeToApex: 0.68
+  jumpHeight: 20
+  timeToApex: 1
+  fallGravityMultiplier: 2.5
   groundCheck: {fileID: 979188995}
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
   groundCheckRadius: 0.1
+  doubleJump: {fileID: 0}
 --- !u!114 &979189001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1032,6 +1035,7 @@ MonoBehaviour:
   maxHP: 100
   regen: 1
   regenDelay: 5
+  damageMult: 1
 --- !u!1001 &2036356756
 PrefabInstance:
   m_ObjectHideFlags: 0

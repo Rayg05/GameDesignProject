@@ -10,6 +10,8 @@ public static class UnifyPlayerPrefab
     const string PrefabPath = "Assets/Prefab/Player.prefab";
     const string SourceScene = "Assets/Scenes/Boss Scenes/NeptuneBoss.unity"; // most complete player, gets applied to the prefab
     const string HubScene = "Assets/Scenes/HubWorld.unity";                    // has a standalone (non-prefab) player
+    const string HudPrefabPath = "Assets/Prefab/HUD.prefab";                   // health bar + inventory, missing from the hub
+    const string StrengthItemPath = "Assets/GameEquipment/StrengthItem.asset"; // no player had the StrengthItem component yet
     static readonly string[] InstanceScenes =
     {
         "Assets/Scenes/Boss Scenes/UranusBoss.unity",
@@ -23,7 +25,8 @@ public static class UnifyPlayerPrefab
         if (!EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo()) return;
         if (!EditorUtility.DisplayDialog("Unify Player Prefab",
             "This applies NeptuneBoss's player to Player.prefab, then replaces the player in HubWorld, " +
-            "UranusBoss, CurrentGame and Scene2 with that prefab and saves every scene.\n\n" +
+            "UranusBoss, CurrentGame and Scene2 with that prefab, adds the HUD/inventory to HubWorld " +
+            "and saves every scene.\n\n" +
             "Make sure your work is committed in git first so you can undo it.", "Run", "Cancel")) return;
 
         GameObject prefab = AssetDatabase.LoadAssetAtPath<GameObject>(PrefabPath);
@@ -37,6 +40,7 @@ public static class UnifyPlayerPrefab
         PrefabUtility.ApplyPrefabInstance(neptunePlayer, InteractionMode.AutomatedAction);
         EditorSceneManager.SaveScene(scene);
         Debug.Log("[Unify] Applied NeptuneBoss player to Player.prefab");
+        AddStrengthItem();
 
         // 2. Hub: swap the standalone player for the prefab, keeping its InteractionDetector (added to the prefab)
         scene = EditorSceneManager.OpenScene(HubScene, OpenSceneMode.Single);
@@ -53,6 +57,7 @@ public static class UnifyPlayerPrefab
         }
         Relink(scene, hubPlayer, newHubPlayer);
         Object.DestroyImmediate(hubPlayer);
+        AddHud(scene, newHubPlayer);
 
         // zoom the hub camera out so the bigger player is framed like the old one
         float zoom = ColliderHeight(newHubPlayer) / oldHeight;
@@ -86,6 +91,45 @@ public static class UnifyPlayerPrefab
 
         EditorSceneManager.OpenScene(SourceScene, OpenSceneMode.Single);
         EditorUtility.DisplayDialog("Unify Player Prefab", "Done. Check the Console for any [Unify] warnings.", "OK");
+    }
+
+    // Gives the prefab a StrengthItem wired to the side jab, so equipping Strength does something.
+    static void AddStrengthItem()
+    {
+        GameObject contents = PrefabUtility.LoadPrefabContents(PrefabPath);
+        if (contents.GetComponent<StrengthItem>() == null)
+        {
+            Transform sideJab = contents.transform.Find("Side Jab");
+            JabAttackArea area = sideJab != null ? sideJab.GetComponent<JabAttackArea>() : contents.GetComponentInChildren<JabAttackArea>(true);
+
+            var so = new SerializedObject(contents.AddComponent<StrengthItem>());
+            so.FindProperty("jabAttack").objectReferenceValue = area;
+            so.FindProperty("strengthItem").objectReferenceValue = AssetDatabase.LoadAssetAtPath<EquipmentData>(StrengthItemPath);
+            so.ApplyModifiedPropertiesWithoutUndo();
+            if (area == null) Debug.LogWarning("[Unify] Added StrengthItem but found no JabAttackArea for it, assign 'Jab Attack' by hand");
+            else Debug.Log("[Unify] Added StrengthItem to Player.prefab");
+        }
+        PrefabUtility.SaveAsPrefabAsset(contents, PrefabPath);
+        PrefabUtility.UnloadPrefabContents(contents);
+    }
+
+    // Puts the HUD (health bar + inventory) in the scene if it has none and points it at the player's health.
+    static void AddHud(Scene scene, GameObject player)
+    {
+        HUD hud = null;
+        foreach (GameObject root in scene.GetRootGameObjects())
+            if (hud == null) hud = root.GetComponentInChildren<HUD>(true);
+
+        if (hud == null)
+        {
+            var hudObject = (GameObject)PrefabUtility.InstantiatePrefab(AssetDatabase.LoadAssetAtPath<GameObject>(HudPrefabPath), scene);
+            hud = hudObject.GetComponentInChildren<HUD>(true);
+            Debug.Log($"[Unify] Added HUD to {scene.name}");
+        }
+
+        var so = new SerializedObject(hud);
+        so.FindProperty("playerHealth").objectReferenceValue = player.GetComponent<Health>();
+        so.ApplyModifiedPropertiesWithoutUndo();
     }
 
     // Puts a fresh prefab instance where oldPlayer is. Call Relink afterwards to move scene references over.

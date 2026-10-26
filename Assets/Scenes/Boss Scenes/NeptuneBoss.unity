@@ -856,7 +856,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Basic_Movement2
   moveSpeed: 20
-  jumpHeight: 27
+  jumpHeight: 20
   timeToApex: 1
   fallGravityMultiplier: 2.5
   groundCheck: {fileID: 1967294862}

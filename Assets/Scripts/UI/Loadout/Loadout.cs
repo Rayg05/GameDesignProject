@@ -14,6 +14,14 @@ public static class Loadout
 
     public static EquipmentData Get(SlotType type) => equipped[(int)type];
 
+    //true if at least one slot has something in it
+    public static bool HasAnyEquipped()
+    {
+        foreach (EquipmentData data in equipped)
+            if (data != null) return true;
+        return false;
+    }
+
     //equipes something to its slot
     public static void Equip(SlotType type, EquipmentData data)
     {
