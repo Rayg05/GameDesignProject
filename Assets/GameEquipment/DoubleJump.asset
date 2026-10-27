@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70195c6923946f4458fb1efaf551ede9, type: 3}
   m_Name: DoubleJump
   m_EditorClassIdentifier: Assembly-CSharp::EquipmentData
-  displayName: 
-  icon: {fileID: 756151848, guid: c749b56e062451f4b8a966cfcb38728a, type: 3}
+  displayName: Soaring Boots
+  description: Become able to jump midair.
+  icon: {fileID: -371184054500711404, guid: 7557daa3aa6e83648b3b9187ebd6c501, type: 3}
   slotType: 2
   keybind: Space

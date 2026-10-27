@@ -1,5 +1,4 @@
 using UnityEngine;
-using static UnityEditor.VersionControl.Asset;
 
 public class Larissa_Boss : Boss
 {

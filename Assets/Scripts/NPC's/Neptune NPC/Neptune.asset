@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Neptune
   m_EditorClassIdentifier: Assembly-CSharp::NPCDialogue
   npcName: Neptune
-  npcPortrait: {fileID: 0}
+  npcPortrait: {fileID: 4587741999509736294, guid: 065d65947974955498604115560042d2, type: 3}
+  dialogueBox: {fileID: 7495714598454710264, guid: 528e32851561d724c942ada76bfa6840, type: 3}
   dialogueLines:
   - Why hello there Pluto
   - How may I be of assisstance?

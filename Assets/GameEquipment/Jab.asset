@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70195c6923946f4458fb1efaf551ede9, type: 3}
   m_Name: Jab
   m_EditorClassIdentifier: Assembly-CSharp::EquipmentData
-  displayName: 
-  icon: {fileID: 1208040086343421634, guid: 2cdc5a1e45667e74ea7dc831603498a8, type: 3}
+  displayName: Ice Shank
+  description: Short range
+  icon: {fileID: -494880540075189763, guid: 0acc2afa1062b0c41a5a85c552715815, type: 3}
   slotType: 0
   keybind: L-Click

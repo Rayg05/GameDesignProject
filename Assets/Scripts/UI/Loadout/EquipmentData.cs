@@ -6,6 +6,7 @@ public enum SlotType { Weapon, Item, Ability }
 public class EquipmentData : ScriptableObject
 {
     public string displayName;
+    [TextArea] public string description; // shown under the name when hovering it in the inventory
     public Sprite icon;
     public SlotType slotType;
     public string keybind; // shown on the HUD slot, e.g. "Q" or "L-Click"; leave empty for passive gear

@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70195c6923946f4458fb1efaf551ede9, type: 3}
   m_Name: StrengthItem
   m_EditorClassIdentifier: Assembly-CSharp::EquipmentData
-  displayName: 
+  displayName: Fury Flask
+  description: Increase attack power for a short duration.
   icon: {fileID: 12085813604639031, guid: ccf6302d5e7e87c4ba6d56d938b6c07b, type: 3}
   slotType: 1
   keybind: Q

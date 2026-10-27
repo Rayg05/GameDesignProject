@@ -54,6 +54,11 @@ public class NPC : MonoBehaviour, Interactable
         nameText.SetText(dialogueData.npcName);
         portraitImage.sprite = dialogueData.npcPortrait;
 
+        // Each NPC can bring their own dialogue box art
+        Image panelImage = dialoguePanel.GetComponent<Image>();
+        if (panelImage != null && dialogueData.dialogueBox != null)
+            panelImage.sprite = dialogueData.dialogueBox;
+
         dialoguePanel.SetActive(true);
         //Pause controller set true here if we add it
 

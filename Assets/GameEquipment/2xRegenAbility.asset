@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70195c6923946f4458fb1efaf551ede9, type: 3}
   m_Name: 2xRegenAbility
   m_EditorClassIdentifier: Assembly-CSharp::EquipmentData
-  displayName: 
+  displayName: Restorative Locket
+  description: Double passive health regeneration.
   icon: {fileID: 1475863190240918629, guid: 34cdc7f3b2503ec47a661682ead86472, type: 3}
   slotType: 2
