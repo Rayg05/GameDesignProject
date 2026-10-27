@@ -171,6 +171,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pluto
       objectReference: {fileID: 0}
+    - target: {fileID: 3665634787247887953, guid: ad4af34d8d483a745bf3290c52f7b6be, type: 3}
+      propertyPath: jumpHeight
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -390,6 +394,9 @@ MonoBehaviour:
   regen: 1
   regenDelay: 5
   damageMult: 1
+  returnToHubOnDeath: 1
+  returnSceneName: HubWorld
+  returnDelay: 2
 --- !u!1001 &2036356756
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -826,6 +833,7 @@ MonoBehaviour:
   offset: {x: 0, y: 2.5, z: -50}
   smoothSpeed: 3
   bounds: {fileID: 0}
+  topBound: {fileID: 0}
   snapOnStart: 1
 --- !u!81 &2074683447
 AudioListener:

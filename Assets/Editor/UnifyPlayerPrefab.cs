@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public static class UnifyPlayerPrefab
 {
     const string PrefabPath = "Assets/Prefab/Player.prefab";
-    const string SourceScene = "Assets/Scenes/Boss Scenes/NeptuneBoss.unity"; // most complete player, gets applied to the prefab
+    const string SourceScene = "Assets/Scenes/Boss Scenes/LarissaBoss.unity"; // most complete player, gets applied to the prefab
     const string HubScene = "Assets/Scenes/HubWorld.unity";                    // has a standalone (non-prefab) player
     const string HudPrefabPath = "Assets/Prefab/HUD.prefab";                   // health bar + inventory, missing from the hub
     const string StrengthItemPath = "Assets/GameEquipment/StrengthItem.asset"; // no player had the StrengthItem component yet
@@ -24,7 +24,7 @@ public static class UnifyPlayerPrefab
     {
         if (!EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo()) return;
         if (!EditorUtility.DisplayDialog("Unify Player Prefab",
-            "This applies NeptuneBoss's player to Player.prefab, then replaces the player in HubWorld, " +
+            "This applies LarissaBoss's player to Player.prefab, then replaces the player in HubWorld, " +
             "UranusBoss, CurrentGame and Scene2 with that prefab, adds the HUD/inventory to HubWorld " +
             "and saves every scene.\n\n" +
             "Make sure your work is committed in git first so you can undo it.", "Run", "Cancel")) return;
@@ -34,12 +34,12 @@ public static class UnifyPlayerPrefab
         // 1. Neptune's player becomes the prefab
         Scene scene = EditorSceneManager.OpenScene(SourceScene, OpenSceneMode.Single);
         GameObject neptunePlayer = FindPlayerInstance(scene);
-        if (neptunePlayer == null) { Debug.LogError("[Unify] No Player.prefab instance in NeptuneBoss, nothing changed"); return; }
+        if (neptunePlayer == null) { Debug.LogError("[Unify] No Player.prefab instance in LarissaBoss, nothing changed"); return; }
         foreach (Transform t in neptunePlayer.GetComponentsInChildren<Transform>(true))
             GameObjectUtility.RemoveMonoBehavioursWithMissingScript(t.gameObject);
         PrefabUtility.ApplyPrefabInstance(neptunePlayer, InteractionMode.AutomatedAction);
         EditorSceneManager.SaveScene(scene);
-        Debug.Log("[Unify] Applied NeptuneBoss player to Player.prefab");
+        Debug.Log("[Unify] Applied LarissaBoss player to Player.prefab");
         AddStrengthItem();
 
         // 2. Hub: swap the standalone player for the prefab, keeping its InteractionDetector (added to the prefab)

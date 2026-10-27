@@ -20,6 +20,8 @@ public class PlanetSelection : MonoBehaviour
     private GameObject controlsHint; // [A / D] Browse  [E] Select  [ESC] Back
 
     private string[] planetNames = { "Neptune", "Uranus", "Saturn", "Jupiter", "Other" };
+    // boss scene for each planet above, in the same order; empty = no boss scene yet
+    private string[] bossScenes = { "LarissaBoss", "UranusBoss", "", "", "" };
     private int numPlanets;
     private int targetX = 0;
     private int targetY = 0;
@@ -93,11 +95,13 @@ public class PlanetSelection : MonoBehaviour
                 errorShownTime = Time.unscaledTime;
                 errorHideTime = errorShownTime + errorDuration;
             } else {
-                // Create name of scene ([Planet]Boss)
-                string sceneName = planetNames[targetX] + "Boss";
+                string sceneName = bossScenes[targetX];
 
-                // GO TO ROOM HERE.
-                SceneFader.LoadScene(sceneName);
+                // GO TO ROOM HERE (planets without a boss scene in the build yet do nothing).
+                if (Application.CanStreamedLevelBeLoaded(sceneName))
+                    SceneFader.LoadScene(sceneName);
+                else
+                    Debug.LogWarning($"No boss scene for {planetNames[targetX]} in the build yet");
             }
         }
 
