@@ -24,8 +24,9 @@ public class HUD : MonoBehaviour
     [SerializeField] private GameObject criticalIcon;
     [SerializeField, Range(0f, 1f)] private float criticalThreshold = 0.2f;
 
-    [Header("Strength buff")]
-    [SerializeField] private Color strengthGlowColor = new Color(1f, 0.55f, 0f, 1f); // orange
+    [Header("Buff auras")]
+    [SerializeField] private Color strengthGlowColor = new Color(1f, 0.55f, 0f, 1f); // orange, Fury Flask
+    [SerializeField] private Color defenseGlowColor = new Color(0.2f, 0.85f, 0.3f, 1f); // green, Bulwark
     [SerializeField] private float glowPulseSpeed = 4f;
 
     [Header("Debug")]
@@ -37,12 +38,20 @@ public class HUD : MonoBehaviour
     private bool healPending;   // next HealthChanged comes from Health.Heal
     private float healTarget;   // fill the heal animation is heading to
 
-    // orange glow layers behind the bar + seconds left, while the strength item is active
+    // glow layers behind the bar + seconds left, one set per buff item while it's active
     private static readonly float[] GlowPadding = { 6f, 12f, 20f };
     private static readonly float[] GlowAlpha = { 0.7f, 0.4f, 0.18f };
-    private Image[] glowLayers;
-    private TextMeshProUGUI strengthTimerText;
-    private bool timerOutlineSet;
+    private const float TimerSpacing = 100f; // gap between timers when more than one buff is active
+
+    private class BuffAura
+    {
+        public Func<EquipmentData> item; // read each frame, the item's Awake may run after the HUD's
+        public Color color;
+        public Image[] layers;
+        public TextMeshProUGUI timerText;
+        public bool outlineSet;
+    }
+    private BuffAura[] auras;
 
     //attach health to healthbar
     private void Awake()
@@ -54,7 +63,7 @@ public class HUD : MonoBehaviour
         inventoryButton.onClick.AddListener(() => InventoryToggled?.Invoke());
         KeybindLabel.Create((RectTransform)inventoryButton.transform, "I");
         if (playerHealth != null) Bind(playerHealth);
-        BuildStrengthGlow(); // last, so the core HUD is set up even if this fails
+        BuildBuffAuras(); // last, so the core HUD is set up even if this fails
     }
 
     //toggling inventory
@@ -69,7 +78,7 @@ public class HUD : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.P)) target.Heal(debugAmount);
         }
 
-        UpdateStrengthGlow();
+        UpdateBuffAuras();
     }
 
     //points healthbar to health component
@@ -204,8 +213,7 @@ public class HUD : MonoBehaviour
         healRoutine = null;
     }
 
-    // Copies of the bar's outline drawn as solid orange, each a bit bigger and fainter = soft glow
-    private void BuildStrengthGlow()
+    private void BuildBuffAuras()
     {
         RectTransform bar = (RectTransform)healthFill.transform.parent;
         Transform emptyBar = bar.Find("EmptyBar");
@@ -214,10 +222,21 @@ public class HUD : MonoBehaviour
         Shader shader = Shader.Find("Custom/UISilhouette");
         Material silhouette = shader != null ? new Material(shader) : null;
 
-        glowLayers = new Image[GlowPadding.Length];
+        auras = new[]
+        {
+            BuildAura("Strength", () => StrengthItem.Data, strengthGlowColor, bar, source, silhouette),
+            BuildAura("Defense", () => DefenseUp.Data, defenseGlowColor, bar, source, silhouette),
+        };
+    }
+
+    // Copies of the bar's outline drawn as a solid color, each a bit bigger and fainter = soft glow
+    private BuffAura BuildAura(string name, Func<EquipmentData> item, Color color, RectTransform bar, Image source, Material silhouette)
+    {
+        BuffAura aura = new BuffAura { item = item, color = color, layers = new Image[GlowPadding.Length] };
+
         for (int i = 0; i < GlowPadding.Length; i++)
         {
-            GameObject go = new GameObject("StrengthGlow" + i, typeof(RectTransform));
+            GameObject go = new GameObject(name + "Glow" + i, typeof(RectTransform));
             go.transform.SetParent(bar, false);
             go.transform.SetAsFirstSibling(); // behind the bar, biggest layer furthest back
             RectTransform rect = (RectTransform)go.transform;
@@ -230,55 +249,63 @@ public class HUD : MonoBehaviour
             glow.sprite = source.sprite;
             glow.material = silhouette;
             glow.raycastTarget = false;
-            glowLayers[i] = glow;
+            aura.layers[i] = glow;
             go.SetActive(false);
         }
 
-        GameObject textObject = new GameObject("StrengthTimer", typeof(RectTransform));
+        GameObject textObject = new GameObject(name + "Timer", typeof(RectTransform));
         textObject.transform.SetParent(bar, false);
         RectTransform textRect = (RectTransform)textObject.transform;
         textRect.anchorMin = textRect.anchorMax = new Vector2(1f, 0.5f);
         textRect.pivot = new Vector2(0f, 0.5f);
-        textRect.anchoredPosition = new Vector2(GlowPadding[GlowPadding.Length - 1] + 8f, 0f);
         textRect.sizeDelta = new Vector2(120f, 60f);
-        strengthTimerText = textObject.AddComponent<TextMeshProUGUI>();
-        strengthTimerText.fontSize = 40f;
-        strengthTimerText.fontStyle = FontStyles.Bold;
-        strengthTimerText.color = strengthGlowColor;
-        strengthTimerText.alignment = TextAlignmentOptions.Left;
-        strengthTimerText.textWrappingMode = TextWrappingModes.NoWrap;
-        strengthTimerText.raycastTarget = false;
+        aura.timerText = textObject.AddComponent<TextMeshProUGUI>();
+        aura.timerText.fontSize = 40f;
+        aura.timerText.fontStyle = FontStyles.Bold;
+        aura.timerText.color = color;
+        aura.timerText.alignment = TextAlignmentOptions.Left;
+        aura.timerText.textWrappingMode = TextWrappingModes.NoWrap;
+        aura.timerText.raycastTarget = false;
         textObject.SetActive(false);
+        return aura;
     }
 
-    private void UpdateStrengthGlow()
+    private void UpdateBuffAuras()
     {
-        float remaining = ItemTimers.ActiveRemaining(StrengthItem.Data);
-        bool active = remaining > 0f;
-
-        if (strengthTimerText.gameObject.activeSelf != active) strengthTimerText.gameObject.SetActive(active);
-        foreach (Image glow in glowLayers)
-            if (glow.gameObject.activeSelf != active) glow.gameObject.SetActive(active);
-        if (!active) return;
-
-        if (!timerOutlineSet && strengthTimerText.gameObject.activeInHierarchy)
-        {
-            // TMP's material only exists once the text is active (the healthbar is hidden in the hub),
-            // so the outline is set the first time it shows instead of in BuildStrengthGlow
-            strengthTimerText.outlineWidth = 0.25f;
-            strengthTimerText.outlineColor = Color.black;
-            timerOutlineSet = true;
-        }
-
-        strengthTimerText.text = Mathf.CeilToInt(remaining) + "s";
-
         // gentle pulse so it reads as a buff rather than part of the bar
         float pulse = Mathf.Lerp(0.6f, 1f, (Mathf.Sin(Time.unscaledTime * glowPulseSpeed) + 1f) * 0.5f);
-        for (int i = 0; i < glowLayers.Length; i++)
+        int shownTimers = 0; // active timers line up left to right next to the bar
+
+        foreach (BuffAura aura in auras)
         {
-            Color c = strengthGlowColor;
-            c.a = GlowAlpha[i] * pulse;
-            glowLayers[i].color = c;
+            float remaining = ItemTimers.ActiveRemaining(aura.item());
+            bool active = remaining > 0f;
+
+            if (aura.timerText.gameObject.activeSelf != active) aura.timerText.gameObject.SetActive(active);
+            foreach (Image glow in aura.layers)
+                if (glow.gameObject.activeSelf != active) glow.gameObject.SetActive(active);
+            if (!active) continue;
+
+            if (!aura.outlineSet && aura.timerText.gameObject.activeInHierarchy)
+            {
+                // TMP's material only exists once the text is active (the healthbar is hidden in the hub),
+                // so the outline is set the first time it shows instead of in BuildAura
+                aura.timerText.outlineWidth = 0.25f;
+                aura.timerText.outlineColor = Color.black;
+                aura.outlineSet = true;
+            }
+
+            aura.timerText.text = Mathf.CeilToInt(remaining) + "s";
+            ((RectTransform)aura.timerText.transform).anchoredPosition =
+                new Vector2(GlowPadding[GlowPadding.Length - 1] + 8f + shownTimers * TimerSpacing, 0f);
+            shownTimers++;
+
+            for (int i = 0; i < aura.layers.Length; i++)
+            {
+                Color c = aura.color;
+                c.a = GlowAlpha[i] * pulse;
+                aura.layers[i].color = c;
+            }
         }
     }
 

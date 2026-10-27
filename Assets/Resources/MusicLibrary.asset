@@ -20,6 +20,6 @@ MonoBehaviour:
   - sceneName: LarissaBoss
     clip: {fileID: 8300000, guid: 4f5f091b2e882194284abd27c6f990dd, type: 3}
   - sceneName: UranusBoss
-    clip: {fileID: 8300000, guid: 1c72de01432930a4daf1c6e821011569, type: 3}
+    clip: {fileID: 8300000, guid: c83ed01eed473574991b6029152c92fa, type: 3}
   volume: 0.188
   fadeTime: 1

@@ -18,6 +18,14 @@ public class DefenseUp : MonoBehaviour
     private bool onCooldown = false;
     private float timer = 0f;
 
+    // which EquipmentData is the defense item, so the HUD can show its aura
+    public static EquipmentData Data { get; private set; }
+
+    void Awake()
+    {
+        if (defenseUp != null) Data = defenseUp;
+    }
+
     // Update is called once per frame
     void Update()
     {
