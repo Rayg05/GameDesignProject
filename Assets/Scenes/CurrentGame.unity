@@ -231,7 +231,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2399115592720631176, guid: ad4af34d8d483a745bf3290c52f7b6be, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 694198103}
   m_SourcePrefab: {fileID: 100100000, guid: ad4af34d8d483a745bf3290c52f7b6be, type: 3}
 --- !u!4 &460498001 stripped
 Transform:
@@ -426,6 +429,9 @@ MonoBehaviour:
   regen: 1
   regenDelay: 5
   damageMult: 1
+  returnToHubOnDeath: 1
+  returnSceneName: HubWorld
+  returnDelay: 2
 --- !u!95 &560135192
 Animator:
   serializedVersion: 7
@@ -476,6 +482,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DoubleRegen
   multiplier: 2
   ability: {fileID: 11400000, guid: 5d318396791de7e4686a51f4068d50d8, type: 2}
+--- !u!1 &694198102 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2399115592720631176, guid: ad4af34d8d483a745bf3290c52f7b6be, type: 3}
+  m_PrefabInstance: {fileID: 460498000}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &694198103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694198102}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 732202790c075214fb1452a679fbc3ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Dash
+  ability: {fileID: 11400000, guid: ddff4c7e1d4c0a34098364163ae89fe4, type: 2}
 --- !u!1 &1014181853
 GameObject:
   m_ObjectHideFlags: 0
@@ -585,6 +609,7 @@ MonoBehaviour:
   offset: {x: 0, y: 2.5, z: -50}
   smoothSpeed: 3
   bounds: {fileID: 0}
+  topBound: {fileID: 0}
   snapOnStart: 1
 --- !u!1 &1100985265
 GameObject:
@@ -1258,7 +1283,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4471491364373088950, guid: 60e23b9982af8d841bd58683e418b47f, type: 3}
       propertyPath: ownedEquipment.Array.size
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4471491364373088950, guid: 60e23b9982af8d841bd58683e418b47f, type: 3}
       propertyPath: 'ownedEquipment.Array.data[3]'
@@ -1270,6 +1295,14 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 8669902dbe98191458b5f78d86ca63a0, type: 2}
     - target: {fileID: 4471491364373088950, guid: 60e23b9982af8d841bd58683e418b47f, type: 3}
       propertyPath: 'ownedEquipment.Array.data[5]'
+      value: 
+      objectReference: {fileID: 11400000, guid: a65180b267275c44cb5b0e9b79ba4373, type: 2}
+    - target: {fileID: 4471491364373088950, guid: 60e23b9982af8d841bd58683e418b47f, type: 3}
+      propertyPath: 'ownedEquipment.Array.data[6]'
+      value: 
+      objectReference: {fileID: 11400000, guid: ddff4c7e1d4c0a34098364163ae89fe4, type: 2}
+    - target: {fileID: 4471491364373088950, guid: 60e23b9982af8d841bd58683e418b47f, type: 3}
+      propertyPath: 'ownedEquipment.Array.data[7]'
       value: 
       objectReference: {fileID: 11400000, guid: a65180b267275c44cb5b0e9b79ba4373, type: 2}
     - target: {fileID: 4548199662563854195, guid: 60e23b9982af8d841bd58683e418b47f, type: 3}
