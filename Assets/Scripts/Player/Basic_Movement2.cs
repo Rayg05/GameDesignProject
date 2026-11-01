@@ -40,7 +40,12 @@ public class Basic_Movement2 : MonoBehaviour
     private float total_dash_time = 0f;
     private float waitTime = 0;
     private TrailRenderer[] dashTrails;
+    public static EquipmentData DashData { get; private set; }
 
+    void Awake()
+    {
+        if (dash != null) DashData = dash;
+    }
     void Start()
     {
         look_up_Animator = GetComponent<Animator>();
@@ -160,15 +165,17 @@ public class Basic_Movement2 : MonoBehaviour
     }
     private void HandleDash()
     {
-       if (Input.GetKeyDown(KeyCode.F) && !dash_cooldown && Time.time >= waitTime && Loadout.IsEquipped(dash))
+        if (Input.GetKeyDown(KeyCode.LeftShift) && !dash_cooldown && Time.time >= waitTime && Loadout.IsEquipped(dash))
         {
             total_dash_time = dash_length + Time.time;
             dash_cooldown = true;
+            ItemTimers.StartActive(dash, dash_length);
         }
-        if(dash_cooldown && Time.time >=total_dash_time && Loadout.IsEquipped(dash))
+        if (dash_cooldown && Time.time >= total_dash_time && Loadout.IsEquipped(dash))
         {
             dash_cooldown = false;
             waitTime = Time.time + cooldown_duration;
+            ItemTimers.StartCooldown(dash, cooldown_duration);
         }
         if (dash_cooldown)
         {
@@ -180,7 +187,6 @@ public class Basic_Movement2 : MonoBehaviour
             speedMultiplier = 1f;
             SetTrails(false);
         }
-
     }
     private void SetTrails(bool on)
     {
