@@ -5,6 +5,8 @@ public class Saturn_Boss : Boss
     [Header("Attack Damage")]
     public float whipDamage = 5f;
 
+    public float whipDist = 35.0f;
+
     protected override void BuildStates() {
         // IDLE SHOULD BE FIRST ON THE LIST!
         states.Add(new Saturn_Idle(this));
@@ -26,9 +28,21 @@ public class Saturn_Boss : Boss
             return;
         }
 
+        // Distance between Saturn and player.
+        float dist = Mathf.Abs(target.position.x - transform.position.x);
+
+        // If close, whip.
+        if (dist < whipDist) {
+            state_machine.ChangeState(states[1]);
+        } else {
+            state_machine.ChangeState(states[0]);
+        }
+
         // From Idle, pick a random state to transition to.
+        /*
         int rand = Random.Range(1, states.Count);
         Debug.Log("Rand = " + rand + ", num_states = " + states.Count);
         state_machine.ChangeState(states[rand]);
+        */
     }
 }
