@@ -18,7 +18,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1943088443592195208
 Transform:
   m_ObjectHideFlags: 0
@@ -383,3 +383,4 @@ MonoBehaviour:
   contactDamage: 5
   whipDamage: 5
   whipDist: 35
+  whipHitbox: {fileID: 0}

@@ -7,6 +7,8 @@ public class Saturn_Boss : Boss
 
     public float whipDist = 35.0f;
 
+    public GameObject whipHitbox;
+
     protected override void BuildStates() {
         // IDLE SHOULD BE FIRST ON THE LIST!
         states.Add(new Saturn_Idle(this));
@@ -44,5 +46,11 @@ public class Saturn_Boss : Boss
         Debug.Log("Rand = " + rand + ", num_states = " + states.Count);
         state_machine.ChangeState(states[rand]);
         */
+    }
+
+    // Called on animation events only.
+    public void WhipHitboxActivation(int activate) {
+        // Activate and deactivate whip at given keyframes.
+        whipHitbox.SetActive(activate != 0);
     }
 }

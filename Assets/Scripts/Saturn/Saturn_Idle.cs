@@ -13,7 +13,7 @@ public class Saturn_Idle : IState {
     public void Enter() {
         Debug.Log("Entering Saturn_Idle.");
         timer = 0f;
-        animator.SetBool("Idle", true);
+        //animator.SetBool("Idle", true);
         saturn.FaceTarget();
     }
 
@@ -23,7 +23,7 @@ public class Saturn_Idle : IState {
     }
 
     public void Exit() {
-        animator.SetBool("Idle", false);
+        //animator.SetBool("Idle", false);
         Debug.Log("Exiting Saturn_Idle.");
     }
 }

@@ -204,6 +204,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3759609028917083643, guid: 2731e3f023b10824ba20385cd9ae6875, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3803703699655012891, guid: 2731e3f023b10824ba20385cd9ae6875, type: 3}
       propertyPath: m_Name
       value: Saturn
@@ -252,6 +256,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 460498001}
+    - target: {fileID: 7567656797137158369, guid: 2731e3f023b10824ba20385cd9ae6875, type: 3}
+      propertyPath: whipHitbox
+      value: 
+      objectReference: {fileID: 1909139600}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -433,6 +441,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75a71cd55fd14a643bf2fc06b110fadb, type: 3}
+--- !u!1 &1909139600 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3759609028917083643, guid: 2731e3f023b10824ba20385cd9ae6875, type: 3}
+  m_PrefabInstance: {fileID: 660296578}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2027382792 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3803703699655012891, guid: 0e46c532aaa52e54f880af7dc7d5b0db, type: 3}
