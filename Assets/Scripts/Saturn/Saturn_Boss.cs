@@ -8,8 +8,8 @@ public class Saturn_Boss : Boss
     protected override void BuildStates() {
         // IDLE SHOULD BE FIRST ON THE LIST!
         states.Add(new Saturn_Idle(this));
-        states.Add(new Saturn_Whip(this));
-        //states.Add(new Saturn_Hat(this));
+        //states.Add(new Saturn_Whip(this));
+        states.Add(new Saturn_Hat(this));
         //states.Add(new Saturn_Drill(this));
     }
 
