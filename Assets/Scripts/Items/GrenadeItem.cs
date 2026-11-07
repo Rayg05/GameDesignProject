@@ -1,27 +1,27 @@
 using UnityEngine;
-using UnityEngine.LowLevel;
 
 public class GrenadeItem : MonoBehaviour
 {
-    [SerializeField] private GrenadeAttackArea grenadeAttack;
     [SerializeField] private int strengthBonus = 3;
     [SerializeField] private float timeToExplode = 5f;
     [SerializeField] private float cooldownDuration = 10f;
     [SerializeField] private int usages = 3;
-    [SerializeField] private float grenadeSpeed = 50f;
+    [SerializeField] private float grenadeGravity = 2f;       
+    [SerializeField] private float minThrowSpeed = 6f;
+    [SerializeField] private float maxThrowSpeed = 18f;
+    [SerializeField] private float throwPowerPerUnit = 2f;    
+    [SerializeField] private float arcBoost = 0.3f; 
+    [SerializeField] private float spinSpeed = 360f;
     [SerializeField] private EquipmentData grenadeItem;
     [SerializeField] private Transform firePoint;
     [SerializeField] private Transform playerRoot;
     [SerializeField] private GameObject grenadePrefab;
 
-    private int orig_Damage;
-    private bool isActive = false;
+    private bool isActive = false; 
     private bool onCooldown = false;
     private float timer = 0f;
     private Camera cam;
 
-
-    // which EquipmentData is the strength item, so the HUD can show its timer
     public static EquipmentData Data { get; private set; }
 
     void Awake()
@@ -32,21 +32,16 @@ public class GrenadeItem : MonoBehaviour
 
     void Update()
     {
-        if (grenadeAttack == null) return;
-
-        // Activate buff on key press
         if (Input.GetKeyDown(KeyCode.Q) && Loadout.IsEquipped(grenadeItem) && Time.timeScale > 0f)
         {
             if (!isActive && !onCooldown && usages > 0)
             {
-                Explode();
-                orig_Damage = grenadeAttack.damage;
-                grenadeAttack.damage += strengthBonus;
+                ThrowGrenade();
                 isActive = true;
                 timer = 0f;
                 ItemTimers.StartActive(grenadeItem, timeToExplode);
                 usages--;
-                
+                Debug.Log("Grenade out!");
             }
             else if (onCooldown)
             {
@@ -54,49 +49,68 @@ public class GrenadeItem : MonoBehaviour
             }
         }
 
-        // Count down the active buff
         if (isActive)
+        {
+            timer += Time.deltaTime;
+            if (timer >= timeToExplode) EndActive();
+        }
+        else if (onCooldown)
         {
             timer += Time.deltaTime;
             if (timer >= cooldownDuration)
             {
-                grenadeAttack.damage = orig_Damage;
-                isActive = false;
-                onCooldown = true;
-                ItemTimers.StartCooldown(grenadeItem, cooldownDuration);
+                onCooldown = false;
                 timer = 0f;
-                Debug.Log("now on cooldown");
+                Debug.Log(usages > 0 ? "Cooldown finished, ready to use again" : "Out of Grenades");
             }
         }
     }
-    private void Explode()
+
+    private void EndActive()
     {
-        // get mouse position 
+        isActive = false;
+        onCooldown = true;
+        timer = 0f;
+        ItemTimers.StartCooldown(grenadeItem, cooldownDuration);
+        Debug.Log("Grenade exploded, now on cooldown");
+    }
+
+    private void ThrowGrenade()
+    {
+        // aim toward the mouse
         Vector3 mousePos = Input.mousePosition;
         mousePos.z = Mathf.Abs(cam.transform.position.z - firePoint.position.z);
         Vector2 mouseWorld = cam.ScreenToWorldPoint(mousePos);
-        Vector2 direction = (mouseWorld - (Vector2)firePoint.position).normalized;
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        Vector2 toMouse = mouseWorld - (Vector2)firePoint.position;
+        Vector2 direction = toMouse.normalized;
 
-        GameObject grenade = Instantiate(grenadePrefab, firePoint.position, Quaternion.Euler(0f, 0f, angle));
+        // farther cursor = harder throw
+        float speed = Mathf.Clamp(toMouse.magnitude * throwPowerPerUnit, minThrowSpeed, maxThrowSpeed);
 
+        // tilt the launch upward so it arcs instead of drooping
+        Vector2 launchDir = (direction + Vector2.up * arcBoost).normalized;
+
+        // no aim rotation, the grenade spins instead
+        GameObject grenade = Instantiate(grenadePrefab, firePoint.position, Quaternion.identity);
+
+        // don't collide with the player
         Transform shooter = playerRoot != null ? playerRoot : transform.root;
         foreach (Collider2D pc in shooter.GetComponentsInChildren<Collider2D>())
             foreach (Collider2D bc in grenade.GetComponentsInChildren<Collider2D>())
                 Physics2D.IgnoreCollision(bc, pc);
 
-        //strength buff compensation 
+        // apply the player's strength buff to this grenade's damage
         GrenadeAttackArea area = grenade.GetComponentInChildren<GrenadeAttackArea>();
         if (area != null) area.damage += DamageModifiers.FlatBonus;
 
-        //object movement 
+        // movement with gravity
         Rigidbody2D rb = grenade.GetComponent<Rigidbody2D>();
-        rb.gravityScale = 0f;
+        rb.gravityScale = grenadeGravity;
         rb.linearDamping = 0f;
-        rb.linearVelocity = direction * grenadeSpeed;
+        rb.linearVelocity = launchDir * speed;
+        rb.angularVelocity = -Mathf.Sign(direction.x) * spinSpeed; 
 
-        //destroy object on its timer or impact 
+        // explode (destroy) when the fuse runs out
         Destroy(grenade, timeToExplode);
-        
     }
 }
