@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class GrenadeItem : MonoBehaviour
 {
-    [SerializeField] private int strengthBonus = 3;
     [SerializeField] private float timeToExplode = 5f;
     [SerializeField] private float cooldownDuration = 10f;
     [SerializeField] private int usages = 3;
@@ -30,6 +29,7 @@ public class GrenadeItem : MonoBehaviour
         if (grenadeItem != null) Data = grenadeItem;
     }
 
+    //same format as the strengthItem script
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Q) && Loadout.IsEquipped(grenadeItem) && Time.timeScale > 0f)
@@ -77,40 +77,40 @@ public class GrenadeItem : MonoBehaviour
 
     private void ThrowGrenade()
     {
-        // aim toward the mouse
+        //uses same functionality as projectile weapon to get mouse position 
+        //for aiming purposes 
+
         Vector3 mousePos = Input.mousePosition;
         mousePos.z = Mathf.Abs(cam.transform.position.z - firePoint.position.z);
         Vector2 mouseWorld = cam.ScreenToWorldPoint(mousePos);
         Vector2 toMouse = mouseWorld - (Vector2)firePoint.position;
         Vector2 direction = toMouse.normalized;
 
-        // farther cursor = harder throw
+        //farther cursor = harder throw
         float speed = Mathf.Clamp(toMouse.magnitude * throwPowerPerUnit, minThrowSpeed, maxThrowSpeed);
 
-        // tilt the launch upward so it arcs instead of drooping
+        //tilt the launch upward so it arcs instead of drooping
         Vector2 launchDir = (direction + Vector2.up * arcBoost).normalized;
 
-        // no aim rotation, the grenade spins instead
+        //no aim rotation, the grenade spins instead
         GameObject grenade = Instantiate(grenadePrefab, firePoint.position, Quaternion.identity);
 
-        // don't collide with the player
+        //don't collide with the player
         Transform shooter = playerRoot != null ? playerRoot : transform.root;
         foreach (Collider2D pc in shooter.GetComponentsInChildren<Collider2D>())
             foreach (Collider2D bc in grenade.GetComponentsInChildren<Collider2D>())
                 Physics2D.IgnoreCollision(bc, pc);
-
-        // apply the player's strength buff to this grenade's damage
-        GrenadeAttackArea area = grenade.GetComponentInChildren<GrenadeAttackArea>();
-        if (area != null) area.damage += DamageModifiers.FlatBonus;
 
         // movement with gravity
         Rigidbody2D rb = grenade.GetComponent<Rigidbody2D>();
         rb.gravityScale = grenadeGravity;
         rb.linearDamping = 0f;
         rb.linearVelocity = launchDir * speed;
-        rb.angularVelocity = -Mathf.Sign(direction.x) * spinSpeed; 
+        rb.angularVelocity = -Mathf.Sign(direction.x) * spinSpeed;
 
-        // explode (destroy) when the fuse runs out
-        Destroy(grenade, timeToExplode);
+        //calls start fuse function so damage can be done 
+        GrenadeAttackArea area = grenade.GetComponentInChildren<GrenadeAttackArea>();
+        if (area != null) area.StartFuse(timeToExplode);
+        else Destroy(grenade, timeToExplode);
     }
 }
