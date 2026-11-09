@@ -23,7 +23,7 @@ public class Hat_Projectile : MonoBehaviour
     {
         Rigidbody2D wall = collision.GetComponent<Rigidbody2D>();
 
-        if(!collision.CompareTag(wallTag)) return;
+        //if(!collision.CompareTag(wallTag)) return;
 
         bounces--;
 
@@ -32,10 +32,6 @@ public class Hat_Projectile : MonoBehaviour
             if(bounces % 2 == 0)
             {
                 Shoot((plutoPos.position - transform.position).normalized);
-            }
-            else
-            {
-                Shoot(new Vector2(1f, 0.8f).normalized);
             }
         }
 
