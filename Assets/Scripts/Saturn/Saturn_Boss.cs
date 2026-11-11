@@ -5,6 +5,10 @@ public class Saturn_Boss : Boss
     [Header("Attack Damage")]
     public float whipDamage = 5f;
 
+    [Header("Hat damage")]
+
+    public float hatDamage = 10f;
+
     protected override void BuildStates() {
         // IDLE SHOULD BE FIRST ON THE LIST!
         states.Add(new Saturn_Idle(this));

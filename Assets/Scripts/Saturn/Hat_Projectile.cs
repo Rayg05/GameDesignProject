@@ -43,12 +43,6 @@ public class Hat_Projectile : MonoBehaviour
 
     }
 
-    public void OnTriggerEnter2D(Collider2D collision)
-    {
-       
-        
-    }
-
     public void Shoot(Vector2 dir) {
         rb.linearVelocity = dir * speed;
     }

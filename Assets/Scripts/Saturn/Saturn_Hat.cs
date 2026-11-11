@@ -2,12 +2,12 @@ using UnityEngine;
 
 public class Saturn_Hat : IState
 {
-    readonly Boss saturn;
+    readonly Saturn_Boss saturn;
     readonly Animator animator;
     float stateDuration = 1f;
     float timer;
     bool fired;
-    public Saturn_Hat(Boss boss)
+    public Saturn_Hat(Saturn_Boss boss)
     {
         saturn = boss; 
         animator = saturn.GetComponent<Animator>();
@@ -29,7 +29,14 @@ public class Saturn_Hat : IState
             fired = true;
 
             Transform lt = saturn.transform;
+            GameObject projectile = ((Boss)saturn).projectile;
+            GameObject p1 = GameObject.Instantiate(projectile, lt.position, lt.rotation);
+            BossDamage.Apply(p1, saturn.hatDamage);
+            p1.GetComponent<Hat_Projectile>().Shoot(new Vector2(-lt.localScale.x, 0));
         }
+
+        if (timer >= stateDuration)
+            saturn.ChooseNextState(this);
     }
 
     public void Exit()
