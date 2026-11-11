@@ -8,7 +8,7 @@ public class Hat_Projectile : MonoBehaviour
     public float speed = 30f;
     private string wallTag = "Wall";
     private float timer = 0f;
-    private int bounces = 5;
+    private int bounces = 8;
 
     [SerializeField] Transform plutoPos;
 
@@ -19,22 +19,33 @@ public class Hat_Projectile : MonoBehaviour
 
 
     }
-     public void OnTriggerEnter2D(Collider2D collision)
+
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        Rigidbody2D wall = collision.GetComponent<Rigidbody2D>();
+
 
         //if(!collision.CompareTag(wallTag)) return;
 
         bounces--;
 
-        if(wall != null)
-        {
-            if(bounces % 2 == 0)
+
+            if(bounces % 2 == 0)   //every other bounce goes towards the player so it doesnt bounce off randomly and get it stuck somewhere
             {
                 Shoot((plutoPos.position - transform.position).normalized);
             }
-        }
+            else
+            {
+                Vector2 incoming =  -collision.relativeVelocity.normalized;
 
+               Shoot(Vector2.Reflect(incoming, collision.contacts[0].normal));
+                
+            }
+
+    }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+       
         
     }
 
