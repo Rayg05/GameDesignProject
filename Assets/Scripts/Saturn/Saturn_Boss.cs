@@ -22,12 +22,16 @@ public class Saturn_Boss : Boss
 
     public GameObject whipHitbox;
 
+    [Header("Hat damage")]
+
+    public float hatDamage = 10f;
+
     protected override void BuildStates() {
         // IDLE SHOULD BE FIRST ON THE LIST!
         states.Add(new Saturn_Idle(this));
-        states.Add(new Saturn_Whip(this));
-        states.Add(new Saturn_Drill(this));
-        //states.Add(new Saturn_Hat(this));
+        states.Add(new Saturn_Whip(this));   // 1
+        states.Add(new Saturn_Drill(this));  // 2
+        states.Add(new Saturn_Hat(this));    // 3
     }
 
     // Just Idle, in this case.
@@ -46,9 +50,12 @@ public class Saturn_Boss : Boss
         // Distance between Saturn and player.
         float dist = Mathf.Abs(target.position.x - transform.position.x);
 
-        // If close, whip. If far, drill (the jump closes the distance).
+        // If close, whip. If far, randomly drill (the jump closes the distance) or throw the hat.
+        // The hat is only an option once a projectile prefab is assigned in the Inspector.
         if (dist < whipDist) {
             state_machine.ChangeState(states[1]);
+        } else if (projectile != null && Random.value < 0.5f) {
+            state_machine.ChangeState(states[3]);
         } else {
             state_machine.ChangeState(states[2]);
         }
