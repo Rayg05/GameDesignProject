@@ -1,10 +1,10 @@
 using UnityEngine;
 
-// Saturn leaps in an arc until she's directly above the player, hangs for a moment,
+// Saturn leaps in an arc until she's above where the player was when she jumped, hangs for a moment,
 // then dives straight down through the floor. She resurfaces somewhere else and
 // repeats, for a total of `diveCount` dives, then rises back to the ground.
-// Contact damage comes from BossDamage on her colliders, so the dive hurts on its own.
-public class Saturn_Dive : IState {
+// While the attack runs, touching her deals diveDamage instead of her normal contact damage.
+public class Saturn_Drill : IState {
     enum Phase { Jump, Hang, Dive, Underground, Resurface, Grounded }
 
     readonly Saturn_Boss saturn;
@@ -14,15 +14,17 @@ public class Saturn_Dive : IState {
     int divesDone;
     float groundY;        // Y she stands at on the floor (captured on Enter)
     Vector3 jumpStart;
+    float jumpTargetX;    // player's X when the jump started (locked for the whole arc)
 
-    public Saturn_Dive(Saturn_Boss boss) {
+    public Saturn_Drill(Saturn_Boss boss) {
         saturn = boss;
     }
 
     public void Enter() {
-        Debug.Log("Entering Saturn_Dive.");
+        Debug.Log("Entering Saturn_Drill.");
         groundY = saturn.transform.position.y;
         divesDone = 0;
+        BossDamage.Apply(saturn.gameObject, saturn.diveDamage);
         StartJump();
     }
 
@@ -32,15 +34,14 @@ public class Saturn_Dive : IState {
 
         switch (phase) {
             case Phase.Jump: {
-                // x moves linearly toward the player's CURRENT x, y eases out to the apex.
-                // That combination traces the rising half of a parabola.
+                // x moves linearly toward where the player was when the jump began, y eases out
+                // to the apex. That traces the rising half of a parabola along a fixed path:
+                // she commits to the spot and doesn't track the player mid-air.
                 float p = Mathf.Clamp01(timer / saturn.diveJumpDuration);
-                float targetX = saturn.target != null ? saturn.target.position.x : jumpStart.x;
                 float apexY = groundY + saturn.diveJumpHeight;
-                float x = Mathf.Lerp(jumpStart.x, targetX, p);
+                float x = Mathf.Lerp(jumpStart.x, jumpTargetX, p);
                 float y = Mathf.Lerp(jumpStart.y, apexY, 1f - (1f - p) * (1f - p));
                 t.position = new Vector3(x, y, t.position.z);
-                saturn.FaceTarget();
 
                 if (p >= 1f) SetPhase(Phase.Hang);
                 break;
@@ -93,11 +94,14 @@ public class Saturn_Dive : IState {
         // Make sure she's exactly on the floor if the state is interrupted.
         Vector3 pos = saturn.transform.position;
         saturn.transform.position = new Vector3(pos.x, groundY, pos.z);
-        Debug.Log("Exiting Saturn_Dive.");
+        BossDamage.Apply(saturn.gameObject, saturn.contactDamage);
+        Debug.Log("Exiting Saturn_Drill.");
     }
 
     void StartJump() {
         jumpStart = saturn.transform.position;
+        jumpTargetX = saturn.target != null ? saturn.target.position.x : jumpStart.x;
+        saturn.FaceTarget(); // face the landing spot once; don't flip mid-air
         SetPhase(Phase.Jump);
     }
 

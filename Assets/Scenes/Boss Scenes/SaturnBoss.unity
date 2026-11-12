@@ -332,6 +332,16 @@ MonoBehaviour:
   rightEdgeX: 0
   contactDamage: 5
   whipDamage: 5
+  diveCount: 3
+  diveJumpHeight: 20
+  diveJumpDuration: 1
+  diveHangTime: 0.6
+  diveSpeed: 40
+  diveUndergroundDepth: 30
+  diveUndergroundTime: 0.6
+  diveResurfaceDuration: 0.4
+  diveGroundedTime: 0.5
+  diveMinSurfaceDistance: 6
 --- !u!212 &549414054
 SpriteRenderer:
   serializedVersion: 3
@@ -606,31 +616,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75a71cd55fd14a643bf2fc06b110fadb, type: 3}
---- !u!1 &2027382792 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3803703699655012891, guid: 0e46c532aaa52e54f880af7dc7d5b0db, type: 3}
-  m_PrefabInstance: {fileID: 5792595391559486563}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2027382802
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2027382792}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4197db3605ed9fa42a64148b60cc5996, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Health
-  health: 72
-  maxHP: 72
-  regen: 1
-  regenDelay: 5
-  damageMult: 1
-  returnToHubOnDeath: 1
-  returnSceneName: HubWorld
-  returnDelay: 2
 --- !u!1001 &2036356756
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1143,90 +1128,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &5792595391559486563
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3244610682463442823, guid: 0e46c532aaa52e54f880af7dc7d5b0db, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3759609028917083643, guid: 0e46c532aaa52e54f880af7dc7d5b0db, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3803703699655012891, guid: 0e46c532aaa52e54f880af7dc7d5b0db, type: 3}
-      propertyPath: m_Name
-      value: Uranus
-      objectReference: {fileID: 0}
-    - target: {fileID: 7176578589272541424, guid: 0e46c532aaa52e54f880af7dc7d5b0db, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 7176578589272541424, guid: 0e46c532aaa52e54f880af7dc7d5b0db, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 11.700001
-      objectReference: {fileID: 0}
-    - target: {fileID: 7176578589272541424, guid: 0e46c532aaa52e54f880af7dc7d5b0db, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7176578589272541424, guid: 0e46c532aaa52e54f880af7dc7d5b0db, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7176578589272541424, guid: 0e46c532aaa52e54f880af7dc7d5b0db, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7176578589272541424, guid: 0e46c532aaa52e54f880af7dc7d5b0db, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7176578589272541424, guid: 0e46c532aaa52e54f880af7dc7d5b0db, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7176578589272541424, guid: 0e46c532aaa52e54f880af7dc7d5b0db, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7176578589272541424, guid: 0e46c532aaa52e54f880af7dc7d5b0db, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7176578589272541424, guid: 0e46c532aaa52e54f880af7dc7d5b0db, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8026818287504522656, guid: 0e46c532aaa52e54f880af7dc7d5b0db, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8336132183604343561, guid: 0e46c532aaa52e54f880af7dc7d5b0db, type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 460498001}
-    - target: {fileID: 8336132183604343561, guid: 0e46c532aaa52e54f880af7dc7d5b0db, type: 3}
-      propertyPath: blitzDamage
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 8336132183604343561, guid: 0e46c532aaa52e54f880af7dc7d5b0db, type: 3}
-      propertyPath: slashDamage
-      value: 20
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3803703699655012891, guid: 0e46c532aaa52e54f880af7dc7d5b0db, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2027382802}
-  m_SourcePrefab: {fileID: 100100000, guid: 0e46c532aaa52e54f880af7dc7d5b0db, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1236,5 +1137,4 @@ SceneRoots:
   - {fileID: 1189144121}
   - {fileID: 2036356756}
   - {fileID: 460498000}
-  - {fileID: 5792595391559486563}
   - {fileID: 549414055}

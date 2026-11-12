@@ -4,6 +4,7 @@ public class Saturn_Boss : Boss
 {
     [Header("Attack Damage")]
     public float whipDamage = 5f;
+    public float diveDamage = 5f;   // touching her at any point during the dive attack
 
     [Header("Dive Attack")]
     public int diveCount = 3;                  // how many dives per attack
@@ -21,7 +22,7 @@ public class Saturn_Boss : Boss
         // IDLE SHOULD BE FIRST ON THE LIST!
         states.Add(new Saturn_Idle(this));
         states.Add(new Saturn_Whip(this));
-        states.Add(new Saturn_Dive(this));
+        states.Add(new Saturn_Drill(this));
         //states.Add(new Saturn_Hat(this));
         //states.Add(new Saturn_Drill(this));
     }
