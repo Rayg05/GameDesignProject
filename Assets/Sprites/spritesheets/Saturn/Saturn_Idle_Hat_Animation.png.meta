@@ -1,0 +1,470 @@
+fileFormatVersion: 2
+guid: a1bc36033c3f935488754584aa39f04a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7209360103278144393
+    second: Saturn_Idle_Hat_Animation_0
+  - first:
+      213: 255853219466379437
+    second: Saturn_Idle_Hat_Animation_1
+  - first:
+      213: 4336124735287359015
+    second: Saturn_Idle_Hat_Animation_2
+  - first:
+      213: 4950507772102155208
+    second: Saturn_Idle_Hat_Animation_3
+  - first:
+      213: 2098951592895701007
+    second: Saturn_Idle_Hat_Animation_4
+  - first:
+      213: -168795543383981143
+    second: Saturn_Idle_Hat_Animation_5
+  - first:
+      213: 5988875492274846785
+    second: Saturn_Idle_Hat_Animation_6
+  - first:
+      213: 478717991359663414
+    second: Saturn_Idle_Hat_Animation_7
+  - first:
+      213: -1929749075392559540
+    second: Saturn_Idle_Hat_Animation_8
+  - first:
+      213: 1961681986717811007
+    second: Saturn_Idle_Hat_Animation_9
+  - first:
+      213: -7529343416871608912
+    second: Saturn_Idle_Hat_Animation_10
+  - first:
+      213: -7879471287843382871
+    second: Saturn_Idle_Hat_Animation_11
+  - first:
+      213: -6294682822571685699
+    second: Saturn_Idle_Hat_Animation_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Saturn_Idle_Hat_Animation_0
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 49
+        width: 881
+        height: 1897
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7749b32de2533fb90800000000000000
+      internalID: -7209360103278144393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Idle_Hat_Animation_1
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 1551
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da00fe4c529fc8300800000000000000
+      internalID: 255853219466379437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Idle_Hat_Animation_2
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 46
+        width: 884
+        height: 1895
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 726769419720d2c30800000000000000
+      internalID: 4336124735287359015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Idle_Hat_Animation_3
+      rect:
+        serializedVersion: 2
+        x: 2094
+        y: 0
+        width: 869
+        height: 1940
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cb95fdf69cb3b440800000000000000
+      internalID: 4950507772102155208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Idle_Hat_Animation_4
+      rect:
+        serializedVersion: 2
+        x: 3090
+        y: 60
+        width: 881
+        height: 1886
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f00e94f5a59f02d10800000000000000
+      internalID: 2098951592895701007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Idle_Hat_Animation_5
+      rect:
+        serializedVersion: 2
+        x: 3977
+        y: 1551
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a3cdecf85158adf0800000000000000
+      internalID: -168795543383981143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Idle_Hat_Animation_6
+      rect:
+        serializedVersion: 2
+        x: 4080
+        y: 60
+        width: 891
+        height: 1886
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14cb511a782cc1350800000000000000
+      internalID: 5988875492274846785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Idle_Hat_Animation_7
+      rect:
+        serializedVersion: 2
+        x: 4977
+        y: 1551
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63dc49e0a7fb4a600800000000000000
+      internalID: 478717991359663414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Idle_Hat_Animation_8
+      rect:
+        serializedVersion: 2
+        x: 5080
+        y: 63
+        width: 884
+        height: 1878
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c46869fa0772835e0800000000000000
+      internalID: -1929749075392559540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Idle_Hat_Animation_9
+      rect:
+        serializedVersion: 2
+        x: 6094
+        y: 63
+        width: 870
+        height: 1878
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f31099c9f5b493b10800000000000000
+      internalID: 1961681986717811007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Idle_Hat_Animation_10
+      rect:
+        serializedVersion: 2
+        x: 7090
+        y: 61
+        width: 873
+        height: 1879
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bd1175fd06628790800000000000000
+      internalID: -7529343416871608912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Idle_Hat_Animation_11
+      rect:
+        serializedVersion: 2
+        x: 8080
+        y: 49
+        width: 891
+        height: 1897
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a994366c9e76a290800000000000000
+      internalID: -7879471287843382871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Idle_Hat_Animation_12
+      rect:
+        serializedVersion: 2
+        x: 8977
+        y: 1551
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db88cd2d25bc4a8a0800000000000000
+      internalID: -6294682822571685699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Saturn_Idle_Hat_Animation_0: -7209360103278144393
+      Saturn_Idle_Hat_Animation_1: 255853219466379437
+      Saturn_Idle_Hat_Animation_10: -7529343416871608912
+      Saturn_Idle_Hat_Animation_11: -7879471287843382871
+      Saturn_Idle_Hat_Animation_12: -6294682822571685699
+      Saturn_Idle_Hat_Animation_2: 4336124735287359015
+      Saturn_Idle_Hat_Animation_3: 4950507772102155208
+      Saturn_Idle_Hat_Animation_4: 2098951592895701007
+      Saturn_Idle_Hat_Animation_5: -168795543383981143
+      Saturn_Idle_Hat_Animation_6: 5988875492274846785
+      Saturn_Idle_Hat_Animation_7: 478717991359663414
+      Saturn_Idle_Hat_Animation_8: -1929749075392559540
+      Saturn_Idle_Hat_Animation_9: 1961681986717811007
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

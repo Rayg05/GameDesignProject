@@ -18,13 +18,16 @@ public class Saturn_Boss : Boss
     public float diveGroundedTime = 0.5f;      // pause on the floor before the next jump
     public float diveMinSurfaceDistance = 4f;  // try to resurface at least this far from the player
 
+    public float whipDist = 35.0f;
+
+    public GameObject whipHitbox;
+
     protected override void BuildStates() {
         // IDLE SHOULD BE FIRST ON THE LIST!
         states.Add(new Saturn_Idle(this));
         states.Add(new Saturn_Whip(this));
         states.Add(new Saturn_Drill(this));
         //states.Add(new Saturn_Hat(this));
-        //states.Add(new Saturn_Drill(this));
     }
 
     // Just Idle, in this case.
@@ -40,9 +43,27 @@ public class Saturn_Boss : Boss
             return;
         }
 
+        // Distance between Saturn and player.
+        float dist = Mathf.Abs(target.position.x - transform.position.x);
+
+        // If close, whip. If far, drill (the jump closes the distance).
+        if (dist < whipDist) {
+            state_machine.ChangeState(states[1]);
+        } else {
+            state_machine.ChangeState(states[2]);
+        }
+
         // From Idle, pick a random state to transition to.
+        /*
         int rand = Random.Range(1, states.Count);
         Debug.Log("Rand = " + rand + ", num_states = " + states.Count);
         state_machine.ChangeState(states[rand]);
+        */
+    }
+
+    // Called on animation events only.
+    public void WhipHitboxActivation(int activate) {
+        // Activate and deactivate whip at given keyframes.
+        whipHitbox.SetActive(activate != 0);
     }
 }
