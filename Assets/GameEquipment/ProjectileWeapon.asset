@@ -16,4 +16,4 @@ MonoBehaviour:
   description: shoot projectiles at your enemy
   icon: {fileID: -494880540075189763, guid: 0acc2afa1062b0c41a5a85c552715815, type: 3}
   slotType: 0
-  keybind: 
+  keybind: L-Click

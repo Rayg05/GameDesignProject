@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c15665a3216a76c489eb277327af9d17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GrenadeAttackArea
-  damage: 20
+  damage: 12
   radius: 15
   minDamagePercent: 0.2
   hitLayers:

@@ -891,12 +891,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 947636a2fbe85194e819582cb5355db4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Projectile_Weapon
-  numOfShots: 15
+  numOfShots: 100
   reloadCooldown: 10
   bulletSpeed: 50
   fireRate: 0.15
   bulletLifetime: 2
-  projectilePrefab: {fileID: 4468432386827043254, guid: 711d154fbe43a574aba665dbca4e4d89, type: 3}
+  projectilePrefabs:
+  - {fileID: 4468432386827043254, guid: e42e2bbef37a51343b79ce0efbc4bb19, type: 3}
+  - {fileID: 4468432386827043254, guid: 711d154fbe43a574aba665dbca4e4d89, type: 3}
+  - {fileID: 4468432386827043254, guid: 0a5e33daa37b4c94f90ad0e637c2c362, type: 3}
   firePoint: {fileID: 1110720311}
   playerRoot: {fileID: 460498001}
   projectileWeapon: {fileID: 11400000, guid: fce75ea871050be4ebf6c5717f42936f, type: 2}
@@ -912,13 +915,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6e807f76a3c8ab4c82d3f6ba5a8dc26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GrenadeItem
-  strengthBonus: 3
-  timeToExplode: 5
-  cooldownDuration: 10
-  usages: 3
+  timeToExplode: 3
+  cooldownDuration: 3
+  usages: 5
   grenadeGravity: 2
   minThrowSpeed: 25
-  maxThrowSpeed: 40
+  maxThrowSpeed: 30
   throwPowerPerUnit: 2
   arcBoost: 0.3
   spinSpeed: 360

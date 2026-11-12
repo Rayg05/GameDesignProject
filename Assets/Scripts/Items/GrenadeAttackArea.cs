@@ -2,22 +2,31 @@ using UnityEngine;
 
 public class GrenadeAttackArea : MonoBehaviour
 {
-    [SerializeField] public int damage = 20;
+    [SerializeField] public int damage = 12;
     [SerializeField] private float radius = 15f;
     [SerializeField, Range(0f, 1f)] private float minDamagePercent = 0.2f;
     [SerializeField] private LayerMask hitLayers = ~0;
     [SerializeField] private Sprite explosionSprite;
     [SerializeField] private float explosionScale = 1f;
     [SerializeField] private float explosionDuration = 0.3f;
+    private bool exploded;
 
-    // called by GrenadeItem right after the grenade is spawned
     public void StartFuse(float seconds)
     {
         Invoke(nameof(Explode), seconds);
     }
 
+    public void Detonate()
+    {
+        CancelInvoke(nameof(Explode));
+        Explode();
+    }
+
     private void Explode()
     {
+        if (exploded) return;
+        exploded = true;
+
         foreach (Collider2D hit in Physics2D.OverlapCircleAll(transform.position, radius, hitLayers))
         {
             BossHealth boss = hit.GetComponentInParent<BossHealth>();

@@ -7,14 +7,14 @@ public class GrenadeItem : MonoBehaviour
     [SerializeField] private int usages = 3;
     [SerializeField] private float grenadeGravity = 2f;       
     [SerializeField] private float minThrowSpeed = 6f;
-    [SerializeField] private float maxThrowSpeed = 18f;
-    [SerializeField] private float throwPowerPerUnit = 2f;    
-    [SerializeField] private float arcBoost = 0.3f; 
+    [SerializeField] private float maxThrowSpeed = 18f;    
     [SerializeField] private float spinSpeed = 360f;
     [SerializeField] private EquipmentData grenadeItem;
     [SerializeField] private Transform firePoint;
     [SerializeField] private Transform playerRoot;
     [SerializeField] private GameObject grenadePrefab;
+    private GameObject activeGrenade;
+    private GrenadeAttackArea activeArea;
 
     private bool isActive = false; 
     private bool onCooldown = false;
@@ -34,7 +34,11 @@ public class GrenadeItem : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Q) && Loadout.IsEquipped(grenadeItem) && Time.timeScale > 0f)
         {
-            if (!isActive && !onCooldown && usages > 0)
+            if (isActive)
+            {
+                DetonateEarly();
+            }
+            else if (!onCooldown && usages > 0)
             {
                 ThrowGrenade();
                 isActive = true;
@@ -74,7 +78,13 @@ public class GrenadeItem : MonoBehaviour
         ItemTimers.StartCooldown(grenadeItem, cooldownDuration);
         Debug.Log("Grenade exploded, now on cooldown");
     }
+    private void DetonateEarly()
+    {
+        if (activeArea != null) activeArea.Detonate();
+        else if (activeGrenade != null) Destroy(activeGrenade);
 
+        EndActive();
+    }
     private void ThrowGrenade()
     {
         //uses same functionality as projectile weapon to get mouse position 
@@ -87,10 +97,9 @@ public class GrenadeItem : MonoBehaviour
         Vector2 direction = toMouse.normalized;
 
         //farther cursor = harder throw
-        float speed = Mathf.Clamp(toMouse.magnitude * throwPowerPerUnit, minThrowSpeed, maxThrowSpeed);
+        float speed = Mathf.Clamp(toMouse.magnitude, minThrowSpeed, maxThrowSpeed);
 
-        //tilt the launch upward so it arcs instead of drooping
-        Vector2 launchDir = (direction + Vector2.up * arcBoost).normalized;
+        Vector2 launchDir = (direction + Vector2.up).normalized;
 
         //no aim rotation, the grenade spins instead
         GameObject grenade = Instantiate(grenadePrefab, firePoint.position, Quaternion.identity);
@@ -109,8 +118,9 @@ public class GrenadeItem : MonoBehaviour
         rb.angularVelocity = -Mathf.Sign(direction.x) * spinSpeed;
 
         //calls start fuse function so damage can be done 
-        GrenadeAttackArea area = grenade.GetComponentInChildren<GrenadeAttackArea>();
-        if (area != null) area.StartFuse(timeToExplode);
+        activeGrenade = grenade;
+        activeArea = grenade.GetComponentInChildren<GrenadeAttackArea>();
+        if (activeArea != null) activeArea.StartFuse(timeToExplode);
         else Destroy(grenade, timeToExplode);
     }
 }
