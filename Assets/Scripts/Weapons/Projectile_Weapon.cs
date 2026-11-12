@@ -7,7 +7,7 @@ public class Projectile_Weapon : MonoBehaviour
     [SerializeField] private float bulletSpeed = 50f;
     [SerializeField] private float fireRate = 0.15f;
     [SerializeField] private float bulletLifetime = 2f;
-    [SerializeField] private GameObject projectilePrefab;
+    [SerializeField] private GameObject[] projectilePrefabs;
     [SerializeField] private Transform firePoint;
     [SerializeField] private Transform playerRoot;
     [SerializeField] private EquipmentData projectileWeapon;
@@ -50,12 +50,17 @@ public class Projectile_Weapon : MonoBehaviour
         }
 
         //reload whenever you are at 0 or less ammo and press R
-        if (Input.GetKeyDown(KeyCode.R) && currentAmmo <= 0)
+        if (Input.GetKeyDown(KeyCode.R) && currentAmmo <= 0 && !isReloading)
+        {
             isReloading = true;
+            reloadTimer = 0f;
+            ItemTimers.StartCooldown(projectileWeapon, reloadCooldown);
+        }
     }
 
     private void Shoot()
     {
+        if (projectilePrefabs == null || projectilePrefabs.Length == 0) return;
         currentAmmo--;
 
         // get mouse position 
@@ -66,7 +71,8 @@ public class Projectile_Weapon : MonoBehaviour
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 
         // instantiate the game object and the set angle it should shoot at
-        GameObject bullet = Instantiate(projectilePrefab, firePoint.position, Quaternion.Euler(0f, 0f, angle));
+        GameObject prefab = projectilePrefabs[Random.Range(0, projectilePrefabs.Length)];
+        GameObject bullet = Instantiate(prefab, firePoint.position, Quaternion.Euler(0f, 0f, angle));
 
         //loops through the platers root and makes sure each bullet ignores
         //collision with player colliders 
