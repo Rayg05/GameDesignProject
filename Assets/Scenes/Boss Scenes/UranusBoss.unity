@@ -891,10 +891,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 947636a2fbe85194e819582cb5355db4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Projectile_Weapon
-  numOfShots: 100
+  numOfShots: 15
   reloadCooldown: 10
   bulletSpeed: 50
-  fireRate: 0.15
+  fireRate: 0.5
   bulletLifetime: 2
   projectilePrefabs:
   - {fileID: 4468432386827043254, guid: e42e2bbef37a51343b79ce0efbc4bb19, type: 3}
@@ -917,12 +917,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GrenadeItem
   timeToExplode: 3
   cooldownDuration: 3
-  usages: 5
+  usages: 3
   grenadeGravity: 2
   minThrowSpeed: 25
   maxThrowSpeed: 30
-  throwPowerPerUnit: 2
-  arcBoost: 0.3
   spinSpeed: 360
   grenadeItem: {fileID: 11400000, guid: 5bf82a30c4ec3734599b9e64b8f5d52c, type: 2}
   firePoint: {fileID: 1110720311}
