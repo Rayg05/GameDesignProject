@@ -1,0 +1,377 @@
+fileFormatVersion: 2
+guid: 8edd7cae6b433c04ca5af754f6492c87
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6996300075143344474
+    second: Pluto_Dash_0
+  - first:
+      213: 3264734872729957849
+    second: Pluto_Dash_1
+  - first:
+      213: 7720576304310790500
+    second: Pluto_Dash_2
+  - first:
+      213: -7569083312288105307
+    second: Pluto_Dash_3
+  - first:
+      213: 367180796152711080
+    second: Pluto_Dash_4
+  - first:
+      213: 3107599200622118892
+    second: Pluto_Dash_5
+  - first:
+      213: -7497955662415752155
+    second: Pluto_Dash_6
+  - first:
+      213: 1306470187950120300
+    second: Pluto_Dash_7
+  - first:
+      213: 8385905566105077582
+    second: Pluto_Dash_8
+  - first:
+      213: -6462179278806320077
+    second: Pluto_Dash_9
+  - first:
+      213: 1497022290012138632
+    second: Pluto_Dash_10
+  - first:
+      213: 535587360872388955
+    second: Pluto_Dash_11
+  - first:
+      213: 1440579758984341828
+    second: Pluto_Dash_12
+  - first:
+      213: 6689806750226453062
+    second: Pluto_Dash_13
+  - first:
+      213: -1522824679654527391
+    second: Pluto_Dash_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pluto_Dash_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2740
+        width: 1000
+        height: 1250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5135f0b9d9d71160800000000000000
+      internalID: 6996300075143344474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Dash_1
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2740
+        width: 1000
+        height: 1250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d536e6c11bae4d20800000000000000
+      internalID: 3264734872729957849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Dash_2
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2740
+        width: 1000
+        height: 1250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4692ebf4e3ff42b60800000000000000
+      internalID: 7720576304310790500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Dash_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1400
+        width: 1000
+        height: 1250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5acfab784d635f690800000000000000
+      internalID: -7569083312288105307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Dash_6
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1400
+        width: 1000
+        height: 1250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52494180d09e1f790800000000000000
+      internalID: -7497955662415752155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Dash_9
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1400
+        width: 1000
+        height: 1250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33cfbdb1f2ab156a0800000000000000
+      internalID: -6462179278806320077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Dash_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 70
+        width: 1000
+        height: 1250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44921e488a7fdf310800000000000000
+      internalID: 1440579758984341828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Dash_13
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 70
+        width: 1000
+        height: 1250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64212439bc7f6dc50800000000000000
+      internalID: 6689806750226453062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Dash_14
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 70
+        width: 1000
+        height: 1250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16e6ef9a507dddae0800000000000000
+      internalID: -1522824679654527391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5d3fa7ee5ebd5d0439b76ec24d7f4869
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Pluto_Dash_0: 6996300075143344474
+      Pluto_Dash_1: 3264734872729957849
+      Pluto_Dash_10: 1497022290012138632
+      Pluto_Dash_11: 535587360872388955
+      Pluto_Dash_12: 1440579758984341828
+      Pluto_Dash_13: 6689806750226453062
+      Pluto_Dash_14: -1522824679654527391
+      Pluto_Dash_2: 7720576304310790500
+      Pluto_Dash_3: -7569083312288105307
+      Pluto_Dash_4: 367180796152711080
+      Pluto_Dash_5: 3107599200622118892
+      Pluto_Dash_6: -7497955662415752155
+      Pluto_Dash_7: 1306470187950120300
+      Pluto_Dash_8: 8385905566105077582
+      Pluto_Dash_9: -6462179278806320077
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

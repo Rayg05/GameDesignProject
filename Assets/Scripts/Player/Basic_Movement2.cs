@@ -6,6 +6,7 @@ public class Basic_Movement2 : MonoBehaviour
     private Animator jump_Animator;
     private Animator fall_Animator;
     private Animator look_up_Animator;
+    private Animator dash_Animator;
 
 
     private Rigidbody2D rb;
@@ -36,7 +37,7 @@ public class Basic_Movement2 : MonoBehaviour
     private float speedMultiplier = 1f;
     private float cooldown_duration = 4f;
     private bool dash_cooldown = false;
-    private float dash_length = .1f;
+    private float dash_length = .2f;
     private float total_dash_time = 0f;
     private float waitTime = 0;
     private TrailRenderer[] dashTrails;
@@ -52,6 +53,7 @@ public class Basic_Movement2 : MonoBehaviour
         fall_Animator = GetComponent<Animator>();
         jump_Animator = GetComponent<Animator>();
         run_Animator = GetComponent<Animator>();
+        dash_Animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         bodyCollider = GetComponent<Collider2D>();
         playerHealth = GetComponent<Health>();
@@ -187,6 +189,7 @@ public class Basic_Movement2 : MonoBehaviour
             speedMultiplier = 1f;
             SetTrails(false);
         }
+        dash_Animator.SetBool("Dash", dash_cooldown);
     }
     private void SetTrails(bool on)
     {

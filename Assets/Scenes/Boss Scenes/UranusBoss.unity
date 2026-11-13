@@ -320,6 +320,7 @@ MonoBehaviour:
   returnToHubOnDeath: 1
   returnSceneName: HubWorld
   returnDelay: 2
+  deathAnimTime: 2
 --- !u!1001 &2036356756
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -872,6 +873,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4149344224241198165, guid: e595c33099aa704488a015dfae950cb3, type: 3}
+      propertyPath: returnDelay
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149344224241198165, guid: e595c33099aa704488a015dfae950cb3, type: 3}
+      propertyPath: deathAnimTime
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149344224241198165, guid: e595c33099aa704488a015dfae950cb3, type: 3}
+      propertyPath: returnToHubOnDeath
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8988230479173707971, guid: e595c33099aa704488a015dfae950cb3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -11

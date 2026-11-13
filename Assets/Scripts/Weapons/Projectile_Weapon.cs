@@ -11,6 +11,7 @@ public class Projectile_Weapon : MonoBehaviour
     [SerializeField] private Transform firePoint;
     [SerializeField] private Transform playerRoot;
     [SerializeField] private EquipmentData projectileWeapon;
+    private Animator anim;
 
     private int currentAmmo;
     private bool isReloading;
@@ -22,10 +23,16 @@ public class Projectile_Weapon : MonoBehaviour
     {
         cam = Camera.main;
         currentAmmo = numOfShots;
+        anim = GetComponentInParent<Animator>();
     }
 
     void Update()
     {
+        if (!Loadout.IsEquipped(projectileWeapon))
+        {
+            if (anim != null) anim.SetBool("Shooting", false);
+            return;
+        }
         //make sure its equipped
         if (!Loadout.IsEquipped(projectileWeapon)) return;
 
@@ -50,12 +57,14 @@ public class Projectile_Weapon : MonoBehaviour
         }
 
         //reload whenever you are at 0 or less ammo and press R
-        if (Input.GetKeyDown(KeyCode.R) && currentAmmo <= 0 && !isReloading)
+        if (currentAmmo <= 0 && !isReloading)
         {
             isReloading = true;
             reloadTimer = 0f;
             ItemTimers.StartCooldown(projectileWeapon, reloadCooldown);
         }
+        if (anim != null)
+            anim.SetBool("Shooting", Input.GetMouseButton(0) && !isReloading && currentAmmo > 0);
     }
 
     private void Shoot()
