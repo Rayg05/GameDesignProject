@@ -6,6 +6,7 @@ TagManager:
   tags:
   - BossProjectile
   - Wall
+  - Boss
   layers:
   - Default
   - TransparentFX
