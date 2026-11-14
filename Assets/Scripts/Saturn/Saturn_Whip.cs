@@ -16,24 +16,24 @@ public class Saturn_Whip : IState {
 
     public void Enter() {
         Debug.Log("Entering Saturn_Whip.");
-        //animator.SetBool("Whip", true);
+        animator.SetBool("Whip", true);
         saturn.FaceTarget();
     }
 
     public void Execute() {
         // % completion of the whip animation.
-        whipDuration = animator.GetCurrentAnimatorStateInfo(0).normalizedTime;
-        Debug.Log("whipDuration: " + whipDuration);
+        //whipDuration = animator.GetCurrentAnimatorStateInfo(0).normalizedTime;
+        //Debug.Log("whipDuration: " + whipDuration);
 
         // If the animation is done, we're done.
-        Debug.Log("Is " + whipDuration + " >= 1?");
-        if(whipDuration >= 1.0f) { saturn.ChooseNextState(this); }
-        Debug.Log("Yes!");
+        //Debug.Log("Is " + whipDuration + " >= 1?");
+        //if(whipDuration >= 1.0f) { saturn.ChooseNextState(this); }
+        //Debug.Log("Yes!");
     }
 
     public void Exit() {
-        //animator.SetBool("Whip", false);
-        whipDuration = 0.0f;
+        animator.SetBool("Whip", false);
+        //whipDuration = 0.0f;
         saturn.FaceTarget();
         Debug.Log("Exiting Saturn_Whip.");
     }

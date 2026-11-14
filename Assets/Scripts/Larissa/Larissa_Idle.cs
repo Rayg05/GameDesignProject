@@ -26,7 +26,7 @@ public class Larissa_Idle : IState {
         // This is just a little easier for right now.
         timer += Time.deltaTime;
 
-        if (timer > 3f) { larissa.ChooseNextState(this); }
+        if (timer > 3f) { larissa.ChooseNextState(); }
         return;
     }
 

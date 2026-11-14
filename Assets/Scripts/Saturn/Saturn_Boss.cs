@@ -23,9 +23,11 @@ public class Saturn_Boss : Boss
     }
 
     // == IN PROGRESS ==
-    public override void ChooseNextState(IState previous_state) {
+    public override void ChooseNextState() {
+        IState prev = GetCurrentState();
+
         // If the previous state wasn't idle, just go to idling.
-        if (previous_state != states[0]) {
+        if (prev != states[0]) {
             state_machine.ChangeState(states[0]);
             return;
         }
