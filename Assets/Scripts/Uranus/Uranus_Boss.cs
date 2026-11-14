@@ -20,10 +20,11 @@ public class Uranus_Boss : Boss
 
     // Picks a random state (NOT IDLE) and goes there.
     // NOTE: All states should go to Idle on termination, at least for this boss.
-    public override void ChooseNextState(IState previous_state) {
+    public override void ChooseNextState() {
+        IState prev = GetCurrentState();
         // If the previous state wasn't idle, just go to idling.
         // This can be handled differently in other bosses.
-        if (previous_state != states[0]) {
+        if (prev != states[0]) {
             state_machine.ChangeState(states[0]);
             return;
         }

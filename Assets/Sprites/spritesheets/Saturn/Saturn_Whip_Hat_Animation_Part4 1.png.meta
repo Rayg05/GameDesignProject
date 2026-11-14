@@ -1,0 +1,665 @@
+fileFormatVersion: 2
+guid: e0cef0d9b748df649bd35b56e2d0e321
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2530447373396444926
+    second: Saturn_Whip_Hat_Animation_Part4 1_0
+  - first:
+      213: -2724432763635755327
+    second: Saturn_Whip_Hat_Animation_Part4 1_1
+  - first:
+      213: 3064943686426222630
+    second: Saturn_Whip_Hat_Animation_Part4 1_2
+  - first:
+      213: 7570641702503052570
+    second: Saturn_Whip_Hat_Animation_Part4 1_3
+  - first:
+      213: 8366890586566664678
+    second: Saturn_Whip_Hat_Animation_Part4 1_4
+  - first:
+      213: -4367290752831485638
+    second: Saturn_Whip_Hat_Animation_Part4 1_5
+  - first:
+      213: -3746492967850646035
+    second: Saturn_Whip_Hat_Animation_Part4 1_6
+  - first:
+      213: -5791835176432903917
+    second: Saturn_Whip_Hat_Animation_Part4 1_7
+  - first:
+      213: 4958068559297159536
+    second: Saturn_Whip_Hat_Animation_Part4 1_8
+  - first:
+      213: 1654044545270436
+    second: Saturn_Whip_Hat_Animation_Part4 1_9
+  - first:
+      213: 898789372626267877
+    second: Saturn_Whip_Hat_Animation_Part4 1_10
+  - first:
+      213: -1678772294577427977
+    second: Saturn_Whip_Hat_Animation_Part4 1_11
+  - first:
+      213: -3514464525091786533
+    second: Saturn_Whip_Hat_Animation_Part4 1_12
+  - first:
+      213: 4364627181488528495
+    second: Saturn_Whip_Hat_Animation_Part4 1_13
+  - first:
+      213: 2498265514428688612
+    second: Saturn_Whip_Hat_Animation_Part4 1_14
+  - first:
+      213: -1598054620537203824
+    second: Saturn_Whip_Hat_Animation_Part4 1_15
+  - first:
+      213: -76238438888379628
+    second: Saturn_Whip_Hat_Animation_Part4 1_16
+  - first:
+      213: -802731155735482093
+    second: Saturn_Whip_Hat_Animation_Part4 1_17
+  - first:
+      213: -2694278787082496650
+    second: Saturn_Whip_Hat_Animation_Part4 1_18
+  - first:
+      213: -6326811848835999813
+    second: Saturn_Whip_Hat_Animation_Part4 1_19
+  - first:
+      213: 2025150731617645175
+    second: Saturn_Whip_Hat_Animation_Part4 1_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Saturn_Whip_Hat_Animation_Part4 1_0
+      rect:
+        serializedVersion: 2
+        x: 5955
+        y: 6039
+        width: 1046
+        height: 1852
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20972e1558b02ecd0800000000000000
+      internalID: -2530447373396444926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Whip_Hat_Animation_Part4 1_1
+      rect:
+        serializedVersion: 2
+        x: 12883
+        y: 6038
+        width: 1063
+        height: 1823
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c61e0d06ded03ad0800000000000000
+      internalID: -2724432763635755327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Whip_Hat_Animation_Part4 1_2
+      rect:
+        serializedVersion: 2
+        x: 19871
+        y: 6031
+        width: 1059
+        height: 1823
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 620e2064b0ed88a20800000000000000
+      internalID: 3064943686426222630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Whip_Hat_Animation_Part4 1_3
+      rect:
+        serializedVersion: 2
+        x: 26673
+        y: 6020
+        width: 1222
+        height: 1658
+      alignment: 9
+      pivot: {x: 0.6115439, y: 0.5904342}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a15f3777482501960800000000000000
+      internalID: 7570641702503052570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Whip_Hat_Animation_Part4 1_4
+      rect:
+        serializedVersion: 2
+        x: 13863
+        y: 6018
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e1add6a8aa2d1470800000000000000
+      internalID: 8366890586566664678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Whip_Hat_Animation_Part4 1_5
+      rect:
+        serializedVersion: 2
+        x: 20770
+        y: 6013
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3981aef2344463c0800000000000000
+      internalID: -4367290752831485638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Whip_Hat_Animation_Part4 1_6
+      rect:
+        serializedVersion: 2
+        x: 5795
+        y: 5691
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de563c9de78c10cc0800000000000000
+      internalID: -3746492967850646035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Whip_Hat_Animation_Part4 1_7
+      rect:
+        serializedVersion: 2
+        x: 8796
+        y: 4008
+        width: 4889
+        height: 1854
+      alignment: 9
+      pivot: {x: 0.91263413, y: 0.49264812}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 319da1fe7944f9fa0800000000000000
+      internalID: -5791835176432903917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Whip_Hat_Animation_Part4 1_8
+      rect:
+        serializedVersion: 2
+        x: 14052
+        y: 4008
+        width: 6633
+        height: 1904
+      alignment: 9
+      pivot: {x: 0.931552, y: 0.4570456}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 071a0f0f5199ec440800000000000000
+      internalID: 4958068559297159536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Whip_Hat_Animation_Part4 1_9
+      rect:
+        serializedVersion: 2
+        x: 20985
+        y: 4008
+        width: 7001
+        height: 1968
+      alignment: 9
+      pivot: {x: 0.89718574, y: 0.47229525}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a240914850e50000800000000000000
+      internalID: 1654044545270436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Whip_Hat_Animation_Part4 1_10
+      rect:
+        serializedVersion: 2
+        x: 3989
+        y: 4020
+        width: 2823
+        height: 1670
+      alignment: 9
+      pivot: {x: 0.8573093, y: 0.54897344}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5eee8432c24297c00800000000000000
+      internalID: 898789372626267877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Whip_Hat_Animation_Part4 1_11
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 2008
+        width: 6511
+        height: 1968
+      alignment: 9
+      pivot: {x: 0.9312641, y: 0.45151588}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f9e1fa1e7dc3b8e0800000000000000
+      internalID: -1678772294577427977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Whip_Hat_Animation_Part4 1_12
+      rect:
+        serializedVersion: 2
+        x: 8796
+        y: 2022
+        width: 4889
+        height: 1904
+      alignment: 9
+      pivot: {x: 0.88475364, y: 0.4713645}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd03136822d1a3fc0800000000000000
+      internalID: -3514464525091786533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Whip_Hat_Animation_Part4 1_13
+      rect:
+        serializedVersion: 2
+        x: 17989
+        y: 2008
+        width: 2696
+        height: 1661
+      alignment: 9
+      pivot: {x: 0.81347007, y: 0.5082067}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6c53a9fb45429c30800000000000000
+      internalID: 4364627181488528495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Whip_Hat_Animation_Part4 1_14
+      rect:
+        serializedVersion: 2
+        x: 26619
+        y: 2020
+        width: 1276
+        height: 1658
+      alignment: 9
+      pivot: {x: 0.57477593, y: 0.5739917}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e8612ebf3f9ba220800000000000000
+      internalID: 2498265514428688612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Whip_Hat_Animation_Part4 1_15
+      rect:
+        serializedVersion: 2
+        x: 5736
+        y: 20
+        width: 1159
+        height: 1658
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 093553b1ac192d9e0800000000000000
+      internalID: -1598054620537203824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Whip_Hat_Animation_Part4 1_16
+      rect:
+        serializedVersion: 2
+        x: 12883
+        y: 38
+        width: 1063
+        height: 1823
+      alignment: 9
+      pivot: {x: 0.57693714, y: 0.5299081}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41be3d33b8521fef0800000000000000
+      internalID: -76238438888379628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Whip_Hat_Animation_Part4 1_17
+      rect:
+        serializedVersion: 2
+        x: 19974
+        y: 18
+        width: 878
+        height: 1889
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3117f3454402cd4f0800000000000000
+      internalID: -802731155735482093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Whip_Hat_Animation_Part4 1_18
+      rect:
+        serializedVersion: 2
+        x: 27088
+        y: 35
+        width: 881
+        height: 1892
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 675d312d7bffb9ad0800000000000000
+      internalID: -2694278787082496650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Whip_Hat_Animation_Part4 1_19
+      rect:
+        serializedVersion: 2
+        x: 27975
+        y: 1546
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb7d565f426a238a0800000000000000
+      internalID: -6326811848835999813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Whip_Hat_Animation_Part4 1_20
+      rect:
+        serializedVersion: 2
+        x: 13863
+        y: 18
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77231b65cd7ca1c10800000000000000
+      internalID: 2025150731617645175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 50ce4ae628caf0441b27e89c45da0062
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Saturn_Whip_Hat_Animation_Part4 1_0: -2530447373396444926
+      Saturn_Whip_Hat_Animation_Part4 1_1: -2724432763635755327
+      Saturn_Whip_Hat_Animation_Part4 1_10: 898789372626267877
+      Saturn_Whip_Hat_Animation_Part4 1_11: -1678772294577427977
+      Saturn_Whip_Hat_Animation_Part4 1_12: -3514464525091786533
+      Saturn_Whip_Hat_Animation_Part4 1_13: 4364627181488528495
+      Saturn_Whip_Hat_Animation_Part4 1_14: 2498265514428688612
+      Saturn_Whip_Hat_Animation_Part4 1_15: -1598054620537203824
+      Saturn_Whip_Hat_Animation_Part4 1_16: -76238438888379628
+      Saturn_Whip_Hat_Animation_Part4 1_17: -802731155735482093
+      Saturn_Whip_Hat_Animation_Part4 1_18: -2694278787082496650
+      Saturn_Whip_Hat_Animation_Part4 1_19: -6326811848835999813
+      Saturn_Whip_Hat_Animation_Part4 1_2: 3064943686426222630
+      Saturn_Whip_Hat_Animation_Part4 1_20: 2025150731617645175
+      Saturn_Whip_Hat_Animation_Part4 1_3: 7570641702503052570
+      Saturn_Whip_Hat_Animation_Part4 1_4: 8366890586566664678
+      Saturn_Whip_Hat_Animation_Part4 1_5: -4367290752831485638
+      Saturn_Whip_Hat_Animation_Part4 1_6: -3746492967850646035
+      Saturn_Whip_Hat_Animation_Part4 1_7: -5791835176432903917
+      Saturn_Whip_Hat_Animation_Part4 1_8: 4958068559297159536
+      Saturn_Whip_Hat_Animation_Part4 1_9: 1654044545270436
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

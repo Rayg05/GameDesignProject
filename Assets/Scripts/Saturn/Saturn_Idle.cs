@@ -19,7 +19,7 @@ public class Saturn_Idle : IState {
 
     public void Execute() {
         timer += Time.deltaTime;
-        if (timer > 3f) saturn.ChooseNextState(this);
+        if (timer > 3f) saturn.ChooseNextState();
     }
 
     public void Exit() {

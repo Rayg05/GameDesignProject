@@ -15,7 +15,11 @@ public abstract class Boss : MonoBehaviour {
 
     protected abstract void BuildStates();
     protected abstract IState GetStartState();
-    public abstract void ChooseNextState(IState previous_state);
+    public abstract void ChooseNextState();
+    // my bad y'all
+    public IState GetCurrentState() {
+        return state_machine.current_state;
+    }
 
     protected virtual void Awake() {
         BossDamage.Apply(gameObject, contactDamage);
