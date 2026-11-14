@@ -6,7 +6,8 @@ public class Basic_Movement2 : MonoBehaviour
     private Animator jump_Animator;
     private Animator fall_Animator;
     private Animator look_up_Animator;
-    
+    private Animator dash_Animator;
+
 
     private Rigidbody2D rb;
     private Collider2D bodyCollider;
@@ -14,6 +15,7 @@ public class Basic_Movement2 : MonoBehaviour
     private Health playerHealth;
 
     [SerializeField] private float moveSpeed = 10f;
+    [SerializeField] EquipmentData dash;
     [SerializeField] private float jumpHeight = 7f; // height of a full jump (space held the whole way up)
     [SerializeField] private float timeToApex = 0.35f; // seconds a full jump takes to reach the top
     [SerializeField, Min(1f)] private float fallGravityMultiplier = 2.5f; // stronger gravity when falling or when space is let go early
@@ -32,21 +34,37 @@ public class Basic_Movement2 : MonoBehaviour
     private bool isGrounded;
     private int maxJump;
     private int jumpCount = 0;
+    private float speedMultiplier = 1f;
+    private float cooldown_duration = 4f;
+    private bool dash_cooldown = false;
+    private float dash_length = .2f;
+    private float total_dash_time = 0f;
+    private float waitTime = 0;
+    private TrailRenderer[] dashTrails;
+    public static EquipmentData DashData { get; private set; }
 
+    void Awake()
+    {
+        if (dash != null) DashData = dash;
+    }
     void Start()
     {
         look_up_Animator = GetComponent<Animator>();
         fall_Animator = GetComponent<Animator>();
         jump_Animator = GetComponent<Animator>();
         run_Animator = GetComponent<Animator>();
+        dash_Animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         bodyCollider = GetComponent<Collider2D>();
         playerHealth = GetComponent<Health>();
         hurtbox = transform.Find("Hurtbox").gameObject;
+        dashTrails = GetComponentsInChildren<TrailRenderer>();
     }
 
     void Update()
     {
+        HandleDash();
+        float currentSpeed = moveSpeed * speedMultiplier;
         float animationInput = Input.GetAxisRaw("Horizontal");
         run_Animator.SetFloat("Speed", Mathf.Abs(animationInput));
         if (animationInput > 0)
@@ -75,8 +93,8 @@ public class Basic_Movement2 : MonoBehaviour
         }
 
 
-        rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
-        if(isGrounded)
+        rb.linearVelocity = new Vector2(moveInput * currentSpeed, rb.linearVelocity.y);
+        if (isGrounded)
         {
             jumpCount = 0;
         }
@@ -140,10 +158,43 @@ public class Basic_Movement2 : MonoBehaviour
         isGrounded = Physics2D.OverlapBox(feet, checkSize, 0f, groundLayer);
     }
 
-    public void HurtPlayer(float amt) {
+    public void HurtPlayer(float amt)
+    {
         // Turn off hitbox for a set amount of time.
         Debug.Log("Player has taken damage!");
         playerHealth.Damage(amt);
         return;
     }
+    private void HandleDash()
+    {
+        if (Input.GetKeyDown(KeyCode.LeftShift) && !dash_cooldown && Time.time >= waitTime && Loadout.IsEquipped(dash))
+        {
+            total_dash_time = dash_length + Time.time;
+            dash_cooldown = true;
+            ItemTimers.StartActive(dash, dash_length);
+        }
+        if (dash_cooldown && Time.time >= total_dash_time && Loadout.IsEquipped(dash))
+        {
+            dash_cooldown = false;
+            waitTime = Time.time + cooldown_duration;
+            ItemTimers.StartCooldown(dash, cooldown_duration);
+        }
+        if (dash_cooldown)
+        {
+            speedMultiplier = 7f;
+            SetTrails(true);
+        }
+        else
+        {
+            speedMultiplier = 1f;
+            SetTrails(false);
+        }
+        dash_Animator.SetBool("Dash", dash_cooldown);
+    }
+    private void SetTrails(bool on)
+    {
+        foreach (var trail in dashTrails)
+            trail.emitting = on;
+    }
+
 }

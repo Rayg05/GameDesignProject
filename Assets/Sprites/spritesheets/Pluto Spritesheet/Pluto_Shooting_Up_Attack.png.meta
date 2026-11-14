@@ -1,0 +1,499 @@
+fileFormatVersion: 2
+guid: 40351c4b9e665fd4fb42050615b627d1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2304122317083991474
+    second: Pluto_Shooting_Up_Attack_0
+  - first:
+      213: -6996137914665421688
+    second: Pluto_Shooting_Up_Attack_1
+  - first:
+      213: -4949779817826709440
+    second: Pluto_Shooting_Up_Attack_2
+  - first:
+      213: -938464362177145068
+    second: Pluto_Shooting_Up_Attack_3
+  - first:
+      213: 4200939047603455967
+    second: Pluto_Shooting_Up_Attack_4
+  - first:
+      213: 9215289419618511389
+    second: Pluto_Shooting_Up_Attack_5
+  - first:
+      213: 1248930499172945596
+    second: Pluto_Shooting_Up_Attack_6
+  - first:
+      213: -7180402795218731321
+    second: Pluto_Shooting_Up_Attack_7
+  - first:
+      213: -6785572470530839798
+    second: Pluto_Shooting_Up_Attack_8
+  - first:
+      213: 5173999781579305831
+    second: Pluto_Shooting_Up_Attack_9
+  - first:
+      213: 93224747384679771
+    second: Pluto_Shooting_Up_Attack_10
+  - first:
+      213: 8781396629985366240
+    second: Pluto_Shooting_Up_Attack_11
+  - first:
+      213: 881471406748069831
+    second: Pluto_Shooting_Up_Attack_12
+  - first:
+      213: 1380990451900599750
+    second: Pluto_Shooting_Up_Attack_13
+  - first:
+      213: 2030318198773558425
+    second: Pluto_Shooting_Up_Attack_14
+  - first:
+      213: -4098687969540703408
+    second: Pluto_Shooting_Up_Attack_15
+  - first:
+      213: -4104355023788643953
+    second: Pluto_Shooting_Up_Attack_16
+  - first:
+      213: -5773931892146485942
+    second: Pluto_Shooting_Up_Attack_17
+  - first:
+      213: 8699658091391209145
+    second: Pluto_Shooting_Up_Attack_18
+  - first:
+      213: -7862968327560389393
+    second: Pluto_Shooting_Up_Attack_19
+  - first:
+      213: 4783967616348508163
+    second: Pluto_Shooting_Up_Attack_20
+  - first:
+      213: -870669196798002611
+    second: Pluto_Shooting_Up_Attack_21
+  - first:
+      213: -623729782412945689
+    second: Pluto_Shooting_Up_Attack_22
+  - first:
+      213: -8510113997265972590
+    second: Pluto_Shooting_Up_Attack_23
+  - first:
+      213: -5642525410425588898
+    second: Pluto_Shooting_Up_Attack_24
+  - first:
+      213: 1328321171928400487
+    second: Pluto_Shooting_Up_Attack_25
+  - first:
+      213: -2401184678366029380
+    second: Pluto_Shooting_Up_Attack_26
+  - first:
+      213: -5892071943634764136
+    second: Pluto_Shooting_Up_Attack_27
+  - first:
+      213: -3471731555640268497
+    second: Pluto_Shooting_Up_Attack_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pluto_Shooting_Up_Attack_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2700
+        width: 800
+        height: 1299
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bd57d42a03e9ff10800000000000000
+      internalID: 2304122317083991474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Shooting_Up_Attack_2
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2700
+        width: 800
+        height: 1299
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0409a021b79de4bb0800000000000000
+      internalID: -4949779817826709440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Shooting_Up_Attack_4
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2700
+        width: 800
+        height: 1299
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd7c8776ecbbc4a30800000000000000
+      internalID: 4200939047603455967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Shooting_Up_Attack_5
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2700
+        width: 800
+        height: 1299
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1ae6c607e843ef70800000000000000
+      internalID: 9215289419618511389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Shooting_Up_Attack_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1360
+        width: 800
+        height: 1300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbeca500ca7155110800000000000000
+      internalID: 1248930499172945596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Shooting_Up_Attack_8
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1370
+        width: 800
+        height: 1300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0be6502acdc4d1a0800000000000000
+      internalID: -6785572470530839798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Shooting_Up_Attack_9
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1360
+        width: 800
+        height: 1300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 763bbf8636dbdc740800000000000000
+      internalID: 5173999781579305831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Shooting_Up_Attack_11
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1360
+        width: 800
+        height: 1300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e0171a85b9cdd970800000000000000
+      internalID: 8781396629985366240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Shooting_Up_Attack_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 30
+        width: 800
+        height: 1300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 292d1e2786006e980800000000000000
+      internalID: -8510113997265972590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Shooting_Up_Attack_24
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 26
+        width: 800
+        height: 1300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e53b77bd809b1b1b0800000000000000
+      internalID: -5642525410425588898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Shooting_Up_Attack_25
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 30
+        width: 800
+        height: 1300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7624c6071152f6210800000000000000
+      internalID: 1328321171928400487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Shooting_Up_Attack_27
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 30
+        width: 800
+        height: 1300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89eba98e8c72b3ea0800000000000000
+      internalID: -5892071943634764136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 4aa6ee4d0d657c7448922904c76e7d2f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Pluto_Shooting_Up_Attack_0: 2304122317083991474
+      Pluto_Shooting_Up_Attack_1: -6996137914665421688
+      Pluto_Shooting_Up_Attack_10: 93224747384679771
+      Pluto_Shooting_Up_Attack_11: 8781396629985366240
+      Pluto_Shooting_Up_Attack_12: 881471406748069831
+      Pluto_Shooting_Up_Attack_13: 1380990451900599750
+      Pluto_Shooting_Up_Attack_14: 2030318198773558425
+      Pluto_Shooting_Up_Attack_15: -4098687969540703408
+      Pluto_Shooting_Up_Attack_16: -4104355023788643953
+      Pluto_Shooting_Up_Attack_17: -5773931892146485942
+      Pluto_Shooting_Up_Attack_18: 8699658091391209145
+      Pluto_Shooting_Up_Attack_19: -7862968327560389393
+      Pluto_Shooting_Up_Attack_2: -4949779817826709440
+      Pluto_Shooting_Up_Attack_20: 4783967616348508163
+      Pluto_Shooting_Up_Attack_21: -870669196798002611
+      Pluto_Shooting_Up_Attack_22: -623729782412945689
+      Pluto_Shooting_Up_Attack_23: -8510113997265972590
+      Pluto_Shooting_Up_Attack_24: -5642525410425588898
+      Pluto_Shooting_Up_Attack_25: 1328321171928400487
+      Pluto_Shooting_Up_Attack_26: -2401184678366029380
+      Pluto_Shooting_Up_Attack_27: -5892071943634764136
+      Pluto_Shooting_Up_Attack_28: -3471731555640268497
+      Pluto_Shooting_Up_Attack_3: -938464362177145068
+      Pluto_Shooting_Up_Attack_4: 4200939047603455967
+      Pluto_Shooting_Up_Attack_5: 9215289419618511389
+      Pluto_Shooting_Up_Attack_6: 1248930499172945596
+      Pluto_Shooting_Up_Attack_7: -7180402795218731321
+      Pluto_Shooting_Up_Attack_8: -6785572470530839798
+      Pluto_Shooting_Up_Attack_9: 5173999781579305831
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
