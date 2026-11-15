@@ -47,7 +47,7 @@ public class Larissa_Projectile : IState {
 
         // Go back to Idle.
         if (timer >= stateDuration)
-            larissa.ChooseNextState(this);
+            larissa.ChooseNextState();
     }
 
     public void Exit() {

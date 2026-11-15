@@ -1,0 +1,517 @@
+fileFormatVersion: 2
+guid: 7ea6f958d0ae7184aa51a0a85ee8f463
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1786683728243360361
+    second: Pluto_Run_Gun_0
+  - first:
+      213: -598445638741305840
+    second: Pluto_Run_Gun_1
+  - first:
+      213: 2868772617642114868
+    second: Pluto_Run_Gun_2
+  - first:
+      213: 2173812894877488130
+    second: Pluto_Run_Gun_3
+  - first:
+      213: -3235497274737530864
+    second: Pluto_Run_Gun_4
+  - first:
+      213: -7627693513239211606
+    second: Pluto_Run_Gun_5
+  - first:
+      213: 8361789315630184098
+    second: Pluto_Run_Gun_6
+  - first:
+      213: 3353718205315583983
+    second: Pluto_Run_Gun_7
+  - first:
+      213: -1253428996815283509
+    second: Pluto_Run_Gun_8
+  - first:
+      213: 4740040443583383844
+    second: Pluto_Run_Gun_9
+  - first:
+      213: -5691842821215853190
+    second: Pluto_Run_Gun_10
+  - first:
+      213: -6591332405438676872
+    second: Pluto_Run_Gun_11
+  - first:
+      213: 1316701605429730534
+    second: Pluto_Run_Gun_12
+  - first:
+      213: -5075153537860711441
+    second: Pluto_Run_Gun_13
+  - first:
+      213: 2796572518724597797
+    second: Pluto_Run_Gun_14
+  - first:
+      213: -3613402820122253117
+    second: Pluto_Run_Gun_15
+  - first:
+      213: -94111458107532357
+    second: Pluto_Run_Gun_16
+  - first:
+      213: 8855114665480312744
+    second: Pluto_Run_Gun_17
+  - first:
+      213: -5882559629719653425
+    second: Pluto_Run_Gun_18
+  - first:
+      213: -1166670090439529847
+    second: Pluto_Run_Gun_19
+  - first:
+      213: -9162115993082750149
+    second: Pluto_Run_Gun_20
+  - first:
+      213: -4757764116782199856
+    second: Pluto_Run_Gun_21
+  - first:
+      213: -8062908022900216975
+    second: Pluto_Run_Gun_22
+  - first:
+      213: 6724353884616017090
+    second: Pluto_Run_Gun_23
+  - first:
+      213: 7437000984322223593
+    second: Pluto_Run_Gun_24
+  - first:
+      213: -4538742986085865421
+    second: Pluto_Run_Gun_25
+  - first:
+      213: 118822714611664106
+    second: Pluto_Run_Gun_26
+  - first:
+      213: -5551702925906349177
+    second: Pluto_Run_Gun_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pluto_Run_Gun_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4040
+        width: 1100
+        height: 1280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43ffcef0f7defc720800000000000000
+      internalID: 2868772617642114868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Run_Gun_5
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 4040
+        width: 1100
+        height: 1280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa153d7b92df42690800000000000000
+      internalID: -7627693513239211606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Run_Gun_6
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 4040
+        width: 1100
+        height: 1280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a63bc4741b0b0470800000000000000
+      internalID: 8361789315630184098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Run_Gun_7
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 4040
+        width: 1100
+        height: 1280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fef889060fcca8e20800000000000000
+      internalID: 3353718205315583983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Run_Gun_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2700
+        width: 1100
+        height: 1280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a75621c5c138201b0800000000000000
+      internalID: -5691842821215853190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Run_Gun_12
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2700
+        width: 1100
+        height: 1280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ec53da422dd54210800000000000000
+      internalID: 1316701605429730534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Run_Gun_13
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2700
+        width: 1100
+        height: 1280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: febce332fbe6199b0800000000000000
+      internalID: -5075153537860711441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Run_Gun_15
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 2700
+        width: 1100
+        height: 1280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c8e73c974d9addc0800000000000000
+      internalID: -3613402820122253117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Run_Gun_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1370
+        width: 1100
+        height: 1280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c44e8c1b34b15d50800000000000000
+      internalID: 6724353884616017090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Run_Gun_24
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1370
+        width: 1100
+        height: 1280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eda1c80ef8853760800000000000000
+      internalID: 7437000984322223593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Run_Gun_25
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1370
+        width: 1100
+        height: 1280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3386e8b2d452301c0800000000000000
+      internalID: -4538742986085865421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Run_Gun_26
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 1370
+        width: 1050
+        height: 1280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae40daf11a426a100800000000000000
+      internalID: 118822714611664106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Run_Gun_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 40
+        width: 1100
+        height: 1280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 783fad26a9364f2b0800000000000000
+      internalID: -5551702925906349177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 015f2528a938c854187ce1ef4e26911f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Pluto_Run_Gun_0: -1786683728243360361
+      Pluto_Run_Gun_1: -598445638741305840
+      Pluto_Run_Gun_10: -5691842821215853190
+      Pluto_Run_Gun_11: -6591332405438676872
+      Pluto_Run_Gun_12: 1316701605429730534
+      Pluto_Run_Gun_13: -5075153537860711441
+      Pluto_Run_Gun_14: 2796572518724597797
+      Pluto_Run_Gun_15: -3613402820122253117
+      Pluto_Run_Gun_16: -94111458107532357
+      Pluto_Run_Gun_17: 8855114665480312744
+      Pluto_Run_Gun_18: -5882559629719653425
+      Pluto_Run_Gun_19: -1166670090439529847
+      Pluto_Run_Gun_2: 2868772617642114868
+      Pluto_Run_Gun_20: -9162115993082750149
+      Pluto_Run_Gun_21: -4757764116782199856
+      Pluto_Run_Gun_22: -8062908022900216975
+      Pluto_Run_Gun_23: 6724353884616017090
+      Pluto_Run_Gun_24: 7437000984322223593
+      Pluto_Run_Gun_25: -4538742986085865421
+      Pluto_Run_Gun_26: 118822714611664106
+      Pluto_Run_Gun_27: -5551702925906349177
+      Pluto_Run_Gun_3: 2173812894877488130
+      Pluto_Run_Gun_4: -3235497274737530864
+      Pluto_Run_Gun_5: -7627693513239211606
+      Pluto_Run_Gun_6: 8361789315630184098
+      Pluto_Run_Gun_7: 3353718205315583983
+      Pluto_Run_Gun_8: -1253428996815283509
+      Pluto_Run_Gun_9: 4740040443583383844
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -13,7 +13,7 @@ public interface IState {
 
 public class FSM
 {
-    IState current_state;
+    public IState current_state;
     Boss boss;
     public FSM(Boss b) { boss = b; }
 

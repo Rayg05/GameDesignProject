@@ -23,7 +23,7 @@ public class Uranus_Idle : IState
     public void Execute()
     {
         timer += Time.deltaTime;
-        if (timer > 3f) uranus.ChooseNextState(this);
+        if (timer > 3f) uranus.ChooseNextState();
     }
 
     public void Exit()

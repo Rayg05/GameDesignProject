@@ -55,7 +55,7 @@ public class Uranus_Blitz : IState
         // stop and move to next state
         if (Time.time - startTime >= duration)
         {
-            uranus.ChooseNextState(this);
+            uranus.ChooseNextState();
             return;
         }
 
