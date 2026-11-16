@@ -9,6 +9,8 @@ public class Saturn_Boss : Boss
 
     public GameObject whipHitbox;
 
+    public float hatDamage= 5f;
+
     protected override void BuildStates() {
         // IDLE SHOULD BE FIRST ON THE LIST!
         states.Add(new Saturn_Idle(this));

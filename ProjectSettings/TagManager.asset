@@ -11,13 +11,13 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Boss
   - Water
   - UI
   - Ground
   - background
   - Projectile
-  - 
+  - player
   - 
   - 
   - 

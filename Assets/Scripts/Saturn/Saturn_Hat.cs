@@ -36,7 +36,7 @@ public class Saturn_Hat : IState
         }
 
         if (timer >= stateDuration)
-            saturn.ChooseNextState(this);
+            saturn.ChooseNextState();
     }
 
     public void Exit()

@@ -20,7 +20,6 @@ public class Hat_Projectile : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         Shoot(new Vector2(2, 0));
 
-    
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -44,8 +43,11 @@ public class Hat_Projectile : MonoBehaviour
             
         }
 
-        
 
+        if(bounces == 0 && collision.gameObject.CompareTag("Boss"))
+        {
+            Destroy(gameObject);
+        }
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -56,8 +58,6 @@ public class Hat_Projectile : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
-
 
     public void Shoot(Vector2 dir) {
         rb.linearVelocity = dir * speed;
@@ -76,5 +76,6 @@ public class Hat_Projectile : MonoBehaviour
 
             rb.linearVelocity = transform.up * speed;
         }
+        
     }
 }
