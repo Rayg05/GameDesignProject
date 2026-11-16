@@ -15,6 +15,7 @@ public class Uranus_Blitz : IState
     float duration = 8f;   // total time spent blitzing
 
     readonly Animator animator;
+    AudioSource source;
 
     public Uranus_Blitz(Uranus_Boss boss)
     {
@@ -27,7 +28,9 @@ public class Uranus_Blitz : IState
         if (hitbox == null)
             Debug.LogWarning("Uranus has no child named 'Hitbox'. Blitz won't deal damage.");
 
+        // Get components.
         animator = uranus.GetComponent<Animator>();
+        source = uranus.audiosource;
     }
 
     public void Enter()
@@ -40,6 +43,13 @@ public class Uranus_Blitz : IState
             BossDamage.Apply(hitbox, uranus.blitzDamage);
             hitbox.SetActive(true);
         }
+
+        // Audio parameters.
+        source.clip = uranus.sfx_blitz;
+        source.loop = true;
+
+        // Play audio.
+        source.Play();
 
         // his body hits as hard as the blitz while blitzing, so it doesn't matter which collider touches first
         BossDamage.Apply(uranus.gameObject, uranus.blitzDamage);
@@ -74,6 +84,10 @@ public class Uranus_Blitz : IState
 
     public void Exit()
     {
+        // Reset audio.
+        source.Stop();
+        
+        // Animation.
         animator.SetBool("Blitz", false);
         if (hitbox != null) hitbox.SetActive(false);
         BossDamage.Apply(uranus.gameObject, uranus.contactDamage);

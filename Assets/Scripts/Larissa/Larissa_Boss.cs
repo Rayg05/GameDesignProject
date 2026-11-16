@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Larissa_Boss : Boss
 {
-    public GameObject projectile;
+    public GameObject lprojectile;
 
     [Header("Attack Damage")]
     public float projectileDamage = 5f; // per ice projectile
@@ -11,6 +11,9 @@ public class Larissa_Boss : Boss
     [Header("Dash")]
     public float dashWindup = 0.6f; // seconds she holds still facing the player before dashing
     public float dashSpeed = 8f;    // units per second
+
+    [Header("Sounds")]
+    public AudioClip sfx_woosh;
 
     protected override void BuildStates() {
         // IDLE SHOULD BE FIRST ON THE LIST!

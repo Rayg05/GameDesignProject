@@ -7,10 +7,15 @@ public class Larissa_Projectile : IState {
     float timer;
     bool fired;
     readonly Animator animator;
+    readonly AudioSource source;
     public Larissa_Projectile(Larissa_Boss boss) 
     { 
         larissa = boss;
         animator = larissa.GetComponent<Animator>();
+        source = larissa.GetComponentInChildren<AudioSource>();
+
+        source.clip = larissa.sfx_woosh;
+        source.loop = false;
     }
 
     public void Enter() {
@@ -26,6 +31,10 @@ public class Larissa_Projectile : IState {
         timer += Time.deltaTime;
         if (!fired && timer >= stateDuration/1.2)
         {
+            // Play audio.
+            Debug.Log("PLAY AUDIO");
+            source.Play();
+
             fired = true;
             Transform lt = larissa.transform;
             GameObject projectile = ((Boss)larissa).projectile; // Boss.projectile, not the one Larissa_Boss hides it with

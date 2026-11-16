@@ -6,6 +6,10 @@ public class Uranus_Boss : Boss
     public float blitzDamage = 5f;
     public float slashDamage = 5f; // per slash line
 
+    [Header("Sounds")]
+    public AudioClip sfx_blitz;
+    public AudioClip sfx_slash;
+
     protected override void BuildStates() {
         // IDLE SHOULD BE FIRST ON THE LIST!
         states.Add(new Uranus_Idle(this));

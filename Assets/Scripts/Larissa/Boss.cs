@@ -6,6 +6,7 @@ public abstract class Boss : MonoBehaviour {
     public FSM state_machine { get; private set; }
     public GameObject projectile;
     public Transform target;
+    public AudioSource audiosource;
     public float leftEdgeX;
     public float rightEdgeX;
     public float contactDamage = 5f; // touching the boss itself
@@ -22,6 +23,7 @@ public abstract class Boss : MonoBehaviour {
     }
 
     protected virtual void Awake() {
+        audiosource = GetComponentInChildren<AudioSource>();
         BossDamage.Apply(gameObject, contactDamage);
         BuildStates();
         state_machine = new FSM(this);
