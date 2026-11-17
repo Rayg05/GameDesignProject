@@ -47,7 +47,7 @@ public class Larissa_Dash : IState {
             bool arrived = (larissaDir < 0) ? (larissa.transform.position.x >= rEX) : (larissa.transform.position.x <= lEX);
 
             // Exit when arrived.
-            if (arrived) { larissa.ChooseNextState(this); }
+            if (arrived) { larissa.ChooseNextState(); }
         }
     }
 

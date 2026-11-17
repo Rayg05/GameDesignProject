@@ -77,7 +77,7 @@ public class Saturn_Drill : IState {
                     saturn.FaceTarget();
                     // More dives left: pause on the ground, then jump. Otherwise the attack is over.
                     if (divesDone < saturn.diveCount) SetPhase(Phase.Grounded);
-                    else saturn.ChooseNextState(this);
+                    else saturn.ChooseNextState();
                 }
                 break;
             }

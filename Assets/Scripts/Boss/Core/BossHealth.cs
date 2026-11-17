@@ -10,7 +10,7 @@ public class BossHealth : MonoBehaviour
 
     public bool invincible = false;
     private float itimer = 0.0f;
-    private float imax = 1.0f; // Amount of time the boss will be invincible.
+    private float imax = .1f; // Amount of time the boss will be invincible.
     public event Action<float, float> HealthChanged;
     public event Action<float> Damaged; // damage amount
     public float Current => health;

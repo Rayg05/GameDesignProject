@@ -116,7 +116,7 @@ public class Uranus_Slash : IState
         //check if the total duration has been reached to exit the state
         if (timer >= totalDuration)
         {
-            uranus.ChooseNextState(this);
+            uranus.ChooseNextState();
         }
     }
 

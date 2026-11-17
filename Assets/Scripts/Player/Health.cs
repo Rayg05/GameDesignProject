@@ -24,6 +24,8 @@ public class Health : MonoBehaviour
     private bool needsRegen = false;
 
     private bool regenAllowed => Time.time > startRegenTime;
+    [SerializeField] private float deathAnimTime = 30f; // how long to keep the object alive for the death animation
+    private bool dead;
 
     public void SetRegenMultiplier(float multiplier)
     {
@@ -38,16 +40,54 @@ public class Health : MonoBehaviour
 
     public void Damage(float amount)
     {
+        if (dead) return;
+
         health -= amount * damageMult;
         HealthChanged?.Invoke(Mathf.Max(health, 0f), maxHP);
 
         if (health <= 0)
         {
-            if (returnToHubOnDeath) SceneFader.LoadScene(returnSceneName, returnDelay);
-            Destroy(gameObject);
+            Die();
             return;
         }
         OnTakeDamage();
+    }
+
+    private void Die()
+    {
+        
+        dead = true;
+        needsRegen = false;
+
+        if (returnToHubOnDeath) SceneFader.LoadScene(returnSceneName, returnDelay);
+
+        Animator animator = GetComponent<Animator>();
+        bool hasDeadParam = false;
+        if (animator != null)
+        {
+            foreach (AnimatorControllerParameter p in animator.parameters)
+            {
+                
+                if (p.name == "Dead") hasDeadParam = true;
+            }
+           
+        }
+
+        if (!hasDeadParam)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        animator.SetBool("Dead", true);
+
+        Rigidbody2D rb = GetComponent<Rigidbody2D>();
+        if (rb != null) rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+
+        foreach (MonoBehaviour script in GetComponentsInChildren<MonoBehaviour>())
+            if (script != this) script.enabled = false;
+
+        Destroy(gameObject, deathAnimTime);
     }
 
     public void Heal(float amount)

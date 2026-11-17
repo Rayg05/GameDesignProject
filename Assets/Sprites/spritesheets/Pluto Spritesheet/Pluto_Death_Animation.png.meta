@@ -1,0 +1,1919 @@
+fileFormatVersion: 2
+guid: cff7aadd5d50fb245b256510a21f75b2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6459840010384122522
+    second: Pluto_Death_Animation_0
+  - first:
+      213: -6680116996187454622
+    second: Pluto_Death_Animation_1
+  - first:
+      213: -4633814020453644295
+    second: Pluto_Death_Animation_2
+  - first:
+      213: 1765444191680719805
+    second: Pluto_Death_Animation_3
+  - first:
+      213: -8914461554424287336
+    second: Pluto_Death_Animation_4
+  - first:
+      213: -6114571960395053148
+    second: Pluto_Death_Animation_5
+  - first:
+      213: 2509689957804346168
+    second: Pluto_Death_Animation_6
+  - first:
+      213: 7938121403629934455
+    second: Pluto_Death_Animation_7
+  - first:
+      213: 3589037572840967365
+    second: Pluto_Death_Animation_8
+  - first:
+      213: -5935616705542716858
+    second: Pluto_Death_Animation_9
+  - first:
+      213: -1751283594767850536
+    second: Pluto_Death_Animation_10
+  - first:
+      213: 3669563541752273124
+    second: Pluto_Death_Animation_11
+  - first:
+      213: 427112477131874707
+    second: Pluto_Death_Animation_12
+  - first:
+      213: -7291873608161110368
+    second: Pluto_Death_Animation_13
+  - first:
+      213: 8137671243613286723
+    second: Pluto_Death_Animation_14
+  - first:
+      213: 6978211448833350077
+    second: Pluto_Death_Animation_15
+  - first:
+      213: -7486384021279779157
+    second: Pluto_Death_Animation_16
+  - first:
+      213: 6166352454048409835
+    second: Pluto_Death_Animation_17
+  - first:
+      213: -3295943386322871794
+    second: Pluto_Death_Animation_18
+  - first:
+      213: -3173524951388377973
+    second: Pluto_Death_Animation_19
+  - first:
+      213: 5852526364661936662
+    second: Pluto_Death_Animation_20
+  - first:
+      213: 4913222046419172517
+    second: Pluto_Death_Animation_21
+  - first:
+      213: 7450342061120444946
+    second: Pluto_Death_Animation_22
+  - first:
+      213: -6179792047687075573
+    second: Pluto_Death_Animation_23
+  - first:
+      213: 4610162778111052180
+    second: Pluto_Death_Animation_24
+  - first:
+      213: 3858210787318288797
+    second: Pluto_Death_Animation_25
+  - first:
+      213: 5713759976852631739
+    second: Pluto_Death_Animation_26
+  - first:
+      213: 5857139376008445041
+    second: Pluto_Death_Animation_27
+  - first:
+      213: -2088493510914080367
+    second: Pluto_Death_Animation_28
+  - first:
+      213: 5170262526552974400
+    second: Pluto_Death_Animation_29
+  - first:
+      213: 3276833178360812491
+    second: Pluto_Death_Animation_30
+  - first:
+      213: 9053122683120367932
+    second: Pluto_Death_Animation_31
+  - first:
+      213: -2285014808222147345
+    second: Pluto_Death_Animation_32
+  - first:
+      213: 706637526579828066
+    second: Pluto_Death_Animation_33
+  - first:
+      213: 1890207088210389182
+    second: Pluto_Death_Animation_34
+  - first:
+      213: 6444247830617778674
+    second: Pluto_Death_Animation_35
+  - first:
+      213: 709832577527988904
+    second: Pluto_Death_Animation_36
+  - first:
+      213: -2912453429444763401
+    second: Pluto_Death_Animation_37
+  - first:
+      213: -8343250187784448598
+    second: Pluto_Death_Animation_38
+  - first:
+      213: 1842273092003404495
+    second: Pluto_Death_Animation_39
+  - first:
+      213: 8917322051952894712
+    second: Pluto_Death_Animation_40
+  - first:
+      213: 7135243702417176516
+    second: Pluto_Death_Animation_41
+  - first:
+      213: -3498402463927461834
+    second: Pluto_Death_Animation_42
+  - first:
+      213: -9034858978610512294
+    second: Pluto_Death_Animation_43
+  - first:
+      213: -2401085291976912088
+    second: Pluto_Death_Animation_44
+  - first:
+      213: 7318572413379404708
+    second: Pluto_Death_Animation_45
+  - first:
+      213: 7162555428915335998
+    second: Pluto_Death_Animation_46
+  - first:
+      213: -6712884001710551120
+    second: Pluto_Death_Animation_47
+  - first:
+      213: -2892714069197272618
+    second: Pluto_Death_Animation_48
+  - first:
+      213: 2069122745405362926
+    second: Pluto_Death_Animation_49
+  - first:
+      213: -2358596680290000994
+    second: Pluto_Death_Animation_50
+  - first:
+      213: 2563071308539259673
+    second: Pluto_Death_Animation_51
+  - first:
+      213: -2528013702496782163
+    second: Pluto_Death_Animation_52
+  - first:
+      213: -5612965264182161632
+    second: Pluto_Death_Animation_53
+  - first:
+      213: -3236947980526747888
+    second: Pluto_Death_Animation_54
+  - first:
+      213: 5758209240943822764
+    second: Pluto_Death_Animation_55
+  - first:
+      213: -4372505915213839610
+    second: Pluto_Death_Animation_56
+  - first:
+      213: 2229221904939452239
+    second: Pluto_Death_Animation_57
+  - first:
+      213: 3939962096532218195
+    second: Pluto_Death_Animation_58
+  - first:
+      213: -6557189378060177217
+    second: Pluto_Death_Animation_59
+  - first:
+      213: -3595707071772270534
+    second: Pluto_Death_Animation_60
+  - first:
+      213: -790439292583587197
+    second: Pluto_Death_Animation_61
+  - first:
+      213: -415296343490074956
+    second: Pluto_Death_Animation_62
+  - first:
+      213: -9041457240298788195
+    second: Pluto_Death_Animation_63
+  - first:
+      213: 8698707795349096124
+    second: Pluto_Death_Animation_64
+  - first:
+      213: 5102922475471971965
+    second: Pluto_Death_Animation_65
+  - first:
+      213: 73896385931529224
+    second: Pluto_Death_Animation_66
+  - first:
+      213: 997020066231459015
+    second: Pluto_Death_Animation_67
+  - first:
+      213: -4883169052006955868
+    second: Pluto_Death_Animation_68
+  - first:
+      213: 1955846198001556668
+    second: Pluto_Death_Animation_69
+  - first:
+      213: 2031592220632257903
+    second: Pluto_Death_Animation_70
+  - first:
+      213: 7229417171651197716
+    second: Pluto_Death_Animation_71
+  - first:
+      213: 3357690630796764079
+    second: Pluto_Death_Animation_72
+  - first:
+      213: -6605042193717591646
+    second: Pluto_Death_Animation_73
+  - first:
+      213: -5909408992242757140
+    second: Pluto_Death_Animation_74
+  - first:
+      213: -2925053748242846288
+    second: Pluto_Death_Animation_75
+  - first:
+      213: 1068997220378221157
+    second: Pluto_Death_Animation_76
+  - first:
+      213: 3012761714719487529
+    second: Pluto_Death_Animation_77
+  - first:
+      213: 6351146001316934046
+    second: Pluto_Death_Animation_78
+  - first:
+      213: 3800426087134175374
+    second: Pluto_Death_Animation_79
+  - first:
+      213: -5387823111262317804
+    second: Pluto_Death_Animation_80
+  - first:
+      213: 353129441286138278
+    second: Pluto_Death_Animation_81
+  - first:
+      213: 4458308837980473552
+    second: Pluto_Death_Animation_82
+  - first:
+      213: 4335109516613472875
+    second: Pluto_Death_Animation_83
+  - first:
+      213: 5543249867317799926
+    second: Pluto_Death_Animation_84
+  - first:
+      213: 4730553944608434816
+    second: Pluto_Death_Animation_85
+  - first:
+      213: 7016544588113392897
+    second: Pluto_Death_Animation_86
+  - first:
+      213: -2277980946906964920
+    second: Pluto_Death_Animation_87
+  - first:
+      213: 3002226580421783472
+    second: Pluto_Death_Animation_88
+  - first:
+      213: 4944097840866513653
+    second: Pluto_Death_Animation_89
+  - first:
+      213: 2950296540754567744
+    second: Pluto_Death_Animation_90
+  - first:
+      213: 612046613755268603
+    second: Pluto_Death_Animation_91
+  - first:
+      213: -7875677273699761445
+    second: Pluto_Death_Animation_92
+  - first:
+      213: -61503273268589398
+    second: Pluto_Death_Animation_93
+  - first:
+      213: -5544404288079431729
+    second: Pluto_Death_Animation_94
+  - first:
+      213: -2168707216794277383
+    second: Pluto_Death_Animation_95
+  - first:
+      213: -9212806976710582037
+    second: Pluto_Death_Animation_96
+  - first:
+      213: 510723239736147852
+    second: Pluto_Death_Animation_97
+  - first:
+      213: 8761338334861202225
+    second: Pluto_Death_Animation_98
+  - first:
+      213: -6336271570319191381
+    second: Pluto_Death_Animation_99
+  - first:
+      213: 3764174073731875225
+    second: Pluto_Death_Animation_100
+  - first:
+      213: 6820028509069798673
+    second: Pluto_Death_Animation_101
+  - first:
+      213: 5353623892968534133
+    second: Pluto_Death_Animation_102
+  - first:
+      213: -1412579903123723812
+    second: Pluto_Death_Animation_103
+  - first:
+      213: 6565033859456725198
+    second: Pluto_Death_Animation_104
+  - first:
+      213: -4247009927649976797
+    second: Pluto_Death_Animation_105
+  - first:
+      213: 3047077430120783527
+    second: Pluto_Death_Animation_106
+  - first:
+      213: 7697806009567902098
+    second: Pluto_Death_Animation_107
+  - first:
+      213: 8626999463592306733
+    second: Pluto_Death_Animation_108
+  - first:
+      213: 6351925617232860882
+    second: Pluto_Death_Animation_109
+  - first:
+      213: 7307544163035139677
+    second: Pluto_Death_Animation_110
+  - first:
+      213: 2752110358187810156
+    second: Pluto_Death_Animation_111
+  - first:
+      213: -1365689889911737586
+    second: Pluto_Death_Animation_112
+  - first:
+      213: 5171672371644274553
+    second: Pluto_Death_Animation_113
+  - first:
+      213: -5469553831789145197
+    second: Pluto_Death_Animation_114
+  - first:
+      213: 604640552798607933
+    second: Pluto_Death_Animation_115
+  - first:
+      213: -6077247708352384015
+    second: Pluto_Death_Animation_116
+  - first:
+      213: -772889307853210346
+    second: Pluto_Death_Animation_117
+  - first:
+      213: 4390738252426215615
+    second: Pluto_Death_Animation_118
+  - first:
+      213: -7165400937165815632
+    second: Pluto_Death_Animation_119
+  - first:
+      213: -8165595823014966042
+    second: Pluto_Death_Animation_120
+  - first:
+      213: 1328797341215154218
+    second: Pluto_Death_Animation_121
+  - first:
+      213: 7144443337055981721
+    second: Pluto_Death_Animation_122
+  - first:
+      213: 3040927091884087749
+    second: Pluto_Death_Animation_123
+  - first:
+      213: -6942232679119982897
+    second: Pluto_Death_Animation_124
+  - first:
+      213: 8450639756855465266
+    second: Pluto_Death_Animation_125
+  - first:
+      213: 392582908780597012
+    second: Pluto_Death_Animation_126
+  - first:
+      213: -3481370562886702882
+    second: Pluto_Death_Animation_127
+  - first:
+      213: 7456551351077958102
+    second: Pluto_Death_Animation_128
+  - first:
+      213: 4842931929747328925
+    second: Pluto_Death_Animation_129
+  - first:
+      213: -6112552995599591710
+    second: Pluto_Death_Animation_130
+  - first:
+      213: -4637453732112910427
+    second: Pluto_Death_Animation_131
+  - first:
+      213: -8182978127123964713
+    second: Pluto_Death_Animation_132
+  - first:
+      213: -4988779145626022173
+    second: Pluto_Death_Animation_133
+  - first:
+      213: 6400099535283903363
+    second: Pluto_Death_Animation_134
+  - first:
+      213: 5886238697009769300
+    second: Pluto_Death_Animation_135
+  - first:
+      213: -4682639133400108886
+    second: Pluto_Death_Animation_136
+  - first:
+      213: -4805642447622996924
+    second: Pluto_Death_Animation_137
+  - first:
+      213: 6911049495939996881
+    second: Pluto_Death_Animation_138
+  - first:
+      213: -7723797647762419849
+    second: Pluto_Death_Animation_139
+  - first:
+      213: 8164999825036936428
+    second: Pluto_Death_Animation_140
+  - first:
+      213: 6549971785385231632
+    second: Pluto_Death_Animation_141
+  - first:
+      213: -7200340864795785571
+    second: Pluto_Death_Animation_142
+  - first:
+      213: 1280187046931620567
+    second: Pluto_Death_Animation_143
+  - first:
+      213: 2777772163524363614
+    second: Pluto_Death_Animation_144
+  - first:
+      213: -4469929019971874596
+    second: Pluto_Death_Animation_145
+  - first:
+      213: -6373252166485420727
+    second: Pluto_Death_Animation_146
+  - first:
+      213: -6527588939469513839
+    second: Pluto_Death_Animation_147
+  - first:
+      213: -1060253786743281167
+    second: Pluto_Death_Animation_148
+  - first:
+      213: 1146789237142543794
+    second: Pluto_Death_Animation_149
+  - first:
+      213: 4754041490325646033
+    second: Pluto_Death_Animation_150
+  - first:
+      213: 5291219278814385656
+    second: Pluto_Death_Animation_151
+  - first:
+      213: 355387078673718431
+    second: Pluto_Death_Animation_152
+  - first:
+      213: -5465530109866735786
+    second: Pluto_Death_Animation_153
+  - first:
+      213: -458119535814518884
+    second: Pluto_Death_Animation_154
+  - first:
+      213: -9106243776976565489
+    second: Pluto_Death_Animation_155
+  - first:
+      213: 6223958752861862596
+    second: Pluto_Death_Animation_156
+  - first:
+      213: 7739374779478573875
+    second: Pluto_Death_Animation_157
+  - first:
+      213: -7626956010807776986
+    second: Pluto_Death_Animation_158
+  - first:
+      213: 2607676963244453002
+    second: Pluto_Death_Animation_159
+  - first:
+      213: 5977309671056843168
+    second: Pluto_Death_Animation_160
+  - first:
+      213: -8426725376438387486
+    second: Pluto_Death_Animation_161
+  - first:
+      213: -1059762179236802648
+    second: Pluto_Death_Animation_162
+  - first:
+      213: -5321273083077376631
+    second: Pluto_Death_Animation_163
+  - first:
+      213: -5465131380865561376
+    second: Pluto_Death_Animation_164
+  - first:
+      213: 2249898310875117211
+    second: Pluto_Death_Animation_165
+  - first:
+      213: -1219296137651673740
+    second: Pluto_Death_Animation_166
+  - first:
+      213: -9173993445463477018
+    second: Pluto_Death_Animation_167
+  - first:
+      213: -9204862159491501830
+    second: Pluto_Death_Animation_168
+  - first:
+      213: -8227028242144921709
+    second: Pluto_Death_Animation_169
+  - first:
+      213: -473083889459546855
+    second: Pluto_Death_Animation_170
+  - first:
+      213: 5621724923783433345
+    second: Pluto_Death_Animation_171
+  - first:
+      213: 2385895988938997538
+    second: Pluto_Death_Animation_172
+  - first:
+      213: 6186325262537577738
+    second: Pluto_Death_Animation_173
+  - first:
+      213: 6282145936519399170
+    second: Pluto_Death_Animation_174
+  - first:
+      213: 2946243399755099147
+    second: Pluto_Death_Animation_175
+  - first:
+      213: 6575398259801060449
+    second: Pluto_Death_Animation_176
+  - first:
+      213: 6889007962123504035
+    second: Pluto_Death_Animation_177
+  - first:
+      213: 1088435263902603948
+    second: Pluto_Death_Animation_178
+  - first:
+      213: -1399154944794792809
+    second: Pluto_Death_Animation_179
+  - first:
+      213: -1283118365171139191
+    second: Pluto_Death_Animation_180
+  - first:
+      213: 6197479724374855446
+    second: Pluto_Death_Animation_181
+  - first:
+      213: -5089656220449449797
+    second: Pluto_Death_Animation_182
+  - first:
+      213: -1792498923053135664
+    second: Pluto_Death_Animation_183
+  - first:
+      213: -4748696026582493349
+    second: Pluto_Death_Animation_184
+  - first:
+      213: -3040691838263527452
+    second: Pluto_Death_Animation_185
+  - first:
+      213: 2266051331747677921
+    second: Pluto_Death_Animation_186
+  - first:
+      213: 9079067193127034843
+    second: Pluto_Death_Animation_187
+  - first:
+      213: 972019088286628414
+    second: Pluto_Death_Animation_188
+  - first:
+      213: 2835611213296109552
+    second: Pluto_Death_Animation_189
+  - first:
+      213: -2886712108205353300
+    second: Pluto_Death_Animation_190
+  - first:
+      213: -7627443056486973863
+    second: Pluto_Death_Animation_191
+  - first:
+      213: -1131750517898870722
+    second: Pluto_Death_Animation_192
+  - first:
+      213: -6533748240925427571
+    second: Pluto_Death_Animation_193
+  - first:
+      213: 4329693790897416098
+    second: Pluto_Death_Animation_194
+  - first:
+      213: 6953899183834883924
+    second: Pluto_Death_Animation_195
+  - first:
+      213: -5701708777613579665
+    second: Pluto_Death_Animation_196
+  - first:
+      213: -158108368568852188
+    second: Pluto_Death_Animation_197
+  - first:
+      213: -6791105720857862604
+    second: Pluto_Death_Animation_198
+  - first:
+      213: -7620737632329232343
+    second: Pluto_Death_Animation_199
+  - first:
+      213: -1986096604587204562
+    second: Pluto_Death_Animation_200
+  - first:
+      213: 3681619988527079390
+    second: Pluto_Death_Animation_201
+  - first:
+      213: 145974783690959571
+    second: Pluto_Death_Animation_202
+  - first:
+      213: -8893784076018307391
+    second: Pluto_Death_Animation_203
+  - first:
+      213: -650658597557486282
+    second: Pluto_Death_Animation_204
+  - first:
+      213: -852474248066324928
+    second: Pluto_Death_Animation_205
+  - first:
+      213: -3095869363575064809
+    second: Pluto_Death_Animation_206
+  - first:
+      213: 311528412532760297
+    second: Pluto_Death_Animation_207
+  - first:
+      213: 4710978005869344215
+    second: Pluto_Death_Animation_208
+  - first:
+      213: -5286130483683825280
+    second: Pluto_Death_Animation_209
+  - first:
+      213: 1476171992000850874
+    second: Pluto_Death_Animation_210
+  - first:
+      213: -5357321232540151938
+    second: Pluto_Death_Animation_211
+  - first:
+      213: 5835372659200551254
+    second: Pluto_Death_Animation_212
+  - first:
+      213: 8827356946892773153
+    second: Pluto_Death_Animation_213
+  - first:
+      213: 6648252097666074451
+    second: Pluto_Death_Animation_214
+  - first:
+      213: 6182996086308336628
+    second: Pluto_Death_Animation_215
+  - first:
+      213: -2936120707375021735
+    second: Pluto_Death_Animation_216
+  - first:
+      213: -3390361968559259679
+    second: Pluto_Death_Animation_217
+  - first:
+      213: -7639797479412814459
+    second: Pluto_Death_Animation_218
+  - first:
+      213: -3894473664112309351
+    second: Pluto_Death_Animation_219
+  - first:
+      213: -2504627777649362472
+    second: Pluto_Death_Animation_220
+  - first:
+      213: -8802461361431333757
+    second: Pluto_Death_Animation_221
+  - first:
+      213: -5213401883352079883
+    second: Pluto_Death_Animation_222
+  - first:
+      213: 2273806826007731123
+    second: Pluto_Death_Animation_223
+  - first:
+      213: -7150526541714832755
+    second: Pluto_Death_Animation_224
+  - first:
+      213: -1246578291192908166
+    second: Pluto_Death_Animation_225
+  - first:
+      213: -3392095495717362985
+    second: Pluto_Death_Animation_226
+  - first:
+      213: -4876142098446768966
+    second: Pluto_Death_Animation_227
+  - first:
+      213: 5302766939687668734
+    second: Pluto_Death_Animation_228
+  - first:
+      213: 3136537178947417853
+    second: Pluto_Death_Animation_229
+  - first:
+      213: 1024109238348357244
+    second: Pluto_Death_Animation_230
+  - first:
+      213: -5388708897992130600
+    second: Pluto_Death_Animation_231
+  - first:
+      213: -5339109177271623691
+    second: Pluto_Death_Animation_232
+  - first:
+      213: -2797606877356566347
+    second: Pluto_Death_Animation_233
+  - first:
+      213: 4004552159728045586
+    second: Pluto_Death_Animation_234
+  - first:
+      213: 7276080158365599848
+    second: Pluto_Death_Animation_235
+  - first:
+      213: -2166860896751004751
+    second: Pluto_Death_Animation_236
+  - first:
+      213: 7467082514872653650
+    second: Pluto_Death_Animation_237
+  - first:
+      213: 1378336848976413480
+    second: Pluto_Death_Animation_238
+  - first:
+      213: 3340060860795927504
+    second: Pluto_Death_Animation_239
+  - first:
+      213: -4991834026243989125
+    second: Pluto_Death_Animation_240
+  - first:
+      213: 4302249026839640926
+    second: Pluto_Death_Animation_241
+  - first:
+      213: -3770206686819046178
+    second: Pluto_Death_Animation_242
+  - first:
+      213: 3532267023669825403
+    second: Pluto_Death_Animation_243
+  - first:
+      213: -285251064196965311
+    second: Pluto_Death_Animation_244
+  - first:
+      213: 7001109308234646962
+    second: Pluto_Death_Animation_245
+  - first:
+      213: 8947972000077916965
+    second: Pluto_Death_Animation_246
+  - first:
+      213: -3628372977590266395
+    second: Pluto_Death_Animation_247
+  - first:
+      213: -465879730410641624
+    second: Pluto_Death_Animation_248
+  - first:
+      213: -1025996737865133131
+    second: Pluto_Death_Animation_249
+  - first:
+      213: 3063219985439697684
+    second: Pluto_Death_Animation_250
+  - first:
+      213: -4152400455052107
+    second: Pluto_Death_Animation_251
+  - first:
+      213: 1082667728454978720
+    second: Pluto_Death_Animation_252
+  - first:
+      213: -1433060509855700266
+    second: Pluto_Death_Animation_253
+  - first:
+      213: 5754635962405497049
+    second: Pluto_Death_Animation_254
+  - first:
+      213: -6789122785170036806
+    second: Pluto_Death_Animation_255
+  - first:
+      213: -5540527529664118710
+    second: Pluto_Death_Animation_256
+  - first:
+      213: -2158942768267353434
+    second: Pluto_Death_Animation_257
+  - first:
+      213: -5122628939394374952
+    second: Pluto_Death_Animation_258
+  - first:
+      213: 1876807683270760165
+    second: Pluto_Death_Animation_259
+  - first:
+      213: 2593938807107986512
+    second: Pluto_Death_Animation_260
+  - first:
+      213: 1174854641392025945
+    second: Pluto_Death_Animation_261
+  - first:
+      213: -1738517007647989145
+    second: Pluto_Death_Animation_262
+  - first:
+      213: 8335407600804466026
+    second: Pluto_Death_Animation_263
+  - first:
+      213: 1769499488183846548
+    second: Pluto_Death_Animation_264
+  - first:
+      213: -1313924468539908570
+    second: Pluto_Death_Animation_265
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pluto_Death_Animation_2
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 6700
+        width: 1000
+        height: 1200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f7c2ab03b261bfb0800000000000000
+      internalID: -4633814020453644295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Death_Animation_4
+      rect:
+        serializedVersion: 2
+        x: 3700
+        y: 6790
+        width: 1000
+        height: 1200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89fe9a47278794480800000000000000
+      internalID: -8914461554424287336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Death_Animation_5
+      rect:
+        serializedVersion: 2
+        x: 4900
+        y: 6800
+        width: 1000
+        height: 1198
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a7c61bc23da42ba0800000000000000
+      internalID: -6114571960395053148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Death_Animation_6
+      rect:
+        serializedVersion: 2
+        x: 6100
+        y: 6840
+        width: 1000
+        height: 1158
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83b0b4f38b534d220800000000000000
+      internalID: 2509689957804346168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Death_Animation_1
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 6700
+        width: 1000
+        height: 1200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 777994fcb5fd92e60800000000000000
+      internalID: 7938121403629934455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Death_Animation_3
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 6730
+        width: 1000
+        height: 1200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cc47be28a2dec130800000000000000
+      internalID: 3589037572840967365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Death_Animation_7
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 5500
+        width: 1000
+        height: 1200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6428047fd0470ada0800000000000000
+      internalID: -5935616705542716858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Death_Animation_8
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 5500
+        width: 1000
+        height: 1200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d3a4e869d032b7e0800000000000000
+      internalID: -1751283594767850536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Death_Animation_9
+      rect:
+        serializedVersion: 2
+        x: 2530
+        y: 5500
+        width: 1000
+        height: 1200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e85eda5998ece230800000000000000
+      internalID: 3669563541752273124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Death_Animation_10
+      rect:
+        serializedVersion: 2
+        x: 3720
+        y: 5500
+        width: 1000
+        height: 1200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3912596f8886de500800000000000000
+      internalID: 427112477131874707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Death_Animation_11
+      rect:
+        serializedVersion: 2
+        x: 4920
+        y: 5500
+        width: 1000
+        height: 1200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a6d28e569f0eca90800000000000000
+      internalID: -7291873608161110368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Death_Animation_12
+      rect:
+        serializedVersion: 2
+        x: 6120
+        y: 5500
+        width: 1000
+        height: 1200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3413b7e71e0dee070800000000000000
+      internalID: 8137671243613286723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Death_Animation_13
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 4180
+        width: 1000
+        height: 1200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db9964f275697d060800000000000000
+      internalID: 6978211448833350077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Death_Animation_14
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 4180
+        width: 1000
+        height: 1200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba6557fa5650b1890800000000000000
+      internalID: -7486384021279779157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Death_Animation_15
+      rect:
+        serializedVersion: 2
+        x: 2490
+        y: 4180
+        width: 1000
+        height: 1200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be8e96fd2e8439550800000000000000
+      internalID: 6166352454048409835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Death_Animation_16
+      rect:
+        serializedVersion: 2
+        x: 3730
+        y: 4170
+        width: 1000
+        height: 1200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0a5d6ae3f47242d0800000000000000
+      internalID: -3295943386322871794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Death_Animation_17
+      rect:
+        serializedVersion: 2
+        x: 4920
+        y: 4190
+        width: 1000
+        height: 1200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8c28aaeedf55f3d0800000000000000
+      internalID: -3173524951388377973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Death_Animation_18
+      rect:
+        serializedVersion: 2
+        x: 6100
+        y: 4190
+        width: 1000
+        height: 1200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 612784c78b9583150800000000000000
+      internalID: 5852526364661936662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Death_Animation_24
+      rect:
+        serializedVersion: 2
+        x: 6100
+        y: 2880
+        width: 1000
+        height: 1200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5acbe6b7b654f2440800000000000000
+      internalID: 4913222046419172517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Death_Animation_19
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 2860
+        width: 1000
+        height: 1200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b09f3d3efd7fc3aa0800000000000000
+      internalID: -6179792047687075573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Death_Animation_20
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 2860
+        width: 1000
+        height: 1200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 499890afe969aff30800000000000000
+      internalID: 4610162778111052180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Death_Animation_21
+      rect:
+        serializedVersion: 2
+        x: 2509
+        y: 2851
+        width: 1000
+        height: 1200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d91dfa6f44e1b8530800000000000000
+      internalID: 3858210787318288797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Death_Animation_22
+      rect:
+        serializedVersion: 2
+        x: 3700
+        y: 2851
+        width: 1000
+        height: 1200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb035281d6a5b4f40800000000000000
+      internalID: 5713759976852631739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Death_Animation_23
+      rect:
+        serializedVersion: 2
+        x: 4900
+        y: 2860
+        width: 1000
+        height: 1200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17cbfe2ea3db84150800000000000000
+      internalID: 5857139376008445041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Death_Animation_27
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 1540
+        width: 1000
+        height: 1200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a3e372a5dac09560800000000000000
+      internalID: 7318572413379404708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Death_Animation_30
+      rect:
+        serializedVersion: 2
+        x: 6100
+        y: 1540
+        width: 1000
+        height: 1200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91b6a7f76cbd19320800000000000000
+      internalID: 2563071308539259673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Death_Animation_26
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 1500
+        width: 1000
+        height: 1200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3825b0db6abc705f0800000000000000
+      internalID: -790439292583587197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Death_Animation_29
+      rect:
+        serializedVersion: 2
+        x: 4980
+        y: 1500
+        width: 1000
+        height: 1200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41bf0615d9c045460800000000000000
+      internalID: 7229417171651197716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Death_Animation_25
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 1500
+        width: 1000
+        height: 1200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa36c42c6d9e89e20800000000000000
+      internalID: 3357690630796764079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Death_Animation_28
+      rect:
+        serializedVersion: 2
+        x: 3670
+        y: 1500
+        width: 1000
+        height: 1200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92670c631da7fc920800000000000000
+      internalID: 3012761714719487529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Death_Animation_33
+      rect:
+        serializedVersion: 2
+        x: 2530
+        y: 210
+        width: 1000
+        height: 1200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22ffcbbc2c76c1120800000000000000
+      internalID: 2385895988938997538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Death_Animation_32
+      rect:
+        serializedVersion: 2
+        x: 1370
+        y: 154
+        width: 1000
+        height: 1200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e60f9f1ea1a27f10800000000000000
+      internalID: 2266051331747677921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Death_Animation_31
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 160
+        width: 1000
+        height: 1200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6aad9163167fd0b0800000000000000
+      internalID: -5701708777613579665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pluto_Death_Animation_34
+      rect:
+        serializedVersion: 2
+        x: 3680
+        y: 160
+        width: 1000
+        height: 1200
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edf522e9fddb71330800000000000000
+      internalID: 3681619988527079390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 23767feb9c685f14d95474fd837d085e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Pluto_Death_Animation_0: 6459840010384122522
+      Pluto_Death_Animation_1: 7938121403629934455
+      Pluto_Death_Animation_10: 427112477131874707
+      Pluto_Death_Animation_100: 3764174073731875225
+      Pluto_Death_Animation_101: 6820028509069798673
+      Pluto_Death_Animation_102: 5353623892968534133
+      Pluto_Death_Animation_103: -1412579903123723812
+      Pluto_Death_Animation_104: 6565033859456725198
+      Pluto_Death_Animation_105: -4247009927649976797
+      Pluto_Death_Animation_106: 3047077430120783527
+      Pluto_Death_Animation_107: 7697806009567902098
+      Pluto_Death_Animation_108: 8626999463592306733
+      Pluto_Death_Animation_109: 6351925617232860882
+      Pluto_Death_Animation_11: -7291873608161110368
+      Pluto_Death_Animation_110: 7307544163035139677
+      Pluto_Death_Animation_111: 2752110358187810156
+      Pluto_Death_Animation_112: -1365689889911737586
+      Pluto_Death_Animation_113: 5171672371644274553
+      Pluto_Death_Animation_114: -5469553831789145197
+      Pluto_Death_Animation_115: 604640552798607933
+      Pluto_Death_Animation_116: -6077247708352384015
+      Pluto_Death_Animation_117: -772889307853210346
+      Pluto_Death_Animation_118: 4390738252426215615
+      Pluto_Death_Animation_119: -7165400937165815632
+      Pluto_Death_Animation_12: 8137671243613286723
+      Pluto_Death_Animation_120: -8165595823014966042
+      Pluto_Death_Animation_121: 1328797341215154218
+      Pluto_Death_Animation_122: 7144443337055981721
+      Pluto_Death_Animation_123: 3040927091884087749
+      Pluto_Death_Animation_124: -6942232679119982897
+      Pluto_Death_Animation_125: 8450639756855465266
+      Pluto_Death_Animation_126: 392582908780597012
+      Pluto_Death_Animation_127: -3481370562886702882
+      Pluto_Death_Animation_128: 7456551351077958102
+      Pluto_Death_Animation_129: 4842931929747328925
+      Pluto_Death_Animation_13: 6978211448833350077
+      Pluto_Death_Animation_130: -6112552995599591710
+      Pluto_Death_Animation_133: -4988779145626022173
+      Pluto_Death_Animation_134: 6400099535283903363
+      Pluto_Death_Animation_135: 5886238697009769300
+      Pluto_Death_Animation_136: -4682639133400108886
+      Pluto_Death_Animation_137: -4805642447622996924
+      Pluto_Death_Animation_138: 6911049495939996881
+      Pluto_Death_Animation_139: -7723797647762419849
+      Pluto_Death_Animation_14: -7486384021279779157
+      Pluto_Death_Animation_140: 8164999825036936428
+      Pluto_Death_Animation_141: 6549971785385231632
+      Pluto_Death_Animation_142: -7200340864795785571
+      Pluto_Death_Animation_143: 1280187046931620567
+      Pluto_Death_Animation_144: 2777772163524363614
+      Pluto_Death_Animation_145: -4469929019971874596
+      Pluto_Death_Animation_146: -6373252166485420727
+      Pluto_Death_Animation_147: -6527588939469513839
+      Pluto_Death_Animation_148: -1060253786743281167
+      Pluto_Death_Animation_149: 1146789237142543794
+      Pluto_Death_Animation_15: 6166352454048409835
+      Pluto_Death_Animation_150: 4754041490325646033
+      Pluto_Death_Animation_151: 5291219278814385656
+      Pluto_Death_Animation_152: 355387078673718431
+      Pluto_Death_Animation_153: -5465530109866735786
+      Pluto_Death_Animation_154: -458119535814518884
+      Pluto_Death_Animation_155: -9106243776976565489
+      Pluto_Death_Animation_156: 6223958752861862596
+      Pluto_Death_Animation_157: 7739374779478573875
+      Pluto_Death_Animation_158: -7626956010807776986
+      Pluto_Death_Animation_159: 2607676963244453002
+      Pluto_Death_Animation_16: -3295943386322871794
+      Pluto_Death_Animation_160: 5977309671056843168
+      Pluto_Death_Animation_161: -8426725376438387486
+      Pluto_Death_Animation_162: -1059762179236802648
+      Pluto_Death_Animation_163: -5321273083077376631
+      Pluto_Death_Animation_164: -5465131380865561376
+      Pluto_Death_Animation_165: 2249898310875117211
+      Pluto_Death_Animation_166: -1219296137651673740
+      Pluto_Death_Animation_167: -9173993445463477018
+      Pluto_Death_Animation_168: -9204862159491501830
+      Pluto_Death_Animation_169: -8227028242144921709
+      Pluto_Death_Animation_17: -3173524951388377973
+      Pluto_Death_Animation_170: -473083889459546855
+      Pluto_Death_Animation_171: 5621724923783433345
+      Pluto_Death_Animation_173: 6186325262537577738
+      Pluto_Death_Animation_174: 6282145936519399170
+      Pluto_Death_Animation_175: 2946243399755099147
+      Pluto_Death_Animation_176: 6575398259801060449
+      Pluto_Death_Animation_177: 6889007962123504035
+      Pluto_Death_Animation_178: 1088435263902603948
+      Pluto_Death_Animation_179: -1399154944794792809
+      Pluto_Death_Animation_18: 5852526364661936662
+      Pluto_Death_Animation_180: -1283118365171139191
+      Pluto_Death_Animation_181: 6197479724374855446
+      Pluto_Death_Animation_182: -5089656220449449797
+      Pluto_Death_Animation_183: -1792498923053135664
+      Pluto_Death_Animation_184: -4748696026582493349
+      Pluto_Death_Animation_185: -3040691838263527452
+      Pluto_Death_Animation_187: 9079067193127034843
+      Pluto_Death_Animation_188: 972019088286628414
+      Pluto_Death_Animation_189: 2835611213296109552
+      Pluto_Death_Animation_19: -6179792047687075573
+      Pluto_Death_Animation_190: -2886712108205353300
+      Pluto_Death_Animation_191: -7627443056486973863
+      Pluto_Death_Animation_192: -1131750517898870722
+      Pluto_Death_Animation_193: -6533748240925427571
+      Pluto_Death_Animation_194: 4329693790897416098
+      Pluto_Death_Animation_195: 6953899183834883924
+      Pluto_Death_Animation_197: -158108368568852188
+      Pluto_Death_Animation_198: -6791105720857862604
+      Pluto_Death_Animation_199: -7620737632329232343
+      Pluto_Death_Animation_2: -4633814020453644295
+      Pluto_Death_Animation_20: 4610162778111052180
+      Pluto_Death_Animation_200: -1986096604587204562
+      Pluto_Death_Animation_202: 145974783690959571
+      Pluto_Death_Animation_203: -8893784076018307391
+      Pluto_Death_Animation_204: -650658597557486282
+      Pluto_Death_Animation_205: -852474248066324928
+      Pluto_Death_Animation_206: -3095869363575064809
+      Pluto_Death_Animation_207: 311528412532760297
+      Pluto_Death_Animation_208: 4710978005869344215
+      Pluto_Death_Animation_209: -5286130483683825280
+      Pluto_Death_Animation_21: 3858210787318288797
+      Pluto_Death_Animation_210: 1476171992000850874
+      Pluto_Death_Animation_211: -5357321232540151938
+      Pluto_Death_Animation_212: 5835372659200551254
+      Pluto_Death_Animation_213: 8827356946892773153
+      Pluto_Death_Animation_214: 6648252097666074451
+      Pluto_Death_Animation_215: 6182996086308336628
+      Pluto_Death_Animation_216: -2936120707375021735
+      Pluto_Death_Animation_217: -3390361968559259679
+      Pluto_Death_Animation_218: -7639797479412814459
+      Pluto_Death_Animation_219: -3894473664112309351
+      Pluto_Death_Animation_22: 5713759976852631739
+      Pluto_Death_Animation_220: -2504627777649362472
+      Pluto_Death_Animation_221: -8802461361431333757
+      Pluto_Death_Animation_222: -5213401883352079883
+      Pluto_Death_Animation_223: 2273806826007731123
+      Pluto_Death_Animation_224: -7150526541714832755
+      Pluto_Death_Animation_225: -1246578291192908166
+      Pluto_Death_Animation_226: -3392095495717362985
+      Pluto_Death_Animation_227: -4876142098446768966
+      Pluto_Death_Animation_228: 5302766939687668734
+      Pluto_Death_Animation_229: 3136537178947417853
+      Pluto_Death_Animation_23: 5857139376008445041
+      Pluto_Death_Animation_230: 1024109238348357244
+      Pluto_Death_Animation_231: -5388708897992130600
+      Pluto_Death_Animation_232: -5339109177271623691
+      Pluto_Death_Animation_233: -2797606877356566347
+      Pluto_Death_Animation_234: 4004552159728045586
+      Pluto_Death_Animation_235: 7276080158365599848
+      Pluto_Death_Animation_236: -2166860896751004751
+      Pluto_Death_Animation_237: 7467082514872653650
+      Pluto_Death_Animation_238: 1378336848976413480
+      Pluto_Death_Animation_239: 3340060860795927504
+      Pluto_Death_Animation_24: 4913222046419172517
+      Pluto_Death_Animation_240: -4991834026243989125
+      Pluto_Death_Animation_241: 4302249026839640926
+      Pluto_Death_Animation_242: -3770206686819046178
+      Pluto_Death_Animation_243: 3532267023669825403
+      Pluto_Death_Animation_244: -285251064196965311
+      Pluto_Death_Animation_245: 7001109308234646962
+      Pluto_Death_Animation_246: 8947972000077916965
+      Pluto_Death_Animation_247: -3628372977590266395
+      Pluto_Death_Animation_248: -465879730410641624
+      Pluto_Death_Animation_249: -1025996737865133131
+      Pluto_Death_Animation_25: 3357690630796764079
+      Pluto_Death_Animation_250: 3063219985439697684
+      Pluto_Death_Animation_251: -4152400455052107
+      Pluto_Death_Animation_252: 1082667728454978720
+      Pluto_Death_Animation_253: -1433060509855700266
+      Pluto_Death_Animation_254: 5754635962405497049
+      Pluto_Death_Animation_255: -6789122785170036806
+      Pluto_Death_Animation_256: -5540527529664118710
+      Pluto_Death_Animation_257: -2158942768267353434
+      Pluto_Death_Animation_258: -5122628939394374952
+      Pluto_Death_Animation_259: 1876807683270760165
+      Pluto_Death_Animation_26: -790439292583587197
+      Pluto_Death_Animation_260: 2593938807107986512
+      Pluto_Death_Animation_261: 1174854641392025945
+      Pluto_Death_Animation_262: -1738517007647989145
+      Pluto_Death_Animation_263: 8335407600804466026
+      Pluto_Death_Animation_264: 1769499488183846548
+      Pluto_Death_Animation_265: -1313924468539908570
+      Pluto_Death_Animation_27: 7318572413379404708
+      Pluto_Death_Animation_28: 3012761714719487529
+      Pluto_Death_Animation_29: 7229417171651197716
+      Pluto_Death_Animation_3: 3589037572840967365
+      Pluto_Death_Animation_30: 2563071308539259673
+      Pluto_Death_Animation_31: -5701708777613579665
+      Pluto_Death_Animation_32: 2266051331747677921
+      Pluto_Death_Animation_33: 2385895988938997538
+      Pluto_Death_Animation_34: 3681619988527079390
+      Pluto_Death_Animation_35: 6444247830617778674
+      Pluto_Death_Animation_36: 709832577527988904
+      Pluto_Death_Animation_37: -2912453429444763401
+      Pluto_Death_Animation_38: -8343250187784448598
+      Pluto_Death_Animation_39: 1842273092003404495
+      Pluto_Death_Animation_4: -8914461554424287336
+      Pluto_Death_Animation_40: 8917322051952894712
+      Pluto_Death_Animation_41: 7135243702417176516
+      Pluto_Death_Animation_42: -3498402463927461834
+      Pluto_Death_Animation_43: -9034858978610512294
+      Pluto_Death_Animation_44: -2401085291976912088
+      Pluto_Death_Animation_46: 7162555428915335998
+      Pluto_Death_Animation_47: -6712884001710551120
+      Pluto_Death_Animation_48: -2892714069197272618
+      Pluto_Death_Animation_49: 2069122745405362926
+      Pluto_Death_Animation_5: -6114571960395053148
+      Pluto_Death_Animation_50: -2358596680290000994
+      Pluto_Death_Animation_52: -2528013702496782163
+      Pluto_Death_Animation_53: -5612965264182161632
+      Pluto_Death_Animation_54: -3236947980526747888
+      Pluto_Death_Animation_55: 5758209240943822764
+      Pluto_Death_Animation_56: -4372505915213839610
+      Pluto_Death_Animation_57: 2229221904939452239
+      Pluto_Death_Animation_58: 3939962096532218195
+      Pluto_Death_Animation_59: -6557189378060177217
+      Pluto_Death_Animation_6: 2509689957804346168
+      Pluto_Death_Animation_60: -3595707071772270534
+      Pluto_Death_Animation_62: -415296343490074956
+      Pluto_Death_Animation_63: -9041457240298788195
+      Pluto_Death_Animation_64: 8698707795349096124
+      Pluto_Death_Animation_65: 5102922475471971965
+      Pluto_Death_Animation_66: 73896385931529224
+      Pluto_Death_Animation_67: 997020066231459015
+      Pluto_Death_Animation_68: -4883169052006955868
+      Pluto_Death_Animation_69: 1955846198001556668
+      Pluto_Death_Animation_7: -5935616705542716858
+      Pluto_Death_Animation_70: 2031592220632257903
+      Pluto_Death_Animation_73: -6605042193717591646
+      Pluto_Death_Animation_74: -5909408992242757140
+      Pluto_Death_Animation_75: -2925053748242846288
+      Pluto_Death_Animation_76: 1068997220378221157
+      Pluto_Death_Animation_78: 6351146001316934046
+      Pluto_Death_Animation_79: 3800426087134175374
+      Pluto_Death_Animation_8: -1751283594767850536
+      Pluto_Death_Animation_80: -5387823111262317804
+      Pluto_Death_Animation_81: 353129441286138278
+      Pluto_Death_Animation_82: 4458308837980473552
+      Pluto_Death_Animation_83: 4335109516613472875
+      Pluto_Death_Animation_84: 5543249867317799926
+      Pluto_Death_Animation_85: 4730553944608434816
+      Pluto_Death_Animation_86: 7016544588113392897
+      Pluto_Death_Animation_87: -2277980946906964920
+      Pluto_Death_Animation_88: 3002226580421783472
+      Pluto_Death_Animation_89: 4944097840866513653
+      Pluto_Death_Animation_9: 3669563541752273124
+      Pluto_Death_Animation_90: 2950296540754567744
+      Pluto_Death_Animation_91: 612046613755268603
+      Pluto_Death_Animation_92: -7875677273699761445
+      Pluto_Death_Animation_93: -61503273268589398
+      Pluto_Death_Animation_94: -5544404288079431729
+      Pluto_Death_Animation_95: -2168707216794277383
+      Pluto_Death_Animation_96: -9212806976710582037
+      Pluto_Death_Animation_97: 510723239736147852
+      Pluto_Death_Animation_98: 8761338334861202225
+      Pluto_Death_Animation_99: -6336271570319191381
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
