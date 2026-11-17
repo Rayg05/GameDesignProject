@@ -8,6 +8,8 @@ public class Saturn_Drill : IState {
     enum Phase { Jump, Hang, Dive, Underground, Resurface, Grounded }
 
     readonly Saturn_Boss saturn;
+    readonly Animator animator;
+    static readonly int JumpState = Animator.StringToHash("SaturnVertJump");
 
     Phase phase;
     float timer;
@@ -18,6 +20,7 @@ public class Saturn_Drill : IState {
 
     public Saturn_Drill(Saturn_Boss boss) {
         saturn = boss;
+        animator = saturn.GetComponent<Animator>();
     }
 
     public void Enter() {
@@ -25,6 +28,7 @@ public class Saturn_Drill : IState {
         groundY = saturn.transform.position.y;
         divesDone = 0;
         BossDamage.Apply(saturn.gameObject, saturn.diveDamage);
+        animator.SetBool("Drill", true);
         StartJump();
     }
 
@@ -91,11 +95,30 @@ public class Saturn_Drill : IState {
     }
 
     public void Exit() {
+        animator.SetBool("Drill", false);
+        animator.SetBool("DrillDive", false);
+        animator.speed = 1f;
         // Make sure she's exactly on the floor if the state is interrupted.
         Vector3 pos = saturn.transform.position;
         saturn.transform.position = new Vector3(pos.x, groundY, pos.z);
         BossDamage.Apply(saturn.gameObject, saturn.contactDamage);
         Debug.Log("Exiting Saturn_Drill.");
+    }
+
+    // Jump / Hang: SaturnVertJump plays once (0.8s at 10fps, matching diveJumpDuration) and holds
+    //   its last frame (hair spread) through the hang.
+    // Dive / Underground / Resurface: SaturnDrill (DrillDive = true).
+    // Grounded: frozen on the first jump frame, so the jump plays from the start when she takes off.
+    void UpdateAnimation() {
+        bool drilling = phase == Phase.Dive || phase == Phase.Underground || phase == Phase.Resurface;
+        animator.SetBool("DrillDive", drilling);
+
+        if (phase == Phase.Jump || phase == Phase.Grounded) {
+            animator.Play(JumpState, 0, 0f);
+            animator.speed = phase == Phase.Grounded ? 0f : 1f;
+        } else {
+            animator.speed = 1f;
+        }
     }
 
     void StartJump() {
@@ -108,6 +131,7 @@ public class Saturn_Drill : IState {
     void SetPhase(Phase next) {
         phase = next;
         timer = 0f;
+        UpdateAnimation();
     }
 
     // Random X inside the arena, trying to stay away from the player so it feels like "somewhere else".
