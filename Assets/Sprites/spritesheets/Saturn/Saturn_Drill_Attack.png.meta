@@ -1,0 +1,678 @@
+fileFormatVersion: 2
+guid: 4d22e13b7272443f9a727bf0ace715ed
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 408668449279717100
+    second: Saturn_Drill_Attack_0
+  - first:
+      213: 665017510478640632
+    second: Saturn_Drill_Attack_1
+  - first:
+      213: 957968574659138289
+    second: Saturn_Drill_Attack_2
+  - first:
+      213: 932549578940710753
+    second: Saturn_Drill_Attack_3
+  - first:
+      213: 839028893411460289
+    second: Saturn_Drill_Attack_4
+  - first:
+      213: 353819490493015327
+    second: Saturn_Drill_Attack_5
+  - first:
+      213: 124457436711047639
+    second: Saturn_Drill_Attack_6
+  - first:
+      213: 774863059487130168
+    second: Saturn_Drill_Attack_7
+  - first:
+      213: 354849807250103444
+    second: Saturn_Drill_Attack_8
+  - first:
+      213: 607163021397328856
+    second: Saturn_Drill_Attack_9
+  - first:
+      213: 921913170966464805
+    second: Saturn_Drill_Attack_10
+  - first:
+      213: 903007630504528046
+    second: Saturn_Drill_Attack_11
+  - first:
+      213: 532150445192816723
+    second: Saturn_Drill_Attack_12
+  - first:
+      213: 486608144226987968
+    second: Saturn_Drill_Attack_13
+  - first:
+      213: 672898909493591931
+    second: Saturn_Drill_Attack_14
+  - first:
+      213: 430897011249026821
+    second: Saturn_Drill_Attack_15
+  - first:
+      213: 268403081501357175
+    second: Saturn_Drill_Attack_16
+  - first:
+      213: 699809858488115875
+    second: Saturn_Drill_Attack_17
+  - first:
+      213: 619515205007274818
+    second: Saturn_Drill_Attack_18
+  - first:
+      213: 638256638491184631
+    second: Saturn_Drill_Attack_19
+  - first:
+      213: 762689854546216107
+    second: Saturn_Drill_Attack_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Saturn_Drill_Attack_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8400
+        width: 2000
+        height: 2100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56b0a95f593140bab9e065a7aee8f0ab
+      internalID: 408668449279717100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Drill_Attack_1
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 8400
+        width: 2000
+        height: 2100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 381668374b39474bb57f10e205baaae8
+      internalID: 665017510478640632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Drill_Attack_2
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 8400
+        width: 2000
+        height: 2100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4435b596060a46bfb188bb449bbea30e
+      internalID: 957968574659138289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Drill_Attack_3
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 8400
+        width: 2000
+        height: 2100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57fc8f97c8b94a2aaf06dc9e0aed508c
+      internalID: 932549578940710753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Drill_Attack_4
+      rect:
+        serializedVersion: 2
+        x: 8000
+        y: 8400
+        width: 2000
+        height: 2100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e9fc9dacc8c4619bfc75f24b3d6510d
+      internalID: 839028893411460289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Drill_Attack_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6300
+        width: 2000
+        height: 2100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d8becf04b83406c9bbb3555a8d1562e
+      internalID: 353819490493015327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Drill_Attack_6
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 6300
+        width: 2000
+        height: 2100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1baabf5928146079bdd47ebcb34578c
+      internalID: 124457436711047639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Drill_Attack_7
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 6300
+        width: 2000
+        height: 2100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c002fa023bfb4673a72fa5adc6e1afc9
+      internalID: 774863059487130168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Drill_Attack_8
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 6300
+        width: 2000
+        height: 2100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e68254e2691f4f64a2afc9d6cb07cd95
+      internalID: 354849807250103444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Drill_Attack_9
+      rect:
+        serializedVersion: 2
+        x: 8000
+        y: 6300
+        width: 2000
+        height: 2100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76b910eb6f5d4ca3976c5290d42daebb
+      internalID: 607163021397328856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Drill_Attack_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4200
+        width: 2000
+        height: 2100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b7ee0d0b0a54be3b866d4b7e26aeb28
+      internalID: 921913170966464805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Drill_Attack_11
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 4200
+        width: 2000
+        height: 2100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89d2728ff84a4b59aefdf2b3fed4b6b1
+      internalID: 903007630504528046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Drill_Attack_12
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 4200
+        width: 2000
+        height: 2100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70935edf2d3f4a6f90ae39d2966da8ca
+      internalID: 532150445192816723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Drill_Attack_13
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 4200
+        width: 2000
+        height: 2100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ab01e6f3c534454a823d7536a68817e
+      internalID: 486608144226987968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Drill_Attack_14
+      rect:
+        serializedVersion: 2
+        x: 8000
+        y: 4200
+        width: 2000
+        height: 2100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14117bdf8565413bb434fdb7f902471b
+      internalID: 672898909493591931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Drill_Attack_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2100
+        width: 2000
+        height: 2100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f43dbc608884d40b25496c5a71f6985
+      internalID: 430897011249026821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Drill_Attack_16
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2100
+        width: 2000
+        height: 2100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6af55733135a4d2f9b68d65c77b4a6eb
+      internalID: 268403081501357175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Drill_Attack_17
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 2100
+        width: 2000
+        height: 2100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0f8b22f2b9e462ea8fe02fd0d7e7612
+      internalID: 699809858488115875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Drill_Attack_18
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 2100
+        width: 2000
+        height: 2100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf2750128b044b84b2a74acb8a7e5cee
+      internalID: 619515205007274818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Drill_Attack_19
+      rect:
+        serializedVersion: 2
+        x: 8000
+        y: 2100
+        width: 2000
+        height: 2100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 182362b31f3146e9a48e76820fe955b0
+      internalID: 638256638491184631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Drill_Attack_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 2000
+        height: 2100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b713f1d9a154f03b876ff87697abc82
+      internalID: 762689854546216107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Saturn_Drill_Attack_0: 408668449279717100
+      Saturn_Drill_Attack_1: 665017510478640632
+      Saturn_Drill_Attack_2: 957968574659138289
+      Saturn_Drill_Attack_3: 932549578940710753
+      Saturn_Drill_Attack_4: 839028893411460289
+      Saturn_Drill_Attack_5: 353819490493015327
+      Saturn_Drill_Attack_6: 124457436711047639
+      Saturn_Drill_Attack_7: 774863059487130168
+      Saturn_Drill_Attack_8: 354849807250103444
+      Saturn_Drill_Attack_9: 607163021397328856
+      Saturn_Drill_Attack_10: 921913170966464805
+      Saturn_Drill_Attack_11: 903007630504528046
+      Saturn_Drill_Attack_12: 532150445192816723
+      Saturn_Drill_Attack_13: 486608144226987968
+      Saturn_Drill_Attack_14: 672898909493591931
+      Saturn_Drill_Attack_15: 430897011249026821
+      Saturn_Drill_Attack_16: 268403081501357175
+      Saturn_Drill_Attack_17: 699809858488115875
+      Saturn_Drill_Attack_18: 619515205007274818
+      Saturn_Drill_Attack_19: 638256638491184631
+      Saturn_Drill_Attack_20: 762689854546216107
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

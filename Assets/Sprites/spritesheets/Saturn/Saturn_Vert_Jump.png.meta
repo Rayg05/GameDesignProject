@@ -1,0 +1,340 @@
+fileFormatVersion: 2
+guid: 38d065cb4cd2453b81d36943d0eb2671
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 293963987147547225
+    second: Saturn_Vert_Jump_0
+  - first:
+      213: 361922822015121242
+    second: Saturn_Vert_Jump_1
+  - first:
+      213: 48353292060529616
+    second: Saturn_Vert_Jump_2
+  - first:
+      213: 175445629794029551
+    second: Saturn_Vert_Jump_3
+  - first:
+      213: 1065769531982008110
+    second: Saturn_Vert_Jump_4
+  - first:
+      213: 315441849828252038
+    second: Saturn_Vert_Jump_5
+  - first:
+      213: 408413770677910447
+    second: Saturn_Vert_Jump_6
+  - first:
+      213: 1098461911652825774
+    second: Saturn_Vert_Jump_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Saturn_Vert_Jump_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4200
+        width: 2000
+        height: 2100
+      alignment: 9
+      pivot: {x: 0.456, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 075aaa676e0949308526a538f9b760a8
+      internalID: 293963987147547225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Vert_Jump_1
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 4200
+        width: 2000
+        height: 2100
+      alignment: 9
+      pivot: {x: 0.456, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0a26bab60af4fe08e1808d6deee6f58
+      internalID: 361922822015121242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Vert_Jump_2
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 4200
+        width: 2000
+        height: 2100
+      alignment: 9
+      pivot: {x: 0.456, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a9e3232f9f14165a5d5169a8cea18d8
+      internalID: 48353292060529616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Vert_Jump_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2100
+        width: 2000
+        height: 2100
+      alignment: 9
+      pivot: {x: 0.456, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f64c318287b24c73848bbed32fe6e6fa
+      internalID: 175445629794029551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Vert_Jump_4
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2100
+        width: 2000
+        height: 2100
+      alignment: 9
+      pivot: {x: 0.456, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8edf38c4e5a340b89829e3f13128d205
+      internalID: 1065769531982008110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Vert_Jump_5
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 2100
+        width: 2000
+        height: 2100
+      alignment: 9
+      pivot: {x: 0.456, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a63338e960e424b9357fa32e2b196d1
+      internalID: 315441849828252038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Vert_Jump_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 2000
+        height: 2100
+      alignment: 9
+      pivot: {x: 0.456, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc892149716545b39c9b78507244e11d
+      internalID: 408413770677910447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Vert_Jump_7
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 0
+        width: 2000
+        height: 2100
+      alignment: 9
+      pivot: {x: 0.456, y: 0.48}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 009a5bb5cf3e422ea64b503c08b89c60
+      internalID: 1098461911652825774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Saturn_Vert_Jump_0: 293963987147547225
+      Saturn_Vert_Jump_1: 361922822015121242
+      Saturn_Vert_Jump_2: 48353292060529616
+      Saturn_Vert_Jump_3: 175445629794029551
+      Saturn_Vert_Jump_4: 1065769531982008110
+      Saturn_Vert_Jump_5: 315441849828252038
+      Saturn_Vert_Jump_6: 408413770677910447
+      Saturn_Vert_Jump_7: 1098461911652825774
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
