@@ -27,7 +27,6 @@ public class Saturn_Hat : IState
         if(!fired && timer >= stateDuration / 1.2)
         {
             fired = true;
-
             Transform lt = saturn.transform;
             GameObject projectile = ((Boss)saturn).projectile;
             GameObject p1 = GameObject.Instantiate(projectile, lt.position, lt.rotation);
@@ -41,7 +40,7 @@ public class Saturn_Hat : IState
 
     public void Exit()
     {
-        
+        animator.SetBool("Hat", false);
     }
 
     

@@ -6,7 +6,7 @@ using UnityEngine;
 public class Hat_Projectile : MonoBehaviour
 {
     Rigidbody2D rb;
-    public float speed = 30f;
+    public float speed = 60f;
     private int bounces = 8;
 
     private float rotateSpeed = 200f;
@@ -20,18 +20,21 @@ public class Hat_Projectile : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         Shoot(new Vector2(2, 0));
 
+        plutoPos = GameObject.Find("Pluto").transform;
+        saturn = GameObject.Find("Saturn").transform;
+
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
 
-        if(bounces > 0)
+        if(bounces > 0 && !collision.gameObject.CompareTag("Boss"))
         {
           bounces--;  
         }
         
 
-        if(bounces % 2 == 0)   //every other bounce goes towards the player so it doesnt bounce off randomly and get it stuck somewhere
+        if(bounces % 2 == 0 && !collision.gameObject.CompareTag("Boss"))   //every other bounce goes towards the player so it doesnt bounce off randomly and get it stuck somewhere
         {
             Shoot((plutoPos.position - transform.position).normalized);
         }
@@ -54,7 +57,6 @@ public class Hat_Projectile : MonoBehaviour
     {
         if(bounces == 0 && collision.gameObject.CompareTag("Boss"))
         {
-            Debug.Log("entered boss");
             Destroy(gameObject);
         }
     }

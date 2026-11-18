@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Saturn_Boss : Boss
 {
+    public GameObject projectile;
     [Header("Attack Damage")]
     public float whipDamage = 5f;
     public float diveDamage = 5f;   // touching her at any point during the dive attack
@@ -58,11 +59,11 @@ public class Saturn_Boss : Boss
         }
 
         // From Idle, pick a random state to transition to.
-        /*
-        int rand = Random.Range(1, states.Count);
-        Debug.Log("Rand = " + rand + ", num_states = " + states.Count);
-        state_machine.ChangeState(states[rand]);
-        */
+        
+        // int rand = Random.Range(1, states.Count);
+        // Debug.Log("Rand = " + rand + ", num_states = " + states.Count);
+        // state_machine.ChangeState(states[rand]);
+        
     }
 
     // Called on animation events only.
