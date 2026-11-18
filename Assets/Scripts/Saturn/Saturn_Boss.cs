@@ -30,7 +30,7 @@ public class Saturn_Boss : Boss
         states.Add(new Saturn_Idle(this));
         states.Add(new Saturn_Whip(this));   // 1
         states.Add(new Saturn_Drill(this));  // 2
-        //states.Add(new Saturn_Hat(this));
+        states.Add(new Saturn_Hat(this)); //3
     }
 
     // Just Idle, in this case.
@@ -55,7 +55,8 @@ public class Saturn_Boss : Boss
         if (dist < whipDist) {
             state_machine.ChangeState(states[1]);
         } else {
-            state_machine.ChangeState(states[2]);
+            int rand = Random.Range(2, states.Count);
+            state_machine.ChangeState(states[rand]);
         }
 
         // From Idle, pick a random state to transition to.

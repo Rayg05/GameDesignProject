@@ -46,11 +46,6 @@ public class Hat_Projectile : MonoBehaviour
             
         }
 
-
-        if(bounces == 0 && collision.gameObject.CompareTag("Boss"))
-        {
-            Destroy(gameObject);
-        }
     }
 
     void OnTriggerEnter2D(Collider2D collision)

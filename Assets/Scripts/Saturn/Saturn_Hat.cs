@@ -15,9 +15,10 @@ public class Saturn_Hat : IState
 
     public void Enter ()
     {
+        Debug.Log("Entering Saturn Hat");
         timer = 0f;
         fired = false;
-        animator.SetBool("Hat", true);
+        animator.SetBool("Throw", true);
     }
     public void Execute()
     {
@@ -25,7 +26,8 @@ public class Saturn_Hat : IState
         timer += Time.deltaTime;
 
         if(!fired && timer >= stateDuration / 1.2)
-        {
+        {   
+            //shoots the hat
             fired = true;
             Transform lt = saturn.transform;
             GameObject projectile = ((Boss)saturn).projectile;
@@ -40,7 +42,8 @@ public class Saturn_Hat : IState
 
     public void Exit()
     {
-        animator.SetBool("Hat", false);
+        Debug.Log("Exiting Saturn Hat");
+        animator.SetBool("Throw", false);
     }
 
     
