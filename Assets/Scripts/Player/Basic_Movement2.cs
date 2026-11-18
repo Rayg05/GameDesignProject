@@ -15,6 +15,7 @@ public class Basic_Movement2 : MonoBehaviour
     private Health playerHealth;
 
     [SerializeField] private float moveSpeed = 10f;
+    private float externalPushX = 0f; // extra horizontal speed from outside forces (e.g. Jupiter's wind)
     [SerializeField] EquipmentData dash;
     [SerializeField] private float jumpHeight = 7f; // height of a full jump (space held the whole way up)
     [SerializeField] private float timeToApex = 0.35f; // seconds a full jump takes to reach the top
@@ -93,7 +94,7 @@ public class Basic_Movement2 : MonoBehaviour
         }
 
 
-        rb.linearVelocity = new Vector2(moveInput * currentSpeed, rb.linearVelocity.y);
+        rb.linearVelocity = new Vector2(moveInput * currentSpeed + externalPushX, rb.linearVelocity.y);
         if (isGrounded)
         {
             jumpCount = 0;
@@ -156,6 +157,12 @@ public class Basic_Movement2 : MonoBehaviour
         Vector2 feet = new Vector2(b.center.x, b.min.y);
         Vector2 checkSize = new Vector2(b.size.x * 0.9f, groundCheckRadius * 2f);
         isGrounded = Physics2D.OverlapBox(feet, checkSize, 0f, groundLayer);
+    }
+
+    // Constant horizontal push applied on top of the player's own movement. Pass 0 to stop it.
+    public void SetExternalPush(float speedX)
+    {
+        externalPushX = speedX;
     }
 
     public void HurtPlayer(float amt)
