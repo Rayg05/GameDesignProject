@@ -8,7 +8,6 @@ public class Hat_Projectile : MonoBehaviour
     Rigidbody2D rb;
     public float speed = 60f;
     private int bounces = 8;
-
     private float rotateSpeed = 200f;
 
     [SerializeField] Transform plutoPos;
@@ -62,7 +61,7 @@ public class Hat_Projectile : MonoBehaviour
 
     void Update() {
         if(bounces == 0)
-        {
+        {   //returns back to the boss after it is done bouncing
             Vector2 direction = (Vector2)saturn.position - rb.position;
 
             direction.Normalize();
