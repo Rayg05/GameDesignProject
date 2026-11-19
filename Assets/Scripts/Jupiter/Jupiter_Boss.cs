@@ -11,12 +11,14 @@ public class Jupiter_Boss : Boss
     [Header("Wind Attack")]
     public float windDuration = 15f;
     public float windStrength = 5f;   // speed added to the player in the wind's direction (player moves at 10)
+    public CeilingAttackController ceilingAttackController;
 
     protected override void BuildStates() {
         // IDLE SHOULD BE FIRST ON THE LIST!
         states.Add(new Jupiter_Idle(this));        // 0
         states.Add(new Jupiter_FistAttack(this));  // 1
         states.Add(new Jupiter_Wind(this));        // 2
+        states.Add(new Jupiter_CeilingAttack(this, ceilingAttackController));
     }
 
     // Just Idle, in this case.
