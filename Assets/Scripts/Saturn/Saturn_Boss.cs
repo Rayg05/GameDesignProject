@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Saturn_Boss : Boss
 {
+    public GameObject projectile;
     [Header("Attack Damage")]
     public float whipDamage = 5f;
     public float diveDamage = 5f;   // touching her at any point during the dive attack
@@ -22,12 +23,14 @@ public class Saturn_Boss : Boss
 
     public GameObject whipHitbox;
 
+    public float hatDamage= 5f;
+
     protected override void BuildStates() {
         // IDLE SHOULD BE FIRST ON THE LIST!
         states.Add(new Saturn_Idle(this));
         states.Add(new Saturn_Whip(this));   // 1
         states.Add(new Saturn_Drill(this));  // 2
-        //states.Add(new Saturn_Hat(this));
+        states.Add(new Saturn_Hat(this)); //3
     }
 
     // Just Idle, in this case.
@@ -52,15 +55,16 @@ public class Saturn_Boss : Boss
         if (dist < whipDist) {
             state_machine.ChangeState(states[1]);
         } else {
-            state_machine.ChangeState(states[2]);
+            int rand = Random.Range(2, states.Count);
+            state_machine.ChangeState(states[rand]);
         }
 
         // From Idle, pick a random state to transition to.
-        /*
-        int rand = Random.Range(1, states.Count);
-        Debug.Log("Rand = " + rand + ", num_states = " + states.Count);
-        state_machine.ChangeState(states[rand]);
-        */
+        
+        // int rand = Random.Range(1, states.Count);
+        // Debug.Log("Rand = " + rand + ", num_states = " + states.Count);
+        // state_machine.ChangeState(states[rand]);
+        
     }
 
     // Called on animation events only.

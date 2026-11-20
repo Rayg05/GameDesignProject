@@ -5,17 +5,20 @@ TagManager:
   serializedVersion: 3
   tags:
   - BossProjectile
+  - Wall
+  - Boss
+  - SaturnHat
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Boss
   - Water
   - UI
   - Ground
   - background
-  - 
-  - 
+  - Projectile
+  - player
   - 
   - 
   - 

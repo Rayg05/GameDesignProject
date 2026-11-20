@@ -1,0 +1,379 @@
+fileFormatVersion: 2
+guid: 74c80057d764ed94089d0598a14befc0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4189921044554716703
+    second: Saturn_Hat_Spin_0
+  - first:
+      213: -5491938555064333777
+    second: Saturn_Hat_Spin_1
+  - first:
+      213: 334011802718354065
+    second: Saturn_Hat_Spin_2
+  - first:
+      213: -4727282399416883179
+    second: Saturn_Hat_Spin_3
+  - first:
+      213: 3251655966191356682
+    second: Saturn_Hat_Spin_4
+  - first:
+      213: 6466380911962440349
+    second: Saturn_Hat_Spin_5
+  - first:
+      213: 2546983386931477767
+    second: Saturn_Hat_Spin_6
+  - first:
+      213: 2607858527662513898
+    second: Saturn_Hat_Spin_7
+  - first:
+      213: 7664600007121002854
+    second: Saturn_Hat_Spin_8
+  - first:
+      213: -8937566202464708328
+    second: Saturn_Hat_Spin_9
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Saturn_Hat_Spin_0
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 2313
+        width: 870
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f161e99adf6952a30800000000000000
+      internalID: 4189921044554716703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Hat_Spin_1
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 2400
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2a4e115bf6b8c3b0800000000000000
+      internalID: -5491938555064333777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Hat_Spin_2
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 2313
+        width: 679
+        height: 489
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19ab0d307f5a2a400800000000000000
+      internalID: 334011802718354065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Hat_Spin_3
+      rect:
+        serializedVersion: 2
+        x: 2257
+        y: 2300
+        width: 486
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 518ecc534b1556eb0800000000000000
+      internalID: -4727282399416883179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Hat_Spin_4
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 1313
+        width: 679
+        height: 489
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0b8d9c8fd3302d20800000000000000
+      internalID: 3251655966191356682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Hat_Spin_5
+      rect:
+        serializedVersion: 2
+        x: 1046
+        y: 1399
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9243e7dd233db950800000000000000
+      internalID: 6466380911962440349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Hat_Spin_6
+      rect:
+        serializedVersion: 2
+        x: 1062
+        y: 1313
+        width: 870
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70d3fda55e3b85320800000000000000
+      internalID: 2546983386931477767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Hat_Spin_7
+      rect:
+        serializedVersion: 2
+        x: 2202
+        y: 1297
+        width: 644
+        height: 507
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aee1ccd8389f03420800000000000000
+      internalID: 2607858527662513898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Hat_Spin_8
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 300
+        width: 486
+        height: 504
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66167e109112e5a60800000000000000
+      internalID: 7664600007121002854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Hat_Spin_9
+      rect:
+        serializedVersion: 2
+        x: 1202
+        y: 297
+        width: 644
+        height: 507
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 819dd8164e267f380800000000000000
+      internalID: -8937566202464708328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Saturn_Hat_Spin_0: 4189921044554716703
+      Saturn_Hat_Spin_1: -5491938555064333777
+      Saturn_Hat_Spin_2: 334011802718354065
+      Saturn_Hat_Spin_3: -4727282399416883179
+      Saturn_Hat_Spin_4: 3251655966191356682
+      Saturn_Hat_Spin_5: 6466380911962440349
+      Saturn_Hat_Spin_6: 2546983386931477767
+      Saturn_Hat_Spin_7: 2607858527662513898
+      Saturn_Hat_Spin_8: 7664600007121002854
+      Saturn_Hat_Spin_9: -8937566202464708328
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
