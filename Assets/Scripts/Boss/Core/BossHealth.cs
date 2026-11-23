@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class BossHealth : MonoBehaviour
+public class BossHealth : MonoBehaviour, IDamageable
 {
     [SerializeField] private float health = 100f;
     [SerializeField] private float maxHP = 100f;

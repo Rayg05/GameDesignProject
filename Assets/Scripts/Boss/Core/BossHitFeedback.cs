@@ -1,9 +1,9 @@
 using System.Collections;
 using UnityEngine;
 
-// Flashes the boss white and spawns a damage number whenever BossHealth takes damage.
-// BossHealth adds this automatically, so no setup is needed.
-[RequireComponent(typeof(BossHealth))]
+// Flashes the object white and spawns a damage number whenever its health component takes damage.
+// Works with BossHealth, Minion_Health, or anything else that implements IDamageable.
+// The health script adds this automatically, so no setup is needed.
 public class BossHitFeedback : MonoBehaviour
 {
     [Header("Flash")]
@@ -15,7 +15,7 @@ public class BossHitFeedback : MonoBehaviour
     [SerializeField] private Color numberColor = Color.white;
     [SerializeField] private float numberFontSize = 12f;
 
-    private BossHealth health;
+    private IDamageable health;
     private SpriteRenderer[] renderers;
     private Material[] originalMaterials;
     private Material flashMaterial;
@@ -23,7 +23,7 @@ public class BossHitFeedback : MonoBehaviour
 
     private void Awake()
     {
-        health = GetComponent<BossHealth>();
+        health = GetComponent<IDamageable>();
         renderers = GetComponentsInChildren<SpriteRenderer>(true);
         originalMaterials = new Material[renderers.Length];
 
@@ -39,8 +39,15 @@ public class BossHitFeedback : MonoBehaviour
         }
     }
 
-    private void OnEnable() => health.Damaged += HandleDamaged;
-    private void OnDisable() => health.Damaged -= HandleDamaged;
+    private void OnEnable()
+    {
+        if (health != null) health.Damaged += HandleDamaged;
+    }
+
+    private void OnDisable()
+    {
+        if (health != null) health.Damaged -= HandleDamaged;
+    }
 
     private void OnDestroy()
     {
@@ -50,7 +57,7 @@ public class BossHitFeedback : MonoBehaviour
     private void HandleDamaged(float amount)
     {
         DamagePopup popup = DamagePopup.Spawn(GetPopupPosition(), amount, numberColor, numberFontSize);
-        // Draw on the boss's sorting layer so the number isn't hidden behind it
+        // Draw on the object's sorting layer so the number isn't hidden behind it
         if (renderers.Length > 0 && renderers[0] != null)
             popup.GetComponent<MeshRenderer>().sortingLayerID = renderers[0].sortingLayerID;
 

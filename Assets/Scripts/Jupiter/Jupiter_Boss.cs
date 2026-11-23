@@ -12,6 +12,7 @@ public class Jupiter_Boss : Boss
     public float windDuration = 15f;
     public float windStrength = 5f;   // speed added to the player in the wind's direction (player moves at 10)
     public CeilingAttackController ceilingAttackController;
+    public Spawn_Minions minion_spawner;
 
     protected override void BuildStates() {
         // IDLE SHOULD BE FIRST ON THE LIST!
@@ -19,6 +20,7 @@ public class Jupiter_Boss : Boss
         states.Add(new Jupiter_FistAttack(this));  // 1
         states.Add(new Jupiter_Wind(this));        // 2
         states.Add(new Jupiter_CeilingAttack(this, ceilingAttackController));
+        states.Add(new Jupiter_Minions(this, minion_spawner));
     }
 
     // Just Idle, in this case.
