@@ -1,0 +1,483 @@
+fileFormatVersion: 2
+guid: 763c807c4666bfe4f8e5c60da8dc25fe
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5699209983528072012
+    second: Saturn_Hat_Throw_0
+  - first:
+      213: -505766787314920862
+    second: Saturn_Hat_Throw_1
+  - first:
+      213: -5562663919230333119
+    second: Saturn_Hat_Throw_2
+  - first:
+      213: 6503177219845751697
+    second: Saturn_Hat_Throw_3
+  - first:
+      213: -7267920216424722371
+    second: Saturn_Hat_Throw_4
+  - first:
+      213: -3475571282995580325
+    second: Saturn_Hat_Throw_5
+  - first:
+      213: -9155944657266414270
+    second: Saturn_Hat_Throw_6
+  - first:
+      213: -6764116204183152210
+    second: Saturn_Hat_Throw_7
+  - first:
+      213: 1930800304228609071
+    second: Saturn_Hat_Throw_8
+  - first:
+      213: 946825551218131141
+    second: Saturn_Hat_Throw_9
+  - first:
+      213: 4962647446646989579
+    second: Saturn_Hat_Throw_10
+  - first:
+      213: -7055617392458726914
+    second: Saturn_Hat_Throw_11
+  - first:
+      213: 1378836620972029694
+    second: Saturn_Hat_Throw_12
+  - first:
+      213: -6213827742171309836
+    second: Saturn_Hat_Throw_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Saturn_Hat_Throw_0
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 4349
+        width: 884
+        height: 1894
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c43fc88c849a71f40800000000000000
+      internalID: 5699209983528072012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Hat_Throw_1
+      rect:
+        serializedVersion: 2
+        x: 1478
+        y: 5848
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26257ee59c72bf8f0800000000000000
+      internalID: -505766787314920862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Hat_Throw_2
+      rect:
+        serializedVersion: 2
+        x: 2478
+        y: 4341
+        width: 1044
+        height: 1752
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14fc46143a27dc2b0800000000000000
+      internalID: -5562663919230333119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Hat_Throw_3
+      rect:
+        serializedVersion: 2
+        x: 4509
+        y: 4336
+        width: 1048
+        height: 1826
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1938154e93def3a50800000000000000
+      internalID: 6503177219845751697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Hat_Throw_4
+      rect:
+        serializedVersion: 2
+        x: 6530
+        y: 4330
+        width: 1044
+        height: 1845
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d30df1cf119232b90800000000000000
+      internalID: -7267920216424722371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Hat_Throw_5
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 2233
+        width: 1078
+        height: 1861
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b52ff7d155a44cfc0800000000000000
+      internalID: -3475571282995580325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Hat_Throw_6
+      rect:
+        serializedVersion: 2
+        x: 2535
+        y: 2230
+        width: 1203
+        height: 1708
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24def7038dc8fe080800000000000000
+      internalID: -9155944657266414270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Hat_Throw_7
+      rect:
+        serializedVersion: 2
+        x: 4585
+        y: 2183
+        width: 1094
+        height: 1757
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea9133e66280122a0800000000000000
+      internalID: -6764116204183152210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Hat_Throw_8
+      rect:
+        serializedVersion: 2
+        x: 6010
+        y: 2238
+        width: 1604
+        height: 1714
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2c23c995a49bca10800000000000000
+      internalID: 1930800304228609071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Hat_Throw_9
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 135
+        width: 1063
+        height: 1699
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c0ce9482dcc32d00800000000000000
+      internalID: 946825551218131141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Hat_Throw_10
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 1832
+        width: 17
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b03a4ea3f8dded440800000000000000
+      internalID: 4962647446646989579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Hat_Throw_11
+      rect:
+        serializedVersion: 2
+        x: 2588
+        y: 152
+        width: 767
+        height: 1681
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef10e632d59651e90800000000000000
+      internalID: -7055617392458726914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Hat_Throw_12
+      rect:
+        serializedVersion: 2
+        x: 4588
+        y: 149
+        width: 781
+        height: 1687
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef67654f99c922310800000000000000
+      internalID: 1378836620972029694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saturn_Hat_Throw_13
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 115
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f8596c379c04c9a0800000000000000
+      internalID: -6213827742171309836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Saturn_Hat_Throw_0: 5699209983528072012
+      Saturn_Hat_Throw_1: -505766787314920862
+      Saturn_Hat_Throw_10: 4962647446646989579
+      Saturn_Hat_Throw_11: -7055617392458726914
+      Saturn_Hat_Throw_12: 1378836620972029694
+      Saturn_Hat_Throw_13: -6213827742171309836
+      Saturn_Hat_Throw_2: -5562663919230333119
+      Saturn_Hat_Throw_3: 6503177219845751697
+      Saturn_Hat_Throw_4: -7267920216424722371
+      Saturn_Hat_Throw_5: -3475571282995580325
+      Saturn_Hat_Throw_6: -9155944657266414270
+      Saturn_Hat_Throw_7: -6764116204183152210
+      Saturn_Hat_Throw_8: 1930800304228609071
+      Saturn_Hat_Throw_9: 946825551218131141
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
